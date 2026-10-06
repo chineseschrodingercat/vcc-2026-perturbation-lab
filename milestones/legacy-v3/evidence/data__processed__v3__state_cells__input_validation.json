@@ -1,0 +1,45 @@
+{
+  "all_passed": true,
+  "training_unique_targets": 8642,
+  "validation_unique_targets": 933,
+  "train_validation_target_overlap": 0,
+  "h1_target_overlap": 0,
+  "files": [
+    {
+      "line": "hepg2",
+      "shape": [
+        56992,
+        1024
+      ],
+      "sha256": "722172b35eb6f558dd53a448810c7c7692177465222c10c7047a344e62994fd6",
+      "unique_original_rows": 56992
+    },
+    {
+      "line": "jurkat",
+      "shape": [
+        68064,
+        1024
+      ],
+      "sha256": "f2eea5c0c70d6404095a02ef118785f434a2952c6f488b17cf61fb1078489eb1",
+      "unique_original_rows": 68064
+    },
+    {
+      "line": "rpe1",
+      "shape": [
+        63968,
+        1024
+      ],
+      "sha256": "4fc02fceadf3e3f18aac5b78a24d1e2f2ece707e62eb86cd12f2ba4e371d2fa6",
+      "unique_original_rows": 63968
+    },
+    {
+      "line": "k562",
+      "shape": [
+        306496,
+        1024
+      ],
+      "sha256": "b2e4f94bb52d538687cce165d46bc0ca10948efb7faa1956519975d5626b96fc",
+      "unique_original_rows": 306496
+    }
+  ]
+}

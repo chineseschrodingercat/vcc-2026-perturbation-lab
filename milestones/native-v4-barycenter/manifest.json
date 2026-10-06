@@ -1,0 +1,843 @@
+{
+  "schema_version": 1,
+  "id": "native-v4-barycenter",
+  "title": "V4 · N1 barycenter weight 0.75",
+  "evidence_scope": "historical-native6-development",
+  "score_protocol_id": "native6-historical-n1-contract-e489efd753fc0395",
+  "overall": 0.26991439870760525,
+  "status": "development experiment; not promoted",
+  "promotion": false,
+  "import_date": "2026-10-06",
+  "research_execution_on_import": false,
+  "reproducibility": {
+    "evidence_verification": "portable; no scientific dependencies or data required",
+    "scientific_execution": "archival Windows sources; original paths and pinned environments must be restored; not validated from a fresh clone"
+  },
+  "files": [
+    {
+      "path": "milestones/native-v4-barycenter/results.json",
+      "sha256": "7f9d417929115c67e84a8ddf36e624c552ffc6488672f88d5e7896fa17ef6eb0",
+      "bytes": 859,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/configs/V2_NATIVE_SCORE_CONTRACT.json",
+      "sha256": "e489efd753fc0395c87c756113504317d3d144aa23bdc2f474c99f13ccfc3219",
+      "bytes": 124777,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/configs/V4_NATIVE_BARYCENTER_PLAN.json",
+      "sha256": "705aa907c28c87d779008a27dae9e617e32915fac0da8e8e269177b0627c6ea8",
+      "bytes": 4341,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/completed_cases.csv",
+      "sha256": "ad0acf3bcaf043aca745af701a62665219add2f553065c6da76e01b6cd527177",
+      "bytes": 6345,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/executed_plan.json",
+      "sha256": "e7b34ae132842d2df98f4d5d4092037dc271d5a1410f597fb3db7b42750bdb2e",
+      "bytes": 4679,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_hepg2__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.25/aggregate.csv",
+      "sha256": "f6fc089df7f4af9e0e492a15372b1204799ca9cc9b522b665e334ed059cfd6ee",
+      "bytes": 501,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_hepg2__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.25/fid_decomposition.csv",
+      "sha256": "3434a648ead345ca386566c4be938d71f9a809f456f6c099117f9473f8e0f9b8",
+      "bytes": 612,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_hepg2__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.25/metrics.csv",
+      "sha256": "5ab3a48509ee072685c3a260251abee7d15c199ce40c4fd8880931a9118ac80d",
+      "bytes": 3225,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_hepg2__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.25/overall_components.csv",
+      "sha256": "9cc157c2f71f5d2ae4ecf612f46d96ef6173bab304c7b1f96a5a42e780125fd3",
+      "bytes": 789,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_hepg2__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.25/summary.json",
+      "sha256": "8c90235cf66112093bc42aff61bcd8d4a145d63d756735cc68fb64f6a66f712b",
+      "bytes": 435,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_hepg2__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.5/aggregate.csv",
+      "sha256": "609e78828720001ab08da390bcefc2a4f37d4f44ca72cf2d52b3f583e3def89b",
+      "bytes": 501,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_hepg2__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.5/fid_decomposition.csv",
+      "sha256": "59f10e729dec2d9fceda53a48696409070fc89bedd2a35d7a8336eca1489b839",
+      "bytes": 651,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_hepg2__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.5/metrics.csv",
+      "sha256": "219cd0c00c3a96234827e4d47ec48d41bbba76c21ad9335912148b0c7af57144",
+      "bytes": 3234,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_hepg2__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.5/overall_components.csv",
+      "sha256": "266ee08e5eb37c84437fcb126da8a8776ee5c9336ed1a4171347198bc0558609",
+      "bytes": 789,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_hepg2__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.5/summary.json",
+      "sha256": "0ea2c5f16c69671fa99d7a7978c36e8984dd8eac1109765c476cba4216b78e33",
+      "bytes": 434,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_hepg2__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/aggregate.csv",
+      "sha256": "0ac85bb42323a3e4966aa3c1ed1b8b9118d9836ec5bf2f28695e453021d9b715",
+      "bytes": 503,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_hepg2__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/fid_decomposition.csv",
+      "sha256": "89963d2098ed15fd14e6911b629a5db819f41f6a20c21c92c9a8e69152f85d05",
+      "bytes": 731,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_hepg2__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/metrics.csv",
+      "sha256": "109bb235bb5adc6b7dfa7e6296bced35a3d66bdc58e37cf35233e5eb72d42c4e",
+      "bytes": 3301,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_hepg2__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/overall_components.csv",
+      "sha256": "4735aa6d3a4c1569eb2813c66eb931e41e01e9a344813c625f7104a4c88a6e1c",
+      "bytes": 789,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_hepg2__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/summary.json",
+      "sha256": "f1e8d9cff0ea4a4daa22169be716d4c2c57927933a99a45ee5a09ef7c45e7af8",
+      "bytes": 435,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_hepg2__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.25/aggregate.csv",
+      "sha256": "daf8cc53bc5d423af8ee21f8c2774a1ea4ada6c8ba4d2d1b0ce5ff255d6dc633",
+      "bytes": 501,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_hepg2__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.25/fid_decomposition.csv",
+      "sha256": "ab6de24ce6f36a2cac423b90f699105a0d249dcdc5472bb715c8989a3e4d32a4",
+      "bytes": 775,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_hepg2__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.25/metrics.csv",
+      "sha256": "156eb79362943be33af952a8d6b584477c657b7e263d884235d574a59fdd5e18",
+      "bytes": 3350,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_hepg2__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.25/overall_components.csv",
+      "sha256": "0d73760d5fe9370133301b63f14f1f3d6121d2358add7ff56ad0f858dd917e3f",
+      "bytes": 789,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_hepg2__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.25/summary.json",
+      "sha256": "934a9ac1db6872ead4fe070d36a2ff2d9d2aec2316bb1fdd5835240cd569b32c",
+      "bytes": 433,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_hepg2__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.5/aggregate.csv",
+      "sha256": "bb2f2e511191d3d37b360938b77e7a36a4eb8e0d41d3101231f2d82806cdee95",
+      "bytes": 505,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_hepg2__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.5/fid_decomposition.csv",
+      "sha256": "0072234d7429a681e1011a93a4940b8ca36d734b2b0036e37ff98aed5b8be1ac",
+      "bytes": 743,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_hepg2__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.5/metrics.csv",
+      "sha256": "282a430cac662044cf68f9f1c7c8abaf52286c2153f7282315aea916d00e22f8",
+      "bytes": 3334,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_hepg2__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.5/overall_components.csv",
+      "sha256": "c9c67cd0f249be81a7ada8d89e1ddb74cd29074f7ee057e9c10f88ce4cc82aec",
+      "bytes": 790,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_hepg2__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.5/summary.json",
+      "sha256": "e6a026c28181878c777e0ad2c03892efa11837a40c5edf454a249a7f171c424b",
+      "bytes": 434,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_hepg2__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/aggregate.csv",
+      "sha256": "4807a09ffb48606dbce189cd7d83da40b840fddd50d5b3d71898abe6e47755f9",
+      "bytes": 503,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_hepg2__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/fid_decomposition.csv",
+      "sha256": "31d4d33c91406d0f046192273d12a19ab52b1a094ac84c600bc24a4935b5df3c",
+      "bytes": 751,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_hepg2__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/metrics.csv",
+      "sha256": "477940ef259dbcb80c2a361b4bc797153acbb6acd2af662f82f869346cc0a2a0",
+      "bytes": 3337,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_hepg2__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/overall_components.csv",
+      "sha256": "09a2ded80a4227d04906cdd31f9b9f5e1acfa8d601be5869f3a9b212a3aba990",
+      "bytes": 789,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_hepg2__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/summary.json",
+      "sha256": "9238fd4135a1d5a87bc36ac43a9de6b3d62efa098edbd817aabbf9faefb8a233",
+      "bytes": 434,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_jurkat__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.25/aggregate.csv",
+      "sha256": "9d3b863f5e2ee751e35bdedb0c5b4edc8d7e3ebdfdfb2647d0ec7701b61d1f17",
+      "bytes": 503,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_jurkat__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.25/fid_decomposition.csv",
+      "sha256": "3079825bd69010db4059ae6abfcf8e136db02045a60cdebec9d30c7ba77693d4",
+      "bytes": 773,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_jurkat__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.25/metrics.csv",
+      "sha256": "0763045fa0e25b693afa4fd900c53fcffa877bb4019f0ab60879b63fd61136d3",
+      "bytes": 3430,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_jurkat__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.25/overall_components.csv",
+      "sha256": "cd14246b3fe3833134cd30d38d4014472aa7c038d651f776b5ddf6775b67eb95",
+      "bytes": 779,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_jurkat__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.25/summary.json",
+      "sha256": "c707362f008342370dc94b456c8d293a0f628fec21a557f608fd21b8c417a925",
+      "bytes": 435,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_jurkat__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.5/aggregate.csv",
+      "sha256": "2eb3a11646fdcb961323e38280757ad7e80bd3e2d38b6c7b8c5b9180871f6d06",
+      "bytes": 502,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_jurkat__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.5/fid_decomposition.csv",
+      "sha256": "fe5f35b879dee10d6b08649d1aae478ad19b350ee5d27d413fd1115b41a012dd",
+      "bytes": 792,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_jurkat__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.5/metrics.csv",
+      "sha256": "40a37036f7eac015f63f927510e2aa63a5d764664c2fe40c3a5111d02bfee978",
+      "bytes": 3441,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_jurkat__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.5/overall_components.csv",
+      "sha256": "b2dc55bdceb5104929e4166d858b474052d7b9aca8e94417af133e9d3869627b",
+      "bytes": 776,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_jurkat__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.5/summary.json",
+      "sha256": "4b20dec84e4329d7646e6c625fcd19a493558bd65aa3ee2169091c8282fdb036",
+      "bytes": 434,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_jurkat__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/aggregate.csv",
+      "sha256": "c1dfb8739e18d6d334ce9633c5cf8ef01eb8cada48b2bcc3384c401a22a4b276",
+      "bytes": 502,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_jurkat__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/fid_decomposition.csv",
+      "sha256": "8378e948a2fa1ce7fd4e246303ef5f78ae453c918a9545af1d02370c76b025ad",
+      "bytes": 748,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_jurkat__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/metrics.csv",
+      "sha256": "52e70a0a630e49b5ea56d6ded649fe04c691cf72ac7de01e82f0359caeff5afc",
+      "bytes": 3454,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_jurkat__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/overall_components.csv",
+      "sha256": "c1517f6977030933469a66579c8cafc71baa309fba5f860447387ec0db59da65",
+      "bytes": 775,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_jurkat__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/summary.json",
+      "sha256": "6318601c9b1be601abbe046b62c6a0857a8768ffe139c1093887fbb1bd01b049",
+      "bytes": 436,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_jurkat__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.25/aggregate.csv",
+      "sha256": "b4c0ff54264d3b767c52bd676492e5870e8df780d15710ef71ac0a42b0ab3ffb",
+      "bytes": 505,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_jurkat__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.25/fid_decomposition.csv",
+      "sha256": "7e099283a6e24e5f61ac8ded0bcd5b49c75d7e618b469245f91bea7a8a6d2852",
+      "bytes": 749,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_jurkat__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.25/metrics.csv",
+      "sha256": "f2a2cc3901649f82cc4ae8caefbbea1991064a1bd6477ad0da0cd0a7ce4b8619",
+      "bytes": 3350,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_jurkat__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.25/overall_components.csv",
+      "sha256": "de16b26dd4b825e69132f31cef34973f7ca448bd6965452bf2bd5702c44b4536",
+      "bytes": 793,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_jurkat__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.25/summary.json",
+      "sha256": "102bdc0dff42ac8168cefd411d38eeb91aa07cb802446d21a02a9f4f072f2864",
+      "bytes": 438,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_jurkat__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.5/aggregate.csv",
+      "sha256": "04bf4de23918f87576549594d7b58c9d3dd9b58e9bbd91a8cbf87e202c403da9",
+      "bytes": 505,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_jurkat__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.5/fid_decomposition.csv",
+      "sha256": "011566285556fcbb599893bc5e8fc1f5d450b714ab7de1b5ce4ac8ea601b27fe",
+      "bytes": 766,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_jurkat__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.5/metrics.csv",
+      "sha256": "ed7439569e2523f98ec1caab60f0312854d47046ab22c520e3de680e10de11d8",
+      "bytes": 3368,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_jurkat__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.5/overall_components.csv",
+      "sha256": "9cee87f0732d5b7ba38d40f215983bcc90347aa694430627d90f4d0e58f60593",
+      "bytes": 792,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_jurkat__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.5/summary.json",
+      "sha256": "46e88be6c995d87c17cf875aebc3fe5c4d956f6d9acf37cc0a7b42afaf7b128f",
+      "bytes": 436,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_jurkat__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/aggregate.csv",
+      "sha256": "54282ec8a4716345245a785fcaf74b6f284f2cc36fcf7e7012e48720e2bc7995",
+      "bytes": 502,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_jurkat__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/fid_decomposition.csv",
+      "sha256": "bc477c55f2066e5e4d7df3e3dc24aba35b3783b8f634644e7e0bee9ec85e2538",
+      "bytes": 757,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_jurkat__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/metrics.csv",
+      "sha256": "89caeee13eaffe50e3888ba2f927b5f7ea5c716dec9d2895a48b57971a5d7d27",
+      "bytes": 3361,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_jurkat__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/overall_components.csv",
+      "sha256": "49a6a2bcb21234e8aedeff117d17a5ce8bfd48f8972fa48be5e2a71a4bf85526",
+      "bytes": 787,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_jurkat__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/summary.json",
+      "sha256": "a0f7050f9e706b5f4c8ecf4d94b917d40a3532e22c1b40446829d34e7c604d88",
+      "bytes": 435,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_rpe1__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.25/aggregate.csv",
+      "sha256": "ed4761b236160cafb0a48cafd09ce2fe52c2e2a1ff48db6702313c8c0ca1fa02",
+      "bytes": 502,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_rpe1__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.25/fid_decomposition.csv",
+      "sha256": "7a00171f0ad7c924eb3d155ea6ccdcbdb4b9856ca62baa40f9d0fcbdfeb65136",
+      "bytes": 786,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_rpe1__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.25/metrics.csv",
+      "sha256": "c0b5772af5d0ac70cdf2e9bbd0f5339d34b5dd3fd347241dd86e4f1c3267ca50",
+      "bytes": 3457,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_rpe1__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.25/overall_components.csv",
+      "sha256": "71b9a8c33f26bd7590a270ee742162feb99e4ecea921c39b7684279095bc806e",
+      "bytes": 774,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_rpe1__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.25/summary.json",
+      "sha256": "02d4b6492320386ea29eeae3eefff50ded481bb9a208c34c106dc8cb08dba54a",
+      "bytes": 435,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_rpe1__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.5/aggregate.csv",
+      "sha256": "5ff9f70b679682d479bae546d8f524e5b6d4829cb45edefc41758dc7e9412359",
+      "bytes": 500,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_rpe1__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.5/fid_decomposition.csv",
+      "sha256": "b59a5326e9e99a836e5890d3c05860be5b988fbedee0dbcf9cc7a8e3c0f7e364",
+      "bytes": 776,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_rpe1__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.5/metrics.csv",
+      "sha256": "c8b4d5b22bb43c557e96a43858ffea0a925e0be53596af6f3711690f2a7fa319",
+      "bytes": 3453,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_rpe1__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.5/overall_components.csv",
+      "sha256": "77ca73846f6f5ab9dffc316d9ee4635d162f803d689e1959d8ee51dfaea00c2a",
+      "bytes": 777,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_rpe1__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.5/summary.json",
+      "sha256": "bd46cd1642f2b785aefdd10692fc00bf2a056699c1e93506ad21bc1f158f44ef",
+      "bytes": 433,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_rpe1__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/aggregate.csv",
+      "sha256": "35d412be8d988c3154817d6194205e1d48e06fbd94ccb70ebe0a376d575b96e8",
+      "bytes": 502,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_rpe1__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/fid_decomposition.csv",
+      "sha256": "b3cbe0a8d3b840bb4304e5a7c9417f617e43daef8735a23f5a8a8a31633149fc",
+      "bytes": 749,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_rpe1__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/metrics.csv",
+      "sha256": "ff53aeee9057a28cf02b57f5263217c407edce178720dc50d63b663ac7ba2638",
+      "bytes": 3448,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_rpe1__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/overall_components.csv",
+      "sha256": "cd684df690331490b181bdf7da69aee0bc8c580741ee83310ebdbeba59c4ff00",
+      "bytes": 774,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_rpe1__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/summary.json",
+      "sha256": "501b89b5d20cefd3cbc9645ecdf9afa4c5ba425c579193efad87f316cf8480b3",
+      "bytes": 435,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_rpe1__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.25/aggregate.csv",
+      "sha256": "58739abe0a5bf7caef6469fd01c27d202121a3f2ec47a1f72edd331cddedc6b5",
+      "bytes": 489,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_rpe1__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.25/fid_decomposition.csv",
+      "sha256": "4fafa52a06f8b3f6b17cd5f8868d09972d4c1f041e0d6cdf15be3f81214987ae",
+      "bytes": 626,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_rpe1__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.25/metrics.csv",
+      "sha256": "cb48676f8f8b9bb2bcb85cc84ffe1b81d0b5f1498b2900a3884c297d3e9bda95",
+      "bytes": 3264,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_rpe1__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.25/overall_components.csv",
+      "sha256": "9cf016a66b74ba6d6be756545a6b7acd36ad9177133259a7012cc305bd26965b",
+      "bytes": 759,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_rpe1__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.25/summary.json",
+      "sha256": "e76727e4ffdfc0606ff6931dab95ff6371a410fe6aa7637f391034ddd9175f22",
+      "bytes": 421,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_rpe1__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.5/aggregate.csv",
+      "sha256": "3a934f1eb3065df4d8df270d93aa3612a8aaf5aa2877616f709aed45edcfdccf",
+      "bytes": 490,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_rpe1__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.5/fid_decomposition.csv",
+      "sha256": "f638640c895392188ea045fe9ea6de7910a6cce32998f3651926393cf9e9e036",
+      "bytes": 638,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_rpe1__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.5/metrics.csv",
+      "sha256": "fe353c90c488626b7198920f61d1b56299112bec51674be53f84c0288a3be009",
+      "bytes": 3262,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_rpe1__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.5/overall_components.csv",
+      "sha256": "783e57e4c9999e296740529edb166f3ff14c83975acfe7c17d38f2bda9efda85",
+      "bytes": 762,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_rpe1__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.5/summary.json",
+      "sha256": "429829bbce1bcffaee93fc208ad3ca9c5b101694c0f32242a56088a1ab79cec4",
+      "bytes": 420,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_rpe1__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/aggregate.csv",
+      "sha256": "5dbe7fd20494542c361bbae7ecd66a7c2427bf33387ec57be9e12765c6a37984",
+      "bytes": 490,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_rpe1__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/fid_decomposition.csv",
+      "sha256": "df72441ebe926f5597a97f2499fa5f7af22f6e2ea39e3f3348d74c31ec3c3212",
+      "bytes": 716,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_rpe1__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/metrics.csv",
+      "sha256": "65351669d121ede38b735545df632118876ffeb9bf7016d032a66501b69f6505",
+      "bytes": 3329,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_rpe1__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/overall_components.csv",
+      "sha256": "7136d55f183af32ac626d439a08cd71b9aa86017ad32c485b1be2fe0e7ded5df",
+      "bytes": 758,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/outer_rpe1__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/summary.json",
+      "sha256": "5f810d4e018ffa91220d7bd48f2259a8d5e7996d039f22829b5a09324429907c",
+      "bytes": 421,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/progress.json",
+      "sha256": "3fd60a4708508f201f1e98b0aeca550112c6c96cb5ae0cc971a11a88c8e98943",
+      "bytes": 2431,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/runs/V4/barycenter/six_metric_components.csv",
+      "sha256": "f640055ff45fb796c35e47369af0fda3ef2dd034b6268623c2ea3163f20c3154",
+      "bytes": 25050,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/scripts/native_reproducer.py",
+      "sha256": "ccb7bcfb136223b3f00b7ce80369b0603131a797df709db20a36fb9cff3a6c88",
+      "bytes": 24423,
+      "role": "source"
+    },
+    {
+      "path": "snapshots/scripts/run_native_batch.py",
+      "sha256": "2ee2a122e972fd95483f21addd90b6d255da2c926331a0f42d467f3062ced8b9",
+      "bytes": 5757,
+      "role": "source"
+    },
+    {
+      "path": "snapshots/staging/newV3_ntc_denoising/control_only_pilot.py",
+      "sha256": "c4d6034d46d869f3bb1a443ff74812f6e658cd92419df1263cebdf00cc236368",
+      "bytes": 12410,
+      "role": "source"
+    },
+    {
+      "path": "snapshots/staging/newV3_ntc_denoising/native_controls/hepg2/complete.json",
+      "sha256": "46f6eb59883dc527603b6b066b9a1523e657bc505c4958cf73827f02d9a0faa1",
+      "bytes": 4505,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/staging/newV3_ntc_denoising/native_controls/jurkat/complete.json",
+      "sha256": "9d6d454a6e6f01f8f85fede0ffcc20060a29258d93b5e47efdb0158f1ce2f731",
+      "bytes": 4516,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/staging/newV3_ntc_denoising/native_controls/rpe1/complete.json",
+      "sha256": "81082615eb20c708d53d8c5ba3c3900d09068d284f81922101838c4d5377677d",
+      "bytes": 4498,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/staging/newV4_carrier_readout/carrier_law.py",
+      "sha256": "1223bda8753d2e1464701af634680834320a95168a4ac1ea8136150571597523",
+      "bytes": 4523,
+      "role": "source"
+    },
+    {
+      "path": "snapshots/staging/newV4_carrier_readout/mechanical_pilot/hepg2/complete.json",
+      "sha256": "c4c28bae901283783a1ac1d4d33784a57ccbe6e660cc1876541906b51340944c",
+      "bytes": 6992,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/staging/newV4_carrier_readout/mechanical_pilot/jurkat/complete.json",
+      "sha256": "3923ba4b25b4d72d1904ddc872a34c2c4438f4c539e4b0b05e8cd90550453837",
+      "bytes": 7004,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/staging/newV4_carrier_readout/mechanical_pilot/rpe1/complete.json",
+      "sha256": "69fc607c212f16855021f66d595606848bc9bcfbd9260be5c52acc28e2e6ad30",
+      "bytes": 6987,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/staging/newV4_carrier_readout/native_adapter.py",
+      "sha256": "508b5acb0b0ea06eb7973033593b0439e2366ac45ab4c094f61fe43379d29837",
+      "bytes": 9491,
+      "role": "source"
+    },
+    {
+      "path": "snapshots/staging/newV4_count_barycenter/PLAN_CN.md",
+      "sha256": "3f083a829aca4d83e7387f6701ea8dbbe9a347507f85974632515e918052fe2e",
+      "bytes": 2472,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/staging/newV4_count_barycenter/RESULT_CN.md",
+      "sha256": "63f0b2254cab5879868f0b4dc0b5c1497b6587dfc3d382a1799fedf4e3c4dd20",
+      "bytes": 1968,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/staging/newV4_count_barycenter/barycenter_law.py",
+      "sha256": "b0c960df1908d551c5f61ad1f5079a2503b05b25d8aa2f97ee06dbf26d2a3fc1",
+      "bytes": 1236,
+      "role": "source"
+    },
+    {
+      "path": "snapshots/staging/newV4_count_barycenter/native_adapter.py",
+      "sha256": "d35302df89f839b0e44ad1e75c42164c86366e25292acccc57f3801994441f31",
+      "bytes": 7256,
+      "role": "source"
+    },
+    {
+      "path": "milestones/native-v4-barycenter/README.md",
+      "sha256": "ac6bf86af256dc4c552b5228daf7ca040d69b35738f327773c32ce450f106241",
+      "bytes": 1690,
+      "role": "documentation"
+    },
+    {
+      "path": "milestones/native-v4-barycenter/release-notes.md",
+      "sha256": "0c3cebb97f98568fde736a412237f3f5c5b437eb75feac5d20317cf29c28ce6e",
+      "bytes": 1117,
+      "role": "release-notes"
+    }
+  ],
+  "external_assets": [
+    {
+      "path": "archive/legacy_20261003/runs/residual_v17/inner_panels/jurkat/real.h5ad",
+      "sha256": "a3ccacb318398021af130ecf2fe1ecb2fb62b8fc6f64288091665c1c7423867a",
+      "bytes": 19035011,
+      "role": "external-data-input"
+    },
+    {
+      "path": "archive/legacy_20261003/runs/residual_v17/inner_panels/rpe1/real.h5ad",
+      "sha256": "54f612978b999a92fbc1c853971afd255138a9c179a530a4530098262dfcc02c",
+      "bytes": 21357973,
+      "role": "external-data-input"
+    },
+    {
+      "path": "archive/legacy_20261003/runs/residual_v17/inner_panels/hepg2/real.h5ad",
+      "sha256": "4ab0dda649ba29e884577e7e9abb1f108b8980bf568537089a9aba0d9e7cd26e",
+      "bytes": 24788925,
+      "role": "external-data-input"
+    },
+    {
+      "path": "staging/newV4_carrier_readout/mechanical_pilot/hepg2/posterior_calibration.npz",
+      "sha256": "a0fa06a1808866396c4972507aa1ac0f9a33bfb25a97cec47dfbacfc4ca92119",
+      "bytes": 377539,
+      "role": "external-NTC-fitted-state"
+    },
+    {
+      "path": "staging/newV3_ntc_denoising/native_controls/hepg2/calibration.npz",
+      "sha256": "12192aefda879b208dd19e275a5d07718adc6d851fac60d3196f6e4525a3e8f0",
+      "bytes": 356442,
+      "role": "external-NTC-fitted-state"
+    },
+    {
+      "path": "staging/newV3_ntc_denoising/native_controls/hepg2/lambda_pool_F32.npy",
+      "sha256": "4733e0acce3f3067564ed8a80a805969cc50beca11f3d15612112da11e87a2a4",
+      "bytes": 73428128,
+      "role": "external-NTC-fitted-state"
+    },
+    {
+      "path": "staging/newV4_carrier_readout/mechanical_pilot/jurkat/posterior_calibration.npz",
+      "sha256": "3e7c0fac94b7b9beba3d59fb3b4bf65b03c599e83af44f29ed979490a6c3424d",
+      "bytes": 373688,
+      "role": "external-NTC-fitted-state"
+    },
+    {
+      "path": "staging/newV3_ntc_denoising/native_controls/jurkat/calibration.npz",
+      "sha256": "5fff457e4a81c99e06444d3dd4ab60357ffded73cdcd1163bbee6e3a81966ea2",
+      "bytes": 354059,
+      "role": "external-NTC-fitted-state"
+    },
+    {
+      "path": "staging/newV3_ntc_denoising/native_controls/jurkat/lambda_pool_F32.npy",
+      "sha256": "13c83efde4430eb4e0da878afd7e3532d34ec21978c4ee03952f06a1d029fe0d",
+      "bytes": 73428128,
+      "role": "external-NTC-fitted-state"
+    },
+    {
+      "path": "staging/newV4_carrier_readout/mechanical_pilot/rpe1/posterior_calibration.npz",
+      "sha256": "b359ac2e382f780b27026b49d344efedff24da433a3533f43e4623002c58fa37",
+      "bytes": 371414,
+      "role": "external-NTC-fitted-state"
+    },
+    {
+      "path": "staging/newV3_ntc_denoising/native_controls/rpe1/calibration.npz",
+      "sha256": "b89800fc83aae357e7755933de07d05fd1130c82cd9ff7ebde5d52f99945492b",
+      "bytes": 352475,
+      "role": "external-NTC-fitted-state"
+    },
+    {
+      "path": "staging/newV3_ntc_denoising/native_controls/rpe1/lambda_pool_F32.npy",
+      "sha256": "f1605cde07b6940b4fd132faa26111ec5ae653db3c7753b9cbc1aa75aa4950d0",
+      "bytes": 73428128,
+      "role": "external-NTC-fitted-state"
+    }
+  ],
+  "external_asset_check_scope": "Curated known core assets only; full scientific rerun also requires original protocol dependencies and original environment. Empty or passing list is not a full pipeline readiness certificate.",
+  "shared_scientific_dependency": "legacy-v28 matched-role CV inputs; unified deployment checkpoint cannot replace them",
+  "score_replay": {
+    "scale": "replicate_scaled",
+    "metric_weights": {
+      "pds_cosine": 0.16666666666666666,
+      "expr_mse_unbiased_capped_norm": 0.16666666666666666,
+      "de_wilcoxon_direction_fidelity_yield_raw": 0.16666666666666666,
+      "de_wilcoxon_direction_reach_raw": 0.16666666666666666,
+      "de_wilcoxon_sig_jaccard": 0.16666666666666666,
+      "de_wilcoxon_lfc_nmae": 0.16666666666666666
+    },
+    "seeds": [
+      20260928
+    ],
+    "contexts": [
+      "hepg2",
+      "jurkat",
+      "rpe1"
+    ],
+    "cases": [
+      {
+        "role": "outer_hepg2__inner_jurkat",
+        "context": "jurkat",
+        "seed": 20260928,
+        "components_path": "snapshots/runs/V4/barycenter/outer_hepg2__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/overall_components.csv",
+        "summary_path": "snapshots/runs/V4/barycenter/outer_hepg2__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/summary.json"
+      },
+      {
+        "role": "outer_hepg2__inner_rpe1",
+        "context": "rpe1",
+        "seed": 20260928,
+        "components_path": "snapshots/runs/V4/barycenter/outer_hepg2__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/overall_components.csv",
+        "summary_path": "snapshots/runs/V4/barycenter/outer_hepg2__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/summary.json"
+      },
+      {
+        "role": "outer_jurkat__inner_hepg2",
+        "context": "hepg2",
+        "seed": 20260928,
+        "components_path": "snapshots/runs/V4/barycenter/outer_jurkat__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/overall_components.csv",
+        "summary_path": "snapshots/runs/V4/barycenter/outer_jurkat__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/summary.json"
+      },
+      {
+        "role": "outer_jurkat__inner_rpe1",
+        "context": "rpe1",
+        "seed": 20260928,
+        "components_path": "snapshots/runs/V4/barycenter/outer_jurkat__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/overall_components.csv",
+        "summary_path": "snapshots/runs/V4/barycenter/outer_jurkat__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/summary.json"
+      },
+      {
+        "role": "outer_rpe1__inner_hepg2",
+        "context": "hepg2",
+        "seed": 20260928,
+        "components_path": "snapshots/runs/V4/barycenter/outer_rpe1__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/overall_components.csv",
+        "summary_path": "snapshots/runs/V4/barycenter/outer_rpe1__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/summary.json"
+      },
+      {
+        "role": "outer_rpe1__inner_jurkat",
+        "context": "jurkat",
+        "seed": 20260928,
+        "components_path": "snapshots/runs/V4/barycenter/outer_rpe1__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/overall_components.csv",
+        "summary_path": "snapshots/runs/V4/barycenter/outer_rpe1__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928/scores/N1_weight_0.75/summary.json"
+      }
+    ],
+    "expected_overall": 0.26991439870760525,
+    "scope": "arithmetic replay of saved metrics; not scientific rescoring"
+  }
+}

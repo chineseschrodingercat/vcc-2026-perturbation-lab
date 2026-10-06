@@ -1,0 +1,52 @@
+{
+  "schema": "V20_fixed_F23_only_NB_decoder1",
+  "role": "inner_train_hepg2",
+  "decoder_contexts": [
+    "k562",
+    "hepg2"
+  ],
+  "protocol_sha256": "31c05bde3f25212d5b10c0c32eba1f0f821f154c76a4c3c7fabc9e8f369113ca",
+  "inputs_complete_sha256": "9307b2bfc3d0ddae5d3df630f97e96232c8d1f3a0efdd866faf196746a1a458d",
+  "role_input_complete_sha256": "c1f29be2c7073a26e7666ceabbe7b00612e9cb7327c1463c6511c0637bd010ae",
+  "trainer_sha256": "3c5d8128d2703c1960b8081f8290a6f2688afaac39fc4449428aaa84fe7c1182",
+  "literal_model_sha256": "60fb8d2fcb4ad52f7f606dec39bb685a1aa6170206972435dced3aa150408f83",
+  "config": {
+    "latent_dim": 64,
+    "z_dim": 130,
+    "h_dim": 64,
+    "condition_hidden": 192,
+    "velocity_hidden": 384,
+    "velocity_layers": 2,
+    "decoder_hidden": 256,
+    "decoder_layers": 2,
+    "theta_floor": 0.0001,
+    "initial_theta": 10.0,
+    "correction_bound": 6.0,
+    "cell_dim": 64,
+    "hidden": 192,
+    "width": 384,
+    "set_size": 8,
+    "integration_steps": 8
+  },
+  "optimizer": {
+    "AdamW": true,
+    "lr": 0.0003,
+    "weight_decay": 0.01
+  },
+  "steps": 3000,
+  "batch_size": 192,
+  "seed": 20261002,
+  "sample_rng_seed": 20561002,
+  "parameters": 2898760,
+  "no_validation_numeric_IO_before_all_final_fits": true,
+  "no_F4_fitting": true,
+  "no_destination_perturbation_IO": true,
+  "no_legacy_theta_encoder_PC_numeric_read": true,
+  "technical_validation_is_not_whole_pipeline_confirmation": true,
+  "runtime": {
+    "matmul_precision": "high",
+    "CPU_threads": 8,
+    "torch_version": "2.8.0+cu128",
+    "GPU": "NVIDIA GeForce RTX 5080"
+  }
+}

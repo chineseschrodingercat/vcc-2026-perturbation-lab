@@ -1,0 +1,11 @@
+metric,mean,agg
+de_wilcoxon_direction_fidelity_yield_raw,0.47095536376389624,mean
+de_wilcoxon_direction_reach_raw,0.48699656030363647,mean
+de_wilcoxon_lfc_nmae,0.79437393377702,mean
+de_wilcoxon_sig_jaccard,0.07133504089649341,mean
+expr_distance_unbiased,0.007317706180309202,mean
+expr_mse_unbiased,0.008841031577842443,mean
+expr_mse_unbiased_capped,0.008841031577842443,mean
+expr_mse_unbiased_capped_norm,1.2081697952880739,ratio_of_sums
+expr_real_mass_ratio,1.0,mean
+pds_cosine,0.8214285714285714,mean

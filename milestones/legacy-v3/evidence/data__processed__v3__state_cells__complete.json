@@ -1,0 +1,11 @@
+{
+  "cells": 495520,
+  "groups": 15233,
+  "genes": 1024,
+  "lines": [
+    "hepg2",
+    "jurkat",
+    "rpe1",
+    "k562"
+  ]
+}

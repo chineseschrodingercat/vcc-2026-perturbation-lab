@@ -1,0 +1,129 @@
+{
+  "arm": "context_KRR_NB",
+  "three_seed_macro_overall": 0.27166637938779886,
+  "three_seed_macro_delta_vs_NB": 0.004481337733902937,
+  "per_background_three_seed_mean": {
+    "hepg2": 0.23320060097467277,
+    "jurkat": 0.3473300654537859,
+    "rpe1": 0.2344684717349379
+  },
+  "six_scaled": {
+    "pds_cosine": 0.6703031414252536,
+    "expr_mse_unbiased_capped_norm": 0.0,
+    "de_wilcoxon_direction_fidelity_yield_raw": 0.8094602456349075,
+    "de_wilcoxon_direction_reach_raw": 0.08249806512596053,
+    "de_wilcoxon_sig_jaccard": 0.17553585827634277,
+    "de_wilcoxon_lfc_nmae": -0.10779903413567109
+  },
+  "all_three_seed_overall_deltas_positive": true,
+  "overall": 0.27166637938779886,
+  "per_seed": [
+    {
+      "seed": 20260928,
+      "arm": "context_KRR_NB",
+      "overall": 0.2754810720812462,
+      "delta_vs_NB": 0.004890090237411178,
+      "per_background": {
+        "hepg2": 0.2493973392183486,
+        "jurkat": 0.33607595211332164,
+        "rpe1": 0.24096992491206848
+      },
+      "six_scaled": {
+        "pds_cosine": 0.7018313489805467,
+        "expr_mse_unbiased_capped_norm": 0.0,
+        "de_wilcoxon_direction_fidelity_yield_raw": 0.810502783451907,
+        "de_wilcoxon_direction_reach_raw": 0.09260490630499406,
+        "de_wilcoxon_sig_jaccard": 0.1749331325995748,
+        "de_wilcoxon_lfc_nmae": -0.12698573884954487
+      }
+    },
+    {
+      "seed": 20260929,
+      "arm": "context_KRR_NB",
+      "overall": 0.2740178197107856,
+      "delta_vs_NB": 0.002869696643978089,
+      "per_background": {
+        "hepg2": 0.21013022443852483,
+        "jurkat": 0.3885531253550367,
+        "rpe1": 0.22337010933879517
+      },
+      "six_scaled": {
+        "pds_cosine": 0.7078629866270698,
+        "expr_mse_unbiased_capped_norm": 0.0,
+        "de_wilcoxon_direction_fidelity_yield_raw": 0.8069274364378525,
+        "de_wilcoxon_direction_reach_raw": 0.07561554437695821,
+        "de_wilcoxon_sig_jaccard": 0.17437625648069174,
+        "de_wilcoxon_lfc_nmae": -0.12067530565785885
+      }
+    },
+    {
+      "seed": 20260930,
+      "arm": "context_KRR_NB",
+      "overall": 0.2655002463713648,
+      "delta_vs_NB": 0.005684226320319545,
+      "per_background": {
+        "hepg2": 0.2400742392671449,
+        "jurkat": 0.3173611188929995,
+        "rpe1": 0.23906538095395
+      },
+      "six_scaled": {
+        "pds_cosine": 0.6012150886681443,
+        "expr_mse_unbiased_capped_norm": 0.0,
+        "de_wilcoxon_direction_fidelity_yield_raw": 0.8109505170149629,
+        "de_wilcoxon_direction_reach_raw": 0.0792737446959293,
+        "de_wilcoxon_sig_jaccard": 0.17729818574876174,
+        "de_wilcoxon_lfc_nmae": -0.07573605789960955
+      }
+    }
+  ],
+  "count_seeds": [
+    20260928,
+    20260929,
+    20260930
+  ],
+  "paired_uncertainty": [
+    {
+      "arm": "context_KRR_NB",
+      "backgrounds": [
+        "hepg2",
+        "jurkat",
+        "rpe1"
+      ],
+      "seeds": [
+        20260928,
+        20260929,
+        20260930
+      ],
+      "paired_delta_matrix": [
+        [
+          0.011972179980645647,
+          -0.0033601335809688437,
+          0.005778093587348904
+        ],
+        [
+          -0.008635792451351265,
+          -0.013379416365957408,
+          -0.03425195084628263
+        ],
+        [
+          0.011333883182939153,
+          0.02534863987886052,
+          0.04552653621989236
+        ]
+      ],
+      "paired_macro_delta": 0.004481337733902937,
+      "crossed_background_seed_percentile95": [
+        -0.018461699966364715,
+        0.027277959769140502
+      ],
+      "fraction_positive_bootstrap_draws": 0.6529492455418381,
+      "equally_weighted_bootstrap_draws": 729,
+      "minimum_draw": -0.03425195084628263,
+      "maximum_draw": 0.04552653621989236,
+      "unit": "Three backgrounds and three stochastic count seeds, paired across arms; roles/cells are not resampled as independent"
+    }
+  ],
+  "independent_units": "Three developed backgrounds; countseeds technical stochastic repetitions, roles and cells are not independent biology",
+  "stable_promotion": false,
+  "interpretation": "Positive macro gain; all three count seeds positive but Jurkat negative in every seed and descriptive interval crosses zero."
+}

@@ -1,0 +1,83 @@
+{
+  "name": "low-random_high-1_v10",
+  "entries": {
+    "de_wilcoxon_direction_fidelity_yield_raw": {
+      "base": 0.5,
+      "scored": true,
+      "direction": "higher",
+      "anchor": 1.0,
+      "penalty": "none",
+      "penalty_exponent": null,
+      "penalty_cap": null,
+      "clamp_low": -1.0,
+      "clamp_high": 1.0,
+      "metric_min": null,
+      "allow_negative_baseline": false
+    },
+    "de_wilcoxon_direction_reach_raw": {
+      "base": 0.0,
+      "scored": true,
+      "direction": "higher",
+      "anchor": 1.0,
+      "penalty": "none",
+      "penalty_exponent": null,
+      "penalty_cap": null,
+      "clamp_low": 0.0,
+      "clamp_high": 1.0,
+      "metric_min": null,
+      "allow_negative_baseline": false
+    },
+    "de_wilcoxon_lfc_nmae": {
+      "base": 1.0,
+      "scored": true,
+      "direction": "lower",
+      "anchor": 0.0,
+      "penalty": "none",
+      "penalty_exponent": null,
+      "penalty_cap": null,
+      "clamp_low": -1.0,
+      "clamp_high": 1.0,
+      "metric_min": null,
+      "allow_negative_baseline": false
+    },
+    "de_wilcoxon_sig_jaccard": {
+      "base": 0.0,
+      "scored": true,
+      "direction": "higher",
+      "anchor": 1.0,
+      "penalty": "none",
+      "penalty_exponent": null,
+      "penalty_cap": null,
+      "clamp_low": 0.0,
+      "clamp_high": 1.0,
+      "metric_min": null,
+      "allow_negative_baseline": false
+    },
+    "expr_mse_unbiased_capped_norm": {
+      "base": 1.0,
+      "scored": true,
+      "direction": "lower",
+      "anchor": 0.0,
+      "penalty": "none",
+      "penalty_exponent": null,
+      "penalty_cap": null,
+      "clamp_low": -6.0,
+      "clamp_high": 1.0,
+      "metric_min": null,
+      "allow_negative_baseline": false
+    },
+    "pds_cosine": {
+      "base": 0.5,
+      "scored": true,
+      "direction": "higher",
+      "anchor": 1.0,
+      "penalty": "none",
+      "penalty_exponent": null,
+      "penalty_cap": null,
+      "clamp_low": -1.0,
+      "clamp_high": 1.0,
+      "metric_min": null,
+      "allow_negative_baseline": false
+    }
+  }
+}

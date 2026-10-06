@@ -1,0 +1,20 @@
+{
+  "seed": 20260927,
+  "features": 1024,
+  "normalization": "per cell library over 6122 measured common genes -> 10000 -> log1p; output 1024 selected genes",
+  "gene_selection": "Top 1024 training-only mean squared normalized pseudobulk responses, equal source weights",
+  "cells_per_target": 32,
+  "control_cells": 2048,
+  "validation": "SHA256(state-v3:target) mod 10 == 0, same target excluded from fitting in all lines",
+  "h1_exclusion": "All 150 H1 target labels excluded from neural network fitting across all four lines; H1 raw perturbed cells never used",
+  "source_embedding": "Optional 64d SVD of observed K562 response; basis excludes validation and H1 targets. Source observations for evaluation targets are allowed inputs.",
+  "sources": {
+    "hepg2": "data/raw/external/nadig_2025/GSE264667_hepg2_raw_singlecell_01.h5ad",
+    "jurkat": "data/raw/external/nadig_2025/GSE264667_jurkat_raw_singlecell_01.h5ad",
+    "rpe1": "data/raw/external/replogle_2022/rpe1/rpe1_raw_singlecell_01.h5ad",
+    "k562": "data/raw/external/replogle_2022/k562_gwps/K562_gwps_raw_singlecell_01.h5ad"
+  },
+  "source_NTC_label": "non-targeting",
+  "missing_string": "all-zero normalized vector",
+  "input_raw_files_modified": false
+}

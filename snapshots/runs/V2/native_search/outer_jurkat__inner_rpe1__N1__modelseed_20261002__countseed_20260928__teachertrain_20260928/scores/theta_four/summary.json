@@ -1,0 +1,11 @@
+{
+  "model": "theta_four",
+  "de_wilcoxon_direction_fidelity_yield_raw": 0.5995243241639343,
+  "de_wilcoxon_direction_reach_raw": 0.3261778940486291,
+  "de_wilcoxon_lfc_nmae": 0.8741349479441434,
+  "de_wilcoxon_sig_jaccard": 0.0711521033215368,
+  "expr_mse_unbiased_capped_norm": 1.87953718921736,
+  "pds_cosine": 0.7142857142857143,
+  "fixed_overall": 0.045212989517993296,
+  "replicate_overall": 0.1851329504075292
+}

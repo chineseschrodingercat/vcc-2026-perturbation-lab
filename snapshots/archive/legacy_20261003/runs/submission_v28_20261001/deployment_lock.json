@@ -1,0 +1,79 @@
+{
+  "created_utc": "2026-10-02T00:02:43.138867+00:00",
+  "authorization": "User requested generation with the best current model and one official submission on 2026-10-01.",
+  "candidate": "V28 N1 deployment with globally selected V7 tiny_ref mean",
+  "selection_basis": "Retained comparable complete-background CV ranking and passed predeclared V28 gate; no new hyperparameter search.",
+  "historical_workflow_cv_overall": 0.2281364395524066,
+  "score_for_this_full_deployment": null,
+  "historical_workflow_differs_from_unified_deployment": true,
+  "mean_predictor": {
+    "engine": "v7",
+    "kind": "tiny_transformer",
+    "step": 600,
+    "seed": 20260928,
+    "origin": "C:\\00 - Competition\\models\\residual_v7\\final_candidate\\seed_20260928",
+    "selection": "Reuse prior global six-inner-role V13 deployment selector tiny_ref winner; MODEL_HISTORY.md archived 2026-09-28 submission report.",
+    "new_mean_fits": 0
+  },
+  "dispersion": {
+    "recipe": "Original V25 NB decoder, 3000 steps, batch192; use only gene-specific theta at generation",
+    "seed": 20261002,
+    "public_count_contexts": [
+      "k562",
+      "hepg2",
+      "jurkat",
+      "rpe1"
+    ],
+    "new_decoder_fits": 1,
+    "new_flow_fits": 0,
+    "challenge_perturbations_used": false,
+    "training_target_folds": [
+      2,
+      3,
+      4
+    ],
+    "all_H1_targets_excluded": true
+  },
+  "generator": {
+    "arm": "N1",
+    "literal_mu": "raw same-donor NTC count times unchanged V13 count_ratio",
+    "editable": "input6119 intersect full-mean seen mask minus own target gene",
+    "protected": "Exact same-donor sparse stochastic-round integers",
+    "count_seed": 20260928,
+    "donor_seed_offset": 100,
+    "nb_namespace": [
+      26,
+      3
+    ],
+    "clipping_or_redraw": false
+  },
+  "output": {
+    "contexts": [
+      "A",
+      "B",
+      "C"
+    ],
+    "targets_per_context": 300,
+    "cells_per_target": 400,
+    "genes": 18533
+  },
+  "official_score_used_for_selection": false,
+  "inputs_sha256": {
+    "scripts\\submit_v28_20261001.py": "56870c5e9cacb89688c479c168f8619a45bbedcd327f8edf267121457db09b5b",
+    "configs\\literal_nb_v28_protocol.json": "61f4abae94c1b4ecace8519a67dfd4434d1aa09e50e8f0fd2c686de46c11ac86",
+    "configs\\latent_flow_v25_protocol.json": "a5e3cbb67414597573ecc663f618acbadb5970b8fc67e9b54772d6c9685f322e",
+    "runs\\literal_nb_v28\\decision.json": "d473a1c4805f0b36243c5639fa44c0748c4f504c455193ca8a81f2419f7b89c3",
+    "models\\residual_v7\\final_candidate\\seed_20260928\\features.npz": "a6cb72bcdcd0e0a5f01e9bce5a4a09d284fd74924373b69af363eebd694aa372",
+    "models\\residual_v7\\final_candidate\\seed_20260928\\training_rows.csv": "2206c79432427a62940d528c3ebefed7959163c785925210410f488364f45cc9",
+    "models\\residual_v7\\final_candidate\\seed_20260928\\tiny_transformer_600.pt": "a2b996eacf498ce63ff584be51d84bc52c77c87ec040f96a8a30d43a91d6dce2",
+    "data\\processed\\latent_flow_v25\\complete.json": "699ba76f8133caad01cead9701e1bb1934801767f7c2bc472a7e05115a18d5f1",
+    "data\\processed\\set_response_v22\\encoder.npz": "1b279cffab9b0513bf2f0e840d1b38c54deed7a2a09487bccaa79641342cd1a3",
+    "src\\vcc2026\\literal_nb_v28.py": "d05ff919ede587314d6608ceb33edea503ae2ed18a01765978ef7942f3328275",
+    "src\\vcc2026\\latent_counts_v26.py": "55797ef3f288e67fd5660b8a7ae85fc642247b0858e12376bfc67171299ec82f",
+    "src\\vcc2026\\train_latent_flow_v25.py": "9d4426bbe62277f5d3d359ef6e19dfd18fde8a8a12ea30e1e9f64287fa3e9d85",
+    "src\\vcc2026\\generate_counts.py": "0813ef9f2dbe0b66a5397440f6392d75e23744edcff784c8c7cb22532e5eb1a5",
+    "src\\vcc2026\\residual_v6_common.py": "997274e11c90ef161c88f26a20ce07171fd5ae6879206780c2da19d22638340d",
+    "data\\raw\\vcc2026\\validation\\files\\gene_names.csv": "25bfa66715e186bebabce7ac788bbcea47e2bf59ca70be1f8f3a06f2f0e47201",
+    "data\\raw\\vcc2026\\validation\\files\\pert_counts.csv": "f57edd7b912ebd718efc7ee9d0f334772513e7cc418d133ce525470e373b3276"
+  }
+}

@@ -1,0 +1,363 @@
+{
+  "schema": "V20_native_F23_clean_generator_and_paired_source_selection1",
+  "frozen": true,
+  "created_utc": "2026-10-04T13:50:32.635492+00:00",
+  "user_continuous_compute_authorization": true,
+  "preparation_authorized": true,
+  "actual_decoder_fit_authorized": false,
+  "actual_mean_fit_authorized": false,
+  "count_authorized": false,
+  "judge_authorized": false,
+  "score_contract_sha256": "e489efd753fc0395c87c756113504317d3d144aa23bdc2f474c99f13ccfc3219",
+  "roles": {
+    "outer_rpe1__inner_jurkat": {
+      "job_key": "outer_rpe1__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928",
+      "destination": "jurkat",
+      "destination_family": "Jurkat",
+      "allowed_native": "hepg2",
+      "allowed_native_family": "HepG2",
+      "forbidden_native_families": [
+        "Jurkat",
+        "RPE1"
+      ],
+      "strict_core_count": 326,
+      "strict_core_prepared_role": "leave_RPE1__inner_HepG2",
+      "original_targets": [
+        "MON1A",
+        "GPN3",
+        "SNRNP40",
+        "RPL39",
+        "C1orf109",
+        "ATP2A2",
+        "RTRAF",
+        "PDCD6"
+      ],
+      "generated_target_cells": {
+        "MON1A": 162,
+        "GPN3": 188,
+        "SNRNP40": 147,
+        "RPL39": 170,
+        "C1orf109": 165,
+        "ATP2A2": 131,
+        "RTRAF": 183,
+        "PDCD6": 129
+      },
+      "model_role": "inner_train_hepg2"
+    },
+    "outer_jurkat__inner_rpe1": {
+      "job_key": "outer_jurkat__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928",
+      "destination": "rpe1",
+      "destination_family": "RPE1",
+      "allowed_native": "hepg2",
+      "allowed_native_family": "HepG2",
+      "forbidden_native_families": [
+        "Jurkat",
+        "RPE1"
+      ],
+      "strict_core_count": 326,
+      "strict_core_prepared_role": "leave_Jurkat__inner_HepG2",
+      "original_targets": [
+        "MON1A",
+        "TUFM",
+        "SNRNP40",
+        "C1orf109",
+        "ATP2A2",
+        "SBNO1",
+        "TUBB",
+        "RTRAF"
+      ],
+      "generated_target_cells": {
+        "MON1A": 175,
+        "TUFM": 176,
+        "SNRNP40": 229,
+        "C1orf109": 214,
+        "ATP2A2": 144,
+        "SBNO1": 172,
+        "TUBB": 256,
+        "RTRAF": 197
+      },
+      "model_role": "inner_train_hepg2"
+    },
+    "outer_rpe1__inner_hepg2": {
+      "job_key": "outer_rpe1__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928",
+      "destination": "hepg2",
+      "destination_family": "HepG2",
+      "allowed_native": "jurkat",
+      "allowed_native_family": "Jurkat",
+      "forbidden_native_families": [
+        "HepG2",
+        "RPE1"
+      ],
+      "strict_core_count": 402,
+      "strict_core_prepared_role": "leave_RPE1__inner_Jurkat",
+      "original_targets": [
+        "EXOSC4",
+        "NUDCD3",
+        "ZBTB17",
+        "HSD17B10",
+        "RAB4B",
+        "BTF3",
+        "NUP133",
+        "RSL1D1"
+      ],
+      "generated_target_cells": {
+        "EXOSC4": 128,
+        "NUDCD3": 172,
+        "ZBTB17": 130,
+        "HSD17B10": 229,
+        "RAB4B": 185,
+        "BTF3": 212,
+        "NUP133": 217,
+        "RSL1D1": 166
+      },
+      "model_role": "inner_train_jurkat"
+    },
+    "outer_hepg2__inner_rpe1": {
+      "job_key": "outer_hepg2__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928",
+      "destination": "rpe1",
+      "destination_family": "RPE1",
+      "allowed_native": "jurkat",
+      "allowed_native_family": "Jurkat",
+      "forbidden_native_families": [
+        "HepG2",
+        "RPE1"
+      ],
+      "strict_core_count": 402,
+      "strict_core_prepared_role": "leave_HepG2__inner_Jurkat",
+      "original_targets": [
+        "MON1A",
+        "TUFM",
+        "SNRNP40",
+        "C1orf109",
+        "ATP2A2",
+        "SBNO1",
+        "TUBB",
+        "RTRAF"
+      ],
+      "generated_target_cells": {
+        "MON1A": 175,
+        "TUFM": 176,
+        "SNRNP40": 229,
+        "C1orf109": 214,
+        "ATP2A2": 144,
+        "SBNO1": 172,
+        "TUBB": 256,
+        "RTRAF": 197
+      },
+      "model_role": "inner_train_jurkat"
+    },
+    "outer_jurkat__inner_hepg2": {
+      "job_key": "outer_jurkat__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928",
+      "destination": "hepg2",
+      "destination_family": "HepG2",
+      "allowed_native": "rpe1",
+      "allowed_native_family": "RPE1",
+      "forbidden_native_families": [
+        "HepG2",
+        "Jurkat"
+      ],
+      "strict_core_count": 379,
+      "strict_core_prepared_role": "leave_Jurkat__inner_RPE1",
+      "original_targets": [
+        "EXOSC4",
+        "NUDCD3",
+        "ZBTB17",
+        "HSD17B10",
+        "RAB4B",
+        "BTF3",
+        "NUP133",
+        "RSL1D1"
+      ],
+      "generated_target_cells": {
+        "EXOSC4": 128,
+        "NUDCD3": 172,
+        "ZBTB17": 130,
+        "HSD17B10": 229,
+        "RAB4B": 185,
+        "BTF3": 212,
+        "NUP133": 217,
+        "RSL1D1": 166
+      },
+      "model_role": "inner_train_rpe1"
+    },
+    "outer_hepg2__inner_jurkat": {
+      "job_key": "outer_hepg2__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928",
+      "destination": "jurkat",
+      "destination_family": "Jurkat",
+      "allowed_native": "rpe1",
+      "allowed_native_family": "RPE1",
+      "forbidden_native_families": [
+        "HepG2",
+        "Jurkat"
+      ],
+      "strict_core_count": 379,
+      "strict_core_prepared_role": "leave_HepG2__inner_RPE1",
+      "original_targets": [
+        "MON1A",
+        "GPN3",
+        "SNRNP40",
+        "RPL39",
+        "C1orf109",
+        "ATP2A2",
+        "RTRAF",
+        "PDCD6"
+      ],
+      "generated_target_cells": {
+        "MON1A": 162,
+        "GPN3": 188,
+        "SNRNP40": 147,
+        "RPL39": 170,
+        "C1orf109": 165,
+        "ATP2A2": 131,
+        "RTRAF": 183,
+        "PDCD6": 129
+      },
+      "model_role": "inner_train_rpe1"
+    }
+  },
+  "seed": 20261002,
+  "count_seed": 20260928,
+  "training_folds": [
+    2,
+    3
+  ],
+  "original_150_target_exclusions_unchanged": true,
+  "final_THP1_truth_sealed": true,
+  "cache": {
+    "k562_cells_per_target": 8,
+    "native_cells_per_target": 24,
+    "NTC_per_context": 3000,
+    "original_selected_eligible_UIDs_preserved": true,
+    "ELOB_true_original_keep": 5,
+    "ELOB_replenish": 3,
+    "ELOC_history_preserved": true,
+    "ELOB_hash_prefix": "v20-ELOB-replenish:",
+    "raw_block_selected_rows": 128,
+    "old_numeric_cache_read_prohibited": true
+  },
+  "pca": {
+    "dimensions": 64,
+    "input_genes": 6119,
+    "normalization": "CP50000 common actual measured axis -> log1p",
+    "gene_scale_floor": 0.1,
+    "pc_scale_floor": 0.1,
+    "svd_n_iter": 4,
+    "random_state": 20261002,
+    "response_profiles": "per-target mean of fixed selected K raw decoder TRAIN cells only",
+    "no_train_target_rule": "omit PCA fit profile only; keep original strict core and scoring population",
+    "ntc": "original K NTC cohort, decoder TRAIN only",
+    "equal_fit_row_weights": true
+  },
+  "decoder": {
+    "steps": 3000,
+    "batch_size": 192,
+    "lr": 0.0003,
+    "min_lr": 3e-05,
+    "weight_decay": 0.01,
+    "gradient_clip": 5.0,
+    "validation_rule": "Guide hash mod5=0 for perturbations; original-row hash mod5=0 for NTC. Fixed before outcomes. Standalone reconstruction/count diagnostics, not biological replicate or heldout response accuracy.",
+    "supervision": "Observed raw nonnegative integer10916-axis counts with per-context unique-measurement mask and actual measured-output library sum. No PC/bulk mean used as integer label.",
+    "frozen_for_response": true,
+    "parameters": 2898760,
+    "seed": 20261002,
+    "count_rng_seed": 20561002,
+    "background_batch_sizes": [
+      96,
+      96
+    ],
+    "final_checkpoint_only": true,
+    "diagnostics_after_all_three_fits_frozen": true
+  },
+  "decoder_model": {
+    "cell_dim": 64,
+    "hidden": 192,
+    "width": 384,
+    "decoder_hidden": 256,
+    "set_size": 8,
+    "correction_bound": 6.0,
+    "integration_steps": 8
+  },
+  "mean_model": {
+    "spec": "V7tiny128_rank32",
+    "parameters": 993763,
+    "steps": 600,
+    "batch": 96,
+    "global_CE_candidates": 96,
+    "seed": 20261002,
+    "K_alpha": 1.0,
+    "no_old_teacher": true,
+    "output_genes": 10916,
+    "common_genes": 6157,
+    "seen_genes": 6114,
+    "source_contexts_per_role": 10,
+    "paired_target_and_context_U": true
+  },
+  "arms": [
+    "B0",
+    "R1"
+  ],
+  "R1": {
+    "state_coefficient": 0.5,
+    "reference_coefficient": 0.5,
+    "tau": 1.0,
+    "reference_bank_weights": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "missing_neutral_distance": 1.0,
+    "raw_signature_geometry": true,
+    "query_NTC_scale_fit": false
+  },
+  "budget": {
+    "PCA_fits": 3,
+    "decoder_fits": 3,
+    "decoder_optimizer_steps": 9000,
+    "decoder_draws": 1728000,
+    "mean_fits": 12,
+    "mean_optimizer_steps": 7200,
+    "mean_draws": 691200,
+    "count_cases": 18,
+    "judge_cases": 18,
+    "official_score_queries": 0
+  },
+  "renderer": {
+    "literal_N1": true,
+    "theta_scale": 1.0,
+    "donor_seed_offset": 100,
+    "protected_namespace": [
+      0
+    ],
+    "NB_namespace": [
+      26,
+      3
+    ],
+    "zero_mu_zero_count": true,
+    "exact_float32_integer_max": 16777216,
+    "row_library_max_exclusive": 1000000,
+    "protected_H0_from_supplied_effect": true,
+    "legacy_counts_copy": false
+  },
+  "resources": {
+    "C_minimum_free_GiB": 50,
+    "new_cache_max_GiB": 6,
+    "model_diagnostics_max_GiB": 2,
+    "count_score_planning_max_GiB": 10,
+    "total_new_max_GiB": 20
+  },
+  "dependencies_sha256": {
+    "C:\\00 - Competition\\configs\\V20_NATIVE_F23_BRIDGE_PREDECLARED_CN.md": "09b548c2c845d704d53b830a049cb46d6008e9ed8e81c7dcce67d262bb5437fb",
+    "C:\\00 - Competition\\configs\\V2_NATIVE_SCORE_CONTRACT.json": "e489efd753fc0395c87c756113504317d3d144aa23bdc2f474c99f13ccfc3219",
+    "C:\\00 - Competition\\archive\\legacy_20261003\\configs\\latent_flow_v25_protocol.json": "a5e3cbb67414597573ecc663f618acbadb5970b8fc67e9b54772d6c9685f322e",
+    "C:\\00 - Competition\\archive\\legacy_20261003\\src\\vcc2026\\latent_flow_v25.py": "60fb8d2fcb4ad52f7f606dec39bb685a1aa6170206972435dced3aa150408f83",
+    "C:\\00 - Competition\\archive\\legacy_20261003\\src\\vcc2026\\prepare_latent_flow_v25.py": "554fa1adf5b576465d91f35073865acb430016e71c4dc3c55cbd4081d5ca2080",
+    "C:\\00 - Competition\\archive\\legacy_20261003\\src\\vcc2026\\literal_nb_v28.py": "d05ff919ede587314d6608ceb33edea503ae2ed18a01765978ef7942f3328275",
+    "C:\\00 - Competition\\staging\\newV12_supervised_label_selection_revision3_identity_fixed_common6157\\TRAINER_MACHINE_CONTRACT.json": "6d2757cd3db28fcd9c95d532de0ebebc3b4d0c168c2971e188736424d99119ce",
+    "C:\\00 - Competition\\data\\processed\\set_response_v22\\input_genes.txt": "f71a5e4ca918560b8841e07cb424d8fe6695f4cb4bd017e576d916807a1b4b84",
+    "C:\\00 - Competition\\reports\\V19\\POSTSCORE_READONLY_REVIEW.json": "09f51b264a354bd1d5f802b439cfe03a2872db5953a220d7268156704e707fcd",
+    "C:\\00 - Competition\\data\\processed\\latent_flow_v25\\k562\\metadata.csv": "432acb0bf948506cb6e1ca47e0635d74982f2db3958fb2af950c73612e8f3efb",
+    "C:\\00 - Competition\\data\\processed\\latent_flow_v25\\hepg2\\metadata.csv": "2e6034b4d9e5b334c014fbe45631e15bd8e6da4e8c02708f4e50824b3e06e370",
+    "C:\\00 - Competition\\data\\processed\\latent_flow_v25\\jurkat\\metadata.csv": "73f95df88c95977a78715472e0aac8730eb5ea0f8c64b881aa91e925adcf4c51",
+    "C:\\00 - Competition\\data\\processed\\latent_flow_v25\\rpe1\\metadata.csv": "d76961472dd261e2ad896281fc3ca035346983c8fef8b86a30ba70955e2cc13c"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "arm": "clean_B0_NB",
+  "three_seed_macro_overall": 0.26718504165389595,
+  "three_seed_macro_delta_vs_NB": 0.0,
+  "per_background_three_seed_mean": {
+    "hepg2": 0.22840388764566422,
+    "jurkat": 0.3660857853416497,
+    "rpe1": 0.20706545197437387
+  },
+  "all_three_seed_overall_deltas_positive": null,
+  "overall": 0.26718504165389595,
+  "count_seeds": [
+    20260928,
+    20260929,
+    20260930
+  ],
+  "per_seed": [
+    {
+      "seed": 20260928,
+      "arm": "clean_B0_NB",
+      "overall": 0.27059098184383507,
+      "delta_vs_NB": 0.0,
+      "per_background": {
+        "hepg2": 0.23742515923770297,
+        "jurkat": 0.3447117445646729,
+        "rpe1": 0.22963604172912933
+      },
+      "six_scaled": {
+        "pds_cosine": 0.7265838242280713,
+        "expr_mse_unbiased_capped_norm": 0.0,
+        "de_wilcoxon_direction_fidelity_yield_raw": 0.8035398619038604,
+        "de_wilcoxon_direction_reach_raw": 0.02298922646576119,
+        "de_wilcoxon_sig_jaccard": 0.17106755500093185,
+        "de_wilcoxon_lfc_nmae": -0.1006345765356144
+      }
+    },
+    {
+      "seed": 20260929,
+      "arm": "clean_B0_NB",
+      "overall": 0.2711481230668075,
+      "delta_vs_NB": 0.0,
+      "per_background": {
+        "hepg2": 0.21349035801949368,
+        "jurkat": 0.40193254172099413,
+        "rpe1": 0.19802146945993465
+      },
+      "six_scaled": {
+        "pds_cosine": 0.666639570360977,
+        "expr_mse_unbiased_capped_norm": 0.0,
+        "de_wilcoxon_direction_fidelity_yield_raw": 0.8012917859534839,
+        "de_wilcoxon_direction_reach_raw": 0.09602642227997255,
+        "de_wilcoxon_sig_jaccard": 0.17215041559590685,
+        "de_wilcoxon_lfc_nmae": -0.10921945578949521
+      }
+    },
+    {
+      "seed": 20260930,
+      "arm": "clean_B0_NB",
+      "overall": 0.25981602005104526,
+      "delta_vs_NB": 0.0,
+      "per_background": {
+        "hepg2": 0.234296145679796,
+        "jurkat": 0.35161306973928214,
+        "rpe1": 0.19353884473405764
+      },
+      "six_scaled": {
+        "pds_cosine": 0.5789622476204926,
+        "expr_mse_unbiased_capped_norm": 0.0,
+        "de_wilcoxon_direction_fidelity_yield_raw": 0.8036444618309037,
+        "de_wilcoxon_direction_reach_raw": 0.059083566254331976,
+        "de_wilcoxon_sig_jaccard": 0.17394851576384662,
+        "de_wilcoxon_lfc_nmae": -0.05674267116330353
+      }
+    }
+  ],
+  "paired_uncertainty": [],
+  "independent_units": "Three previously tuned Native backgrounds; count seeds measure generator Monte Carlo variability, not biological replication; six roles not independent",
+  "stable_promotion": false
+}

@@ -1,0 +1,22 @@
+{
+  "overall": null,
+  "reason": "No recoverable comparable six-metric overall for this early comparison",
+  "model_selection": {
+    "primary_complete_candidate": "runs/baseline_v1/prediction__k562_calibrated_direct.vcc",
+    "alternative_complete_candidate": "runs/transfer_v2/prediction__normalized_k562_transfer.vcc",
+    "foundation_models_promoted_to_full_challenge": false,
+    "reason": "No tested foundation variant dominates the simple baseline across the six local metrics. Direct Stack has severe mean-expression distortion. Normalized-transfer challenger trades slightly lower PDS for lower expression/LFC error. Official anchors and hidden A/B/C outcomes are unavailable.",
+    "validation_scope": "Exploratory H1 24-target external single-cell comparison; raw local metrics, not leaderboard scaling",
+    "caveat": "Local baseline families are refitted under the H1 exclusion protocol; full ABC models use the final development calibration",
+    "evidence": "reports/all_models_six_metric_comparison.csv",
+    "model_count_in_six_metric_table": 12,
+    "official_upload_performed": false
+  },
+  "missing_assets": [
+    "State best.pt checkpoints",
+    "Stack prediction payload",
+    "normalized transfer parameters",
+    "original comparison CSV"
+  ],
+  "interpretation": "Source-and-records archive. No complete checkpoint or end-to-end reproduction claim."
+}

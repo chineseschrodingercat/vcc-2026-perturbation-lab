@@ -1,0 +1,119 @@
+{
+  "benchmark": "Native_inner_six_roles",
+  "output": "C:/00 - Competition/runs/V4/barycenter",
+  "score_contract_sha256": "e489efd753fc0395c87c756113504317d3d144aa23bdc2f474c99f13ccfc3219",
+  "cases": [
+    {
+      "job_key": "outer_rpe1__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928",
+      "arm": "N1_weight_0.25",
+      "generator": "barycenter",
+      "weight": 0.25
+    },
+    {
+      "job_key": "outer_rpe1__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928",
+      "arm": "N1_weight_0.5",
+      "generator": "barycenter",
+      "weight": 0.5
+    },
+    {
+      "job_key": "outer_rpe1__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928",
+      "arm": "N1_weight_0.75",
+      "generator": "barycenter",
+      "weight": 0.75
+    },
+    {
+      "job_key": "outer_jurkat__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928",
+      "arm": "N1_weight_0.25",
+      "generator": "barycenter",
+      "weight": 0.25
+    },
+    {
+      "job_key": "outer_jurkat__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928",
+      "arm": "N1_weight_0.5",
+      "generator": "barycenter",
+      "weight": 0.5
+    },
+    {
+      "job_key": "outer_jurkat__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928",
+      "arm": "N1_weight_0.75",
+      "generator": "barycenter",
+      "weight": 0.75
+    },
+    {
+      "job_key": "outer_rpe1__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928",
+      "arm": "N1_weight_0.25",
+      "generator": "barycenter",
+      "weight": 0.25
+    },
+    {
+      "job_key": "outer_rpe1__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928",
+      "arm": "N1_weight_0.5",
+      "generator": "barycenter",
+      "weight": 0.5
+    },
+    {
+      "job_key": "outer_rpe1__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928",
+      "arm": "N1_weight_0.75",
+      "generator": "barycenter",
+      "weight": 0.75
+    },
+    {
+      "job_key": "outer_hepg2__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928",
+      "arm": "N1_weight_0.25",
+      "generator": "barycenter",
+      "weight": 0.25
+    },
+    {
+      "job_key": "outer_hepg2__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928",
+      "arm": "N1_weight_0.5",
+      "generator": "barycenter",
+      "weight": 0.5
+    },
+    {
+      "job_key": "outer_hepg2__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928",
+      "arm": "N1_weight_0.75",
+      "generator": "barycenter",
+      "weight": 0.75
+    },
+    {
+      "job_key": "outer_jurkat__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928",
+      "arm": "N1_weight_0.25",
+      "generator": "barycenter",
+      "weight": 0.25
+    },
+    {
+      "job_key": "outer_jurkat__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928",
+      "arm": "N1_weight_0.5",
+      "generator": "barycenter",
+      "weight": 0.5
+    },
+    {
+      "job_key": "outer_jurkat__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928",
+      "arm": "N1_weight_0.75",
+      "generator": "barycenter",
+      "weight": 0.75
+    },
+    {
+      "job_key": "outer_hepg2__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928",
+      "arm": "N1_weight_0.25",
+      "generator": "barycenter",
+      "weight": 0.25
+    },
+    {
+      "job_key": "outer_hepg2__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928",
+      "arm": "N1_weight_0.5",
+      "generator": "barycenter",
+      "weight": 0.5
+    },
+    {
+      "job_key": "outer_hepg2__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928",
+      "arm": "N1_weight_0.75",
+      "generator": "barycenter",
+      "weight": 0.75
+    }
+  ],
+  "perturbation_truth_for_fit": false,
+  "mean_semantics": "Count space convex combination of N1 and carrier; stochastic rounding",
+  "weights_identical_across_contexts": true,
+  "primary_comparison": "Three predeclared N1 weights .25 .5 .75"
+}

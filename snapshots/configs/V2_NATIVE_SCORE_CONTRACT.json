@@ -1,0 +1,3203 @@
+{
+  "schema": "new_V2_Native_legacy_V28_score_contract_1",
+  "primary_goal": {
+    "benchmark": "Native_inner_six_roles",
+    "metric": "replicate_overall",
+    "target_exclusive": 0.35,
+    "baseline": 0.25932824671778637,
+    "count_seed": 20260928,
+    "model_seed": 20261002,
+    "teacher_train_seed": 20260928,
+    "aggregation": "Equal six metrics within role; mean two roles within each destination; mean three destinations"
+  },
+  "outer_guard": {
+    "baseline": 0.2281364395524066,
+    "model_seed": 20261002,
+    "count_seeds": [
+      20260928,
+      20260929,
+      20260930
+    ],
+    "teacher_train_seed": 20260928,
+    "report_separately": true,
+    "aggregation": "Mean three count seeds within each destination; mean three destinations"
+  },
+  "repeat_guard": {
+    "model_seed": 20261009,
+    "count_seed": 20260928,
+    "teacher_train_seed": 20261005,
+    "replicate_overall": 0.21332694747739453,
+    "report_separately": true
+  },
+  "scorer": {
+    "package": "cell_eval2",
+    "version": "0.16.0",
+    "preset": "vcc2026",
+    "device": "cpu",
+    "pert_col": "target_gene",
+    "de_backend": "scanpy",
+    "scale": "Historical per-panel generic-baseline to five-split-replicate entries; _replicate_entries then score_one",
+    "scale_anchors": "Frozen saved Native panels; no refitting baseline/anchors",
+    "metrics": [
+      "pds_cosine",
+      "expr_mse_unbiased_capped_norm",
+      "de_wilcoxon_direction_fidelity_yield_raw",
+      "de_wilcoxon_direction_reach_raw",
+      "de_wilcoxon_sig_jaccard",
+      "de_wilcoxon_lfc_nmae"
+    ],
+    "metric_weight": 0.16666666666666666,
+    "fixed_scale_secondary": "low-random_high-1_v10; not the user target",
+    "source": "C:\\00 - Competition\\archive\\legacy_20261003\\src\\vcc2026\\score_residual_v6.py",
+    "source_sha256": "f29583fc5517f8520d7c36f2ff55e670e7a0b022626f00af204e2b8c1d21630a"
+  },
+  "data_boundary": {
+    "heldout_destination_background": true,
+    "inner_target_fold": 1,
+    "outer_target_fold": 0,
+    "target_fold_definition": "sha256(vcc-v4:+target) mod 5",
+    "fit_preprocessing": "Training backgrounds/folds only; destination NTC allowed input",
+    "destination_perturbation_counts_for_fitting": false,
+    "benchmark_status": "Repeatedly used development benchmark; proper outer reported separately",
+    "H1_Overall_comparable_to_primary": false,
+    "official_score_queries": 0
+  },
+  "cases": [
+    {
+      "key": "outer_rpe1__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928",
+      "role": "outer_rpe1__inner_jurkat",
+      "context": "jurkat",
+      "model_role": "inner_train_hepg2",
+      "model_seed": 20261002,
+      "count_seed": 20260928,
+      "teacher_train_seed": 20260928,
+      "teacher_tag": "outer_rpe1__v13_ref",
+      "stage": "inner",
+      "targets": [
+        "MON1A",
+        "GPN3",
+        "SNRNP40",
+        "RPL39",
+        "C1orf109",
+        "ATP2A2",
+        "RTRAF",
+        "PDCD6"
+      ],
+      "generated_target_cells": {
+        "MON1A": 162,
+        "GPN3": 188,
+        "SNRNP40": 147,
+        "RPL39": 170,
+        "C1orf109": 165,
+        "ATP2A2": 131,
+        "RTRAF": 183,
+        "PDCD6": 129
+      },
+      "native_genes": 8880,
+      "reference_real_sha256": "a3ccacb318398021af130ecf2fe1ecb2fb62b8fc6f64288091665c1c7423867a",
+      "source_leaves": {
+        "aggregate": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_rpe1__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928\\aggregate.csv",
+          "sha256": "5fa61be831ad8a5af86167708f1722667943f28eb9dbf6e5d07c5fa7d371d96d"
+        },
+        "summary": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_rpe1__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928\\summary.json",
+          "sha256": "47c28ea182afada6d780ba662fe5db7660642e5e92deb95de645afdbc76a152b"
+        },
+        "components": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_rpe1__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928\\overall_components.csv",
+          "sha256": "46c91f63719eaf777a0407a9346841daab967eab2f2fd5ae60025edbcffa12fc"
+        },
+        "reference": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\inner_panels\\jurkat\\references\\reference.json",
+          "sha256": "f81713db158a7dca4a0a3b3cdc9a83f23a1f74fe13db2269a97be3bc987f16e3"
+        },
+        "anchor": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\inner_panels\\jurkat\\references\\anchor_aggregate.parquet",
+          "sha256": "83277c1d932e28544b18ae78a128d00161c88fd922a9e07acb882b8b3528be36"
+        },
+        "panel": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\inner_panels\\jurkat\\panel.json",
+          "sha256": "de718519c79cabdc1cac722652d67925ee868d8d78bc15a3ff36f86887f1b669"
+        },
+        "genes": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\inner_panels\\jurkat\\genes.txt",
+          "sha256": "26540d68796c3b9601f644242e154733d280e5e1742664b7f0ae41180b80d269"
+        },
+        "mean": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\inner_panels\\jurkat\\effects__outer_rpe1__v13_ref.npz",
+          "sha256": "4f6d73a7f37c29f8cd1f1d082092ca9984408b17e15387f59f5701aafc36ecc0"
+        },
+        "theta": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\retained\\native_theta\\inner_train_hepg2\\seed_20261002\\dispersion_seen.npz",
+          "sha256": "c79b013887552d58c9d4f39a6be21a3b9539799bed18d3faab31d0884727d527"
+        }
+      },
+      "replicate_scale_entries": {
+        "pds_cosine": {
+          "base": 0.5357142857142857,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.8964285714285716,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "expr_mse_unbiased_capped_norm": {
+          "base": 0.7795895661375635,
+          "scoring": {
+            "scored": true,
+            "direction": "lower",
+            "anchor": -0.004236812294037788,
+            "penalty": "boxcox",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": 0.0,
+            "clamp_high": 1.0,
+            "allow_negative_baseline": false,
+            "metric_min": null
+          }
+        },
+        "de_wilcoxon_direction_fidelity_yield_raw": {
+          "base": 0.0212032388486654,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.5775904278396982,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_direction_reach_raw": {
+          "base": 0.3689830962372177,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.9366148811435924,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_sig_jaccard": {
+          "base": 0.000305205929623,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.2749320049504562,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_lfc_nmae": {
+          "base": 0.8307121804221849,
+          "scoring": {
+            "scored": true,
+            "direction": "lower",
+            "anchor": 0.5326400683077396,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": -6.0,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": null
+          }
+        }
+      },
+      "baseline_replicate_overall": 0.31705972245825453
+    },
+    {
+      "key": "outer_jurkat__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928",
+      "role": "outer_jurkat__inner_rpe1",
+      "context": "rpe1",
+      "model_role": "inner_train_hepg2",
+      "model_seed": 20261002,
+      "count_seed": 20260928,
+      "teacher_train_seed": 20260928,
+      "teacher_tag": "outer_jurkat__v13_ref",
+      "stage": "inner",
+      "targets": [
+        "MON1A",
+        "TUFM",
+        "SNRNP40",
+        "C1orf109",
+        "ATP2A2",
+        "SBNO1",
+        "TUBB",
+        "RTRAF"
+      ],
+      "generated_target_cells": {
+        "MON1A": 175,
+        "TUFM": 176,
+        "SNRNP40": 229,
+        "C1orf109": 214,
+        "ATP2A2": 144,
+        "SBNO1": 172,
+        "TUBB": 256,
+        "RTRAF": 197
+      },
+      "native_genes": 8747,
+      "reference_real_sha256": "54f612978b999a92fbc1c853971afd255138a9c179a530a4530098262dfcc02c",
+      "source_leaves": {
+        "aggregate": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_jurkat__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928\\aggregate.csv",
+          "sha256": "881ec16e645862fdca24aeadbf4186081db2d84bb9e9ebabfd57bb069edea9fa"
+        },
+        "summary": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_jurkat__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928\\summary.json",
+          "sha256": "1430864e813bc8fbaab39aba84da69e7aacd2b87b071a9f7952f5144b63ce688"
+        },
+        "components": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_jurkat__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928\\overall_components.csv",
+          "sha256": "3e19d845e9eef019f45274e4e43dd03f118ecc76a01dfab2c3fcab67ae652908"
+        },
+        "reference": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\inner_panels\\rpe1\\references\\reference.json",
+          "sha256": "e34f0840fbc68b837b219777ef72aa11d945cbcdd99fdc193261c46e74e38f3b"
+        },
+        "anchor": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\inner_panels\\rpe1\\references\\anchor_aggregate.parquet",
+          "sha256": "14045b5bf024fcf8ae9a5a945971fea4c69fe0d363933e58bdd91018c18570e2"
+        },
+        "panel": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\inner_panels\\rpe1\\panel.json",
+          "sha256": "c656fde57f52defa6acbb1083bb259379ceef4d9dc453b6a33d81c097fd79f0f"
+        },
+        "genes": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\inner_panels\\rpe1\\genes.txt",
+          "sha256": "89c390f18318c0db86dcffb2c447ff12cc4625d4be940ee1eabde4d085a8120a"
+        },
+        "mean": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\inner_panels\\rpe1\\effects__outer_jurkat__v13_ref.npz",
+          "sha256": "b57ccc774b23d583042a793fb7a73d4eb3723cf3897ea909cbd106c14dafe66e"
+        },
+        "theta": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\retained\\native_theta\\inner_train_hepg2\\seed_20261002\\dispersion_seen.npz",
+          "sha256": "c79b013887552d58c9d4f39a6be21a3b9539799bed18d3faab31d0884727d527"
+        }
+      },
+      "replicate_scale_entries": {
+        "pds_cosine": {
+          "base": 0.5178571428571429,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.9678571428571429,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "expr_mse_unbiased_capped_norm": {
+          "base": 0.7469606962985468,
+          "scoring": {
+            "scored": true,
+            "direction": "lower",
+            "anchor": 0.002333497427796271,
+            "penalty": "boxcox",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": 0.0,
+            "clamp_high": 1.0,
+            "allow_negative_baseline": false,
+            "metric_min": null
+          }
+        },
+        "de_wilcoxon_direction_fidelity_yield_raw": {
+          "base": 0.2085596438530763,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.7762874110614227,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_direction_reach_raw": {
+          "base": 0.2697366506785174,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.9939235117658658,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_sig_jaccard": {
+          "base": 0.0329239152695091,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.3890252049298405,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_lfc_nmae": {
+          "base": 0.8116891081325441,
+          "scoring": {
+            "scored": true,
+            "direction": "lower",
+            "anchor": 0.4989091043412575,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": -6.0,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": null
+          }
+        }
+      },
+      "baseline_replicate_overall": 0.16993062340701273
+    },
+    {
+      "key": "outer_rpe1__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928",
+      "role": "outer_rpe1__inner_hepg2",
+      "context": "hepg2",
+      "model_role": "inner_train_jurkat",
+      "model_seed": 20261002,
+      "count_seed": 20260928,
+      "teacher_train_seed": 20260928,
+      "teacher_tag": "outer_rpe1__v13_ref",
+      "stage": "inner",
+      "targets": [
+        "EXOSC4",
+        "NUDCD3",
+        "ZBTB17",
+        "HSD17B10",
+        "RAB4B",
+        "BTF3",
+        "NUP133",
+        "RSL1D1"
+      ],
+      "generated_target_cells": {
+        "EXOSC4": 128,
+        "NUDCD3": 172,
+        "ZBTB17": 130,
+        "HSD17B10": 229,
+        "RAB4B": 185,
+        "BTF3": 212,
+        "NUP133": 217,
+        "RSL1D1": 166
+      },
+      "native_genes": 9622,
+      "reference_real_sha256": "4ab0dda649ba29e884577e7e9abb1f108b8980bf568537089a9aba0d9e7cd26e",
+      "source_leaves": {
+        "aggregate": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_rpe1__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928\\aggregate.csv",
+          "sha256": "1cb2478f970be7384533ffcec7b2c3ea5daa304a5d42d5fd8deb1ff8c7004ffc"
+        },
+        "summary": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_rpe1__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928\\summary.json",
+          "sha256": "0858d34968b8b940b398eb146e6a525ff027253a9535fa13a9e884a38fd7444f"
+        },
+        "components": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_rpe1__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928\\overall_components.csv",
+          "sha256": "5b97a016de4ed1eed7ecb845517610129b7332e7187fd9b85bba6bd47da63842"
+        },
+        "reference": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\inner_panels\\hepg2\\references\\reference.json",
+          "sha256": "30ac930d2e90cc00e7a77218f564f316f876ca39d94d9238961079d8d7edb11b"
+        },
+        "anchor": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\inner_panels\\hepg2\\references\\anchor_aggregate.parquet",
+          "sha256": "c99d5e9c09343ab138cba024e823123da0b3bfbe9435e3e9ce27d802228947d0"
+        },
+        "panel": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\inner_panels\\hepg2\\panel.json",
+          "sha256": "2353df854df86e2adc513f3bc3b0951fced9479abacac8bf58e32c77e6eea855"
+        },
+        "genes": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\inner_panels\\hepg2\\genes.txt",
+          "sha256": "527f931eb5f89621bd87efe08cc802777b7aa1d1f7442e6264722345975e2a05"
+        },
+        "mean": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\inner_panels\\hepg2\\effects__outer_rpe1__v13_ref.npz",
+          "sha256": "afe821c5ff09506fc95a2fc151cb5a2b8ac2240ad0145fd92b51599ae7d6b3de"
+        },
+        "theta": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\retained\\native_theta\\inner_train_jurkat\\seed_20261002\\dispersion_seen.npz",
+          "sha256": "16cc022349c5356aab946407a2ac9370163fa2ede07ab5b16e1699cae3e608f8"
+        }
+      },
+      "replicate_scale_entries": {
+        "pds_cosine": {
+          "base": 0.4821428571428571,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 1.0,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "expr_mse_unbiased_capped_norm": {
+          "base": 0.6745110820615254,
+          "scoring": {
+            "scored": true,
+            "direction": "lower",
+            "anchor": 0.013925870299741424,
+            "penalty": "boxcox",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": 0.0,
+            "clamp_high": 1.0,
+            "allow_negative_baseline": false,
+            "metric_min": null
+          }
+        },
+        "de_wilcoxon_direction_fidelity_yield_raw": {
+          "base": 0.2092833334375337,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.6830190892236158,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_direction_reach_raw": {
+          "base": 0.4333073898262913,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.9871708153795954,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_sig_jaccard": {
+          "base": 0.0425410425696206,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.25045987616256016,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_lfc_nmae": {
+          "base": 0.7429409396839601,
+          "scoring": {
+            "scored": true,
+            "direction": "lower",
+            "anchor": 0.4826574763091318,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": -6.0,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": null
+          }
+        }
+      },
+      "baseline_replicate_overall": 0.24205048006153385
+    },
+    {
+      "key": "outer_hepg2__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928",
+      "role": "outer_hepg2__inner_rpe1",
+      "context": "rpe1",
+      "model_role": "inner_train_jurkat",
+      "model_seed": 20261002,
+      "count_seed": 20260928,
+      "teacher_train_seed": 20260928,
+      "teacher_tag": "outer_hepg2__v13_ref",
+      "stage": "inner",
+      "targets": [
+        "MON1A",
+        "TUFM",
+        "SNRNP40",
+        "C1orf109",
+        "ATP2A2",
+        "SBNO1",
+        "TUBB",
+        "RTRAF"
+      ],
+      "generated_target_cells": {
+        "MON1A": 175,
+        "TUFM": 176,
+        "SNRNP40": 229,
+        "C1orf109": 214,
+        "ATP2A2": 144,
+        "SBNO1": 172,
+        "TUBB": 256,
+        "RTRAF": 197
+      },
+      "native_genes": 8747,
+      "reference_real_sha256": "54f612978b999a92fbc1c853971afd255138a9c179a530a4530098262dfcc02c",
+      "source_leaves": {
+        "aggregate": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_hepg2__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928\\aggregate.csv",
+          "sha256": "19f692f995ff48d8930d872c75a15a7c1cf307856b33c82ad7e6494f0d7b9b56"
+        },
+        "summary": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_hepg2__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928\\summary.json",
+          "sha256": "258ce09e49c88520fac2c1711cd86e8a8b153d63aba218e6bb96dec0dc2f1d01"
+        },
+        "components": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_hepg2__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928\\overall_components.csv",
+          "sha256": "c91735336fd4f72fd8b301d36b24bdc77a4bc2de61eb7d459db9eb31bde7accc"
+        },
+        "reference": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\inner_panels\\rpe1\\references\\reference.json",
+          "sha256": "e34f0840fbc68b837b219777ef72aa11d945cbcdd99fdc193261c46e74e38f3b"
+        },
+        "anchor": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\inner_panels\\rpe1\\references\\anchor_aggregate.parquet",
+          "sha256": "14045b5bf024fcf8ae9a5a945971fea4c69fe0d363933e58bdd91018c18570e2"
+        },
+        "panel": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\inner_panels\\rpe1\\panel.json",
+          "sha256": "c656fde57f52defa6acbb1083bb259379ceef4d9dc453b6a33d81c097fd79f0f"
+        },
+        "genes": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\inner_panels\\rpe1\\genes.txt",
+          "sha256": "89c390f18318c0db86dcffb2c447ff12cc4625d4be940ee1eabde4d085a8120a"
+        },
+        "mean": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\inner_panels\\rpe1\\effects__outer_hepg2__v13_ref.npz",
+          "sha256": "66159791a1d896f0fc9212e0a49acfb4f52654145507bd2157e1e7a10b34b4f1"
+        },
+        "theta": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\retained\\native_theta\\inner_train_jurkat\\seed_20261002\\dispersion_seen.npz",
+          "sha256": "16cc022349c5356aab946407a2ac9370163fa2ede07ab5b16e1699cae3e608f8"
+        }
+      },
+      "replicate_scale_entries": {
+        "pds_cosine": {
+          "base": 0.5178571428571429,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.9678571428571429,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "expr_mse_unbiased_capped_norm": {
+          "base": 0.7469606962985468,
+          "scoring": {
+            "scored": true,
+            "direction": "lower",
+            "anchor": 0.002333497427796271,
+            "penalty": "boxcox",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": 0.0,
+            "clamp_high": 1.0,
+            "allow_negative_baseline": false,
+            "metric_min": null
+          }
+        },
+        "de_wilcoxon_direction_fidelity_yield_raw": {
+          "base": 0.2085596438530763,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.7762874110614227,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_direction_reach_raw": {
+          "base": 0.2697366506785174,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.9939235117658658,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_sig_jaccard": {
+          "base": 0.0329239152695091,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.3890252049298405,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_lfc_nmae": {
+          "base": 0.8116891081325441,
+          "scoring": {
+            "scored": true,
+            "direction": "lower",
+            "anchor": 0.4989091043412575,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": -6.0,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": null
+          }
+        }
+      },
+      "baseline_replicate_overall": 0.2715676893372326
+    },
+    {
+      "key": "outer_jurkat__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928",
+      "role": "outer_jurkat__inner_hepg2",
+      "context": "hepg2",
+      "model_role": "inner_train_rpe1",
+      "model_seed": 20261002,
+      "count_seed": 20260928,
+      "teacher_train_seed": 20260928,
+      "teacher_tag": "outer_jurkat__v13_ref",
+      "stage": "inner",
+      "targets": [
+        "EXOSC4",
+        "NUDCD3",
+        "ZBTB17",
+        "HSD17B10",
+        "RAB4B",
+        "BTF3",
+        "NUP133",
+        "RSL1D1"
+      ],
+      "generated_target_cells": {
+        "EXOSC4": 128,
+        "NUDCD3": 172,
+        "ZBTB17": 130,
+        "HSD17B10": 229,
+        "RAB4B": 185,
+        "BTF3": 212,
+        "NUP133": 217,
+        "RSL1D1": 166
+      },
+      "native_genes": 9622,
+      "reference_real_sha256": "4ab0dda649ba29e884577e7e9abb1f108b8980bf568537089a9aba0d9e7cd26e",
+      "source_leaves": {
+        "aggregate": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_jurkat__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928\\aggregate.csv",
+          "sha256": "f8fe20132d21288d494cd7cded759a77644fed5884483448207a62fe58082a53"
+        },
+        "summary": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_jurkat__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928\\summary.json",
+          "sha256": "f8e4460e39ba12830773f2f8f69636584c3d9492c932460f14a873d0a46c5a04"
+        },
+        "components": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_jurkat__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928\\overall_components.csv",
+          "sha256": "cabd01d5daa0ebe12d77aed88fe156e412a30f0485cd16eddce294c3bf31f234"
+        },
+        "reference": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\inner_panels\\hepg2\\references\\reference.json",
+          "sha256": "30ac930d2e90cc00e7a77218f564f316f876ca39d94d9238961079d8d7edb11b"
+        },
+        "anchor": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\inner_panels\\hepg2\\references\\anchor_aggregate.parquet",
+          "sha256": "c99d5e9c09343ab138cba024e823123da0b3bfbe9435e3e9ce27d802228947d0"
+        },
+        "panel": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\inner_panels\\hepg2\\panel.json",
+          "sha256": "2353df854df86e2adc513f3bc3b0951fced9479abacac8bf58e32c77e6eea855"
+        },
+        "genes": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\inner_panels\\hepg2\\genes.txt",
+          "sha256": "527f931eb5f89621bd87efe08cc802777b7aa1d1f7442e6264722345975e2a05"
+        },
+        "mean": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\inner_panels\\hepg2\\effects__outer_jurkat__v13_ref.npz",
+          "sha256": "798f968c4fdd4fbe241509a5c4e97ad1926edec8b6b82f690e975bdc4180ab08"
+        },
+        "theta": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\retained\\native_theta\\inner_train_rpe1\\seed_20261002\\dispersion_seen.npz",
+          "sha256": "bfd12108b3a1986e3663d8c7e4922f752b4dfdd788219768faa1034976a7e36c"
+        }
+      },
+      "replicate_scale_entries": {
+        "pds_cosine": {
+          "base": 0.4821428571428571,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 1.0,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "expr_mse_unbiased_capped_norm": {
+          "base": 0.6745110820615254,
+          "scoring": {
+            "scored": true,
+            "direction": "lower",
+            "anchor": 0.013925870299741424,
+            "penalty": "boxcox",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": 0.0,
+            "clamp_high": 1.0,
+            "allow_negative_baseline": false,
+            "metric_min": null
+          }
+        },
+        "de_wilcoxon_direction_fidelity_yield_raw": {
+          "base": 0.2092833334375337,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.6830190892236158,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_direction_reach_raw": {
+          "base": 0.4333073898262913,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.9871708153795954,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_sig_jaccard": {
+          "base": 0.0425410425696206,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.25045987616256016,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_lfc_nmae": {
+          "base": 0.7429409396839601,
+          "scoring": {
+            "scored": true,
+            "direction": "lower",
+            "anchor": 0.4826574763091318,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": -6.0,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": null
+          }
+        }
+      },
+      "baseline_replicate_overall": 0.16317559835839765
+    },
+    {
+      "key": "outer_hepg2__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928",
+      "role": "outer_hepg2__inner_jurkat",
+      "context": "jurkat",
+      "model_role": "inner_train_rpe1",
+      "model_seed": 20261002,
+      "count_seed": 20260928,
+      "teacher_train_seed": 20260928,
+      "teacher_tag": "outer_hepg2__v13_ref",
+      "stage": "inner",
+      "targets": [
+        "MON1A",
+        "GPN3",
+        "SNRNP40",
+        "RPL39",
+        "C1orf109",
+        "ATP2A2",
+        "RTRAF",
+        "PDCD6"
+      ],
+      "generated_target_cells": {
+        "MON1A": 162,
+        "GPN3": 188,
+        "SNRNP40": 147,
+        "RPL39": 170,
+        "C1orf109": 165,
+        "ATP2A2": 131,
+        "RTRAF": 183,
+        "PDCD6": 129
+      },
+      "native_genes": 8880,
+      "reference_real_sha256": "a3ccacb318398021af130ecf2fe1ecb2fb62b8fc6f64288091665c1c7423867a",
+      "source_leaves": {
+        "aggregate": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_hepg2__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928\\aggregate.csv",
+          "sha256": "b3ca254f0d85076bcb71fd88bfda516ea5d4c02c49ba029444d8bc45348bc54d"
+        },
+        "summary": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_hepg2__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928\\summary.json",
+          "sha256": "ba5752c689470b2793a55695a2c9259a2f58ef521048c7477bcb8649de483541"
+        },
+        "components": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_hepg2__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928\\overall_components.csv",
+          "sha256": "a3a455a2796e08752f65ec4f11f3343bcc4505db2363184f4c8159cb57a1f865"
+        },
+        "reference": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\inner_panels\\jurkat\\references\\reference.json",
+          "sha256": "f81713db158a7dca4a0a3b3cdc9a83f23a1f74fe13db2269a97be3bc987f16e3"
+        },
+        "anchor": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\inner_panels\\jurkat\\references\\anchor_aggregate.parquet",
+          "sha256": "83277c1d932e28544b18ae78a128d00161c88fd922a9e07acb882b8b3528be36"
+        },
+        "panel": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\inner_panels\\jurkat\\panel.json",
+          "sha256": "de718519c79cabdc1cac722652d67925ee868d8d78bc15a3ff36f86887f1b669"
+        },
+        "genes": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\inner_panels\\jurkat\\genes.txt",
+          "sha256": "26540d68796c3b9601f644242e154733d280e5e1742664b7f0ae41180b80d269"
+        },
+        "mean": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\inner_panels\\jurkat\\effects__outer_hepg2__v13_ref.npz",
+          "sha256": "a7d573bb61a1b4b09579fcc264f609039d9c917b353a569354fb2e3e655eb0f4"
+        },
+        "theta": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\retained\\native_theta\\inner_train_rpe1\\seed_20261002\\dispersion_seen.npz",
+          "sha256": "bfd12108b3a1986e3663d8c7e4922f752b4dfdd788219768faa1034976a7e36c"
+        }
+      },
+      "replicate_scale_entries": {
+        "pds_cosine": {
+          "base": 0.5357142857142857,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.8964285714285716,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "expr_mse_unbiased_capped_norm": {
+          "base": 0.7795895661375635,
+          "scoring": {
+            "scored": true,
+            "direction": "lower",
+            "anchor": -0.004236812294037788,
+            "penalty": "boxcox",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": 0.0,
+            "clamp_high": 1.0,
+            "allow_negative_baseline": false,
+            "metric_min": null
+          }
+        },
+        "de_wilcoxon_direction_fidelity_yield_raw": {
+          "base": 0.0212032388486654,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.5775904278396982,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_direction_reach_raw": {
+          "base": 0.3689830962372177,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.9366148811435924,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_sig_jaccard": {
+          "base": 0.000305205929623,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.2749320049504562,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_lfc_nmae": {
+          "base": 0.8307121804221849,
+          "scoring": {
+            "scored": true,
+            "direction": "lower",
+            "anchor": 0.5326400683077396,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": -6.0,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": null
+          }
+        }
+      },
+      "baseline_replicate_overall": 0.3921853666842868
+    },
+    {
+      "key": "outer_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928",
+      "role": "outer_hepg2",
+      "context": "hepg2",
+      "model_role": "outer_hepg2",
+      "model_seed": 20261002,
+      "count_seed": 20260928,
+      "teacher_train_seed": 20260928,
+      "teacher_tag": "v13_ref",
+      "stage": "outer",
+      "targets": [
+        "THAP1",
+        "MCMBP",
+        "WDR18",
+        "INTS13",
+        "TUBG1",
+        "DDX19B",
+        "SHQ1",
+        "RTEL1",
+        "SSU72",
+        "INTS14",
+        "NUP85",
+        "MLLT6",
+        "ESF1",
+        "POLR2B",
+        "HSCB"
+      ],
+      "generated_target_cells": {
+        "THAP1": 187,
+        "RBM14-RBM4": 267,
+        "MCMBP": 141,
+        "WDR18": 170,
+        "INTS13": 157,
+        "TUBG1": 129,
+        "DDX19B": 145,
+        "SHQ1": 171,
+        "RTEL1": 263,
+        "SSU72": 212,
+        "INTS14": 132,
+        "NUP85": 136,
+        "MLLT6": 129,
+        "ESF1": 165,
+        "POLR2B": 133,
+        "HSCB": 182
+      },
+      "native_genes": 9622,
+      "reference_real_sha256": "9baffefb981867d6897ffcc4170717453516b3762cd8e020e6e45c5de1db521e",
+      "source_leaves": {
+        "aggregate": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928\\aggregate.csv",
+          "sha256": "37b9fc65dc6b7f21dc2f6910cd875646d8c6dd5ae86c78200fa61e742e9675be"
+        },
+        "summary": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928\\summary.json",
+          "sha256": "e7bab6f1e1fd3496287d442aa13fbebd435f4cd30f2349f051e6ff3da89aa13b"
+        },
+        "components": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928\\overall_components.csv",
+          "sha256": "9429c945d25b1ae68274734ef74837d3f41dc86a364a8e5d3077a92739b98bf2"
+        },
+        "reference": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\hepg2\\train_seed_20260928\\seed_20260928\\references\\reference.json",
+          "sha256": "fa5d36c5f03f0f0dfccaf33b9b4c80453337e2fbe2e1ebd99fb2b9e26ad6cf30"
+        },
+        "anchor": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\hepg2\\train_seed_20260928\\seed_20260928\\references\\anchor_aggregate.parquet",
+          "sha256": "5859b86279e99ef859425d1eb7115179878062c82b7e598c298b25592fb93182"
+        },
+        "panel": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\hepg2\\train_seed_20260928\\seed_20260928\\panel.json",
+          "sha256": "f8cf32359dfac481527fb09290e8e8bbcee72506fe502eec5a87aa7367917ceb"
+        },
+        "genes": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\hepg2\\train_seed_20260928\\seed_20260928\\genes.txt",
+          "sha256": "527f931eb5f89621bd87efe08cc802777b7aa1d1f7442e6264722345975e2a05"
+        },
+        "mean": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\hepg2\\train_seed_20260928\\seed_20260928\\effects__v13_ref.npz",
+          "sha256": "4319b4c80b5e6c807fece5d94d83f73ec6ab3662ce9af6fd115c1f2746edfc45"
+        },
+        "theta": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\retained\\native_theta\\outer_hepg2\\seed_20261002\\dispersion_seen.npz",
+          "sha256": "b5f449a717a7a04d4b2dbe5c1254abe2c1a3f6bc005d17f8e5d12ee23d2d294d"
+        }
+      },
+      "replicate_scale_entries": {
+        "pds_cosine": {
+          "base": 0.5666666666666667,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.8752380952380954,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "expr_mse_unbiased_capped_norm": {
+          "base": 0.7308791260700795,
+          "scoring": {
+            "scored": true,
+            "direction": "lower",
+            "anchor": 0.0212831772384106,
+            "penalty": "boxcox",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": 0.0,
+            "clamp_high": 1.0,
+            "allow_negative_baseline": false,
+            "metric_min": null
+          }
+        },
+        "de_wilcoxon_direction_fidelity_yield_raw": {
+          "base": 0.1511944079046293,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.7678999124379248,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_direction_reach_raw": {
+          "base": 0.2827077554453781,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.9666667544645808,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_sig_jaccard": {
+          "base": 0.0739483683617167,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.34733931185448585,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_lfc_nmae": {
+          "base": 0.8094398373702447,
+          "scoring": {
+            "scored": true,
+            "direction": "lower",
+            "anchor": 0.5400552593234199,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": -6.0,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": null
+          }
+        }
+      },
+      "baseline_replicate_overall": 0.1992516487489422
+    },
+    {
+      "key": "outer_hepg2__N1__modelseed_20261002__countseed_20260929__teachertrain_20260928",
+      "role": "outer_hepg2",
+      "context": "hepg2",
+      "model_role": "outer_hepg2",
+      "model_seed": 20261002,
+      "count_seed": 20260929,
+      "teacher_train_seed": 20260928,
+      "teacher_tag": "v13_ref",
+      "stage": "outer",
+      "targets": [
+        "THAP1",
+        "MCMBP",
+        "WDR18",
+        "INTS13",
+        "TUBG1",
+        "DDX19B",
+        "SHQ1",
+        "RTEL1",
+        "SSU72",
+        "INTS14",
+        "NUP85",
+        "MLLT6",
+        "ESF1",
+        "POLR2B",
+        "HSCB"
+      ],
+      "generated_target_cells": {
+        "THAP1": 187,
+        "RBM14-RBM4": 267,
+        "MCMBP": 141,
+        "WDR18": 170,
+        "INTS13": 157,
+        "TUBG1": 129,
+        "DDX19B": 145,
+        "SHQ1": 171,
+        "RTEL1": 263,
+        "SSU72": 212,
+        "INTS14": 132,
+        "NUP85": 136,
+        "MLLT6": 129,
+        "ESF1": 165,
+        "POLR2B": 133,
+        "HSCB": 182
+      },
+      "native_genes": 9622,
+      "reference_real_sha256": "9baffefb981867d6897ffcc4170717453516b3762cd8e020e6e45c5de1db521e",
+      "source_leaves": {
+        "aggregate": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_hepg2__N1__modelseed_20261002__countseed_20260929__teachertrain_20260928\\aggregate.csv",
+          "sha256": "b5ca9253b7ee127410fcbef43c7c0dca9cafbf9a043f696f4c8048f194c29794"
+        },
+        "summary": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_hepg2__N1__modelseed_20261002__countseed_20260929__teachertrain_20260928\\summary.json",
+          "sha256": "ef13d163419dde21430c847777bc7dfe1fe4b1f258b75f79978794c918ec9f9b"
+        },
+        "components": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_hepg2__N1__modelseed_20261002__countseed_20260929__teachertrain_20260928\\overall_components.csv",
+          "sha256": "6909d493c95d4c006bf15468c35a2b5e60a623ef172424d9c2467b1f68da004b"
+        },
+        "reference": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\hepg2\\train_seed_20260928\\seed_20260929\\references\\reference.json",
+          "sha256": "fa5d36c5f03f0f0dfccaf33b9b4c80453337e2fbe2e1ebd99fb2b9e26ad6cf30"
+        },
+        "anchor": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\hepg2\\train_seed_20260928\\seed_20260929\\references\\anchor_aggregate.parquet",
+          "sha256": "5859b86279e99ef859425d1eb7115179878062c82b7e598c298b25592fb93182"
+        },
+        "panel": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\hepg2\\train_seed_20260928\\seed_20260929\\panel.json",
+          "sha256": "b39c2b09e96ff00bc50ca9e3e9000c847c4d8b735088b77bafd0f4aaae67e830"
+        },
+        "genes": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\hepg2\\train_seed_20260928\\seed_20260929\\genes.txt",
+          "sha256": "527f931eb5f89621bd87efe08cc802777b7aa1d1f7442e6264722345975e2a05"
+        },
+        "mean": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\hepg2\\train_seed_20260928\\seed_20260929\\effects__v13_ref.npz",
+          "sha256": "4319b4c80b5e6c807fece5d94d83f73ec6ab3662ce9af6fd115c1f2746edfc45"
+        },
+        "theta": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\retained\\native_theta\\outer_hepg2\\seed_20261002\\dispersion_seen.npz",
+          "sha256": "b5f449a717a7a04d4b2dbe5c1254abe2c1a3f6bc005d17f8e5d12ee23d2d294d"
+        }
+      },
+      "replicate_scale_entries": {
+        "pds_cosine": {
+          "base": 0.5666666666666667,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.8752380952380954,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "expr_mse_unbiased_capped_norm": {
+          "base": 0.7308791260700795,
+          "scoring": {
+            "scored": true,
+            "direction": "lower",
+            "anchor": 0.0212831772384106,
+            "penalty": "boxcox",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": 0.0,
+            "clamp_high": 1.0,
+            "allow_negative_baseline": false,
+            "metric_min": null
+          }
+        },
+        "de_wilcoxon_direction_fidelity_yield_raw": {
+          "base": 0.1511944079046293,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.7678999124379248,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_direction_reach_raw": {
+          "base": 0.2827077554453781,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.9666667544645808,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_sig_jaccard": {
+          "base": 0.0739483683617167,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.34733931185448585,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_lfc_nmae": {
+          "base": 0.8094398373702447,
+          "scoring": {
+            "scored": true,
+            "direction": "lower",
+            "anchor": 0.5400552593234199,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": -6.0,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": null
+          }
+        }
+      },
+      "baseline_replicate_overall": 0.23093078758167376
+    },
+    {
+      "key": "outer_hepg2__N1__modelseed_20261002__countseed_20260930__teachertrain_20260928",
+      "role": "outer_hepg2",
+      "context": "hepg2",
+      "model_role": "outer_hepg2",
+      "model_seed": 20261002,
+      "count_seed": 20260930,
+      "teacher_train_seed": 20260928,
+      "teacher_tag": "v13_ref",
+      "stage": "outer",
+      "targets": [
+        "THAP1",
+        "MCMBP",
+        "WDR18",
+        "INTS13",
+        "TUBG1",
+        "DDX19B",
+        "SHQ1",
+        "RTEL1",
+        "SSU72",
+        "INTS14",
+        "NUP85",
+        "MLLT6",
+        "ESF1",
+        "POLR2B",
+        "HSCB"
+      ],
+      "generated_target_cells": {
+        "THAP1": 187,
+        "RBM14-RBM4": 267,
+        "MCMBP": 141,
+        "WDR18": 170,
+        "INTS13": 157,
+        "TUBG1": 129,
+        "DDX19B": 145,
+        "SHQ1": 171,
+        "RTEL1": 263,
+        "SSU72": 212,
+        "INTS14": 132,
+        "NUP85": 136,
+        "MLLT6": 129,
+        "ESF1": 165,
+        "POLR2B": 133,
+        "HSCB": 182
+      },
+      "native_genes": 9622,
+      "reference_real_sha256": "9baffefb981867d6897ffcc4170717453516b3762cd8e020e6e45c5de1db521e",
+      "source_leaves": {
+        "aggregate": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_hepg2__N1__modelseed_20261002__countseed_20260930__teachertrain_20260928\\aggregate.csv",
+          "sha256": "460b9adeb74e93c247c407f9a3d143b3f17abbbf3db7ffb08f6d0855728a5888"
+        },
+        "summary": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_hepg2__N1__modelseed_20261002__countseed_20260930__teachertrain_20260928\\summary.json",
+          "sha256": "1e4f4d9c1a49dab6054f740992acb6cfbce4a7645f0f2e1f921c434d26d44478"
+        },
+        "components": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_hepg2__N1__modelseed_20261002__countseed_20260930__teachertrain_20260928\\overall_components.csv",
+          "sha256": "65b47172121e7719a8218c03c13b3a6e728d790a57e511477b95481e1f4dc273"
+        },
+        "reference": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\hepg2\\train_seed_20260928\\seed_20260930\\references\\reference.json",
+          "sha256": "fa5d36c5f03f0f0dfccaf33b9b4c80453337e2fbe2e1ebd99fb2b9e26ad6cf30"
+        },
+        "anchor": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\hepg2\\train_seed_20260928\\seed_20260930\\references\\anchor_aggregate.parquet",
+          "sha256": "5859b86279e99ef859425d1eb7115179878062c82b7e598c298b25592fb93182"
+        },
+        "panel": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\hepg2\\train_seed_20260928\\seed_20260930\\panel.json",
+          "sha256": "9386593c0415fe181740cd41df6878b52b1a342904dcc56eb5308dc660d2c4b3"
+        },
+        "genes": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\hepg2\\train_seed_20260928\\seed_20260930\\genes.txt",
+          "sha256": "527f931eb5f89621bd87efe08cc802777b7aa1d1f7442e6264722345975e2a05"
+        },
+        "mean": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\hepg2\\train_seed_20260928\\seed_20260930\\effects__v13_ref.npz",
+          "sha256": "4319b4c80b5e6c807fece5d94d83f73ec6ab3662ce9af6fd115c1f2746edfc45"
+        },
+        "theta": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\retained\\native_theta\\outer_hepg2\\seed_20261002\\dispersion_seen.npz",
+          "sha256": "b5f449a717a7a04d4b2dbe5c1254abe2c1a3f6bc005d17f8e5d12ee23d2d294d"
+        }
+      },
+      "replicate_scale_entries": {
+        "pds_cosine": {
+          "base": 0.5666666666666667,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.8752380952380954,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "expr_mse_unbiased_capped_norm": {
+          "base": 0.7308791260700795,
+          "scoring": {
+            "scored": true,
+            "direction": "lower",
+            "anchor": 0.0212831772384106,
+            "penalty": "boxcox",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": 0.0,
+            "clamp_high": 1.0,
+            "allow_negative_baseline": false,
+            "metric_min": null
+          }
+        },
+        "de_wilcoxon_direction_fidelity_yield_raw": {
+          "base": 0.1511944079046293,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.7678999124379248,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_direction_reach_raw": {
+          "base": 0.2827077554453781,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.9666667544645808,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_sig_jaccard": {
+          "base": 0.0739483683617167,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.34733931185448585,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_lfc_nmae": {
+          "base": 0.8094398373702447,
+          "scoring": {
+            "scored": true,
+            "direction": "lower",
+            "anchor": 0.5400552593234199,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": -6.0,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": null
+          }
+        }
+      },
+      "baseline_replicate_overall": 0.2344180675824957
+    },
+    {
+      "key": "outer_hepg2__N1__modelseed_20261009__countseed_20260928__teachertrain_20261005",
+      "role": "outer_hepg2",
+      "context": "hepg2",
+      "model_role": "outer_hepg2",
+      "model_seed": 20261009,
+      "count_seed": 20260928,
+      "teacher_train_seed": 20261005,
+      "teacher_tag": "v13_ref",
+      "stage": "outer",
+      "targets": [
+        "THAP1",
+        "MCMBP",
+        "WDR18",
+        "INTS13",
+        "TUBG1",
+        "DDX19B",
+        "SHQ1",
+        "RTEL1",
+        "SSU72",
+        "INTS14",
+        "NUP85",
+        "MLLT6",
+        "ESF1",
+        "POLR2B",
+        "HSCB"
+      ],
+      "generated_target_cells": {
+        "THAP1": 187,
+        "RBM14-RBM4": 267,
+        "MCMBP": 141,
+        "WDR18": 170,
+        "INTS13": 157,
+        "TUBG1": 129,
+        "DDX19B": 145,
+        "SHQ1": 171,
+        "RTEL1": 263,
+        "SSU72": 212,
+        "INTS14": 132,
+        "NUP85": 136,
+        "MLLT6": 129,
+        "ESF1": 165,
+        "POLR2B": 133,
+        "HSCB": 182
+      },
+      "native_genes": 9622,
+      "reference_real_sha256": "9baffefb981867d6897ffcc4170717453516b3762cd8e020e6e45c5de1db521e",
+      "source_leaves": {
+        "aggregate": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_hepg2__N1__modelseed_20261009__countseed_20260928__teachertrain_20261005\\aggregate.csv",
+          "sha256": "bd86119f8400c4e2fabec6a64e6dfae7c7395689f5ae4da5e19a0ffa4f8084f1"
+        },
+        "summary": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_hepg2__N1__modelseed_20261009__countseed_20260928__teachertrain_20261005\\summary.json",
+          "sha256": "aa8676d2ce69b813e5b390b696cdf8e5c6ba88bb0d942acdc4cfb05c399afcf8"
+        },
+        "components": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_hepg2__N1__modelseed_20261009__countseed_20260928__teachertrain_20261005\\overall_components.csv",
+          "sha256": "79a83d8f7410caeead6daa28753647c75ed8398d48b329b6752a3e8c37787f8f"
+        },
+        "reference": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\hepg2\\train_seed_20261005\\seed_20260928\\references\\reference.json",
+          "sha256": "fa5d36c5f03f0f0dfccaf33b9b4c80453337e2fbe2e1ebd99fb2b9e26ad6cf30"
+        },
+        "anchor": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\hepg2\\train_seed_20261005\\seed_20260928\\references\\anchor_aggregate.parquet",
+          "sha256": "5859b86279e99ef859425d1eb7115179878062c82b7e598c298b25592fb93182"
+        },
+        "panel": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\hepg2\\train_seed_20261005\\seed_20260928\\panel.json",
+          "sha256": "f8cf32359dfac481527fb09290e8e8bbcee72506fe502eec5a87aa7367917ceb"
+        },
+        "genes": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\hepg2\\train_seed_20261005\\seed_20260928\\genes.txt",
+          "sha256": "527f931eb5f89621bd87efe08cc802777b7aa1d1f7442e6264722345975e2a05"
+        },
+        "mean": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\hepg2\\train_seed_20261005\\seed_20260928\\effects__v13_ref.npz",
+          "sha256": "a038941ce1dd85f76628695095591ff38907d5ffb7db2abe177f22743d2fa27a"
+        },
+        "theta": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\retained\\native_theta\\outer_hepg2\\seed_20261009\\dispersion_seen.npz",
+          "sha256": "33aba037512028e8dfdd6d341e9eb5b59f7504d32a40ce19afdd093f418ce054"
+        }
+      },
+      "replicate_scale_entries": {
+        "pds_cosine": {
+          "base": 0.5666666666666667,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.8752380952380954,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "expr_mse_unbiased_capped_norm": {
+          "base": 0.7308791260700795,
+          "scoring": {
+            "scored": true,
+            "direction": "lower",
+            "anchor": 0.0212831772384106,
+            "penalty": "boxcox",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": 0.0,
+            "clamp_high": 1.0,
+            "allow_negative_baseline": false,
+            "metric_min": null
+          }
+        },
+        "de_wilcoxon_direction_fidelity_yield_raw": {
+          "base": 0.1511944079046293,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.7678999124379248,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_direction_reach_raw": {
+          "base": 0.2827077554453781,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.9666667544645808,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_sig_jaccard": {
+          "base": 0.0739483683617167,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.34733931185448585,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_lfc_nmae": {
+          "base": 0.8094398373702447,
+          "scoring": {
+            "scored": true,
+            "direction": "lower",
+            "anchor": 0.5400552593234199,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": -6.0,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": null
+          }
+        }
+      },
+      "baseline_replicate_overall": 0.19994721015273062
+    },
+    {
+      "key": "outer_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928",
+      "role": "outer_jurkat",
+      "context": "jurkat",
+      "model_role": "outer_jurkat",
+      "model_seed": 20261002,
+      "count_seed": 20260928,
+      "teacher_train_seed": 20260928,
+      "teacher_tag": "v13_ref",
+      "stage": "outer",
+      "targets": [
+        "CNN2",
+        "IPO13",
+        "MRPL27",
+        "CIAO1",
+        "NAPG",
+        "VPS41",
+        "PHAX",
+        "STAT5B",
+        "KANSL3",
+        "ELP5",
+        "NUB1",
+        "NUDC",
+        "TRMT112",
+        "ATP11B",
+        "THAP1",
+        "CNOT3"
+      ],
+      "generated_target_cells": {
+        "CNN2": 174,
+        "IPO13": 229,
+        "MRPL27": 169,
+        "CIAO1": 166,
+        "NAPG": 152,
+        "VPS41": 167,
+        "PHAX": 192,
+        "STAT5B": 196,
+        "KANSL3": 129,
+        "ELP5": 154,
+        "NUB1": 131,
+        "NUDC": 206,
+        "TRMT112": 233,
+        "ATP11B": 192,
+        "THAP1": 400,
+        "CNOT3": 163
+      },
+      "native_genes": 8880,
+      "reference_real_sha256": "033be89b03b02648b1836f24c0430da598a8f1586c394898c6ba82031dbfed9a",
+      "source_leaves": {
+        "aggregate": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928\\aggregate.csv",
+          "sha256": "90aa0d3888ed3a5856a8b4dd1116f1793eb70203e6d08053cb7fa29bb78a1a71"
+        },
+        "summary": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928\\summary.json",
+          "sha256": "aac02709b0ff9eb497e2595324615fdbdd5861520c9f7ebf2110c351e92c9f4d"
+        },
+        "components": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928\\overall_components.csv",
+          "sha256": "20eded4a2f15783140cab3da01b02de168f9935f37e1f3507fb1fdaf61ab8848"
+        },
+        "reference": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\jurkat\\train_seed_20260928\\seed_20260928\\references\\reference.json",
+          "sha256": "8e553207166f5d8757e29c1eb615ec03ee5410db886cd400b884fca108dab0a0"
+        },
+        "anchor": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\jurkat\\train_seed_20260928\\seed_20260928\\references\\anchor_aggregate.parquet",
+          "sha256": "088cdb5122e02e8e904ca828747c0f0f98266a7ba4356f241b06a7f5388327b5"
+        },
+        "panel": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\jurkat\\train_seed_20260928\\seed_20260928\\panel.json",
+          "sha256": "f6aa7195fe828661efbd41e9e7ee2af7c439848b1b5b1d4f50c9bbc069b923dd"
+        },
+        "genes": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\jurkat\\train_seed_20260928\\seed_20260928\\genes.txt",
+          "sha256": "26540d68796c3b9601f644242e154733d280e5e1742664b7f0ae41180b80d269"
+        },
+        "mean": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\jurkat\\train_seed_20260928\\seed_20260928\\effects__v13_ref.npz",
+          "sha256": "2ed554f3acca8f84c7f8c8931dd8cabcc6bcbce12c3903f0ecf56e2bc64a38c0"
+        },
+        "theta": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\retained\\native_theta\\outer_jurkat\\seed_20261002\\dispersion_seen.npz",
+          "sha256": "01ccfdf649c5e0f915fe7b96da9935e59925389c8fcdcdc679eec433b95570f2"
+        }
+      },
+      "replicate_scale_entries": {
+        "pds_cosine": {
+          "base": 0.4583333333333333,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.9349999999999999,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "expr_mse_unbiased_capped_norm": {
+          "base": 0.9227234188022946,
+          "scoring": {
+            "scored": true,
+            "direction": "lower",
+            "anchor": -0.011961682298650977,
+            "penalty": "boxcox",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": 0.0,
+            "clamp_high": 1.0,
+            "allow_negative_baseline": false,
+            "metric_min": null
+          }
+        },
+        "de_wilcoxon_direction_fidelity_yield_raw": {
+          "base": 0.1137516631402929,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.7966837107782693,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_direction_reach_raw": {
+          "base": 0.1558416916225267,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.971018909440609,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_sig_jaccard": {
+          "base": 0.0025483544735838,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.3116405922228275,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_lfc_nmae": {
+          "base": 0.8991258468020468,
+          "scoring": {
+            "scored": true,
+            "direction": "lower",
+            "anchor": 0.6097696962711556,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": -6.0,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": null
+          }
+        }
+      },
+      "baseline_replicate_overall": 0.37927721701448397
+    },
+    {
+      "key": "outer_jurkat__N1__modelseed_20261002__countseed_20260929__teachertrain_20260928",
+      "role": "outer_jurkat",
+      "context": "jurkat",
+      "model_role": "outer_jurkat",
+      "model_seed": 20261002,
+      "count_seed": 20260929,
+      "teacher_train_seed": 20260928,
+      "teacher_tag": "v13_ref",
+      "stage": "outer",
+      "targets": [
+        "CNN2",
+        "IPO13",
+        "MRPL27",
+        "CIAO1",
+        "NAPG",
+        "VPS41",
+        "PHAX",
+        "STAT5B",
+        "KANSL3",
+        "ELP5",
+        "NUB1",
+        "NUDC",
+        "TRMT112",
+        "ATP11B",
+        "THAP1",
+        "CNOT3"
+      ],
+      "generated_target_cells": {
+        "CNN2": 174,
+        "IPO13": 229,
+        "MRPL27": 169,
+        "CIAO1": 166,
+        "NAPG": 152,
+        "VPS41": 167,
+        "PHAX": 192,
+        "STAT5B": 196,
+        "KANSL3": 129,
+        "ELP5": 154,
+        "NUB1": 131,
+        "NUDC": 206,
+        "TRMT112": 233,
+        "ATP11B": 192,
+        "THAP1": 400,
+        "CNOT3": 163
+      },
+      "native_genes": 8880,
+      "reference_real_sha256": "033be89b03b02648b1836f24c0430da598a8f1586c394898c6ba82031dbfed9a",
+      "source_leaves": {
+        "aggregate": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_jurkat__N1__modelseed_20261002__countseed_20260929__teachertrain_20260928\\aggregate.csv",
+          "sha256": "692556c3f2774dc548f73341b88faddab256a18742446bb102dc3c4e244eb998"
+        },
+        "summary": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_jurkat__N1__modelseed_20261002__countseed_20260929__teachertrain_20260928\\summary.json",
+          "sha256": "344d38f465b20f0f5bd3d956fd54243346ef472eb098e89f7da1bcdb93bdfd8f"
+        },
+        "components": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_jurkat__N1__modelseed_20261002__countseed_20260929__teachertrain_20260928\\overall_components.csv",
+          "sha256": "ace9fb55b0ff3689d35167f4e42029f91dd49e371f72403d2ed423d71c805b1c"
+        },
+        "reference": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\jurkat\\train_seed_20260928\\seed_20260929\\references\\reference.json",
+          "sha256": "8e553207166f5d8757e29c1eb615ec03ee5410db886cd400b884fca108dab0a0"
+        },
+        "anchor": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\jurkat\\train_seed_20260928\\seed_20260929\\references\\anchor_aggregate.parquet",
+          "sha256": "088cdb5122e02e8e904ca828747c0f0f98266a7ba4356f241b06a7f5388327b5"
+        },
+        "panel": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\jurkat\\train_seed_20260928\\seed_20260929\\panel.json",
+          "sha256": "8d7dcd71953ba0470b23658a22a51cb809ba614be0af0643609aca241dd4e952"
+        },
+        "genes": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\jurkat\\train_seed_20260928\\seed_20260929\\genes.txt",
+          "sha256": "26540d68796c3b9601f644242e154733d280e5e1742664b7f0ae41180b80d269"
+        },
+        "mean": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\jurkat\\train_seed_20260928\\seed_20260929\\effects__v13_ref.npz",
+          "sha256": "2ed554f3acca8f84c7f8c8931dd8cabcc6bcbce12c3903f0ecf56e2bc64a38c0"
+        },
+        "theta": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\retained\\native_theta\\outer_jurkat\\seed_20261002\\dispersion_seen.npz",
+          "sha256": "01ccfdf649c5e0f915fe7b96da9935e59925389c8fcdcdc679eec433b95570f2"
+        }
+      },
+      "replicate_scale_entries": {
+        "pds_cosine": {
+          "base": 0.4583333333333333,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.9349999999999999,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "expr_mse_unbiased_capped_norm": {
+          "base": 0.9227234188022946,
+          "scoring": {
+            "scored": true,
+            "direction": "lower",
+            "anchor": -0.011961682298650977,
+            "penalty": "boxcox",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": 0.0,
+            "clamp_high": 1.0,
+            "allow_negative_baseline": false,
+            "metric_min": null
+          }
+        },
+        "de_wilcoxon_direction_fidelity_yield_raw": {
+          "base": 0.1137516631402929,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.7966837107782693,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_direction_reach_raw": {
+          "base": 0.1558416916225267,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.971018909440609,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_sig_jaccard": {
+          "base": 0.0025483544735838,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.3116405922228275,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_lfc_nmae": {
+          "base": 0.8991258468020468,
+          "scoring": {
+            "scored": true,
+            "direction": "lower",
+            "anchor": 0.6097696962711556,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": -6.0,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": null
+          }
+        }
+      },
+      "baseline_replicate_overall": 0.35736480089541317
+    },
+    {
+      "key": "outer_jurkat__N1__modelseed_20261002__countseed_20260930__teachertrain_20260928",
+      "role": "outer_jurkat",
+      "context": "jurkat",
+      "model_role": "outer_jurkat",
+      "model_seed": 20261002,
+      "count_seed": 20260930,
+      "teacher_train_seed": 20260928,
+      "teacher_tag": "v13_ref",
+      "stage": "outer",
+      "targets": [
+        "CNN2",
+        "IPO13",
+        "MRPL27",
+        "CIAO1",
+        "NAPG",
+        "VPS41",
+        "PHAX",
+        "STAT5B",
+        "KANSL3",
+        "ELP5",
+        "NUB1",
+        "NUDC",
+        "TRMT112",
+        "ATP11B",
+        "THAP1",
+        "CNOT3"
+      ],
+      "generated_target_cells": {
+        "CNN2": 174,
+        "IPO13": 229,
+        "MRPL27": 169,
+        "CIAO1": 166,
+        "NAPG": 152,
+        "VPS41": 167,
+        "PHAX": 192,
+        "STAT5B": 196,
+        "KANSL3": 129,
+        "ELP5": 154,
+        "NUB1": 131,
+        "NUDC": 206,
+        "TRMT112": 233,
+        "ATP11B": 192,
+        "THAP1": 400,
+        "CNOT3": 163
+      },
+      "native_genes": 8880,
+      "reference_real_sha256": "033be89b03b02648b1836f24c0430da598a8f1586c394898c6ba82031dbfed9a",
+      "source_leaves": {
+        "aggregate": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_jurkat__N1__modelseed_20261002__countseed_20260930__teachertrain_20260928\\aggregate.csv",
+          "sha256": "96b24b6f8735556c11a6d991297fb80342be5851a7b3240225fb0e506824974a"
+        },
+        "summary": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_jurkat__N1__modelseed_20261002__countseed_20260930__teachertrain_20260928\\summary.json",
+          "sha256": "2f98c571fb61649a3e2df35db2d621fe1fe0b5a8c62a3cf0e3d228048453478c"
+        },
+        "components": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_jurkat__N1__modelseed_20261002__countseed_20260930__teachertrain_20260928\\overall_components.csv",
+          "sha256": "ea796c286196910c5051fa1aa8a310d436e6f67bf4e24754073948f168321db2"
+        },
+        "reference": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\jurkat\\train_seed_20260928\\seed_20260930\\references\\reference.json",
+          "sha256": "8e553207166f5d8757e29c1eb615ec03ee5410db886cd400b884fca108dab0a0"
+        },
+        "anchor": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\jurkat\\train_seed_20260928\\seed_20260930\\references\\anchor_aggregate.parquet",
+          "sha256": "088cdb5122e02e8e904ca828747c0f0f98266a7ba4356f241b06a7f5388327b5"
+        },
+        "panel": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\jurkat\\train_seed_20260928\\seed_20260930\\panel.json",
+          "sha256": "8c06d326434b60ccd21afd9a0e032104a03eb71bb4fdd3bd1cddec13be868fd1"
+        },
+        "genes": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\jurkat\\train_seed_20260928\\seed_20260930\\genes.txt",
+          "sha256": "26540d68796c3b9601f644242e154733d280e5e1742664b7f0ae41180b80d269"
+        },
+        "mean": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\jurkat\\train_seed_20260928\\seed_20260930\\effects__v13_ref.npz",
+          "sha256": "2ed554f3acca8f84c7f8c8931dd8cabcc6bcbce12c3903f0ecf56e2bc64a38c0"
+        },
+        "theta": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\retained\\native_theta\\outer_jurkat\\seed_20261002\\dispersion_seen.npz",
+          "sha256": "01ccfdf649c5e0f915fe7b96da9935e59925389c8fcdcdc679eec433b95570f2"
+        }
+      },
+      "replicate_scale_entries": {
+        "pds_cosine": {
+          "base": 0.4583333333333333,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.9349999999999999,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "expr_mse_unbiased_capped_norm": {
+          "base": 0.9227234188022946,
+          "scoring": {
+            "scored": true,
+            "direction": "lower",
+            "anchor": -0.011961682298650977,
+            "penalty": "boxcox",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": 0.0,
+            "clamp_high": 1.0,
+            "allow_negative_baseline": false,
+            "metric_min": null
+          }
+        },
+        "de_wilcoxon_direction_fidelity_yield_raw": {
+          "base": 0.1137516631402929,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.7966837107782693,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_direction_reach_raw": {
+          "base": 0.1558416916225267,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.971018909440609,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_sig_jaccard": {
+          "base": 0.0025483544735838,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.3116405922228275,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_lfc_nmae": {
+          "base": 0.8991258468020468,
+          "scoring": {
+            "scored": true,
+            "direction": "lower",
+            "anchor": 0.6097696962711556,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": -6.0,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": null
+          }
+        }
+      },
+      "baseline_replicate_overall": 0.33434487895026493
+    },
+    {
+      "key": "outer_jurkat__N1__modelseed_20261009__countseed_20260928__teachertrain_20261005",
+      "role": "outer_jurkat",
+      "context": "jurkat",
+      "model_role": "outer_jurkat",
+      "model_seed": 20261009,
+      "count_seed": 20260928,
+      "teacher_train_seed": 20261005,
+      "teacher_tag": "v13_ref",
+      "stage": "outer",
+      "targets": [
+        "CNN2",
+        "IPO13",
+        "MRPL27",
+        "CIAO1",
+        "NAPG",
+        "VPS41",
+        "PHAX",
+        "STAT5B",
+        "KANSL3",
+        "ELP5",
+        "NUB1",
+        "NUDC",
+        "TRMT112",
+        "ATP11B",
+        "THAP1",
+        "CNOT3"
+      ],
+      "generated_target_cells": {
+        "CNN2": 174,
+        "IPO13": 229,
+        "MRPL27": 169,
+        "CIAO1": 166,
+        "NAPG": 152,
+        "VPS41": 167,
+        "PHAX": 192,
+        "STAT5B": 196,
+        "KANSL3": 129,
+        "ELP5": 154,
+        "NUB1": 131,
+        "NUDC": 206,
+        "TRMT112": 233,
+        "ATP11B": 192,
+        "THAP1": 400,
+        "CNOT3": 163
+      },
+      "native_genes": 8880,
+      "reference_real_sha256": "033be89b03b02648b1836f24c0430da598a8f1586c394898c6ba82031dbfed9a",
+      "source_leaves": {
+        "aggregate": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_jurkat__N1__modelseed_20261009__countseed_20260928__teachertrain_20261005\\aggregate.csv",
+          "sha256": "31d47176d9ffd67a6dbd5b1ac5beafe6bae066a0c96da9f05f52c219ccaaf007"
+        },
+        "summary": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_jurkat__N1__modelseed_20261009__countseed_20260928__teachertrain_20261005\\summary.json",
+          "sha256": "8be2ecd8452a28abef109c122414daea258af3fb9f812878673e77cee42008ec"
+        },
+        "components": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_jurkat__N1__modelseed_20261009__countseed_20260928__teachertrain_20261005\\overall_components.csv",
+          "sha256": "6ef241b6608413cd1d5568a2ac7e4bd389decd7b24d554f99105e051f3d62677"
+        },
+        "reference": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\jurkat\\train_seed_20261005\\seed_20260928\\references\\reference.json",
+          "sha256": "8e553207166f5d8757e29c1eb615ec03ee5410db886cd400b884fca108dab0a0"
+        },
+        "anchor": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\jurkat\\train_seed_20261005\\seed_20260928\\references\\anchor_aggregate.parquet",
+          "sha256": "088cdb5122e02e8e904ca828747c0f0f98266a7ba4356f241b06a7f5388327b5"
+        },
+        "panel": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\jurkat\\train_seed_20261005\\seed_20260928\\panel.json",
+          "sha256": "f6aa7195fe828661efbd41e9e7ee2af7c439848b1b5b1d4f50c9bbc069b923dd"
+        },
+        "genes": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\jurkat\\train_seed_20261005\\seed_20260928\\genes.txt",
+          "sha256": "26540d68796c3b9601f644242e154733d280e5e1742664b7f0ae41180b80d269"
+        },
+        "mean": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\jurkat\\train_seed_20261005\\seed_20260928\\effects__v13_ref.npz",
+          "sha256": "a3ec6ad7ead58fdf9057d97475143d33f9bb44bdbc6aa6b310b7e0f6a7f3dad3"
+        },
+        "theta": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\retained\\native_theta\\outer_jurkat\\seed_20261009\\dispersion_seen.npz",
+          "sha256": "8e3d087209b7238fc2e97531d6e0219c8e329eb69ec254db7757960f1549d106"
+        }
+      },
+      "replicate_scale_entries": {
+        "pds_cosine": {
+          "base": 0.4583333333333333,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.9349999999999999,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "expr_mse_unbiased_capped_norm": {
+          "base": 0.9227234188022946,
+          "scoring": {
+            "scored": true,
+            "direction": "lower",
+            "anchor": -0.011961682298650977,
+            "penalty": "boxcox",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": 0.0,
+            "clamp_high": 1.0,
+            "allow_negative_baseline": false,
+            "metric_min": null
+          }
+        },
+        "de_wilcoxon_direction_fidelity_yield_raw": {
+          "base": 0.1137516631402929,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.7966837107782693,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_direction_reach_raw": {
+          "base": 0.1558416916225267,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.971018909440609,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_sig_jaccard": {
+          "base": 0.0025483544735838,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.3116405922228275,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_lfc_nmae": {
+          "base": 0.8991258468020468,
+          "scoring": {
+            "scored": true,
+            "direction": "lower",
+            "anchor": 0.6097696962711556,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": -6.0,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": null
+          }
+        }
+      },
+      "baseline_replicate_overall": 0.36655484922368897
+    },
+    {
+      "key": "outer_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928",
+      "role": "outer_rpe1",
+      "context": "rpe1",
+      "model_role": "outer_rpe1",
+      "model_seed": 20261002,
+      "count_seed": 20260928,
+      "teacher_train_seed": 20260928,
+      "teacher_tag": "v13_ref",
+      "stage": "outer",
+      "targets": [
+        "CNN2",
+        "MRPL27",
+        "NAPG",
+        "VPS41",
+        "PHAX",
+        "NUB1",
+        "NEDD1",
+        "MALSU1",
+        "GUK1",
+        "ATP11B",
+        "GTF3C6",
+        "THAP1",
+        "NRBP1",
+        "MAT2A",
+        "DDX17"
+      ],
+      "generated_target_cells": {
+        "CNN2": 236,
+        "MRPL27": 191,
+        "NAPG": 226,
+        "VPS41": 272,
+        "PHAX": 162,
+        "STAT5B": 173,
+        "NUB1": 148,
+        "NEDD1": 151,
+        "MALSU1": 170,
+        "GUK1": 138,
+        "ATP11B": 128,
+        "GTF3C6": 138,
+        "THAP1": 152,
+        "NRBP1": 158,
+        "MAT2A": 160,
+        "DDX17": 179
+      },
+      "native_genes": 8747,
+      "reference_real_sha256": "5c3c04900a9452f72e1b1ec721a2f274f645463a39352fc65905e2266ca25851",
+      "source_leaves": {
+        "aggregate": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928\\aggregate.csv",
+          "sha256": "781cbb99091698b01afca177780257da267b90735eee0a2f7f19866ae495f905"
+        },
+        "summary": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928\\summary.json",
+          "sha256": "c6a1b198e9dc8e83d122789e9b937a81c7c48c2104ac3120c0bfee2c84a28abd"
+        },
+        "components": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928\\overall_components.csv",
+          "sha256": "38e60937940a0fc1b7e3392f328aa90c886e7e459e7db0d2f5a7ff417e0546a7"
+        },
+        "reference": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\rpe1\\train_seed_20260928\\seed_20260928\\references\\reference.json",
+          "sha256": "344c8d5b1c68b88b76b345913c21d2a588e03d93bc53c883eeef04644ef97871"
+        },
+        "anchor": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\rpe1\\train_seed_20260928\\seed_20260928\\references\\anchor_aggregate.parquet",
+          "sha256": "4031dc89474849ff2c57ce746c01f72d361668d24c70ee87f3a419ca14412317"
+        },
+        "panel": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\rpe1\\train_seed_20260928\\seed_20260928\\panel.json",
+          "sha256": "cba8372bde80486b5666ebf64c264b243941f8dcab622fcf7c01afc5bfafa6e5"
+        },
+        "genes": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\rpe1\\train_seed_20260928\\seed_20260928\\genes.txt",
+          "sha256": "89c390f18318c0db86dcffb2c447ff12cc4625d4be940ee1eabde4d085a8120a"
+        },
+        "mean": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\rpe1\\train_seed_20260928\\seed_20260928\\effects__v13_ref.npz",
+          "sha256": "8232b2b03051a86008942e71c19797f0013526b73540e871add7075388efbce2"
+        },
+        "theta": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\retained\\native_theta\\outer_rpe1\\seed_20261002\\dispersion_seen.npz",
+          "sha256": "ba94f21832712510350c39c20d586add16e9564426d9b364ca203a58144a17b9"
+        }
+      },
+      "replicate_scale_entries": {
+        "pds_cosine": {
+          "base": 0.4904761904761904,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.8980952380952381,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "expr_mse_unbiased_capped_norm": {
+          "base": 0.7254895944020392,
+          "scoring": {
+            "scored": true,
+            "direction": "lower",
+            "anchor": 0.012660301397864324,
+            "penalty": "boxcox",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": 0.0,
+            "clamp_high": 1.0,
+            "allow_negative_baseline": false,
+            "metric_min": null
+          }
+        },
+        "de_wilcoxon_direction_fidelity_yield_raw": {
+          "base": 0.3548031404098151,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.7898278045443274,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_direction_reach_raw": {
+          "base": 0.4309408089620742,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.9868223229343117,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_sig_jaccard": {
+          "base": 0.0567868777412121,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.3670760974451095,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_lfc_nmae": {
+          "base": 0.775545539286724,
+          "scoring": {
+            "scored": true,
+            "direction": "lower",
+            "anchor": 0.5137331593052044,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": -6.0,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": null
+          }
+        }
+      },
+      "baseline_replicate_overall": 0.11133785980216732
+    },
+    {
+      "key": "outer_rpe1__N1__modelseed_20261002__countseed_20260929__teachertrain_20260928",
+      "role": "outer_rpe1",
+      "context": "rpe1",
+      "model_role": "outer_rpe1",
+      "model_seed": 20261002,
+      "count_seed": 20260929,
+      "teacher_train_seed": 20260928,
+      "teacher_tag": "v13_ref",
+      "stage": "outer",
+      "targets": [
+        "CNN2",
+        "MRPL27",
+        "NAPG",
+        "VPS41",
+        "PHAX",
+        "NUB1",
+        "NEDD1",
+        "MALSU1",
+        "GUK1",
+        "ATP11B",
+        "GTF3C6",
+        "THAP1",
+        "NRBP1",
+        "MAT2A",
+        "DDX17"
+      ],
+      "generated_target_cells": {
+        "CNN2": 236,
+        "MRPL27": 191,
+        "NAPG": 226,
+        "VPS41": 272,
+        "PHAX": 162,
+        "STAT5B": 173,
+        "NUB1": 148,
+        "NEDD1": 151,
+        "MALSU1": 170,
+        "GUK1": 138,
+        "ATP11B": 128,
+        "GTF3C6": 138,
+        "THAP1": 152,
+        "NRBP1": 158,
+        "MAT2A": 160,
+        "DDX17": 179
+      },
+      "native_genes": 8747,
+      "reference_real_sha256": "5c3c04900a9452f72e1b1ec721a2f274f645463a39352fc65905e2266ca25851",
+      "source_leaves": {
+        "aggregate": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_rpe1__N1__modelseed_20261002__countseed_20260929__teachertrain_20260928\\aggregate.csv",
+          "sha256": "ab1225462b0712d6305dc2010a78499ed88fb8f28647cc304ac691e731925577"
+        },
+        "summary": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_rpe1__N1__modelseed_20261002__countseed_20260929__teachertrain_20260928\\summary.json",
+          "sha256": "8d2ef05d603c833796b38c78dbc2a8388589abedd1e56b5dd7ae986660bbcf97"
+        },
+        "components": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_rpe1__N1__modelseed_20261002__countseed_20260929__teachertrain_20260928\\overall_components.csv",
+          "sha256": "0ac23564a86cb4876803db9a4ffa1d9ef5259adaa157c8c72557a95702cb953c"
+        },
+        "reference": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\rpe1\\train_seed_20260928\\seed_20260929\\references\\reference.json",
+          "sha256": "344c8d5b1c68b88b76b345913c21d2a588e03d93bc53c883eeef04644ef97871"
+        },
+        "anchor": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\rpe1\\train_seed_20260928\\seed_20260929\\references\\anchor_aggregate.parquet",
+          "sha256": "4031dc89474849ff2c57ce746c01f72d361668d24c70ee87f3a419ca14412317"
+        },
+        "panel": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\rpe1\\train_seed_20260928\\seed_20260929\\panel.json",
+          "sha256": "1aeccad4bd91b55b97ee93a9d6143e5d15a6c5bfb54cdc2029b0fa8f9b7aa81c"
+        },
+        "genes": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\rpe1\\train_seed_20260928\\seed_20260929\\genes.txt",
+          "sha256": "89c390f18318c0db86dcffb2c447ff12cc4625d4be940ee1eabde4d085a8120a"
+        },
+        "mean": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\rpe1\\train_seed_20260928\\seed_20260929\\effects__v13_ref.npz",
+          "sha256": "8232b2b03051a86008942e71c19797f0013526b73540e871add7075388efbce2"
+        },
+        "theta": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\retained\\native_theta\\outer_rpe1\\seed_20261002\\dispersion_seen.npz",
+          "sha256": "ba94f21832712510350c39c20d586add16e9564426d9b364ca203a58144a17b9"
+        }
+      },
+      "replicate_scale_entries": {
+        "pds_cosine": {
+          "base": 0.4904761904761904,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.8980952380952381,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "expr_mse_unbiased_capped_norm": {
+          "base": 0.7254895944020392,
+          "scoring": {
+            "scored": true,
+            "direction": "lower",
+            "anchor": 0.012660301397864324,
+            "penalty": "boxcox",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": 0.0,
+            "clamp_high": 1.0,
+            "allow_negative_baseline": false,
+            "metric_min": null
+          }
+        },
+        "de_wilcoxon_direction_fidelity_yield_raw": {
+          "base": 0.3548031404098151,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.7898278045443274,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_direction_reach_raw": {
+          "base": 0.4309408089620742,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.9868223229343117,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_sig_jaccard": {
+          "base": 0.0567868777412121,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.3670760974451095,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_lfc_nmae": {
+          "base": 0.775545539286724,
+          "scoring": {
+            "scored": true,
+            "direction": "lower",
+            "anchor": 0.5137331593052044,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": -6.0,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": null
+          }
+        }
+      },
+      "baseline_replicate_overall": 0.1059217576558446
+    },
+    {
+      "key": "outer_rpe1__N1__modelseed_20261002__countseed_20260930__teachertrain_20260928",
+      "role": "outer_rpe1",
+      "context": "rpe1",
+      "model_role": "outer_rpe1",
+      "model_seed": 20261002,
+      "count_seed": 20260930,
+      "teacher_train_seed": 20260928,
+      "teacher_tag": "v13_ref",
+      "stage": "outer",
+      "targets": [
+        "CNN2",
+        "MRPL27",
+        "NAPG",
+        "VPS41",
+        "PHAX",
+        "NUB1",
+        "NEDD1",
+        "MALSU1",
+        "GUK1",
+        "ATP11B",
+        "GTF3C6",
+        "THAP1",
+        "NRBP1",
+        "MAT2A",
+        "DDX17"
+      ],
+      "generated_target_cells": {
+        "CNN2": 236,
+        "MRPL27": 191,
+        "NAPG": 226,
+        "VPS41": 272,
+        "PHAX": 162,
+        "STAT5B": 173,
+        "NUB1": 148,
+        "NEDD1": 151,
+        "MALSU1": 170,
+        "GUK1": 138,
+        "ATP11B": 128,
+        "GTF3C6": 138,
+        "THAP1": 152,
+        "NRBP1": 158,
+        "MAT2A": 160,
+        "DDX17": 179
+      },
+      "native_genes": 8747,
+      "reference_real_sha256": "5c3c04900a9452f72e1b1ec721a2f274f645463a39352fc65905e2266ca25851",
+      "source_leaves": {
+        "aggregate": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_rpe1__N1__modelseed_20261002__countseed_20260930__teachertrain_20260928\\aggregate.csv",
+          "sha256": "02c7cea454243816e484756fb8cf683c30711da929a04d8428321176714b4192"
+        },
+        "summary": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_rpe1__N1__modelseed_20261002__countseed_20260930__teachertrain_20260928\\summary.json",
+          "sha256": "2c64f35d536e200e17e9786f74f58ee18e0cdda52768f420ec41a08281de0109"
+        },
+        "components": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_rpe1__N1__modelseed_20261002__countseed_20260930__teachertrain_20260928\\overall_components.csv",
+          "sha256": "a4f18246c0bf0cf2bdcb86a8071dcceaac88d866f04d40a1e9c1f3b6dfaf0322"
+        },
+        "reference": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\rpe1\\train_seed_20260928\\seed_20260930\\references\\reference.json",
+          "sha256": "344c8d5b1c68b88b76b345913c21d2a588e03d93bc53c883eeef04644ef97871"
+        },
+        "anchor": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\rpe1\\train_seed_20260928\\seed_20260930\\references\\anchor_aggregate.parquet",
+          "sha256": "4031dc89474849ff2c57ce746c01f72d361668d24c70ee87f3a419ca14412317"
+        },
+        "panel": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\rpe1\\train_seed_20260928\\seed_20260930\\panel.json",
+          "sha256": "cad6bddb3f42d543a366eab2f5a7333a2fa96a7d49bf4dd9c78e543479cf7918"
+        },
+        "genes": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\rpe1\\train_seed_20260928\\seed_20260930\\genes.txt",
+          "sha256": "89c390f18318c0db86dcffb2c447ff12cc4625d4be940ee1eabde4d085a8120a"
+        },
+        "mean": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\rpe1\\train_seed_20260928\\seed_20260930\\effects__v13_ref.npz",
+          "sha256": "8232b2b03051a86008942e71c19797f0013526b73540e871add7075388efbce2"
+        },
+        "theta": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\retained\\native_theta\\outer_rpe1\\seed_20261002\\dispersion_seen.npz",
+          "sha256": "ba94f21832712510350c39c20d586add16e9564426d9b364ca203a58144a17b9"
+        }
+      },
+      "replicate_scale_entries": {
+        "pds_cosine": {
+          "base": 0.4904761904761904,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.8980952380952381,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "expr_mse_unbiased_capped_norm": {
+          "base": 0.7254895944020392,
+          "scoring": {
+            "scored": true,
+            "direction": "lower",
+            "anchor": 0.012660301397864324,
+            "penalty": "boxcox",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": 0.0,
+            "clamp_high": 1.0,
+            "allow_negative_baseline": false,
+            "metric_min": null
+          }
+        },
+        "de_wilcoxon_direction_fidelity_yield_raw": {
+          "base": 0.3548031404098151,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.7898278045443274,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_direction_reach_raw": {
+          "base": 0.4309408089620742,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.9868223229343117,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_sig_jaccard": {
+          "base": 0.0567868777412121,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.3670760974451095,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_lfc_nmae": {
+          "base": 0.775545539286724,
+          "scoring": {
+            "scored": true,
+            "direction": "lower",
+            "anchor": 0.5137331593052044,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": -6.0,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": null
+          }
+        }
+      },
+      "baseline_replicate_overall": 0.10038093774037372
+    },
+    {
+      "key": "outer_rpe1__N1__modelseed_20261009__countseed_20260928__teachertrain_20261005",
+      "role": "outer_rpe1",
+      "context": "rpe1",
+      "model_role": "outer_rpe1",
+      "model_seed": 20261009,
+      "count_seed": 20260928,
+      "teacher_train_seed": 20261005,
+      "teacher_tag": "v13_ref",
+      "stage": "outer",
+      "targets": [
+        "CNN2",
+        "MRPL27",
+        "NAPG",
+        "VPS41",
+        "PHAX",
+        "NUB1",
+        "NEDD1",
+        "MALSU1",
+        "GUK1",
+        "ATP11B",
+        "GTF3C6",
+        "THAP1",
+        "NRBP1",
+        "MAT2A",
+        "DDX17"
+      ],
+      "generated_target_cells": {
+        "CNN2": 236,
+        "MRPL27": 191,
+        "NAPG": 226,
+        "VPS41": 272,
+        "PHAX": 162,
+        "STAT5B": 173,
+        "NUB1": 148,
+        "NEDD1": 151,
+        "MALSU1": 170,
+        "GUK1": 138,
+        "ATP11B": 128,
+        "GTF3C6": 138,
+        "THAP1": 152,
+        "NRBP1": 158,
+        "MAT2A": 160,
+        "DDX17": 179
+      },
+      "native_genes": 8747,
+      "reference_real_sha256": "5c3c04900a9452f72e1b1ec721a2f274f645463a39352fc65905e2266ca25851",
+      "source_leaves": {
+        "aggregate": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_rpe1__N1__modelseed_20261009__countseed_20260928__teachertrain_20261005\\aggregate.csv",
+          "sha256": "7422d06228c796781f04869c3f3fbc757a4609f8fa30811bc5548406f19b94d3"
+        },
+        "summary": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_rpe1__N1__modelseed_20261009__countseed_20260928__teachertrain_20261005\\summary.json",
+          "sha256": "962d13e305568efe9b8ccaf0105e38c3980f96abc96017876791dd8935e9db3f"
+        },
+        "components": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\literal_nb_v28\\scores\\outer_rpe1__N1__modelseed_20261009__countseed_20260928__teachertrain_20261005\\overall_components.csv",
+          "sha256": "643b128412cd6a06af419d03c6d0233ba764cf3597a06e6f16b1d61b30694c11"
+        },
+        "reference": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\rpe1\\train_seed_20261005\\seed_20260928\\references\\reference.json",
+          "sha256": "344c8d5b1c68b88b76b345913c21d2a588e03d93bc53c883eeef04644ef97871"
+        },
+        "anchor": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\rpe1\\train_seed_20261005\\seed_20260928\\references\\anchor_aggregate.parquet",
+          "sha256": "4031dc89474849ff2c57ce746c01f72d361668d24c70ee87f3a419ca14412317"
+        },
+        "panel": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\rpe1\\train_seed_20261005\\seed_20260928\\panel.json",
+          "sha256": "cba8372bde80486b5666ebf64c264b243941f8dcab622fcf7c01afc5bfafa6e5"
+        },
+        "genes": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\rpe1\\train_seed_20261005\\seed_20260928\\genes.txt",
+          "sha256": "89c390f18318c0db86dcffb2c447ff12cc4625d4be940ee1eabde4d085a8120a"
+        },
+        "mean": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\outer_panels\\rpe1\\train_seed_20261005\\seed_20260928\\effects__v13_ref.npz",
+          "sha256": "dac824639e46511a4276b11e385f404d60f3d3822d4df970380a1fc2bb9df0bc"
+        },
+        "theta": {
+          "path": "C:\\00 - Competition\\archive\\legacy_20261003\\retained\\native_theta\\outer_rpe1\\seed_20261009\\dispersion_seen.npz",
+          "sha256": "c90ec080a8821bf586b058f183a08102dc8d32766fc43eb0bab0e394ad993551"
+        }
+      },
+      "replicate_scale_entries": {
+        "pds_cosine": {
+          "base": 0.4904761904761904,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.8980952380952381,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "expr_mse_unbiased_capped_norm": {
+          "base": 0.7254895944020392,
+          "scoring": {
+            "scored": true,
+            "direction": "lower",
+            "anchor": 0.012660301397864324,
+            "penalty": "boxcox",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": 0.0,
+            "clamp_high": 1.0,
+            "allow_negative_baseline": false,
+            "metric_min": null
+          }
+        },
+        "de_wilcoxon_direction_fidelity_yield_raw": {
+          "base": 0.3548031404098151,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.7898278045443274,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_direction_reach_raw": {
+          "base": 0.4309408089620742,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.9868223229343117,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_sig_jaccard": {
+          "base": 0.0567868777412121,
+          "scoring": {
+            "scored": true,
+            "direction": "higher",
+            "anchor": 0.3670760974451095,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": null,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": 0.0
+          }
+        },
+        "de_wilcoxon_lfc_nmae": {
+          "base": 0.775545539286724,
+          "scoring": {
+            "scored": true,
+            "direction": "lower",
+            "anchor": 0.5137331593052044,
+            "penalty": "none",
+            "penalty_exponent": null,
+            "penalty_cap": null,
+            "clamp_low": -6.0,
+            "clamp_high": null,
+            "allow_negative_baseline": false,
+            "metric_min": null
+          }
+        }
+      },
+      "baseline_replicate_overall": 0.0734787830557639
+    }
+  ]
+}

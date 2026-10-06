@@ -1,0 +1,90 @@
+{
+  "schema": "V20_completed_original_six_inner_arm1",
+  "completed": true,
+  "arm": "B0",
+  "bundles": [
+    {
+      "job_key": "outer_rpe1__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928",
+      "display_key": "outer_rpe1__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928__B0",
+      "role": "outer_rpe1__inner_jurkat",
+      "arm": "B0",
+      "checkpoint_path": "C:\\00 - Competition\\staging\\newV20_native_source_selection\\models\\outer_rpe1__inner_jurkat\\B0\\checkpoint_600.pt",
+      "checkpoint_SHA256": "156e64481905fd70ae6825b327eff92a8ad6f842b43a378c34140de540b74a88",
+      "bundle_path": "C:\\00 - Competition\\staging\\newV20_native_source_selection\\bundles\\outer_rpe1__inner_jurkat\\B0\\effects.npz",
+      "bundle_sha256": "b2684c98c00c91c16689f37a5ffbbbe26f3418247f6dfb240af986409aa02004",
+      "complete_path": "C:\\00 - Competition\\staging\\newV20_native_source_selection\\bundles\\outer_rpe1__inner_jurkat\\B0\\complete.json",
+      "complete_SHA256": "0521dde6ac2d012814bc3f38032f3d4915d2d8102e996dd8a8107ac12f2f4e78",
+      "targets": 8
+    },
+    {
+      "job_key": "outer_jurkat__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928",
+      "display_key": "outer_jurkat__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928__B0",
+      "role": "outer_jurkat__inner_rpe1",
+      "arm": "B0",
+      "checkpoint_path": "C:\\00 - Competition\\staging\\newV20_native_source_selection\\models\\outer_jurkat__inner_rpe1\\B0\\checkpoint_600.pt",
+      "checkpoint_SHA256": "156e64481905fd70ae6825b327eff92a8ad6f842b43a378c34140de540b74a88",
+      "bundle_path": "C:\\00 - Competition\\staging\\newV20_native_source_selection\\bundles\\outer_jurkat__inner_rpe1\\B0\\effects.npz",
+      "bundle_sha256": "c7a3c78e2cfb7e2e790a61493ae997c8f35242cf3160780160443dd5c1ffc45b",
+      "complete_path": "C:\\00 - Competition\\staging\\newV20_native_source_selection\\bundles\\outer_jurkat__inner_rpe1\\B0\\complete.json",
+      "complete_SHA256": "3d7b19fbdee62d9381d1b023347ef12af1271d9db573bc33ec30e8749b5249e2",
+      "targets": 8
+    },
+    {
+      "job_key": "outer_rpe1__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928",
+      "display_key": "outer_rpe1__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928__B0",
+      "role": "outer_rpe1__inner_hepg2",
+      "arm": "B0",
+      "checkpoint_path": "C:\\00 - Competition\\staging\\newV20_native_source_selection\\models\\outer_rpe1__inner_hepg2\\B0\\checkpoint_600.pt",
+      "checkpoint_SHA256": "511fa40301b6bffd15d4fc35a8e3b6f010468cd268fd03666f5b67111e43d1c1",
+      "bundle_path": "C:\\00 - Competition\\staging\\newV20_native_source_selection\\bundles\\outer_rpe1__inner_hepg2\\B0\\effects.npz",
+      "bundle_sha256": "70388b1ba943cfc378d8c423f018d84969cf26017c5baa5ea8b90f4fcca29958",
+      "complete_path": "C:\\00 - Competition\\staging\\newV20_native_source_selection\\bundles\\outer_rpe1__inner_hepg2\\B0\\complete.json",
+      "complete_SHA256": "9bc5a9479f838d55d4f112766b741db5ab7ed9dff77650f1ec70cd90191e7c16",
+      "targets": 8
+    },
+    {
+      "job_key": "outer_hepg2__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928",
+      "display_key": "outer_hepg2__inner_rpe1__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928__B0",
+      "role": "outer_hepg2__inner_rpe1",
+      "arm": "B0",
+      "checkpoint_path": "C:\\00 - Competition\\staging\\newV20_native_source_selection\\models\\outer_hepg2__inner_rpe1\\B0\\checkpoint_600.pt",
+      "checkpoint_SHA256": "511fa40301b6bffd15d4fc35a8e3b6f010468cd268fd03666f5b67111e43d1c1",
+      "bundle_path": "C:\\00 - Competition\\staging\\newV20_native_source_selection\\bundles\\outer_hepg2__inner_rpe1\\B0\\effects.npz",
+      "bundle_sha256": "717b77a3a129692de87690008c69f370fe0fb0e626c2179c31eee6066517a800",
+      "complete_path": "C:\\00 - Competition\\staging\\newV20_native_source_selection\\bundles\\outer_hepg2__inner_rpe1\\B0\\complete.json",
+      "complete_SHA256": "760195206787c7454ecd3742371007b9550a2ebe3e55f16bfa4c9e19cff66698",
+      "targets": 8
+    },
+    {
+      "job_key": "outer_jurkat__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928",
+      "display_key": "outer_jurkat__inner_hepg2__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928__B0",
+      "role": "outer_jurkat__inner_hepg2",
+      "arm": "B0",
+      "checkpoint_path": "C:\\00 - Competition\\staging\\newV20_native_source_selection\\models\\outer_jurkat__inner_hepg2\\B0\\checkpoint_600.pt",
+      "checkpoint_SHA256": "0f6da6a60bacd8e32068b42711446683ae03d863bb470580019d973b8adf5634",
+      "bundle_path": "C:\\00 - Competition\\staging\\newV20_native_source_selection\\bundles\\outer_jurkat__inner_hepg2\\B0\\effects.npz",
+      "bundle_sha256": "b06cb4229e069ee1d3261939ec234b6ed3df6ca0064c6838fb32e40b444c6892",
+      "complete_path": "C:\\00 - Competition\\staging\\newV20_native_source_selection\\bundles\\outer_jurkat__inner_hepg2\\B0\\complete.json",
+      "complete_SHA256": "10a8fcf2ac3c5387c40862927499a8561b02a74797cdbd6aa8aeef62e0b1989b",
+      "targets": 8
+    },
+    {
+      "job_key": "outer_hepg2__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928",
+      "display_key": "outer_hepg2__inner_jurkat__N1__modelseed_20261002__countseed_20260928__teachertrain_20260928__B0",
+      "role": "outer_hepg2__inner_jurkat",
+      "arm": "B0",
+      "checkpoint_path": "C:\\00 - Competition\\staging\\newV20_native_source_selection\\models\\outer_hepg2__inner_jurkat\\B0\\checkpoint_600.pt",
+      "checkpoint_SHA256": "0f6da6a60bacd8e32068b42711446683ae03d863bb470580019d973b8adf5634",
+      "bundle_path": "C:\\00 - Competition\\staging\\newV20_native_source_selection\\bundles\\outer_hepg2__inner_jurkat\\B0\\effects.npz",
+      "bundle_sha256": "198126ffcfe20619f0b1ef546d750b16dd9eb8f8451097a4fee91dd24b651be3",
+      "complete_path": "C:\\00 - Competition\\staging\\newV20_native_source_selection\\bundles\\outer_hepg2__inner_jurkat\\B0\\complete.json",
+      "complete_SHA256": "31177530e97cb5816192069c53bd9cf99a132803a72ac1c4169a5c3e5376df43",
+      "targets": 8
+    }
+  ],
+  "trainer_machine_contract_SHA256": "d249fd793694bf968c4697705c5bc87dde1e3338fbfb34326503f5b6ebd0d10d",
+  "protocol_sha256": "31c05bde3f25212d5b10c0c32eba1f0f821f154c76a4c3c7fabc9e8f369113ca",
+  "score_contract_SHA256": "e489efd753fc0395c87c756113504317d3d144aa23bdc2f474c99f13ccfc3219",
+  "truth_read_by_trainer": false,
+  "new_count_judge_calls": 0
+}

@@ -1,0 +1,30 @@
+{
+  "arms": [
+    "theta_quarter",
+    "theta_four",
+    "source_fixed",
+    "source_module_r4"
+  ],
+  "parameters": {
+    "theta_quarter": {
+      "theta_scale": 0.25
+    },
+    "theta_four": {
+      "theta_scale": 4.0
+    },
+    "source_fixed": {
+      "theta_scale": 1.0,
+      "bundle": "fixed"
+    },
+    "source_module_r4": {
+      "theta_scale": 1.0,
+      "bundle": "module_fixed_r4"
+    }
+  },
+  "contract_sha256": "e489efd753fc0395c87c756113504317d3d144aa23bdc2f474c99f13ccfc3219",
+  "adaptation": "Readout dispersion or train-only source mean; never reference anchors",
+  "count_seed": 20260928,
+  "scorer_threads": 6,
+  "perturbation_truth_for_fit": false,
+  "frozen_original_source_sha": "f29583fc5517f8520d7c36f2ff55e670e7a0b022626f00af204e2b8c1d21630a"
+}

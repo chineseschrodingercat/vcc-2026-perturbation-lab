@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "id": "legacy-v3",
+  "title": "V3 · early baseline and foundation-model comparison",
+  "evidence_scope": "historical-model-comparison",
+  "score_protocol_id": null,
+  "overall": null,
+  "status": "historical archive; weights incomplete",
+  "promotion": false,
+  "import_date": "2026-10-06",
+  "research_execution_on_import": false,
+  "reproducibility": {
+    "evidence_verification": "portable; no scientific dependencies or data required",
+    "scientific_execution": "archival Windows sources; original paths and pinned environments must be restored; not validated from a fresh clone"
+  },
+  "files": [
+    {
+      "path": "milestones/legacy-v3/evidence/HISTORY_EXCERPT.md",
+      "sha256": "825a290336be969479156a549c44c58d8b813a8a4de277459355a00c81b19750",
+      "bytes": 9108,
+      "role": "evidence"
+    },
+    {
+      "path": "milestones/legacy-v3/evidence/data__processed__v3__state_cells__complete.json",
+      "sha256": "870c5a31f24e22848b00e3d7d40bd82ef0934c6dfbd4403b5c762b01b89cce07",
+      "bytes": 137,
+      "role": "evidence"
+    },
+    {
+      "path": "milestones/legacy-v3/evidence/data__processed__v3__state_cells__input_validation.json",
+      "sha256": "5d108b3b095763a6da6c70e7ffeb80a393db0d2cd9ffaa9902ff18462362b029",
+      "bytes": 1065,
+      "role": "evidence"
+    },
+    {
+      "path": "milestones/legacy-v3/evidence/data__processed__v3__state_cells__protocol.json",
+      "sha256": "71b04b71ddf943ea09a1309936a00f804797954e6835a245fdbf0ff1f94745f1",
+      "bytes": 1246,
+      "role": "evidence"
+    },
+    {
+      "path": "milestones/legacy-v3/evidence/models__selection_v3.json",
+      "sha256": "6b2df7675789c4ec1c88072dae61a4bb7a487a6dacb8ea538cd7dba862834e40",
+      "bytes": 970,
+      "role": "evidence"
+    },
+    {
+      "path": "milestones/legacy-v3/results.json",
+      "sha256": "0b4ed0b5727e2f31ea158195baf95a59c81a77dbea7bd39a3e5bf2b2d4f9ed57",
+      "bytes": 1399,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/archive/legacy_20261003/configs/baseline_v1.json",
+      "sha256": "5e69ed6cc842bfca7d0e9c35bae2f4c701e571cc74041db91001e4bd7eb265b7",
+      "bytes": 1505,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/archive/legacy_20261003/configs/foundation312.requirements.lock.txt",
+      "sha256": "55389c701f7c84116f594442f78753fbc13cc52bb48ced113c71f2186a71e17d",
+      "bytes": 3113,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/archive/legacy_20261003/configs/model_selection_v2_protocol.json",
+      "sha256": "03404a7077aaf8b24ce3f9d49fd0969d58d2bedfa2129ea1925f925f4721df31",
+      "bytes": 1459,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/archive/legacy_20261003/configs/source_registry_v3.json",
+      "sha256": "e1c0b450533344dda4687243faf19c65d0a28422d3d73c297869eaac3eca359c",
+      "bytes": 6967,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/archive/legacy_20261003/configs/vcc313.requirements.v2.lock.txt",
+      "sha256": "99dffe7a8645e4c6da1cfcf512c593ba4dcf86eeab1e1142d62c9daded06ee72",
+      "bytes": 1308,
+      "role": "evidence"
+    },
+    {
+      "path": "snapshots/archive/legacy_20261003/src/vcc2026/benchmark_h1_cells.py",
+      "sha256": "09a4a702052a051fd6ec888f81d2068059382838b682557ea2a96070f2b75695",
+      "bytes": 11142,
+      "role": "source"
+    },
+    {
+      "path": "snapshots/archive/legacy_20261003/src/vcc2026/compile_results_report.py",
+      "sha256": "876071540a0fe30dbbb6996e05e8f806d3adc1a9462740e64983b6b58980048a",
+      "bytes": 15708,
+      "role": "source"
+    },
+    {
+      "path": "snapshots/archive/legacy_20261003/src/vcc2026/evaluate_foundation_pilots.py",
+      "sha256": "3b2fc28720b21955a4eda5a152ace078d12bcce6a057bf2217bd3c7a57137e00",
+      "bytes": 8231,
+      "role": "source"
+    },
+    {
+      "path": "snapshots/archive/legacy_20261003/src/vcc2026/export_bilinear_parameters.py",
+      "sha256": "fa766a605156214e3932fc0402655216b4599d549d8cf8f5f88e1b94c53e3950",
+      "bytes": 2397,
+      "role": "source"
+    },
+    {
+      "path": "snapshots/archive/legacy_20261003/src/vcc2026/foundation_io.py",
+      "sha256": "5b40c2518a5f125af9bb40bd84008e23eb7d28c096dc777e7c5652084cf09f91",
+      "bytes": 1858,
+      "role": "source"
+    },
+    {
+      "path": "snapshots/archive/legacy_20261003/src/vcc2026/generate_counts.py",
+      "sha256": "0813ef9f2dbe0b66a5397440f6392d75e23744edcff784c8c7cb22532e5eb1a5",
+      "bytes": 17161,
+      "role": "source"
+    },
+    {
+      "path": "snapshots/archive/legacy_20261003/src/vcc2026/predict_normalized_transfer.py",
+      "sha256": "672965410d2d667c7119c63b12e1b6f7610efecfe0c90f14e88200651d5690bc",
+      "bytes": 4026,
+      "role": "source"
+    },
+    {
+      "path": "snapshots/archive/legacy_20261003/src/vcc2026/prepare_state_cells.py",
+      "sha256": "799052cc50887154cdd041d80c7a12de266dc1d820cebd5bde44eb1a8e9d62e7",
+      "bytes": 7581,
+      "role": "source"
+    },
+    {
+      "path": "snapshots/archive/legacy_20261003/src/vcc2026/run_stack_pilot.py",
+      "sha256": "820a0ca77936105ccbe467b8261be4c4dcad5845cd642a0fcbc38d5a1aae79e8",
+      "bytes": 5532,
+      "role": "source"
+    },
+    {
+      "path": "snapshots/archive/legacy_20261003/src/vcc2026/select_transfer_model.py",
+      "sha256": "8ac5860214c3e41b510782840711e07fc68db952f5ed772c16cdaaa0a1414132",
+      "bytes": 15177,
+      "role": "source"
+    },
+    {
+      "path": "snapshots/archive/legacy_20261003/src/vcc2026/train_state_pilots.py",
+      "sha256": "73baa9d6502fe9c09e462304b12dac0f916f94ece6842ca63d32e0a23dd85c87",
+      "bytes": 6220,
+      "role": "source"
+    },
+    {
+      "path": "snapshots/archive/legacy_20261003/src/vcc2026/validate_bilinear_targets.py",
+      "sha256": "7f4b848b840b734cff2dc31b6fa354cda710f92da2b210bd25fd6743f3e99781",
+      "bytes": 5683,
+      "role": "source"
+    },
+    {
+      "path": "milestones/legacy-v3/README.md",
+      "sha256": "b6118e8600b924043a3dd604d08cd1bbdf7a2b1e01225d3fc99623f8576c4931",
+      "bytes": 1514,
+      "role": "documentation"
+    },
+    {
+      "path": "milestones/legacy-v3/release-notes.md",
+      "sha256": "a6911b3300ce90b6d7d4fd0796a8b55504f0c04ca3d5919009c8ea6663345849",
+      "bytes": 981,
+      "role": "release-notes"
+    }
+  ],
+  "external_assets": [],
+  "external_asset_check_scope": "Curated known core assets only; full scientific rerun also requires original protocol dependencies and original environment. Empty or passing list is not a full pipeline readiness certificate."
+}

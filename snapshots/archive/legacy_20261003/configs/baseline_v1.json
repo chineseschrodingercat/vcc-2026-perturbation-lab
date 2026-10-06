@@ -1,0 +1,32 @@
+{
+  "run_id": "baseline_v1",
+  "recorded_at_utc_date": "2026-09-27",
+  "selected_model": "k562_calibrated_direct",
+  "source": "replogle_k562_gwps",
+  "effect_scale": "log2((target_mean_raw_umi+0.5)/(ntc_mean_raw_umi+0.5))",
+  "cross_context_scale": 0.6720111954846246,
+  "cross_context_scale_report": "runs/baseline_v1/k562_only_calibration.json",
+  "min_source_target_cells": 30,
+  "support_prior_cells": 50,
+  "effect_clip_log2fc": [-3, 3],
+  "source_observed_official_targets": 272,
+  "targets_with_sufficient_support": 267,
+  "zero_effect_fallback_targets": 33,
+  "measured_official_output_genes": 7679,
+  "unmeasured_output_genes_zero_effect_fallback": 10854,
+  "count_generation": {
+    "seed": 20260927,
+    "cells_per_context_target": 400,
+    "control_sampling": "400 distinct NTC cells per target, separately for each context",
+    "mean_effect_inversion_pseudocount": 0.5,
+    "per_gene_multiplier_cap": 16,
+    "integerization": "stochastic rounding of scaled original nonzero counts",
+    "source_zero_entries": "remain zero"
+  },
+  "model_validation_report": "reports/model_validation.md",
+  "data_audit_report": "reports/external_data_audit.md",
+  "raw_prediction": "runs/baseline_v1/prediction__k562_calibrated_direct.h5ad",
+  "raw_prediction_manifest": "runs/baseline_v1/prediction__k562_calibrated_direct.manifest.json",
+  "official_format_check": "logs/baseline_v1_vcc_prep_dry_run.json",
+  "scope": "Initial locally validated prediction, not a claim about hidden leaderboard score"
+}

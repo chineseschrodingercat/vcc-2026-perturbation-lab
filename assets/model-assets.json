@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "families": {
+    "legacy-v28-model-assets": [
+      {
+        "path": "archive/legacy_20261003/models/residual_v7/final_candidate/seed_20260928/tiny_transformer_600.pt",
+        "sha256": "a2b996eacf498ce63ff584be51d84bc52c77c87ec040f96a8a30d43a91d6dce2",
+        "bytes": 3989751,
+        "role": "model-asset",
+        "blob": "blobs/a2b996eacf498ce63ff584be51d84bc52c77c87ec040f96a8a30d43a91d6dce2.pt"
+      },
+      {
+        "path": "archive/legacy_20261003/models/residual_v7/final_candidate/seed_20260928/features.npz",
+        "sha256": "a6cb72bcdcd0e0a5f01e9bce5a4a09d284fd74924373b69af363eebd694aa372",
+        "bytes": 2144673,
+        "role": "model-asset",
+        "blob": "blobs/a6cb72bcdcd0e0a5f01e9bce5a4a09d284fd74924373b69af363eebd694aa372.npz"
+      },
+      {
+        "path": "archive/legacy_20261003/runs/submission_v28_20261001/dispersion.npz",
+        "sha256": "32cf1c31e1467b0d89067fa3bff7ca94efd54bcb374b8c8c5c7febe47b3a88dd",
+        "bytes": 102384,
+        "role": "model-asset",
+        "blob": "blobs/32cf1c31e1467b0d89067fa3bff7ca94efd54bcb374b8c8c5c7febe47b3a88dd.npz"
+      }
+    ],
+    "clean400-model-assets": [
+      {
+        "path": "staging/newV20_native_source_selection/models/outer_rpe1__inner_jurkat/B0/checkpoint_600.pt",
+        "sha256": "156e64481905fd70ae6825b327eff92a8ad6f842b43a378c34140de540b74a88",
+        "bytes": 11978943,
+        "role": "model-asset",
+        "blob": "blobs/156e64481905fd70ae6825b327eff92a8ad6f842b43a378c34140de540b74a88.pt"
+      },
+      {
+        "path": "staging/newV20_native_source_selection/models/outer_jurkat__inner_rpe1/B0/checkpoint_600.pt",
+        "sha256": "156e64481905fd70ae6825b327eff92a8ad6f842b43a378c34140de540b74a88",
+        "bytes": 11978943,
+        "role": "model-asset",
+        "blob": "blobs/156e64481905fd70ae6825b327eff92a8ad6f842b43a378c34140de540b74a88.pt"
+      },
+      {
+        "path": "staging/newV20_native_source_selection/models/outer_rpe1__inner_hepg2/B0/checkpoint_600.pt",
+        "sha256": "511fa40301b6bffd15d4fc35a8e3b6f010468cd268fd03666f5b67111e43d1c1",
+        "bytes": 11978943,
+        "role": "model-asset",
+        "blob": "blobs/511fa40301b6bffd15d4fc35a8e3b6f010468cd268fd03666f5b67111e43d1c1.pt"
+      },
+      {
+        "path": "staging/newV20_native_source_selection/models/outer_hepg2__inner_rpe1/B0/checkpoint_600.pt",
+        "sha256": "511fa40301b6bffd15d4fc35a8e3b6f010468cd268fd03666f5b67111e43d1c1",
+        "bytes": 11978943,
+        "role": "model-asset",
+        "blob": "blobs/511fa40301b6bffd15d4fc35a8e3b6f010468cd268fd03666f5b67111e43d1c1.pt"
+      },
+      {
+        "path": "staging/newV20_native_source_selection/models/outer_jurkat__inner_hepg2/B0/checkpoint_600.pt",
+        "sha256": "0f6da6a60bacd8e32068b42711446683ae03d863bb470580019d973b8adf5634",
+        "bytes": 11978943,
+        "role": "model-asset",
+        "blob": "blobs/0f6da6a60bacd8e32068b42711446683ae03d863bb470580019d973b8adf5634.pt"
+      },
+      {
+        "path": "staging/newV20_native_source_selection/models/outer_hepg2__inner_jurkat/B0/checkpoint_600.pt",
+        "sha256": "0f6da6a60bacd8e32068b42711446683ae03d863bb470580019d973b8adf5634",
+        "bytes": 11978943,
+        "role": "model-asset",
+        "blob": "blobs/0f6da6a60bacd8e32068b42711446683ae03d863bb470580019d973b8adf5634.pt"
+      },
+      {
+        "path": "models/V20_native_f23_generator/inner_train_hepg2/dispersion_seen.npz",
+        "sha256": "702d1ee096fbb078cb129ecf1f32edb97809efaa894b5f3afbea1b915a967a73",
+        "bytes": 101844,
+        "role": "model-asset",
+        "blob": "blobs/702d1ee096fbb078cb129ecf1f32edb97809efaa894b5f3afbea1b915a967a73.npz"
+      },
+      {
+        "path": "data/processed/V20_native_f23_generator/inner_train_hepg2/encoder.npz",
+        "sha256": "d2a60c2d14731efe21bfb6fb5eb5a1f5955f610b2857282c13fe0b39c44bdeb5",
+        "bytes": 1543118,
+        "role": "model-asset",
+        "blob": "blobs/d2a60c2d14731efe21bfb6fb5eb5a1f5955f610b2857282c13fe0b39c44bdeb5.npz"
+      },
+      {
+        "path": "models/V20_native_f23_generator/inner_train_jurkat/dispersion_seen.npz",
+        "sha256": "17a019320723c97dbbd9a2cb5a40eb2358868ef4d5e954e4d9b5d0e4d5dfd65d",
+        "bytes": 100242,
+        "role": "model-asset",
+        "blob": "blobs/17a019320723c97dbbd9a2cb5a40eb2358868ef4d5e954e4d9b5d0e4d5dfd65d.npz"
+      },
+      {
+        "path": "data/processed/V20_native_f23_generator/inner_train_jurkat/encoder.npz",
+        "sha256": "ec81419f516dd3573d9739b9c52d93b588bb16a8719bd5ba96aa60c0dc0d9def",
+        "bytes": 1543967,
+        "role": "model-asset",
+        "blob": "blobs/ec81419f516dd3573d9739b9c52d93b588bb16a8719bd5ba96aa60c0dc0d9def.npz"
+      },
+      {
+        "path": "models/V20_native_f23_generator/inner_train_rpe1/dispersion_seen.npz",
+        "sha256": "186319e23bc00d1be82c49201dfefbdbfe40e3d8ee421133092c687d3170ca93",
+        "bytes": 100642,
+        "role": "model-asset",
+        "blob": "blobs/186319e23bc00d1be82c49201dfefbdbfe40e3d8ee421133092c687d3170ca93.npz"
+      },
+      {
+        "path": "data/processed/V20_native_f23_generator/inner_train_rpe1/encoder.npz",
+        "sha256": "df6bf61323f9a74af1a8c30fb3c7b8a76dd3e7f45eb5122260adab27ab352650",
+        "bytes": 1543806,
+        "role": "model-asset",
+        "blob": "blobs/df6bf61323f9a74af1a8c30fb3c7b8a76dd3e7f45eb5122260adab27ab352650.npz"
+      },
+      {
+        "path": "runs/research_v28_20261005/ntc_context_krr_native_mean_v1/source_models/lawful_pool_0.npz",
+        "sha256": "d44bbeed6459cc44272712f15feaa664e424f0774d151d462ee29faf6c5a33ed",
+        "bytes": 3236860,
+        "role": "model-asset",
+        "blob": "blobs/d44bbeed6459cc44272712f15feaa664e424f0774d151d462ee29faf6c5a33ed.npz"
+      },
+      {
+        "path": "runs/research_v28_20261005/ntc_context_krr_native_mean_v1/source_models/lawful_pool_1.npz",
+        "sha256": "a125b204c5b902758d02d3d647e0090e31fdabaaa6ff820d2f11395bcec2abe4",
+        "bytes": 3235054,
+        "role": "model-asset",
+        "blob": "blobs/a125b204c5b902758d02d3d647e0090e31fdabaaa6ff820d2f11395bcec2abe4.npz"
+      },
+      {
+        "path": "runs/research_v28_20261005/ntc_context_krr_native_mean_v1/source_models/lawful_pool_2.npz",
+        "sha256": "64f04afa32f8ed7cc2659ff08698cd63be710c79bfad68fd914c7522790e9c75",
+        "bytes": 3233367,
+        "role": "model-asset",
+        "blob": "blobs/64f04afa32f8ed7cc2659ff08698cd63be710c79bfad68fd914c7522790e9c75.npz"
+      }
+    ]
+  },
+  "deduplication": "content SHA256; restore_paths retain role mapping",
+  "raw_counts_in_assets": false
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "milestones": [
+    {
+      "id": "legacy-v3",
+      "title": "V3 · early baseline and foundation-model comparison",
+      "manifest": "milestones/legacy-v3/manifest.json"
+    },
+    {
+      "id": "legacy-v28",
+      "title": "V28 · retained N1 baseline and deployment recipe",
+      "manifest": "milestones/legacy-v28/manifest.json"
+    },
+    {
+      "id": "native-v2-theta-four",
+      "title": "V2 · dispersion multiplier four",
+      "manifest": "milestones/native-v2-theta-four/manifest.json"
+    },
+    {
+      "id": "native-v4-barycenter",
+      "title": "V4 · N1 barycenter weight 0.75",
+      "manifest": "milestones/native-v4-barycenter/manifest.json"
+    },
+    {
+      "id": "clean400-b0-nb",
+      "title": "Clean400 · B0 negative binomial",
+      "manifest": "milestones/clean400-b0-nb/manifest.json"
+    },
+    {
+      "id": "clean400-b0-poisson",
+      "title": "Clean400 · B0 Poisson",
+      "manifest": "milestones/clean400-b0-poisson/manifest.json"
+    },
+    {
+      "id": "clean400-context-krr-nb",
+      "title": "Clean400 · context kernel ridge with NB",
+      "manifest": "milestones/clean400-context-krr-nb/manifest.json"
+    }
+  ]
+}

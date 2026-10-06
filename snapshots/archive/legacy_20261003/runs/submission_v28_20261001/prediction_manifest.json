@@ -1,0 +1,94 @@
+{
+  "created_utc": "2026-10-02T00:04:47.114296+00:00",
+  "candidate": "V28 N1 deployment with globally selected V7 tiny_ref mean",
+  "score_for_this_deployment": null,
+  "historical_workflow_cv_overall": 0.2281364395524066,
+  "deployment_lock_sha256": "8c8ff416f65eacbbd4a7f670adb06da60dd197e1d4c566ab3df0d2a455fde7d3",
+  "exporter_sha256": "0c0e0f473d909fa48120deb9a6e3b413c86fc59ff9ee1820be5ef069a4f78bc7",
+  "decoder_checkpoint_sha256": "8c75ebff9903a5b82d25283c370bf49649e25972721482b2442939aaf11a5115",
+  "mean_checkpoint_sha256": "a2b996eacf498ce63ff584be51d84bc52c77c87ec040f96a8a30d43a91d6dce2",
+  "feature_parity_with_original_validation": {
+    "z": true,
+    "g": true,
+    "h": true,
+    "seen": true,
+    "ownmask": true
+  },
+  "eligible_targets": 267,
+  "frozen_mean_fallback_targets": [
+    "ABCD1",
+    "ANKRD52",
+    "CAPRIN2",
+    "DLAT",
+    "EPHB2",
+    "HEATR6",
+    "KIF21B",
+    "MAPK7",
+    "MLKL",
+    "NICN1",
+    "PARP3",
+    "PBLD",
+    "PDK3",
+    "PHF11",
+    "PHF19",
+    "PSMB9",
+    "RAB11FIP5",
+    "SEMA4F",
+    "SLC44A1",
+    "SNN",
+    "SOCS5",
+    "SPATA20",
+    "STAT6",
+    "TAF4",
+    "TBC1D19",
+    "TDRD7",
+    "TESK2",
+    "TMEM104",
+    "TMEM79",
+    "TTBK2",
+    "TXNDC16",
+    "ZC2HC1A",
+    "ZNF174"
+  ],
+  "contexts": {
+    "A": {
+      "cells": 120000,
+      "control_sha256": "f22e71968487d3da9402769dcd0c73a47851fad4cd7dd25510283c923031fe3e",
+      "effect_sha256": "6111cb4c86eded3d64d69ef3163598299c67adc12eaaf41c274410aa4767481c",
+      "minimum_library": 3206.0,
+      "maximum_library": 54985.0,
+      "maximum_count": 1806.0
+    },
+    "B": {
+      "cells": 120000,
+      "control_sha256": "41557555b3febf6db19fd930b4dd7db88941840077bf985d14dfff959c782380",
+      "effect_sha256": "c5630068385c7d042eee72078420f6f154f6f43f714166cfff869fbb7f25a2a7",
+      "minimum_library": 673.0,
+      "maximum_library": 44291.0,
+      "maximum_count": 1753.0
+    },
+    "C": {
+      "cells": 120000,
+      "control_sha256": "e090e7c7cfdd0006f689214ba38ba0cd2669578e89c9bc325b65f0bd940c02e0",
+      "effect_sha256": "4e0c3633d62cc1db4ffdd6240d6c3c33735ab868f1a30f1e0306f12d4326a8e1",
+      "minimum_library": 3306.0,
+      "maximum_library": 53106.0,
+      "maximum_count": 2462.0
+    }
+  },
+  "count_seed": 20260928,
+  "official_submission_performed": false,
+  "new_mean_fits": 0,
+  "new_decoder_fits": 1,
+  "challenge_perturbation_labels_used": false,
+  "output": {
+    "shape": [
+      360000,
+      18533
+    ],
+    "nnz": 1827543884,
+    "bytes": 2695428901,
+    "path": "C:\\00 - Competition\\runs\\submission_v28_20261001\\v28_n1_prediction.h5ad",
+    "sha256": "fca26e99eea9c31484dbc302a69acb3a7e8c75bfc0fa39fa91c0ef6c2b4a35d6"
+  }
+}

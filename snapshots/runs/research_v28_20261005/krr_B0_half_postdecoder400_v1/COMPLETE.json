@@ -1,0 +1,140 @@
+{
+  "actual_new_integer_count_outputs": 6,
+  "actual_reused_count_outputs": 12,
+  "actual_new_judge_cases": 6,
+  "judge_processes": 1,
+  "judge_threads": 4,
+  "code_sha256": "9f64c0077cf015df9762d2ac1aa056021cd56ada0c181b2a46d8b6709329b3c5",
+  "completed": true,
+  "completed_score_cases": 18,
+  "strict_reused_score_cases": 12,
+  "actual_new_scores": 6,
+  "aggregates": [
+    {
+      "arm": "clean_B0_NB",
+      "overall": 0.27059098184383507,
+      "per_background": {
+        "hepg2": 0.23742515923770297,
+        "jurkat": 0.3447117445646729,
+        "rpe1": 0.22963604172912933
+      },
+      "six_scaled": {
+        "pds_cosine": 0.7265838242280713,
+        "expr_mse_unbiased_capped_norm": 0.0,
+        "de_wilcoxon_direction_fidelity_yield_raw": 0.8035398619038604,
+        "de_wilcoxon_direction_reach_raw": 0.02298922646576119,
+        "de_wilcoxon_sig_jaccard": 0.17106755500093185,
+        "de_wilcoxon_lfc_nmae": -0.1006345765356144
+      },
+      "delta_vs_same_evaluation_B0_NB": 0.0,
+      "per_background_delta_vs_B0_NB": {
+        "hepg2": 0.0,
+        "jurkat": 0.0,
+        "rpe1": 0.0
+      }
+    },
+    {
+      "arm": "context_KRR_NB",
+      "overall": 0.2754810720812462,
+      "per_background": {
+        "hepg2": 0.2493973392183486,
+        "jurkat": 0.33607595211332164,
+        "rpe1": 0.24096992491206848
+      },
+      "six_scaled": {
+        "pds_cosine": 0.7018313489805467,
+        "expr_mse_unbiased_capped_norm": 0.0,
+        "de_wilcoxon_direction_fidelity_yield_raw": 0.810502783451907,
+        "de_wilcoxon_direction_reach_raw": 0.09260490630499406,
+        "de_wilcoxon_sig_jaccard": 0.1749331325995748,
+        "de_wilcoxon_lfc_nmae": -0.12698573884954487
+      },
+      "delta_vs_same_evaluation_B0_NB": 0.004890090237411178,
+      "per_background_delta_vs_B0_NB": {
+        "hepg2": 0.011972179980645647,
+        "jurkat": -0.008635792451351265,
+        "rpe1": 0.011333883182939153
+      }
+    },
+    {
+      "arm": "context_KRR_B0_half_NB",
+      "overall": 0.27039451624255345,
+      "per_background": {
+        "hepg2": 0.24648114137044969,
+        "jurkat": 0.32593789039321697,
+        "rpe1": 0.23876451696399378
+      },
+      "six_scaled": {
+        "pds_cosine": 0.7248198547276731,
+        "expr_mse_unbiased_capped_norm": 0.0,
+        "de_wilcoxon_direction_fidelity_yield_raw": 0.8117970852740339,
+        "de_wilcoxon_direction_reach_raw": 0.0034930089362289,
+        "de_wilcoxon_sig_jaccard": 0.1756163777320768,
+        "de_wilcoxon_lfc_nmae": -0.0933592292146918
+      },
+      "delta_vs_same_evaluation_B0_NB": -0.00019646560128158685,
+      "per_background_delta_vs_B0_NB": {
+        "hepg2": 0.00905598213274672,
+        "jurkat": -0.01877385417145594,
+        "rpe1": 0.009128475234864458
+      }
+    }
+  ],
+  "controlled_contrasts": [
+    {
+      "contrast": "primary_mixed_vs_B0",
+      "candidate": "context_KRR_B0_half_NB",
+      "baseline": "clean_B0_NB",
+      "overall_delta": -0.0001964656012816146,
+      "per_background_delta": {
+        "hepg2": 0.00905598213274672,
+        "jurkat": -0.01877385417145594,
+        "rpe1": 0.009128475234864458
+      },
+      "six_scaled_delta": {
+        "pds_cosine": -0.0017639695003982547,
+        "expr_mse_unbiased_capped_norm": 0.0,
+        "de_wilcoxon_direction_fidelity_yield_raw": 0.008257223370173539,
+        "de_wilcoxon_direction_reach_raw": -0.019496217529532293,
+        "de_wilcoxon_sig_jaccard": 0.004548822731144958,
+        "de_wilcoxon_lfc_nmae": 0.007275347320922609
+      }
+    },
+    {
+      "contrast": "explanation_mixed_vs_KRR",
+      "candidate": "context_KRR_B0_half_NB",
+      "baseline": "context_KRR_NB",
+      "overall_delta": -0.0050865558386927745,
+      "per_background_delta": {
+        "hepg2": -0.002916197847898927,
+        "jurkat": -0.010138061720104674,
+        "rpe1": -0.0022054079480746946
+      },
+      "six_scaled_delta": {
+        "pds_cosine": 0.02298850574712641,
+        "expr_mse_unbiased_capped_norm": 0.0,
+        "de_wilcoxon_direction_fidelity_yield_raw": 0.0012943018221269753,
+        "de_wilcoxon_direction_reach_raw": -0.08911189736876515,
+        "de_wilcoxon_sig_jaccard": 0.0006832451325020084,
+        "de_wilcoxon_lfc_nmae": 0.03362650963485307
+      }
+    }
+  ],
+  "conditional_fixed_three_seed_eligibility": {
+    "evaluated": true,
+    "eligible": false,
+    "rule": "Half overall strictly above max(B0,KRR), all18 and independent postscore PASS then root ticket only",
+    "independent_postscore_PASS_and_root_ticket_still_required": true
+  },
+  "only_promotion_metric": "Same-protocol overall",
+  "fixed_half_weight": 0.5,
+  "no_weight_sweep": true,
+  "all_original_cases_retained": true,
+  "first_seed_screen_not_stable_validation": true,
+  "independent_units": "Three repeatedly tuned Native development backgrounds; roles and generated cells are not independent biological repetitions",
+  "normalized_mean_invariance_claimed": false,
+  "new_model_fits": 0,
+  "official_calls": 0,
+  "THP_truth_opened": false,
+  "protocol_sha256": "5f65894955600bdb8bbe044297276b6109fd88a4bd428acfcae8aaaaf57c3201"
+}

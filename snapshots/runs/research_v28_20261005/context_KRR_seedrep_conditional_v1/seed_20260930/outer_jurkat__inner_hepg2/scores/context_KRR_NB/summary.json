@@ -1,0 +1,11 @@
+{
+  "model": "context_KRR_NB",
+  "de_wilcoxon_direction_fidelity_yield_raw": 0.586045003012965,
+  "de_wilcoxon_direction_reach_raw": 0.4017704430204212,
+  "de_wilcoxon_lfc_nmae": 0.8106245230002171,
+  "de_wilcoxon_sig_jaccard": 0.0684154585898108,
+  "expr_mse_unbiased_capped_norm": 0.8948393286967283,
+  "pds_cosine": 0.9464285714285714,
+  "fixed_overall": 0.3049448664660599,
+  "replicate_overall": 0.2498863028455928
+}

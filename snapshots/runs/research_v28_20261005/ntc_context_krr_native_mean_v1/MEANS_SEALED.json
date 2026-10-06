@@ -1,0 +1,397 @@
+{
+  "schema": "Native6_public19_KRR_all144_mean_exports_sealed_v1",
+  "completed": true,
+  "PROTOCOL_SHA256": "1b1684ac9e52b269b66fffd3592f386586f7a9ac407006e64195b412cb92971d",
+  "arms": [
+    "context_KRR",
+    "equalcomponent_uniform",
+    "positive_RBF"
+  ],
+  "records": [
+    {
+      "role": "outer_rpe1__inner_jurkat",
+      "context": "jurkat",
+      "arm": "context_KRR",
+      "bundle_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\outer_rpe1__inner_jurkat\\context_KRR\\effects.npz",
+      "bundle_sha256": "877a5bb58a7d979702da8f401f2922920e63a114414eb01d267f395955fc604b",
+      "complete_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\outer_rpe1__inner_jurkat\\context_KRR\\complete.json",
+      "complete_SHA256": "ab2ea6335451460cc7673906709da7cec2895ab2496062be61cfc2e50240ee05",
+      "source_model_seal_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\SOURCE_MODELS_SEALED.json",
+      "source_model_seal_SHA256": "e9c4744dbec833b428ccbe19f79b203b65a1e7efda0c30b7a5e1bd520777063e"
+    },
+    {
+      "role": "outer_rpe1__inner_jurkat",
+      "context": "jurkat",
+      "arm": "equalcomponent_uniform",
+      "bundle_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\outer_rpe1__inner_jurkat\\equalcomponent_uniform\\effects.npz",
+      "bundle_sha256": "2f5675291cb4930eb45b0db9b804391cea2f16fff2be132c0901b7eeb245ecda",
+      "complete_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\outer_rpe1__inner_jurkat\\equalcomponent_uniform\\complete.json",
+      "complete_SHA256": "bff5683e4236087aea706649955db0cc7417491f99d1f8e4b7f40b11dcbd21a5",
+      "source_model_seal_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\SOURCE_MODELS_SEALED.json",
+      "source_model_seal_SHA256": "e9c4744dbec833b428ccbe19f79b203b65a1e7efda0c30b7a5e1bd520777063e"
+    },
+    {
+      "role": "outer_rpe1__inner_jurkat",
+      "context": "jurkat",
+      "arm": "positive_RBF",
+      "bundle_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\outer_rpe1__inner_jurkat\\positive_RBF\\effects.npz",
+      "bundle_sha256": "afa70f4d4fe4fb34680b36ec0322be4f20d2c62df2e86becbecf0f7fd35d93dc",
+      "complete_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\outer_rpe1__inner_jurkat\\positive_RBF\\complete.json",
+      "complete_SHA256": "1ead962cfca59d3d011eebae091e9b01b75515811277e4e306d799bffc3bd305",
+      "source_model_seal_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\SOURCE_MODELS_SEALED.json",
+      "source_model_seal_SHA256": "e9c4744dbec833b428ccbe19f79b203b65a1e7efda0c30b7a5e1bd520777063e"
+    },
+    {
+      "role": "outer_jurkat__inner_rpe1",
+      "context": "rpe1",
+      "arm": "context_KRR",
+      "bundle_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\outer_jurkat__inner_rpe1\\context_KRR\\effects.npz",
+      "bundle_sha256": "a961c097fae8d0d4f09854bc5008ee79a410b11eb3b1736ead2d527b4df1a059",
+      "complete_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\outer_jurkat__inner_rpe1\\context_KRR\\complete.json",
+      "complete_SHA256": "fc9b3c1e65671cd3018663cb718884e5b4f35f66fd733c5aa34cecbb9c1cac2a",
+      "source_model_seal_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\SOURCE_MODELS_SEALED.json",
+      "source_model_seal_SHA256": "e9c4744dbec833b428ccbe19f79b203b65a1e7efda0c30b7a5e1bd520777063e"
+    },
+    {
+      "role": "outer_jurkat__inner_rpe1",
+      "context": "rpe1",
+      "arm": "equalcomponent_uniform",
+      "bundle_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\outer_jurkat__inner_rpe1\\equalcomponent_uniform\\effects.npz",
+      "bundle_sha256": "670c06b8608ca79c0d1077ea045a2c795a64bf00e0a4d738e6f93c26e18c592e",
+      "complete_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\outer_jurkat__inner_rpe1\\equalcomponent_uniform\\complete.json",
+      "complete_SHA256": "dd8dfdbd56b2d8b02222652cdc882e60d37cdefc7ebc7cdb0f91905479379aae",
+      "source_model_seal_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\SOURCE_MODELS_SEALED.json",
+      "source_model_seal_SHA256": "e9c4744dbec833b428ccbe19f79b203b65a1e7efda0c30b7a5e1bd520777063e"
+    },
+    {
+      "role": "outer_jurkat__inner_rpe1",
+      "context": "rpe1",
+      "arm": "positive_RBF",
+      "bundle_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\outer_jurkat__inner_rpe1\\positive_RBF\\effects.npz",
+      "bundle_sha256": "7c3ea4c04cb1f415bf5e4f2499e50bac735b0dc2b2969c6a76f3151255c51206",
+      "complete_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\outer_jurkat__inner_rpe1\\positive_RBF\\complete.json",
+      "complete_SHA256": "c018e2331c383540f974012c68d2934900da1bbf725d4a3c5b1d2044b68b39dd",
+      "source_model_seal_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\SOURCE_MODELS_SEALED.json",
+      "source_model_seal_SHA256": "e9c4744dbec833b428ccbe19f79b203b65a1e7efda0c30b7a5e1bd520777063e"
+    },
+    {
+      "role": "outer_rpe1__inner_hepg2",
+      "context": "hepg2",
+      "arm": "context_KRR",
+      "bundle_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\outer_rpe1__inner_hepg2\\context_KRR\\effects.npz",
+      "bundle_sha256": "653927d3e049a0a0ff7d6c0544ddb3208ce6bd6189d6a92c1d87f1b1ea78a192",
+      "complete_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\outer_rpe1__inner_hepg2\\context_KRR\\complete.json",
+      "complete_SHA256": "8bc8e4489035680742eb03bd1b10450ea2bdde60536624eff3e22980255096d6",
+      "source_model_seal_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\SOURCE_MODELS_SEALED.json",
+      "source_model_seal_SHA256": "e9c4744dbec833b428ccbe19f79b203b65a1e7efda0c30b7a5e1bd520777063e"
+    },
+    {
+      "role": "outer_rpe1__inner_hepg2",
+      "context": "hepg2",
+      "arm": "equalcomponent_uniform",
+      "bundle_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\outer_rpe1__inner_hepg2\\equalcomponent_uniform\\effects.npz",
+      "bundle_sha256": "fb78ef0b51ccf3a8a3938fe66681286c16c0dc35288721e042b9ca11a3889989",
+      "complete_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\outer_rpe1__inner_hepg2\\equalcomponent_uniform\\complete.json",
+      "complete_SHA256": "b60f0e8fbf75ab15160601328017e19a6b558e7f619b4fb31c5dfbf93bd1f2fe",
+      "source_model_seal_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\SOURCE_MODELS_SEALED.json",
+      "source_model_seal_SHA256": "e9c4744dbec833b428ccbe19f79b203b65a1e7efda0c30b7a5e1bd520777063e"
+    },
+    {
+      "role": "outer_rpe1__inner_hepg2",
+      "context": "hepg2",
+      "arm": "positive_RBF",
+      "bundle_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\outer_rpe1__inner_hepg2\\positive_RBF\\effects.npz",
+      "bundle_sha256": "89167e99fe880137e2add5df64d57c7f1fb70ba30e3ebc17c2dd4b089c47cb2a",
+      "complete_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\outer_rpe1__inner_hepg2\\positive_RBF\\complete.json",
+      "complete_SHA256": "53ea017430454f7c04aa27aadf7d998c56300a71bfc72711ba1503af75e14b97",
+      "source_model_seal_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\SOURCE_MODELS_SEALED.json",
+      "source_model_seal_SHA256": "e9c4744dbec833b428ccbe19f79b203b65a1e7efda0c30b7a5e1bd520777063e"
+    },
+    {
+      "role": "outer_hepg2__inner_rpe1",
+      "context": "rpe1",
+      "arm": "context_KRR",
+      "bundle_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\outer_hepg2__inner_rpe1\\context_KRR\\effects.npz",
+      "bundle_sha256": "07e51c59c59c2c22d10afb9955d1ccdc63289ffbf66e9f7e7493dc2518976344",
+      "complete_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\outer_hepg2__inner_rpe1\\context_KRR\\complete.json",
+      "complete_SHA256": "7485d889fe49d1617cfafff5340364d803dd58bc6c5f657a43df844bbc968ae8",
+      "source_model_seal_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\SOURCE_MODELS_SEALED.json",
+      "source_model_seal_SHA256": "e9c4744dbec833b428ccbe19f79b203b65a1e7efda0c30b7a5e1bd520777063e"
+    },
+    {
+      "role": "outer_hepg2__inner_rpe1",
+      "context": "rpe1",
+      "arm": "equalcomponent_uniform",
+      "bundle_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\outer_hepg2__inner_rpe1\\equalcomponent_uniform\\effects.npz",
+      "bundle_sha256": "512fd605486154888128283b7a61fe20a49f23286ad272a0d58aa16d5da112f3",
+      "complete_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\outer_hepg2__inner_rpe1\\equalcomponent_uniform\\complete.json",
+      "complete_SHA256": "0541a5069e6b70c5d684191db5f08b32fca424a080d3efa81f3143e93cff939a",
+      "source_model_seal_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\SOURCE_MODELS_SEALED.json",
+      "source_model_seal_SHA256": "e9c4744dbec833b428ccbe19f79b203b65a1e7efda0c30b7a5e1bd520777063e"
+    },
+    {
+      "role": "outer_hepg2__inner_rpe1",
+      "context": "rpe1",
+      "arm": "positive_RBF",
+      "bundle_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\outer_hepg2__inner_rpe1\\positive_RBF\\effects.npz",
+      "bundle_sha256": "e306d80d4ac82164c34be23c836a9f933d700faf47fafcc7cb906e25645c86f8",
+      "complete_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\outer_hepg2__inner_rpe1\\positive_RBF\\complete.json",
+      "complete_SHA256": "f941f0752f1fc0c07bb51710b0794e850564a2c2a6bfe1440dedd4a766063cd1",
+      "source_model_seal_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\SOURCE_MODELS_SEALED.json",
+      "source_model_seal_SHA256": "e9c4744dbec833b428ccbe19f79b203b65a1e7efda0c30b7a5e1bd520777063e"
+    },
+    {
+      "role": "outer_jurkat__inner_hepg2",
+      "context": "hepg2",
+      "arm": "context_KRR",
+      "bundle_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\outer_jurkat__inner_hepg2\\context_KRR\\effects.npz",
+      "bundle_sha256": "fabc01f99fc02d9eb05be89b015a8e9469b6848f64b71ccba69901c18a880435",
+      "complete_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\outer_jurkat__inner_hepg2\\context_KRR\\complete.json",
+      "complete_SHA256": "1620c371a3e2379f81a1efab7eff788e2d2ddf63588c4a7b6f373d3f9a55e0be",
+      "source_model_seal_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\SOURCE_MODELS_SEALED.json",
+      "source_model_seal_SHA256": "e9c4744dbec833b428ccbe19f79b203b65a1e7efda0c30b7a5e1bd520777063e"
+    },
+    {
+      "role": "outer_jurkat__inner_hepg2",
+      "context": "hepg2",
+      "arm": "equalcomponent_uniform",
+      "bundle_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\outer_jurkat__inner_hepg2\\equalcomponent_uniform\\effects.npz",
+      "bundle_sha256": "8e7c41e2709111075f334e3fb92cc10075e59b983f8456f9df323100e4cb3125",
+      "complete_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\outer_jurkat__inner_hepg2\\equalcomponent_uniform\\complete.json",
+      "complete_SHA256": "c8d448a86e1f9ff787ca5824366c9965fb986cf1c2e9e1cdfd71158c582a00a7",
+      "source_model_seal_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\SOURCE_MODELS_SEALED.json",
+      "source_model_seal_SHA256": "e9c4744dbec833b428ccbe19f79b203b65a1e7efda0c30b7a5e1bd520777063e"
+    },
+    {
+      "role": "outer_jurkat__inner_hepg2",
+      "context": "hepg2",
+      "arm": "positive_RBF",
+      "bundle_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\outer_jurkat__inner_hepg2\\positive_RBF\\effects.npz",
+      "bundle_sha256": "d25e3f223443e6b49e3dec2dc59a47a6a5f8d491cb885625076c8f910324b8fd",
+      "complete_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\outer_jurkat__inner_hepg2\\positive_RBF\\complete.json",
+      "complete_SHA256": "82ba3f2b1cbb2fc2e6ea5b8130cd02f1acaaeb3bf14e932ceca21cfbf92141e0",
+      "source_model_seal_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\SOURCE_MODELS_SEALED.json",
+      "source_model_seal_SHA256": "e9c4744dbec833b428ccbe19f79b203b65a1e7efda0c30b7a5e1bd520777063e"
+    },
+    {
+      "role": "outer_hepg2__inner_jurkat",
+      "context": "jurkat",
+      "arm": "context_KRR",
+      "bundle_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\outer_hepg2__inner_jurkat\\context_KRR\\effects.npz",
+      "bundle_sha256": "ac7e62342af804b4a38b7bcf3df573e4c8aba935cf8aacb2221c9bc4542cedaf",
+      "complete_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\outer_hepg2__inner_jurkat\\context_KRR\\complete.json",
+      "complete_SHA256": "e6cecb0419e61b9a71e3ed517936f8f3732a42fd04f1f16d686565bac5bf64ae",
+      "source_model_seal_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\SOURCE_MODELS_SEALED.json",
+      "source_model_seal_SHA256": "e9c4744dbec833b428ccbe19f79b203b65a1e7efda0c30b7a5e1bd520777063e"
+    },
+    {
+      "role": "outer_hepg2__inner_jurkat",
+      "context": "jurkat",
+      "arm": "equalcomponent_uniform",
+      "bundle_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\outer_hepg2__inner_jurkat\\equalcomponent_uniform\\effects.npz",
+      "bundle_sha256": "c4fa0402737505b2df275b620dc407175054b77bba065043d1859762775c2518",
+      "complete_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\outer_hepg2__inner_jurkat\\equalcomponent_uniform\\complete.json",
+      "complete_SHA256": "32c4c7736e3f1fd9360f0713fc3a786f3660bc80c57f1b79cb52582a9573bfb3",
+      "source_model_seal_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\SOURCE_MODELS_SEALED.json",
+      "source_model_seal_SHA256": "e9c4744dbec833b428ccbe19f79b203b65a1e7efda0c30b7a5e1bd520777063e"
+    },
+    {
+      "role": "outer_hepg2__inner_jurkat",
+      "context": "jurkat",
+      "arm": "positive_RBF",
+      "bundle_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\outer_hepg2__inner_jurkat\\positive_RBF\\effects.npz",
+      "bundle_sha256": "5222fa9c072b02ff77061d018f909d3112c7628e8ea50702b250cce707b70054",
+      "complete_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\outer_hepg2__inner_jurkat\\positive_RBF\\complete.json",
+      "complete_SHA256": "a3ae282bfb4adfc334fa2a48b20bee69d4ed47fad5216bae7dc1ca60cc261562",
+      "source_model_seal_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\SOURCE_MODELS_SEALED.json",
+      "source_model_seal_SHA256": "e9c4744dbec833b428ccbe19f79b203b65a1e7efda0c30b7a5e1bd520777063e"
+    }
+  ],
+  "expected_formal_slots": 144,
+  "completed_formal_slots": 144,
+  "expected_roles": 6,
+  "mean_bundles": 18,
+  "source_model_seal_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\SOURCE_MODELS_SEALED.json",
+  "source_model_seal_SHA256": "e9c4744dbec833b428ccbe19f79b203b65a1e7efda0c30b7a5e1bd520777063e",
+  "source_function_AST_SHA256": {
+    "grouped_predictions": "b5ef839b673e8d55cb745d2f6d24c8bad29a62e7db3c5d8592616a6a1d1e45d8",
+    "checked_source_geometry": "f0a65fb0e883c3211b7d7c02e376fb31a9386c3d0ed8b3204583fcc1aab0b2df",
+    "actual_decode": "fcc718ad49b1c1d57de85d4d76ce98044f668dbd9bfe75fdff1d3707776464dc"
+  },
+  "held_response_reads": 0,
+  "THP_numeric_IO": 0,
+  "count_calls": 0,
+  "judge_calls": 0,
+  "Native_query19_response_reads": 0,
+  "numeric_resource": {
+    "RSS_bytes": 134742016,
+    "peak_RSS_bytes": 390033408,
+    "C_free_bytes": 133840248832,
+    "new_output_bytes": 85356213,
+    "numeric_seconds": 10.108999999938533
+  },
+  "opaque_preverify_seconds": 0.546000000089407,
+  "opaque_postverify_seconds": 0.5630000000819564,
+  "all_start_end_bindings_runtime_verified": true,
+  "actual_IO_trace": [
+    {
+      "kind": "source_global_NTC",
+      "context": "CD4_Rest",
+      "path": "C:\\00 - Competition\\staging\\newV15_ntc_directed_source_selection\\ntc_fullrawmeans_v1\\CD4_Rest\\profile.npz",
+      "source_T_read": false
+    },
+    {
+      "kind": "source_global_NTC",
+      "context": "CD4_Stim48hr",
+      "path": "C:\\00 - Competition\\staging\\newV15_ntc_directed_source_selection\\ntc_fullrawmeans_v1\\CD4_Stim48hr\\profile.npz",
+      "source_T_read": false
+    },
+    {
+      "kind": "source_global_NTC",
+      "context": "CD4_Stim8hr",
+      "path": "C:\\00 - Competition\\staging\\newV15_ntc_directed_source_selection\\ntc_fullrawmeans_v1\\CD4_Stim8hr\\profile.npz",
+      "source_T_read": false
+    },
+    {
+      "kind": "source_global_NTC",
+      "context": "HCT116",
+      "path": "C:\\00 - Competition\\staging\\newV15_ntc_directed_source_selection\\ntc_fullrawmeans_v1\\HCT116\\profile.npz",
+      "source_T_read": false
+    },
+    {
+      "kind": "source_global_NTC",
+      "context": "HEK293T",
+      "path": "C:\\00 - Competition\\staging\\newV15_ntc_directed_source_selection\\ntc_fullrawmeans_v1\\HEK293T\\profile.npz",
+      "source_T_read": false
+    },
+    {
+      "kind": "source_global_NTC",
+      "context": "HT29_IFNB",
+      "path": "C:\\00 - Competition\\staging\\newV15_ntc_directed_source_selection\\ntc_fullrawmeans_v1\\HT29_IFNB\\profile.npz",
+      "source_T_read": false
+    },
+    {
+      "kind": "source_global_NTC",
+      "context": "HT29_INS",
+      "path": "C:\\00 - Competition\\staging\\newV15_ntc_directed_source_selection\\ntc_fullrawmeans_v1\\HT29_INS\\profile.npz",
+      "source_T_read": false
+    },
+    {
+      "kind": "source_global_NTC",
+      "context": "HepG2",
+      "path": "C:\\00 - Competition\\staging\\newV15_ntc_directed_source_selection\\ntc_fullrawmeans_v1\\HepG2\\profile.npz",
+      "source_T_read": false
+    },
+    {
+      "kind": "source_global_NTC",
+      "context": "K562",
+      "path": "C:\\00 - Competition\\staging\\newV15_ntc_directed_source_selection\\ntc_fullrawmeans_v1\\K562\\profile.npz",
+      "source_T_read": false
+    },
+    {
+      "kind": "source_global_NTC",
+      "context": "K562_IFNB",
+      "path": "C:\\00 - Competition\\staging\\newV15_ntc_directed_source_selection\\ntc_fullrawmeans_v1\\K562_IFNB\\profile.npz",
+      "source_T_read": false
+    },
+    {
+      "kind": "source_global_NTC",
+      "context": "Jurkat",
+      "path": "C:\\00 - Competition\\staging\\newV15_ntc_directed_source_selection\\ntc_fullrawmeans_v1\\Jurkat\\profile.npz",
+      "source_T_read": false
+    },
+    {
+      "kind": "source_global_NTC",
+      "context": "RPE1",
+      "path": "C:\\00 - Competition\\staging\\newV15_ntc_directed_source_selection\\ntc_fullrawmeans_v1\\RPE1\\profile.npz",
+      "source_T_read": false
+    },
+    {
+      "kind": "lawful_public_query19_beta",
+      "context": "K562",
+      "path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_public19_v2_winapi_repair\\public_sources\\K562.npz",
+      "original_raw_T_C_payload_decoded": false,
+      "Native_response": false
+    },
+    {
+      "kind": "lawful_public_query19_beta",
+      "context": "HCT116",
+      "path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_public19_v2_winapi_repair\\public_sources\\HCT116.npz",
+      "original_raw_T_C_payload_decoded": false,
+      "Native_response": false
+    },
+    {
+      "kind": "lawful_public_query19_beta",
+      "context": "HEK293T",
+      "path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_public19_v2_winapi_repair\\public_sources\\HEK293T.npz",
+      "original_raw_T_C_payload_decoded": false,
+      "Native_response": false
+    },
+    {
+      "kind": "lawful_public_query19_beta",
+      "context": "CD4_Rest",
+      "path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_public19_v2_winapi_repair\\public_sources\\CD4_Rest.npz",
+      "original_raw_T_C_payload_decoded": false,
+      "Native_response": false
+    },
+    {
+      "kind": "lawful_public_query19_beta",
+      "context": "CD4_Stim8hr",
+      "path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_public19_v2_winapi_repair\\public_sources\\CD4_Stim8hr.npz",
+      "original_raw_T_C_payload_decoded": false,
+      "Native_response": false
+    },
+    {
+      "kind": "lawful_public_query19_beta",
+      "context": "CD4_Stim48hr",
+      "path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_public19_v2_winapi_repair\\public_sources\\CD4_Stim48hr.npz",
+      "original_raw_T_C_payload_decoded": false,
+      "Native_response": false
+    },
+    {
+      "kind": "recipient_original3000NTC",
+      "role": "outer_rpe1__inner_jurkat",
+      "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\inner_panels\\jurkat\\generation_pool.npz",
+      "target_argument": false,
+      "perturbation_metadata": false
+    },
+    {
+      "kind": "recipient_original3000NTC",
+      "role": "outer_jurkat__inner_rpe1",
+      "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\inner_panels\\rpe1\\generation_pool.npz",
+      "target_argument": false,
+      "perturbation_metadata": false
+    },
+    {
+      "kind": "recipient_original3000NTC",
+      "role": "outer_rpe1__inner_hepg2",
+      "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\inner_panels\\hepg2\\generation_pool.npz",
+      "target_argument": false,
+      "perturbation_metadata": false
+    },
+    {
+      "kind": "recipient_original3000NTC",
+      "role": "outer_hepg2__inner_rpe1",
+      "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\inner_panels\\rpe1\\generation_pool.npz",
+      "target_argument": false,
+      "perturbation_metadata": false
+    },
+    {
+      "kind": "recipient_original3000NTC",
+      "role": "outer_jurkat__inner_hepg2",
+      "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\inner_panels\\hepg2\\generation_pool.npz",
+      "target_argument": false,
+      "perturbation_metadata": false
+    },
+    {
+      "kind": "recipient_original3000NTC",
+      "role": "outer_hepg2__inner_jurkat",
+      "path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\inner_panels\\jurkat\\generation_pool.npz",
+      "target_argument": false,
+      "perturbation_metadata": false
+    }
+  ],
+  "no_native_mean_truth_selection": true,
+  "all144_mean_vectors_before_any_count_or_judge": true,
+  "future_count_gate": "Independent saved mean gate before root originalNB400 all18 new count matrices; allcountseal before judge"
+}

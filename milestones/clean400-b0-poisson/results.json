@@ -1,0 +1,120 @@
+{
+  "arm": "clean_B0_Poisson",
+  "three_seed_macro_overall": 0.2698630850574491,
+  "three_seed_macro_delta_vs_NB": 0.0026780434035532097,
+  "per_background_three_seed_mean": {
+    "hepg2": 0.23438379118748542,
+    "jurkat": 0.3622274032478023,
+    "rpe1": 0.21297806073705972
+  },
+  "all_three_seed_overall_deltas_positive": false,
+  "overall": 0.2698630850574491,
+  "count_seeds": [
+    20260928,
+    20260929,
+    20260930
+  ],
+  "per_seed": [
+    {
+      "seed": 20260928,
+      "arm": "clean_B0_Poisson",
+      "overall": 0.28162419240157394,
+      "delta_vs_NB": 0.01103321055773889,
+      "per_background": {
+        "hepg2": 0.24924733528257298,
+        "jurkat": 0.3555636110792708,
+        "rpe1": 0.24006163084287807
+      },
+      "six_scaled": {
+        "pds_cosine": 0.7274504544050463,
+        "expr_mse_unbiased_capped_norm": 0.0,
+        "de_wilcoxon_direction_fidelity_yield_raw": 0.8234511076468226,
+        "de_wilcoxon_direction_reach_raw": 0.06820511987153337,
+        "de_wilcoxon_sig_jaccard": 0.16537160507169643,
+        "de_wilcoxon_lfc_nmae": -0.09473313258565501
+      }
+    },
+    {
+      "seed": 20260929,
+      "arm": "clean_B0_Poisson",
+      "overall": 0.2702431013034703,
+      "delta_vs_NB": -0.0009050217633371771,
+      "per_background": {
+        "hepg2": 0.21966662507738788,
+        "jurkat": 0.39452402756090293,
+        "rpe1": 0.1965386512721201
+      },
+      "six_scaled": {
+        "pds_cosine": 0.6723866967977585,
+        "expr_mse_unbiased_capped_norm": 0.0,
+        "de_wilcoxon_direction_fidelity_yield_raw": 0.8178626025448957,
+        "de_wilcoxon_direction_reach_raw": 0.0633667791872219,
+        "de_wilcoxon_sig_jaccard": 0.16557746321445116,
+        "de_wilcoxon_lfc_nmae": -0.09773493392350542
+      }
+    },
+    {
+      "seed": 20260930,
+      "arm": "clean_B0_Poisson",
+      "overall": 0.2577219614673032,
+      "delta_vs_NB": -0.002094058583742083,
+      "per_background": {
+        "hepg2": 0.23423741320249541,
+        "jurkat": 0.3365945711032331,
+        "rpe1": 0.20233390009618102
+      },
+      "six_scaled": {
+        "pds_cosine": 0.5608235289867246,
+        "expr_mse_unbiased_capped_norm": 0.0,
+        "de_wilcoxon_direction_fidelity_yield_raw": 0.8189472527721726,
+        "de_wilcoxon_direction_reach_raw": 0.06829339097761845,
+        "de_wilcoxon_sig_jaccard": 0.1684534929258514,
+        "de_wilcoxon_lfc_nmae": -0.0701858968585479
+      }
+    }
+  ],
+  "paired_uncertainty": [
+    {
+      "arm": "clean_B0_Poisson",
+      "backgrounds": [
+        "hepg2",
+        "jurkat",
+        "rpe1"
+      ],
+      "seeds": [
+        20260928,
+        20260929,
+        20260930
+      ],
+      "paired_delta_matrix": [
+        [
+          0.011822176044870014,
+          0.0061762670578942025,
+          -5.873247730059372e-05
+        ],
+        [
+          0.010851866514597908,
+          -0.007408514160091195,
+          -0.015018498636049038
+        ],
+        [
+          0.010425589113748746,
+          -0.0014828181878145386,
+          0.008795055362123383
+        ]
+      ],
+      "paired_macro_delta": 0.0026780434035532097,
+      "crossed_background_seed_percentile95": [
+        -0.007600122455225841,
+        0.010883267775550914
+      ],
+      "fraction_positive_bootstrap_draws": 0.6941015089163237,
+      "equally_weighted_bootstrap_draws": 729,
+      "minimum_draw": -0.015018498636049038,
+      "maximum_draw": 0.011822176044870014,
+      "unit": "Three backgrounds and three stochastic count seeds, paired across arms; roles/cells are not resampled as independent"
+    }
+  ],
+  "independent_units": "Three previously tuned Native backgrounds; count seeds measure generator Monte Carlo variability, not biological replication; six roles not independent",
+  "stable_promotion": false
+}

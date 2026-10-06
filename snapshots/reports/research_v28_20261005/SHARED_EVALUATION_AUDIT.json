@@ -1,0 +1,724 @@
+{
+  "created_utc": "2026-10-05T09:10:08.503986+00:00",
+  "actual_shared_evaluation_contract": true,
+  "contracts": [
+    {
+      "run": "trace400_v1",
+      "protocol_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\trace400_v1\\PROTOCOL.json",
+      "protocol_sha256": "e51ac047ce65e1a3af23792bc6d408c6acf3d8d35ebf7396c98c0042f91c7cd5",
+      "evaluation_sha256": "c8a719bda010e352af4dd7c433313c795eab5460e709897a95b474cd9091e35c",
+      "evaluation": {
+        "cell_count": 400,
+        "count_seed": 20260928,
+        "donor_seed": 20261028,
+        "cases": [
+          {
+            "role": "outer_hepg2__inner_jurkat",
+            "context": "jurkat",
+            "targets": [
+              "MON1A",
+              "GPN3",
+              "SNRNP40",
+              "RPL39",
+              "C1orf109",
+              "ATP2A2",
+              "RTRAF",
+              "PDCD6"
+            ],
+            "truth_cells_per_target": {
+              "MON1A": 162,
+              "GPN3": 188,
+              "SNRNP40": 147,
+              "RPL39": 170,
+              "C1orf109": 165,
+              "ATP2A2": 131,
+              "RTRAF": 183,
+              "PDCD6": 129
+            },
+            "prediction_cells_per_target": 400,
+            "fixed_leaves": {
+              "real.h5ad": "a3ccacb318398021af130ecf2fe1ecb2fb62b8fc6f64288091665c1c7423867a",
+              "panel.json": "de718519c79cabdc1cac722652d67925ee868d8d78bc15a3ff36f86887f1b669",
+              "genes.txt": "26540d68796c3b9601f644242e154733d280e5e1742664b7f0ae41180b80d269",
+              "generation_pool.npz": "9e76f6ef6fa63bebbeedd613142f2082bcf8ef7d839029d68ac0bd525737d87c",
+              "references/reference.json": "f81713db158a7dca4a0a3b3cdc9a83f23a1f74fe13db2269a97be3bc987f16e3",
+              "references/anchor_aggregate.parquet": "83277c1d932e28544b18ae78a128d00161c88fd922a9e07acb882b8b3528be36"
+            },
+            "references": {
+              "anchor_aggregate.parquet": "83277c1d932e28544b18ae78a128d00161c88fd922a9e07acb882b8b3528be36",
+              "anchor_splits.parquet": "56f6b28df310a0622829ea322edcfdaa49f7e01c2f7fd845fd6ada63846456a6",
+              "baseline_aggregate.csv": "9ed139ec171561822e5c6a898f4a8115f06a47debe79b27ec351539d46141dc1",
+              "baseline_metrics.csv": "8a4ac2738d221822e500b29648b6987a23d3197f18e45caf936bcfde1bb41567",
+              "config.json": "0731f069959cbd4e4e3db9f5ff24dd376fe0d5c591d1e77b877d20abab206e2e",
+              "fixed_scale.json": "606c7b3fd65b1993643e1e0d4c28317409942d80c478a6a1e6a1799aebe21a75",
+              "reference.json": "f81713db158a7dca4a0a3b3cdc9a83f23a1f74fe13db2269a97be3bc987f16e3",
+              "run_params.yaml": "d3797dd2de29f925462591ff88481d7f7eb6460280f9159f6ba8af49ea4d3230"
+            }
+          },
+          {
+            "role": "outer_hepg2__inner_rpe1",
+            "context": "rpe1",
+            "targets": [
+              "MON1A",
+              "TUFM",
+              "SNRNP40",
+              "C1orf109",
+              "ATP2A2",
+              "SBNO1",
+              "TUBB",
+              "RTRAF"
+            ],
+            "truth_cells_per_target": {
+              "MON1A": 175,
+              "TUFM": 176,
+              "SNRNP40": 229,
+              "C1orf109": 214,
+              "ATP2A2": 144,
+              "SBNO1": 172,
+              "TUBB": 256,
+              "RTRAF": 197
+            },
+            "prediction_cells_per_target": 400,
+            "fixed_leaves": {
+              "real.h5ad": "54f612978b999a92fbc1c853971afd255138a9c179a530a4530098262dfcc02c",
+              "panel.json": "c656fde57f52defa6acbb1083bb259379ceef4d9dc453b6a33d81c097fd79f0f",
+              "genes.txt": "89c390f18318c0db86dcffb2c447ff12cc4625d4be940ee1eabde4d085a8120a",
+              "generation_pool.npz": "46e50b8b9fdf0404c4ae8177a1bd76609f567241644615ba38b5e3c7e2c9aedb",
+              "references/reference.json": "e34f0840fbc68b837b219777ef72aa11d945cbcdd99fdc193261c46e74e38f3b",
+              "references/anchor_aggregate.parquet": "14045b5bf024fcf8ae9a5a945971fea4c69fe0d363933e58bdd91018c18570e2"
+            },
+            "references": {
+              "anchor_aggregate.parquet": "14045b5bf024fcf8ae9a5a945971fea4c69fe0d363933e58bdd91018c18570e2",
+              "anchor_splits.parquet": "5dbc1f69af32be1fe467fde30f1e485848119a50c65523705d0473236bcc62fa",
+              "baseline_aggregate.csv": "3c62c445430342df1c8ea8815bbdc39cdb01fce90346de9b1c67b7ef7363357e",
+              "baseline_metrics.csv": "72be655804d18491d441141e8c732b7e16498f3bef99cdfaad48354e2dddf5bc",
+              "config.json": "b274e48e6f95012291af4a59dcac8339c279f609d4aedd8accdd635ab9281610",
+              "fixed_scale.json": "606c7b3fd65b1993643e1e0d4c28317409942d80c478a6a1e6a1799aebe21a75",
+              "reference.json": "e34f0840fbc68b837b219777ef72aa11d945cbcdd99fdc193261c46e74e38f3b",
+              "run_params.yaml": "0633e03904f49ece44470e79e9e8643d3d127548f6ee09844e38c04cb4f02ce4"
+            }
+          },
+          {
+            "role": "outer_jurkat__inner_hepg2",
+            "context": "hepg2",
+            "targets": [
+              "EXOSC4",
+              "NUDCD3",
+              "ZBTB17",
+              "HSD17B10",
+              "RAB4B",
+              "BTF3",
+              "NUP133",
+              "RSL1D1"
+            ],
+            "truth_cells_per_target": {
+              "EXOSC4": 128,
+              "NUDCD3": 172,
+              "ZBTB17": 130,
+              "HSD17B10": 229,
+              "RAB4B": 185,
+              "BTF3": 212,
+              "NUP133": 217,
+              "RSL1D1": 166
+            },
+            "prediction_cells_per_target": 400,
+            "fixed_leaves": {
+              "real.h5ad": "4ab0dda649ba29e884577e7e9abb1f108b8980bf568537089a9aba0d9e7cd26e",
+              "panel.json": "2353df854df86e2adc513f3bc3b0951fced9479abacac8bf58e32c77e6eea855",
+              "genes.txt": "527f931eb5f89621bd87efe08cc802777b7aa1d1f7442e6264722345975e2a05",
+              "generation_pool.npz": "3335652f307be414968e64c1a6be0bedea461fa338d81cdb9622b3a12f3a864e",
+              "references/reference.json": "30ac930d2e90cc00e7a77218f564f316f876ca39d94d9238961079d8d7edb11b",
+              "references/anchor_aggregate.parquet": "c99d5e9c09343ab138cba024e823123da0b3bfbe9435e3e9ce27d802228947d0"
+            },
+            "references": {
+              "anchor_aggregate.parquet": "c99d5e9c09343ab138cba024e823123da0b3bfbe9435e3e9ce27d802228947d0",
+              "anchor_splits.parquet": "a8376b957895f8a82e11282c7535a032978351fff005f8d1ce5f3b83ed38e446",
+              "baseline_aggregate.csv": "b121e131e76abff31df7d77cf30bd9034f09a236e7927b63e24395afe85ce183",
+              "baseline_metrics.csv": "f18b033665bdd32904e65060486ee7161790146c1ec69a3a30c65990b4589d09",
+              "config.json": "036eccbd6d9aed2de491e562988b8548448333527b8896defeebe8d854547d8c",
+              "fixed_scale.json": "606c7b3fd65b1993643e1e0d4c28317409942d80c478a6a1e6a1799aebe21a75",
+              "reference.json": "30ac930d2e90cc00e7a77218f564f316f876ca39d94d9238961079d8d7edb11b",
+              "run_params.yaml": "df786173638ede34e6e55b3a0ef70de452664e3681dfeb0f90500797ea0fb80b"
+            }
+          },
+          {
+            "role": "outer_jurkat__inner_rpe1",
+            "context": "rpe1",
+            "targets": [
+              "MON1A",
+              "TUFM",
+              "SNRNP40",
+              "C1orf109",
+              "ATP2A2",
+              "SBNO1",
+              "TUBB",
+              "RTRAF"
+            ],
+            "truth_cells_per_target": {
+              "MON1A": 175,
+              "TUFM": 176,
+              "SNRNP40": 229,
+              "C1orf109": 214,
+              "ATP2A2": 144,
+              "SBNO1": 172,
+              "TUBB": 256,
+              "RTRAF": 197
+            },
+            "prediction_cells_per_target": 400,
+            "fixed_leaves": {
+              "real.h5ad": "54f612978b999a92fbc1c853971afd255138a9c179a530a4530098262dfcc02c",
+              "panel.json": "c656fde57f52defa6acbb1083bb259379ceef4d9dc453b6a33d81c097fd79f0f",
+              "genes.txt": "89c390f18318c0db86dcffb2c447ff12cc4625d4be940ee1eabde4d085a8120a",
+              "generation_pool.npz": "46e50b8b9fdf0404c4ae8177a1bd76609f567241644615ba38b5e3c7e2c9aedb",
+              "references/reference.json": "e34f0840fbc68b837b219777ef72aa11d945cbcdd99fdc193261c46e74e38f3b",
+              "references/anchor_aggregate.parquet": "14045b5bf024fcf8ae9a5a945971fea4c69fe0d363933e58bdd91018c18570e2"
+            },
+            "references": {
+              "anchor_aggregate.parquet": "14045b5bf024fcf8ae9a5a945971fea4c69fe0d363933e58bdd91018c18570e2",
+              "anchor_splits.parquet": "5dbc1f69af32be1fe467fde30f1e485848119a50c65523705d0473236bcc62fa",
+              "baseline_aggregate.csv": "3c62c445430342df1c8ea8815bbdc39cdb01fce90346de9b1c67b7ef7363357e",
+              "baseline_metrics.csv": "72be655804d18491d441141e8c732b7e16498f3bef99cdfaad48354e2dddf5bc",
+              "config.json": "b274e48e6f95012291af4a59dcac8339c279f609d4aedd8accdd635ab9281610",
+              "fixed_scale.json": "606c7b3fd65b1993643e1e0d4c28317409942d80c478a6a1e6a1799aebe21a75",
+              "reference.json": "e34f0840fbc68b837b219777ef72aa11d945cbcdd99fdc193261c46e74e38f3b",
+              "run_params.yaml": "0633e03904f49ece44470e79e9e8643d3d127548f6ee09844e38c04cb4f02ce4"
+            }
+          },
+          {
+            "role": "outer_rpe1__inner_hepg2",
+            "context": "hepg2",
+            "targets": [
+              "EXOSC4",
+              "NUDCD3",
+              "ZBTB17",
+              "HSD17B10",
+              "RAB4B",
+              "BTF3",
+              "NUP133",
+              "RSL1D1"
+            ],
+            "truth_cells_per_target": {
+              "EXOSC4": 128,
+              "NUDCD3": 172,
+              "ZBTB17": 130,
+              "HSD17B10": 229,
+              "RAB4B": 185,
+              "BTF3": 212,
+              "NUP133": 217,
+              "RSL1D1": 166
+            },
+            "prediction_cells_per_target": 400,
+            "fixed_leaves": {
+              "real.h5ad": "4ab0dda649ba29e884577e7e9abb1f108b8980bf568537089a9aba0d9e7cd26e",
+              "panel.json": "2353df854df86e2adc513f3bc3b0951fced9479abacac8bf58e32c77e6eea855",
+              "genes.txt": "527f931eb5f89621bd87efe08cc802777b7aa1d1f7442e6264722345975e2a05",
+              "generation_pool.npz": "3335652f307be414968e64c1a6be0bedea461fa338d81cdb9622b3a12f3a864e",
+              "references/reference.json": "30ac930d2e90cc00e7a77218f564f316f876ca39d94d9238961079d8d7edb11b",
+              "references/anchor_aggregate.parquet": "c99d5e9c09343ab138cba024e823123da0b3bfbe9435e3e9ce27d802228947d0"
+            },
+            "references": {
+              "anchor_aggregate.parquet": "c99d5e9c09343ab138cba024e823123da0b3bfbe9435e3e9ce27d802228947d0",
+              "anchor_splits.parquet": "a8376b957895f8a82e11282c7535a032978351fff005f8d1ce5f3b83ed38e446",
+              "baseline_aggregate.csv": "b121e131e76abff31df7d77cf30bd9034f09a236e7927b63e24395afe85ce183",
+              "baseline_metrics.csv": "f18b033665bdd32904e65060486ee7161790146c1ec69a3a30c65990b4589d09",
+              "config.json": "036eccbd6d9aed2de491e562988b8548448333527b8896defeebe8d854547d8c",
+              "fixed_scale.json": "606c7b3fd65b1993643e1e0d4c28317409942d80c478a6a1e6a1799aebe21a75",
+              "reference.json": "30ac930d2e90cc00e7a77218f564f316f876ca39d94d9238961079d8d7edb11b",
+              "run_params.yaml": "df786173638ede34e6e55b3a0ef70de452664e3681dfeb0f90500797ea0fb80b"
+            }
+          },
+          {
+            "role": "outer_rpe1__inner_jurkat",
+            "context": "jurkat",
+            "targets": [
+              "MON1A",
+              "GPN3",
+              "SNRNP40",
+              "RPL39",
+              "C1orf109",
+              "ATP2A2",
+              "RTRAF",
+              "PDCD6"
+            ],
+            "truth_cells_per_target": {
+              "MON1A": 162,
+              "GPN3": 188,
+              "SNRNP40": 147,
+              "RPL39": 170,
+              "C1orf109": 165,
+              "ATP2A2": 131,
+              "RTRAF": 183,
+              "PDCD6": 129
+            },
+            "prediction_cells_per_target": 400,
+            "fixed_leaves": {
+              "real.h5ad": "a3ccacb318398021af130ecf2fe1ecb2fb62b8fc6f64288091665c1c7423867a",
+              "panel.json": "de718519c79cabdc1cac722652d67925ee868d8d78bc15a3ff36f86887f1b669",
+              "genes.txt": "26540d68796c3b9601f644242e154733d280e5e1742664b7f0ae41180b80d269",
+              "generation_pool.npz": "9e76f6ef6fa63bebbeedd613142f2082bcf8ef7d839029d68ac0bd525737d87c",
+              "references/reference.json": "f81713db158a7dca4a0a3b3cdc9a83f23a1f74fe13db2269a97be3bc987f16e3",
+              "references/anchor_aggregate.parquet": "83277c1d932e28544b18ae78a128d00161c88fd922a9e07acb882b8b3528be36"
+            },
+            "references": {
+              "anchor_aggregate.parquet": "83277c1d932e28544b18ae78a128d00161c88fd922a9e07acb882b8b3528be36",
+              "anchor_splits.parquet": "56f6b28df310a0622829ea322edcfdaa49f7e01c2f7fd845fd6ada63846456a6",
+              "baseline_aggregate.csv": "9ed139ec171561822e5c6a898f4a8115f06a47debe79b27ec351539d46141dc1",
+              "baseline_metrics.csv": "8a4ac2738d221822e500b29648b6987a23d3197f18e45caf936bcfde1bb41567",
+              "config.json": "0731f069959cbd4e4e3db9f5ff24dd376fe0d5c591d1e77b877d20abab206e2e",
+              "fixed_scale.json": "606c7b3fd65b1993643e1e0d4c28317409942d80c478a6a1e6a1799aebe21a75",
+              "reference.json": "f81713db158a7dca4a0a3b3cdc9a83f23a1f74fe13db2269a97be3bc987f16e3",
+              "run_params.yaml": "d3797dd2de29f925462591ff88481d7f7eb6460280f9159f6ba8af49ea4d3230"
+            }
+          }
+        ],
+        "scoring_code": {
+          "C:\\00 - Competition\\scripts\\native_reproducer.py": "ccb7bcfb136223b3f00b7ce80369b0603131a797df709db20a36fb9cff3a6c88",
+          "C:\\00 - Competition\\archive\\legacy_20261003\\src\\vcc2026\\score_residual_v6.py": "f29583fc5517f8520d7c36f2ff55e670e7a0b022626f00af204e2b8c1d21630a",
+          "C:\\00 - Competition\\archive\\legacy_20261003\\src\\vcc2026\\diagnose_v4.py": "2c07c165410493db3c18a2c9b23ad38d3a474caa424823014a2477644bcbefe7",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\__init__.py": "e11c23963892af67eb63bfb11e35a26c66b47ddb2685213e85c0f9bce2a6f72b",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\_cell_archive.py": "693e6fc2c4f80f3a665fd3870c2dcd9263583aded6945b31afe51a845b4e2966",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\_sparse.py": "c8dbcaef85be37f4f66b9ebdc0645959b9b74e3fa39a532effa979e6953b4b01",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\_threads.py": "a3fbd6ee0c0d0b8d1193e953f1b0b5e478127f13b8f3095fb5f3bac7228b9f52",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\anchor.py": "858f87400e2ecd15e1e6dd7204b7ae8844459e6d0c7a7c32996cafffb22ecf1b",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\baseline.py": "dac2f014cf41ac36e8160bfaa2a65508778adb8a5b1e3522d25d3f16642f3abf",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\cache.py": "7423abfcd6b3847c2757c022982be75e3deeb32a4f60ff323b6c97436acde782",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\catalog.py": "d371aa454ec07dbaa7aa21fcbc2929ef9b8a55691aae39a471f90f0d4e5752df",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\ceiling.py": "9c5429274c65d02d387f0bf20912bde9b71e6c737e608c72a826c7c1bf7ad077",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\cell_source.py": "702e2afb67053ece744841b720fda3f953710f8bc70493cdaed7ac4a2c22ec0e",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\cellstream.py": "cac9ea2e57f221585cfbc42db654d7354d1e0e1ea6898f58edcdfc9d9290c3c1",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\cli.py": "b8db7430f94b8ee59b800b376cf996dba20b14a5491d3ea67e7c9fea6f75712c",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\compat\\__init__.py": "9ac55790eedfecdfb2e81951beaf50a550b937c79e5220b8776a428a27148b8b",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\compat\\utils.py": "73041ca26791e41e222016ba8698b0a7c03d094868edd0e4d393ca4cd843ab42",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\competition.py": "6e98756416bf74b5ac13f729059cdeb5dd566c8edb65bdc7a9b1ff98c3dadfb4",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\config.py": "30381857e42b7bdc03f0d0779f83885656e9e19f8a6747483976a5342f49f8ec",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\de.py": "525b19837c7b42c15838d9f2c053ae19f4108872329d183e4d977620ebe316df",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\de_compute.py": "d2ab56cd4c0fed1d4f6d9a1861ae696917d0cef8bdc01a806dfa74bc215f1bde",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\deseq2_de.py": "00b0853026aadfe521adf1a6b06d0490d46d8381216c39f80f5c5c18da42582d",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\distances.py": "5f2ea019aa1c89d454f20ace34ebca4ccc4e397576ae8d3c4ef4f2db43e7292d",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\gpu\\__init__.py": "e1d977a57d060f6544331003be8c64cb01a8f4e9db1a4e563ce871779df44c80",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\gpu\\bulk.py": "f73abd666b02b99acaeb94b8c5478d9bd80ff2803d2a27f7c59c574e3f4705ae",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\gpu\\distances.py": "837481946f5f4b3dfdd83b920e6a322127e6afafaee606796849b84284cbe6fc",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\h5ad_manifest.py": "238a2c3943601b9bbb768a0889f06fc98f204f078ad545774ab6750b0b621627",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\io.py": "a119bce81e432ff137fc997a4c853561ff08e1e04b2f3978909093e02f7463e1",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\lfc_nmae_ref.py": "8047661f648d013152ce9eb5a093a26cb79b3301090337c40d7d00678bfc10d0",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\metrics\\__init__.py": "bb30167841adbcc9df6edea10ab2773c1597b9b449853eceebd6f299457b7540",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\metrics\\de.py": "6cb7bee7cad59c2a20e45d68ca75b8696723cacc56b8dc94da92ac7676813038",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\metrics\\delta.py": "6067d0c5bd7cac4715406cd4935ec86326e91c6217f204f6bfc5b0a7bb948a8c",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\metrics\\direction.py": "50624ad3253d1bbb213c90110dd309711579e26479174a88e1ed60444f5637b5",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\metrics\\discrimination.py": "34802605c5bec46a845088048cb5bff2c7b4266d17ce1a68936a94bb72188b5d",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\moments.py": "117aa11b3ab611795bc5be5af7a84ae9ae6fef6a451fbf4c94b730fee7d55679",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\noise.py": "a313a5fdc745f3c9db08cdf710ada750c4faea90b08b9853ccf886c63b41eb23",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\norm.py": "6b8dd786a305dfabb499324dc07b8a4be821d583a65e87060cd729463d8367ba",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\partition.py": "8226e5ebce25b31db0158a1aa7a534553f736492fcfec06f9a47efafd24169a9",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\partition_inmem.py": "755e186beb2bbe974479db9daa86600d904e8cb3380fefd5940e8748dd9a2908",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\prep.py": "d07b7d314c69aff6168c6334da95aed8c46d5e27ec59f45a0215d973f59a6912",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\real_bundle.py": "26ef883bd2a9dfaf63a65ce2b6497dcaa4904a482f9074d7b3a824918749f699",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\rowstore.py": "124a832882d85a9f7ba82b65238beb20190f04f602f2e2c973dad78ed214b0c7",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\run.py": "4c889611b4726ac574546af50bce15f830243c46f7609746e0b3e0fafe9cf0c3",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\safety.py": "0e0d17af654a9394dfb9b39c42593ca00e1a459d5177d5697a6006afff8224a8",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\scale.py": "7e1c66664d3763d1af138b6a6563cedafdf54b092cf7e043aa83dbd308194aa7",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\scales.py": "64027cfe5f069b74f7034988debc2d83923be9688558fce94aa22aa7eb0d79e7",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\score.py": "fc1237a3d09396513620ddeffe2a0b24aabb434e84f70a145d9484f00ca8e3d5",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\scoring.py": "9377d80c2853af2c1ace2cb4e576a6db8c24f3f5af859ff426b336df08819929",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\stream.py": "dc54e24aa99bd6e8403c1e046bf0232b8f35d0b53ee371286cfdb5b3a1ae20ae",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\streaming_bulk.py": "ebe2996ca971390325b57c62f85a854be3b7270ab04ca3bbfb7943cbbbcc4929"
+        },
+        "metric_weights": {
+          "pds_cosine": 0.16666666666666666,
+          "expr_mse_unbiased_capped_norm": 0.16666666666666666,
+          "de_wilcoxon_direction_fidelity_yield_raw": 0.16666666666666666,
+          "de_wilcoxon_direction_reach_raw": 0.16666666666666666,
+          "de_wilcoxon_sig_jaccard": 0.16666666666666666,
+          "de_wilcoxon_lfc_nmae": 0.16666666666666666
+        },
+        "aggregation": "six metrics equal; two roles equal within background; three backgrounds equal",
+        "scoring_runtime": "envs/vcc313/Scripts/python.exe; cell_eval2==0.16.0; vcc2026 CPU scanpy"
+      }
+    },
+    {
+      "run": "clean400_v1",
+      "protocol_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\clean400_v1\\PROTOCOL.json",
+      "protocol_sha256": "296c48ce0e427a8e063d488f0e15b3479765e9ce9a3b672852d97d48f33cc271",
+      "evaluation_sha256": "c8a719bda010e352af4dd7c433313c795eab5460e709897a95b474cd9091e35c",
+      "evaluation": {
+        "cell_count": 400,
+        "count_seed": 20260928,
+        "donor_seed": 20261028,
+        "cases": [
+          {
+            "role": "outer_hepg2__inner_jurkat",
+            "context": "jurkat",
+            "targets": [
+              "MON1A",
+              "GPN3",
+              "SNRNP40",
+              "RPL39",
+              "C1orf109",
+              "ATP2A2",
+              "RTRAF",
+              "PDCD6"
+            ],
+            "truth_cells_per_target": {
+              "MON1A": 162,
+              "GPN3": 188,
+              "SNRNP40": 147,
+              "RPL39": 170,
+              "C1orf109": 165,
+              "ATP2A2": 131,
+              "RTRAF": 183,
+              "PDCD6": 129
+            },
+            "prediction_cells_per_target": 400,
+            "fixed_leaves": {
+              "real.h5ad": "a3ccacb318398021af130ecf2fe1ecb2fb62b8fc6f64288091665c1c7423867a",
+              "panel.json": "de718519c79cabdc1cac722652d67925ee868d8d78bc15a3ff36f86887f1b669",
+              "genes.txt": "26540d68796c3b9601f644242e154733d280e5e1742664b7f0ae41180b80d269",
+              "generation_pool.npz": "9e76f6ef6fa63bebbeedd613142f2082bcf8ef7d839029d68ac0bd525737d87c",
+              "references/reference.json": "f81713db158a7dca4a0a3b3cdc9a83f23a1f74fe13db2269a97be3bc987f16e3",
+              "references/anchor_aggregate.parquet": "83277c1d932e28544b18ae78a128d00161c88fd922a9e07acb882b8b3528be36"
+            },
+            "references": {
+              "anchor_aggregate.parquet": "83277c1d932e28544b18ae78a128d00161c88fd922a9e07acb882b8b3528be36",
+              "anchor_splits.parquet": "56f6b28df310a0622829ea322edcfdaa49f7e01c2f7fd845fd6ada63846456a6",
+              "baseline_aggregate.csv": "9ed139ec171561822e5c6a898f4a8115f06a47debe79b27ec351539d46141dc1",
+              "baseline_metrics.csv": "8a4ac2738d221822e500b29648b6987a23d3197f18e45caf936bcfde1bb41567",
+              "config.json": "0731f069959cbd4e4e3db9f5ff24dd376fe0d5c591d1e77b877d20abab206e2e",
+              "fixed_scale.json": "606c7b3fd65b1993643e1e0d4c28317409942d80c478a6a1e6a1799aebe21a75",
+              "reference.json": "f81713db158a7dca4a0a3b3cdc9a83f23a1f74fe13db2269a97be3bc987f16e3",
+              "run_params.yaml": "d3797dd2de29f925462591ff88481d7f7eb6460280f9159f6ba8af49ea4d3230"
+            }
+          },
+          {
+            "role": "outer_hepg2__inner_rpe1",
+            "context": "rpe1",
+            "targets": [
+              "MON1A",
+              "TUFM",
+              "SNRNP40",
+              "C1orf109",
+              "ATP2A2",
+              "SBNO1",
+              "TUBB",
+              "RTRAF"
+            ],
+            "truth_cells_per_target": {
+              "MON1A": 175,
+              "TUFM": 176,
+              "SNRNP40": 229,
+              "C1orf109": 214,
+              "ATP2A2": 144,
+              "SBNO1": 172,
+              "TUBB": 256,
+              "RTRAF": 197
+            },
+            "prediction_cells_per_target": 400,
+            "fixed_leaves": {
+              "real.h5ad": "54f612978b999a92fbc1c853971afd255138a9c179a530a4530098262dfcc02c",
+              "panel.json": "c656fde57f52defa6acbb1083bb259379ceef4d9dc453b6a33d81c097fd79f0f",
+              "genes.txt": "89c390f18318c0db86dcffb2c447ff12cc4625d4be940ee1eabde4d085a8120a",
+              "generation_pool.npz": "46e50b8b9fdf0404c4ae8177a1bd76609f567241644615ba38b5e3c7e2c9aedb",
+              "references/reference.json": "e34f0840fbc68b837b219777ef72aa11d945cbcdd99fdc193261c46e74e38f3b",
+              "references/anchor_aggregate.parquet": "14045b5bf024fcf8ae9a5a945971fea4c69fe0d363933e58bdd91018c18570e2"
+            },
+            "references": {
+              "anchor_aggregate.parquet": "14045b5bf024fcf8ae9a5a945971fea4c69fe0d363933e58bdd91018c18570e2",
+              "anchor_splits.parquet": "5dbc1f69af32be1fe467fde30f1e485848119a50c65523705d0473236bcc62fa",
+              "baseline_aggregate.csv": "3c62c445430342df1c8ea8815bbdc39cdb01fce90346de9b1c67b7ef7363357e",
+              "baseline_metrics.csv": "72be655804d18491d441141e8c732b7e16498f3bef99cdfaad48354e2dddf5bc",
+              "config.json": "b274e48e6f95012291af4a59dcac8339c279f609d4aedd8accdd635ab9281610",
+              "fixed_scale.json": "606c7b3fd65b1993643e1e0d4c28317409942d80c478a6a1e6a1799aebe21a75",
+              "reference.json": "e34f0840fbc68b837b219777ef72aa11d945cbcdd99fdc193261c46e74e38f3b",
+              "run_params.yaml": "0633e03904f49ece44470e79e9e8643d3d127548f6ee09844e38c04cb4f02ce4"
+            }
+          },
+          {
+            "role": "outer_jurkat__inner_hepg2",
+            "context": "hepg2",
+            "targets": [
+              "EXOSC4",
+              "NUDCD3",
+              "ZBTB17",
+              "HSD17B10",
+              "RAB4B",
+              "BTF3",
+              "NUP133",
+              "RSL1D1"
+            ],
+            "truth_cells_per_target": {
+              "EXOSC4": 128,
+              "NUDCD3": 172,
+              "ZBTB17": 130,
+              "HSD17B10": 229,
+              "RAB4B": 185,
+              "BTF3": 212,
+              "NUP133": 217,
+              "RSL1D1": 166
+            },
+            "prediction_cells_per_target": 400,
+            "fixed_leaves": {
+              "real.h5ad": "4ab0dda649ba29e884577e7e9abb1f108b8980bf568537089a9aba0d9e7cd26e",
+              "panel.json": "2353df854df86e2adc513f3bc3b0951fced9479abacac8bf58e32c77e6eea855",
+              "genes.txt": "527f931eb5f89621bd87efe08cc802777b7aa1d1f7442e6264722345975e2a05",
+              "generation_pool.npz": "3335652f307be414968e64c1a6be0bedea461fa338d81cdb9622b3a12f3a864e",
+              "references/reference.json": "30ac930d2e90cc00e7a77218f564f316f876ca39d94d9238961079d8d7edb11b",
+              "references/anchor_aggregate.parquet": "c99d5e9c09343ab138cba024e823123da0b3bfbe9435e3e9ce27d802228947d0"
+            },
+            "references": {
+              "anchor_aggregate.parquet": "c99d5e9c09343ab138cba024e823123da0b3bfbe9435e3e9ce27d802228947d0",
+              "anchor_splits.parquet": "a8376b957895f8a82e11282c7535a032978351fff005f8d1ce5f3b83ed38e446",
+              "baseline_aggregate.csv": "b121e131e76abff31df7d77cf30bd9034f09a236e7927b63e24395afe85ce183",
+              "baseline_metrics.csv": "f18b033665bdd32904e65060486ee7161790146c1ec69a3a30c65990b4589d09",
+              "config.json": "036eccbd6d9aed2de491e562988b8548448333527b8896defeebe8d854547d8c",
+              "fixed_scale.json": "606c7b3fd65b1993643e1e0d4c28317409942d80c478a6a1e6a1799aebe21a75",
+              "reference.json": "30ac930d2e90cc00e7a77218f564f316f876ca39d94d9238961079d8d7edb11b",
+              "run_params.yaml": "df786173638ede34e6e55b3a0ef70de452664e3681dfeb0f90500797ea0fb80b"
+            }
+          },
+          {
+            "role": "outer_jurkat__inner_rpe1",
+            "context": "rpe1",
+            "targets": [
+              "MON1A",
+              "TUFM",
+              "SNRNP40",
+              "C1orf109",
+              "ATP2A2",
+              "SBNO1",
+              "TUBB",
+              "RTRAF"
+            ],
+            "truth_cells_per_target": {
+              "MON1A": 175,
+              "TUFM": 176,
+              "SNRNP40": 229,
+              "C1orf109": 214,
+              "ATP2A2": 144,
+              "SBNO1": 172,
+              "TUBB": 256,
+              "RTRAF": 197
+            },
+            "prediction_cells_per_target": 400,
+            "fixed_leaves": {
+              "real.h5ad": "54f612978b999a92fbc1c853971afd255138a9c179a530a4530098262dfcc02c",
+              "panel.json": "c656fde57f52defa6acbb1083bb259379ceef4d9dc453b6a33d81c097fd79f0f",
+              "genes.txt": "89c390f18318c0db86dcffb2c447ff12cc4625d4be940ee1eabde4d085a8120a",
+              "generation_pool.npz": "46e50b8b9fdf0404c4ae8177a1bd76609f567241644615ba38b5e3c7e2c9aedb",
+              "references/reference.json": "e34f0840fbc68b837b219777ef72aa11d945cbcdd99fdc193261c46e74e38f3b",
+              "references/anchor_aggregate.parquet": "14045b5bf024fcf8ae9a5a945971fea4c69fe0d363933e58bdd91018c18570e2"
+            },
+            "references": {
+              "anchor_aggregate.parquet": "14045b5bf024fcf8ae9a5a945971fea4c69fe0d363933e58bdd91018c18570e2",
+              "anchor_splits.parquet": "5dbc1f69af32be1fe467fde30f1e485848119a50c65523705d0473236bcc62fa",
+              "baseline_aggregate.csv": "3c62c445430342df1c8ea8815bbdc39cdb01fce90346de9b1c67b7ef7363357e",
+              "baseline_metrics.csv": "72be655804d18491d441141e8c732b7e16498f3bef99cdfaad48354e2dddf5bc",
+              "config.json": "b274e48e6f95012291af4a59dcac8339c279f609d4aedd8accdd635ab9281610",
+              "fixed_scale.json": "606c7b3fd65b1993643e1e0d4c28317409942d80c478a6a1e6a1799aebe21a75",
+              "reference.json": "e34f0840fbc68b837b219777ef72aa11d945cbcdd99fdc193261c46e74e38f3b",
+              "run_params.yaml": "0633e03904f49ece44470e79e9e8643d3d127548f6ee09844e38c04cb4f02ce4"
+            }
+          },
+          {
+            "role": "outer_rpe1__inner_hepg2",
+            "context": "hepg2",
+            "targets": [
+              "EXOSC4",
+              "NUDCD3",
+              "ZBTB17",
+              "HSD17B10",
+              "RAB4B",
+              "BTF3",
+              "NUP133",
+              "RSL1D1"
+            ],
+            "truth_cells_per_target": {
+              "EXOSC4": 128,
+              "NUDCD3": 172,
+              "ZBTB17": 130,
+              "HSD17B10": 229,
+              "RAB4B": 185,
+              "BTF3": 212,
+              "NUP133": 217,
+              "RSL1D1": 166
+            },
+            "prediction_cells_per_target": 400,
+            "fixed_leaves": {
+              "real.h5ad": "4ab0dda649ba29e884577e7e9abb1f108b8980bf568537089a9aba0d9e7cd26e",
+              "panel.json": "2353df854df86e2adc513f3bc3b0951fced9479abacac8bf58e32c77e6eea855",
+              "genes.txt": "527f931eb5f89621bd87efe08cc802777b7aa1d1f7442e6264722345975e2a05",
+              "generation_pool.npz": "3335652f307be414968e64c1a6be0bedea461fa338d81cdb9622b3a12f3a864e",
+              "references/reference.json": "30ac930d2e90cc00e7a77218f564f316f876ca39d94d9238961079d8d7edb11b",
+              "references/anchor_aggregate.parquet": "c99d5e9c09343ab138cba024e823123da0b3bfbe9435e3e9ce27d802228947d0"
+            },
+            "references": {
+              "anchor_aggregate.parquet": "c99d5e9c09343ab138cba024e823123da0b3bfbe9435e3e9ce27d802228947d0",
+              "anchor_splits.parquet": "a8376b957895f8a82e11282c7535a032978351fff005f8d1ce5f3b83ed38e446",
+              "baseline_aggregate.csv": "b121e131e76abff31df7d77cf30bd9034f09a236e7927b63e24395afe85ce183",
+              "baseline_metrics.csv": "f18b033665bdd32904e65060486ee7161790146c1ec69a3a30c65990b4589d09",
+              "config.json": "036eccbd6d9aed2de491e562988b8548448333527b8896defeebe8d854547d8c",
+              "fixed_scale.json": "606c7b3fd65b1993643e1e0d4c28317409942d80c478a6a1e6a1799aebe21a75",
+              "reference.json": "30ac930d2e90cc00e7a77218f564f316f876ca39d94d9238961079d8d7edb11b",
+              "run_params.yaml": "df786173638ede34e6e55b3a0ef70de452664e3681dfeb0f90500797ea0fb80b"
+            }
+          },
+          {
+            "role": "outer_rpe1__inner_jurkat",
+            "context": "jurkat",
+            "targets": [
+              "MON1A",
+              "GPN3",
+              "SNRNP40",
+              "RPL39",
+              "C1orf109",
+              "ATP2A2",
+              "RTRAF",
+              "PDCD6"
+            ],
+            "truth_cells_per_target": {
+              "MON1A": 162,
+              "GPN3": 188,
+              "SNRNP40": 147,
+              "RPL39": 170,
+              "C1orf109": 165,
+              "ATP2A2": 131,
+              "RTRAF": 183,
+              "PDCD6": 129
+            },
+            "prediction_cells_per_target": 400,
+            "fixed_leaves": {
+              "real.h5ad": "a3ccacb318398021af130ecf2fe1ecb2fb62b8fc6f64288091665c1c7423867a",
+              "panel.json": "de718519c79cabdc1cac722652d67925ee868d8d78bc15a3ff36f86887f1b669",
+              "genes.txt": "26540d68796c3b9601f644242e154733d280e5e1742664b7f0ae41180b80d269",
+              "generation_pool.npz": "9e76f6ef6fa63bebbeedd613142f2082bcf8ef7d839029d68ac0bd525737d87c",
+              "references/reference.json": "f81713db158a7dca4a0a3b3cdc9a83f23a1f74fe13db2269a97be3bc987f16e3",
+              "references/anchor_aggregate.parquet": "83277c1d932e28544b18ae78a128d00161c88fd922a9e07acb882b8b3528be36"
+            },
+            "references": {
+              "anchor_aggregate.parquet": "83277c1d932e28544b18ae78a128d00161c88fd922a9e07acb882b8b3528be36",
+              "anchor_splits.parquet": "56f6b28df310a0622829ea322edcfdaa49f7e01c2f7fd845fd6ada63846456a6",
+              "baseline_aggregate.csv": "9ed139ec171561822e5c6a898f4a8115f06a47debe79b27ec351539d46141dc1",
+              "baseline_metrics.csv": "8a4ac2738d221822e500b29648b6987a23d3197f18e45caf936bcfde1bb41567",
+              "config.json": "0731f069959cbd4e4e3db9f5ff24dd376fe0d5c591d1e77b877d20abab206e2e",
+              "fixed_scale.json": "606c7b3fd65b1993643e1e0d4c28317409942d80c478a6a1e6a1799aebe21a75",
+              "reference.json": "f81713db158a7dca4a0a3b3cdc9a83f23a1f74fe13db2269a97be3bc987f16e3",
+              "run_params.yaml": "d3797dd2de29f925462591ff88481d7f7eb6460280f9159f6ba8af49ea4d3230"
+            }
+          }
+        ],
+        "scoring_code": {
+          "C:\\00 - Competition\\scripts\\native_reproducer.py": "ccb7bcfb136223b3f00b7ce80369b0603131a797df709db20a36fb9cff3a6c88",
+          "C:\\00 - Competition\\archive\\legacy_20261003\\src\\vcc2026\\score_residual_v6.py": "f29583fc5517f8520d7c36f2ff55e670e7a0b022626f00af204e2b8c1d21630a",
+          "C:\\00 - Competition\\archive\\legacy_20261003\\src\\vcc2026\\diagnose_v4.py": "2c07c165410493db3c18a2c9b23ad38d3a474caa424823014a2477644bcbefe7",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\__init__.py": "e11c23963892af67eb63bfb11e35a26c66b47ddb2685213e85c0f9bce2a6f72b",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\_cell_archive.py": "693e6fc2c4f80f3a665fd3870c2dcd9263583aded6945b31afe51a845b4e2966",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\_sparse.py": "c8dbcaef85be37f4f66b9ebdc0645959b9b74e3fa39a532effa979e6953b4b01",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\_threads.py": "a3fbd6ee0c0d0b8d1193e953f1b0b5e478127f13b8f3095fb5f3bac7228b9f52",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\anchor.py": "858f87400e2ecd15e1e6dd7204b7ae8844459e6d0c7a7c32996cafffb22ecf1b",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\baseline.py": "dac2f014cf41ac36e8160bfaa2a65508778adb8a5b1e3522d25d3f16642f3abf",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\cache.py": "7423abfcd6b3847c2757c022982be75e3deeb32a4f60ff323b6c97436acde782",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\catalog.py": "d371aa454ec07dbaa7aa21fcbc2929ef9b8a55691aae39a471f90f0d4e5752df",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\ceiling.py": "9c5429274c65d02d387f0bf20912bde9b71e6c737e608c72a826c7c1bf7ad077",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\cell_source.py": "702e2afb67053ece744841b720fda3f953710f8bc70493cdaed7ac4a2c22ec0e",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\cellstream.py": "cac9ea2e57f221585cfbc42db654d7354d1e0e1ea6898f58edcdfc9d9290c3c1",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\cli.py": "b8db7430f94b8ee59b800b376cf996dba20b14a5491d3ea67e7c9fea6f75712c",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\compat\\__init__.py": "9ac55790eedfecdfb2e81951beaf50a550b937c79e5220b8776a428a27148b8b",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\compat\\utils.py": "73041ca26791e41e222016ba8698b0a7c03d094868edd0e4d393ca4cd843ab42",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\competition.py": "6e98756416bf74b5ac13f729059cdeb5dd566c8edb65bdc7a9b1ff98c3dadfb4",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\config.py": "30381857e42b7bdc03f0d0779f83885656e9e19f8a6747483976a5342f49f8ec",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\de.py": "525b19837c7b42c15838d9f2c053ae19f4108872329d183e4d977620ebe316df",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\de_compute.py": "d2ab56cd4c0fed1d4f6d9a1861ae696917d0cef8bdc01a806dfa74bc215f1bde",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\deseq2_de.py": "00b0853026aadfe521adf1a6b06d0490d46d8381216c39f80f5c5c18da42582d",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\distances.py": "5f2ea019aa1c89d454f20ace34ebca4ccc4e397576ae8d3c4ef4f2db43e7292d",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\gpu\\__init__.py": "e1d977a57d060f6544331003be8c64cb01a8f4e9db1a4e563ce871779df44c80",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\gpu\\bulk.py": "f73abd666b02b99acaeb94b8c5478d9bd80ff2803d2a27f7c59c574e3f4705ae",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\gpu\\distances.py": "837481946f5f4b3dfdd83b920e6a322127e6afafaee606796849b84284cbe6fc",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\h5ad_manifest.py": "238a2c3943601b9bbb768a0889f06fc98f204f078ad545774ab6750b0b621627",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\io.py": "a119bce81e432ff137fc997a4c853561ff08e1e04b2f3978909093e02f7463e1",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\lfc_nmae_ref.py": "8047661f648d013152ce9eb5a093a26cb79b3301090337c40d7d00678bfc10d0",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\metrics\\__init__.py": "bb30167841adbcc9df6edea10ab2773c1597b9b449853eceebd6f299457b7540",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\metrics\\de.py": "6cb7bee7cad59c2a20e45d68ca75b8696723cacc56b8dc94da92ac7676813038",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\metrics\\delta.py": "6067d0c5bd7cac4715406cd4935ec86326e91c6217f204f6bfc5b0a7bb948a8c",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\metrics\\direction.py": "50624ad3253d1bbb213c90110dd309711579e26479174a88e1ed60444f5637b5",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\metrics\\discrimination.py": "34802605c5bec46a845088048cb5bff2c7b4266d17ce1a68936a94bb72188b5d",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\moments.py": "117aa11b3ab611795bc5be5af7a84ae9ae6fef6a451fbf4c94b730fee7d55679",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\noise.py": "a313a5fdc745f3c9db08cdf710ada750c4faea90b08b9853ccf886c63b41eb23",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\norm.py": "6b8dd786a305dfabb499324dc07b8a4be821d583a65e87060cd729463d8367ba",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\partition.py": "8226e5ebce25b31db0158a1aa7a534553f736492fcfec06f9a47efafd24169a9",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\partition_inmem.py": "755e186beb2bbe974479db9daa86600d904e8cb3380fefd5940e8748dd9a2908",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\prep.py": "d07b7d314c69aff6168c6334da95aed8c46d5e27ec59f45a0215d973f59a6912",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\real_bundle.py": "26ef883bd2a9dfaf63a65ce2b6497dcaa4904a482f9074d7b3a824918749f699",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\rowstore.py": "124a832882d85a9f7ba82b65238beb20190f04f602f2e2c973dad78ed214b0c7",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\run.py": "4c889611b4726ac574546af50bce15f830243c46f7609746e0b3e0fafe9cf0c3",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\safety.py": "0e0d17af654a9394dfb9b39c42593ca00e1a459d5177d5697a6006afff8224a8",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\scale.py": "7e1c66664d3763d1af138b6a6563cedafdf54b092cf7e043aa83dbd308194aa7",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\scales.py": "64027cfe5f069b74f7034988debc2d83923be9688558fce94aa22aa7eb0d79e7",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\score.py": "fc1237a3d09396513620ddeffe2a0b24aabb434e84f70a145d9484f00ca8e3d5",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\scoring.py": "9377d80c2853af2c1ace2cb4e576a6db8c24f3f5af859ff426b336df08819929",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\stream.py": "dc54e24aa99bd6e8403c1e046bf0232b8f35d0b53ee371286cfdb5b3a1ae20ae",
+          "C:\\00 - Competition\\envs\\vcc313\\Lib\\site-packages\\cell_eval2\\streaming_bulk.py": "ebe2996ca971390325b57c62f85a854be3b7270ab04ca3bbfb7943cbbbcc4929"
+        },
+        "metric_weights": {
+          "pds_cosine": 0.16666666666666666,
+          "expr_mse_unbiased_capped_norm": 0.16666666666666666,
+          "de_wilcoxon_direction_fidelity_yield_raw": 0.16666666666666666,
+          "de_wilcoxon_direction_reach_raw": 0.16666666666666666,
+          "de_wilcoxon_sig_jaccard": 0.16666666666666666,
+          "de_wilcoxon_lfc_nmae": 0.16666666666666666
+        },
+        "aggregation": "six metrics equal; two roles equal within background; three backgrounds equal",
+        "scoring_runtime": "envs/vcc313/Scripts/python.exe; cell_eval2==0.16.0; vcc2026 CPU scanpy"
+      }
+    }
+  ],
+  "interpretation": [
+    "Experiment protocols also bind model and generator inputs, so their full hashes differ.",
+    "Population, targets, genes, anchors, count/donor rule, scorer and weights are identical.",
+    "Saved cross-run overall differences are descriptive comparisons on this same evaluation.",
+    "Historical .259328 used variable generated cell counts; it cannot be subtracted here.",
+    "Formal V28 trained Native backgrounds; its .350948/.368994 is in-domain, not clean generalization.",
+    "Historical Native has a Native-fitted prior scalar; clean V20 B0 removes it.",
+    "Across historical and clean pipelines multiple mean/training/dispersion choices change.",
+    "Only within clean fixed-mean arms is a generator improvement isolated.",
+    "No previously frozen protocol, prediction, score or seal was modified."
+  ],
+  "historical_NB_400_anchor": {
+    "arm": "historical_NB",
+    "overall": 0.24485835090313168,
+    "per_background": {
+      "hepg2": 0.1837602932334646,
+      "jurkat": 0.3252623151975844,
+      "rpe1": 0.22555244427834606
+    },
+    "six_scaled": {
+      "pds_cosine": 0.5989959012321594,
+      "expr_mse_unbiased_capped_norm": 0.0,
+      "de_wilcoxon_direction_fidelity_yield_raw": 0.8089956402846185,
+      "de_wilcoxon_direction_reach_raw": 0.02768612134407583,
+      "de_wilcoxon_sig_jaccard": 0.18143708057732333,
+      "de_wilcoxon_lfc_nmae": -0.1479646380193869
+    }
+  },
+  "clean_descriptive_comparisons": [
+    {
+      "arm": "clean_B0_NB",
+      "overall": 0.27059098184383507,
+      "delta_vs_same_evaluation_historical_NB_400": 0.025732630940703383,
+      "model_scope": "double-held model backgrounds; repeatedly tuned development backgrounds",
+      "causal_single_factor_comparison_with_historical_NB": false
+    },
+    {
+      "arm": "clean_B0_Poisson",
+      "overall": 0.28162419240157394,
+      "delta_vs_same_evaluation_historical_NB_400": 0.03676584149844225,
+      "model_scope": "double-held model backgrounds; repeatedly tuned development backgrounds",
+      "causal_single_factor_comparison_with_historical_NB": false
+    },
+    {
+      "arm": "clean_B0_increment",
+      "overall": 0.2781688530140634,
+      "delta_vs_same_evaluation_historical_NB_400": 0.03331050211093173,
+      "model_scope": "double-held model backgrounds; repeatedly tuned development backgrounds",
+      "causal_single_factor_comparison_with_historical_NB": false
+    }
+  ],
+  "official_calls": 0
+}

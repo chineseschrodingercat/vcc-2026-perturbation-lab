@@ -1,0 +1,23 @@
+{
+  "version": "literal_nb_v28",
+  "authorization": "Continue actual tests on existing local data/models using full available CPU/GPU. No cloud, downloads, or official submission.",
+  "primary_arm": "N1",
+  "arms": {"H0": "Exact actual matched historical V13 multiplier and sparse stochastic round; retained original score reuse", "N1": "Literal V13 donor-by-gene unrounded conditional mean B=x*r; actual NB2 draws with frozen legal V25 theta only"},
+  "effect_source": "matched_V13",
+  "fixed_model": {"candidate": "flow_nb", "checkpoint": 3200, "decoder_checkpoint": 3000, "main_seed": 20261002, "repeat_seed": 20261009, "new_full_fits": 0, "weight_use": "Decoder dispersion parameter only; flow checkpoint/role features are provenance/mask inputs"},
+  "intervention": {"literal_B_coordinate_preserved": true, "IPF": false, "decoder_forward": false, "flow_forward": false, "encoder_forward": false, "V1_anchor": false, "source_condition_draws": false, "new_theta_fit": false, "new_mean_fit": false},
+  "rng": {"donor_seed_offset": 100, "protected_namespace": [0], "nb_namespace": [26, 3], "target_index": "Original historical generation_targets index; all donors drawn before new NB draws"},
+  "count_guard": {"maximum_exact_float32_integer": 16777216, "maximum_row_library_exclusive": 1000000, "failure": "Stop and preserve draw; no clipping, redraw, or target replacement"},
+  "theta": {"source": "Frozen role decoder checkpoint dispersion_unconstrained", "transform": "float32 torch CPU softplus(raw) plus original frozen resolved decoder configuration theta_floor (manifest resolved_model_config merged with frozen latent_flow_v25.DEFAULT_CONFIG), then float64 NumPy NB", "CPU_CUDA_comparison_absolute_tolerance": 0.000002},
+  "means": "B uses exact historical V13 total effect, actual original NTC pool mean, count_ratio pseudocount0.5/cap16/fallback and float64 multiplication. Every editable conditional mean equals literal B coordinate; no IPF, smoothing, pseudorate, or epsilon floor. Protected conditional expectations equal already realized H0 integers.",
+  "editable": "Unchanged input6119 intersect role-seen/own-gene mask and unique native measured genes. All outside/own/unseen coordinates equal literal same-donor H0 integer counts. Original B=0 coordinates remain zero.",
+  "data_boundary": "Zero fits/optimizer updates. Whole destination background remains excluded from frozen role theta fitting; fold234/H1 and raw integer/missing masks preserved. Destination NTC is allowed input. Destination perturbation truth is read only by pinned judge.",
+  "inner": {"model_seed": 20261002, "count_seed": 20260928, "teacher_train_seed": 20260928, "cases": 6, "new_arms": ["N1"], "H0_reuse": "Original V13 effects/count seed/native axes/real/reference/engine plus full literal prediction matrix replay proof"},
+  "inner_gate": {"primary_arm": "N1", "minimum_gain_exclusive": 0.005, "minimum_positive_contexts": 2, "averaging": "Mean two legal roles within destination then equal weight three destinations", "requires_generation_valid": true, "fail_action": "Stop before any V28 outer scores; retain negative result"},
+  "outer": {"arms": ["H0", "N1"], "main_count_seeds": [20260928, 20260929, 20260930], "main_teacher_train_seed": 20260928, "repeat_count_seed": 20260928, "repeat_teacher_train_seed": 20261005, "allowed_only_after_inner_gate_passes": true},
+  "advancement": {"primary_arm": "N1", "minimum_gain_vs_V13_exclusive": 0.005, "minimum_positive_contexts_vs_V13": 2, "all_three_main_count_seed_gains_vs_V13_positive": true, "repeat_gain_vs_V13_positive": true, "local_overall_target": 0.25},
+  "budget": {"new_full_fits": 0, "inner_new_scores": 6, "inner_H0_reuses": 6, "outer_new_scores_if_gate_passes": 12, "outer_H0_reuses_if_gate_passes": 12, "maximum_new_scores": 18},
+  "metrics": "Pinned cell_eval2==0.16.0 with identical native real/split-anchor references; retain all six raw/normalized metrics and direction fidelity/yield precision/coverage decomposition.",
+  "resources": "All logical CPUs; no imposed CPU/GPU limit. This intervention requires CPU counts/parameter transform and performs no neural forward. Single scorer with unchanged75GiB free workspace guard.",
+  "interpretation": "Repeated local development backgrounds, not official/new biological replication. Conditional independent NB changes diagonal variance/zeros/normalized means and may double-count donor count noise. Preserving conditional B does not force finite sample means/row totals to equal expectations. No additive extrapolation from V27 gains or guaranteed0.25. V27 failed H3 gate and unvalidated H4 remain unchanged."
+}

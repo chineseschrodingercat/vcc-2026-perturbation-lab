@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "VCC milestone manifest",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "id",
+    "title",
+    "evidence_scope",
+    "score_protocol_id",
+    "overall",
+    "files",
+    "external_assets"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._-]*$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "evidence_scope": {
+      "type": "string"
+    },
+    "score_protocol_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "overall": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "files": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/asset"
+      }
+    },
+    "external_assets": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/asset"
+      }
+    },
+    "score_replay": {
+      "type": "object",
+      "required": [
+        "scale",
+        "metric_weights",
+        "seeds",
+        "contexts",
+        "cases",
+        "expected_overall"
+      ]
+    }
+  },
+  "$defs": {
+    "asset": {
+      "type": "object",
+      "required": [
+        "path",
+        "sha256",
+        "bytes",
+        "role"
+      ],
+      "properties": {
+        "path": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "role": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "schema": "vcc2026_local_source_registry_v3",
+  "project_root": "C:\\00 - Competition",
+  "recorded_at_utc_date": "2026-09-27",
+  "source_of_truth_for_transforms": [
+    "data/processed/v1/external_pseudobulk/*.qc.json",
+    "data/processed/v2/external_pseudobulk/vcc2025_h1.qc.json",
+    "data/processed/v3/state_cells/protocol.json",
+    "data/processed/v3/state_cells/input_validation.json"
+  ],
+  "files": [
+    {
+      "id": "vcc2026_validation_controls",
+      "path": "data/raw/vcc2026/validation/controls.zip",
+      "landing_page": "https://virtualcellchallenge.org/app/datasets",
+      "bytes": 662118680,
+      "sha256": "329a22bc29cac4f43ad0b846b9bb1a383f7a945c83a8cb0450c465f6dc5cc4b5",
+      "role": "Official A/B/C non-targeting controls and target/gene lists"
+    },
+    {
+      "id": "nadig_hepg2_raw_singlecell",
+      "path": "data/raw/external/nadig_2025/GSE264667_hepg2_raw_singlecell_01.h5ad",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE264nnn/GSE264667/suppl/GSE264667_hepg2_raw_singlecell_01.h5ad",
+      "bytes": 5614460941,
+      "sha256": "e1ad7c3c5a201c861a207a858aa7e59f5e6ac1955674c415f7de0d1dadadb52e",
+      "role": "External raw-count training and validation"
+    },
+    {
+      "id": "nadig_jurkat_raw_singlecell",
+      "path": "data/raw/external/nadig_2025/GSE264667_jurkat_raw_singlecell_01.h5ad",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE264nnn/GSE264667/suppl/GSE264667_jurkat_raw_singlecell_01.h5ad",
+      "bytes": 9366490264,
+      "sha256": "ffbe15f2c8f7ffcfd7b0ba9e6937d4ebc2d03b0179fa8234648a59bcb82c04a3",
+      "role": "External raw-count training and validation"
+    },
+    {
+      "id": "replogle_k562_gwps_raw_bulk",
+      "path": "data/raw/external/replogle_2022/k562_gwps/K562_gwps_raw_bulk_01.h5ad",
+      "url": "https://ndownloader.figshare.com/files/35774443",
+      "bytes": 374587922,
+      "sha256": "7cec96b3b76169abbf6b6ab9d10bf00d71d942d89e63292351f745e130b154db",
+      "role": "Main directly observed source responses for 272 official targets"
+    },
+    {
+      "id": "replogle_k562_essential_raw_bulk",
+      "path": "data/raw/external/replogle_2022/k562_essential/K562_essential_raw_bulk_01.h5ad",
+      "url": "https://ndownloader.figshare.com/files/35773070",
+      "bytes": 79766954,
+      "sha256": "80de95e54fcbca0e0537d569b43ec92fde6bd0482801505504baebe3118dcadf",
+      "role": "K562 within-line comparison, grouped with GWPS in validation"
+    },
+    {
+      "id": "replogle_rpe1_raw_bulk",
+      "path": "data/raw/external/replogle_2022/rpe1/rpe1_raw_bulk_01.h5ad",
+      "url": "https://ndownloader.figshare.com/files/35775581",
+      "bytes": 95350546,
+      "sha256": "603c655f1cfa41d649baf3ae63fca224cc11f297e40d4ed59d390b1e8d2e2db2",
+      "role": "External response calibration and validation"
+    },
+    {
+      "id": "replogle_rpe1_raw_singlecell",
+      "path": "data/raw/external/replogle_2022/rpe1/rpe1_raw_singlecell_01.h5ad",
+      "url": "https://ndownloader.figshare.com/files/35775606",
+      "bytes": 8700873216,
+      "sha256": "9b05ef1f81526216fa008d677e9e0d03dce9a2f7a95499a4fb81e505e9d88ef1",
+      "role": "Reserved for later single-cell distribution validation"
+    },
+    {
+      "id": "replogle_k562_essential_raw_singlecell",
+      "path": "data/raw/external/replogle_2022/k562_essential/K562_essential_raw_singlecell_01.h5ad",
+      "url": "https://ndownloader.figshare.com/files/35773219",
+      "bytes": 10661879995,
+      "sha256": "3e5a63a9e892b21029bb55fca4e12517a49aad7af6c14133ca63d12cf68c6cee",
+      "role": "Reserved for later single-cell distribution validation"
+    },
+    {
+      "id": "slim_string_embeddings_v0_3",
+      "path": "data/raw/external/slim_embeddings/gene_string_embeddings.v0.3.h5",
+      "url": "https://raw.githubusercontent.com/RasmussenLab/SLIM/main/data/gene_string_embeddings.v0.3.h5",
+      "bytes": 19502608,
+      "sha256": "789416877b8701ef6f800106d26bf7bb97ea8e72744e6ab93e24933a717f247d",
+      "role": "Tested as unseen-target predictor; poor on held-out 2026 targets"
+    }
+  ],
+  "deferred": [
+    {
+      "id": "replogle_k562_gwps_raw_singlecell",
+      "size_note": "about 65.8 GB on the source listing; exact byte count not recorded in this registry",
+      "reason": "65+ GB genome-wide single-cell source is unnecessary for first direct-response model because the 375 MB construct-mean file covers 272 official targets"
+    }
+  ],
+  "additional_files": [
+    {
+      "manifest": "data\\raw\\external\\vcc2025_h1\\download_manifest.json",
+      "source": "vcc2025_h1_official_train",
+      "source_url": "https://storage.googleapis.com/arc-institute-virtual-cell-atlas/virtual-cell-challenge/2025/train/adata_Training.h5ad",
+      "output_relative_to_root": "data/raw/external/vcc2025_h1/adata_Training.h5ad",
+      "bytes": 15482497461,
+      "sha256": "a09977104fefb622368ca74b50c9d3c1e891733e6c83db07acfca49b0219c02b",
+      "downloaded_at_utc": "2026-09-27T19:34:29.011547+00:00"
+    },
+    {
+      "manifest": "data\\raw\\external\\jiang_mixscale\\download_manifest.json",
+      "source": "jiang_mixscale_de_coverage_audit",
+      "source_url": "https://zenodo.org/api/records/14518762/files/DE_results_all_pathway.zip/content",
+      "output_relative_to_root": "data/raw/external/jiang_mixscale/DE_results_all_pathway.zip",
+      "bytes": 324112587,
+      "sha256": "d2f6d920abaf5e05de6e5343acdfae6a18537d23bf9003e80aa73cce97193c80",
+      "downloaded_at_utc": "2026-09-27T19:42:29.208351+00:00"
+    },
+    {
+      "manifest": "data\\raw\\external\\replogle_2022\\k562_gwps\\singlecell_download_manifest.json",
+      "source_url": "https://ndownloader.figshare.com/files/35775507",
+      "output_relative_to_root": "data/raw/external/replogle_2022/k562_gwps/K562_gwps_raw_singlecell_01.h5ad",
+      "bytes": 65830941948,
+      "sha256": "b697ef7fedcec2972ec334608f86f2a29cb25e70c81b6725195f4cda60a9de2c",
+      "md5": "887e3e6a8c8df6eadf7a3030a53c9546",
+      "expected_source_md5": "887e3e6a8c8df6eadf7a3030a53c9546",
+      "workers": 8,
+      "completed_utc": "2026-09-27T20:10:50.194466+00:00",
+      "range_journal": "data\\raw\\external\\replogle_2022\\k562_gwps\\K562_gwps_raw_singlecell_01.h5ad.ranges.json"
+    },
+    {
+      "manifest": "models\\pretrained\\stack_large_aligned\\checkpoint_manifest.json",
+      "source": "arc_stack_large_aligned",
+      "source_url": "https://huggingface.co/arcinstitute/Stack-Large-Aligned/resolve/b09f085dac03d170b078a5c72f550ae93686e544/bc_large_aligned.ckpt",
+      "output_relative_to_root": "models/pretrained/stack_large_aligned/bc_large_aligned.ckpt",
+      "bytes": 2613863242,
+      "sha256": "f93cf6f42f36c8a85dc570d92e801c1fc3e1f45d55741e6bb250d178a6b6ad36",
+      "downloaded_at_utc": "2026-09-27T19:47:06.370623+00:00"
+    }
+  ],
+  "resource_policy": "configs/resource_policy.json"
+}

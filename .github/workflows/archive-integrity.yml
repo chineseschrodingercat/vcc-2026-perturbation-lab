@@ -1,0 +1,58 @@
+name: Archive integrity
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  data-free-checks:
+    name: Python ${{ matrix.python }} on ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ['3.10', '3.13']
+    runs-on: ${{ matrix.os }}
+    env:
+      PYTHONPATH: src
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Run meaningful data-free unit checks
+        run: python -m unittest discover -s tests -v
+      - name: Inspect registry
+        run: python -m vcc_milestones list
+      - name: Verify bundled source and evidence
+        run: python -m vcc_milestones verify > archive-verification.json
+      - name: Replay all available saved-component score arithmetic
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from vcc_milestones.core import load_registry, replay_score
+          _, manifests = load_registry(Path('.'))
+          results = [replay_score(Path('.'), milestone_id)
+                     for milestone_id, manifest in manifests.items()
+                     if isinstance(manifest.get('score_replay'), dict)]
+          Path('saved-component-replay.json').write_text(
+              json.dumps(results, indent=2, allow_nan=False) + '\n', encoding='utf-8')
+          print(f'Passed saved-component arithmetic replay for {len(results)} milestones.')
+          PY
+      - name: Save inspectable integrity receipts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: integrity-${{ matrix.os }}-python-${{ matrix.python }}
+          path: |
+            archive-verification.json
+            saved-component-replay.json
+          if-no-files-found: warn

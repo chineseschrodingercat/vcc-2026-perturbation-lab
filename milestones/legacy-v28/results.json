@@ -1,0 +1,11 @@
+{
+  "overall": 0.25932824671778637,
+  "other_local_workflow_overall": 0.2281364395524066,
+  "saved_official_overall": 0.06333542864645086,
+  "official_source": "Previously saved local audit; no official API called during import",
+  "official_deployment_is_same_as_cv": false,
+  "deployment_mean": "Global V7 tiny Transformer, 600 steps, seed 20260928, frozen K562 prior",
+  "mean_checkpoint_SHA256": "a2b996eacf498ce63ff584be51d84bc52c77c87ec040f96a8a30d43a91d6dce2",
+  "selected_baseline_retained": true,
+  "interpretation": "Historical CV score belongs to matched role-specific teachers, not the unified deployment checkpoint."
+}

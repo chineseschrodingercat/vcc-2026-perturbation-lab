@@ -1,0 +1,1051 @@
+{
+  "completed": true,
+  "passed": true,
+  "protocol_sha256": "1b1684ac9e52b269b66fffd3592f386586f7a9ac407006e64195b412cb92971d",
+  "mean_seal_sha256": "3779f6957bb24d7a1fe271a7502b1277f49814d3ea10cbf40fccf63acfd1573c",
+  "mean_bundles_full_checked": 18,
+  "target_instances_full_replayed": 48,
+  "formal_mean_vectors_full_replayed": 144,
+  "source_models_independently_checked": 3,
+  "audit_code_path": "C:\\00 - Competition\\staging\\research_v28_20261005\\audit_context_KRR_native_mean_agent.py",
+  "audit_code_sha256": "e23801fd1074f3f36cb3341532315e8730a52ec42452f22884e8ee00c39532f6",
+  "source_model_seal_sha256": "e9c4744dbec833b428ccbe19f79b203b65a1e7efda0c30b7a5e1bd520777063e",
+  "dependencies_unchanged_start_end": 128,
+  "saved_artifacts_unchanged_start_end": 96,
+  "geometry_records": [
+    {
+      "model_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\source_models\\lawful_pool_0.npz",
+      "source_components": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2
+      ],
+      "geometry_independent_exact": true,
+      "public_beta_same_saved_bank_exact": true,
+      "unknown_Native_Mixscale_response_preserved": true,
+      "identified": true
+    },
+    {
+      "model_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\source_models\\lawful_pool_1.npz",
+      "source_components": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2
+      ],
+      "geometry_independent_exact": true,
+      "public_beta_same_saved_bank_exact": true,
+      "unknown_Native_Mixscale_response_preserved": true,
+      "identified": true
+    },
+    {
+      "model_path": "C:\\00 - Competition\\runs\\research_v28_20261005\\ntc_context_krr_native_mean_v1\\source_models\\lawful_pool_2.npz",
+      "source_components": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "geometry_independent_exact": true,
+      "public_beta_same_saved_bank_exact": true,
+      "unknown_Native_Mixscale_response_preserved": true,
+      "identified": true
+    }
+  ],
+  "records": [
+    {
+      "role": "outer_rpe1__inner_jurkat",
+      "target": "MON1A",
+      "target_exact_ENSG": "ENSG00000164077",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 1.1102230246251565e-16,
+      "max_sum_alpha_abs": 5.551115123125783e-17,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 6,
+          "observed_components": 3
+        }
+      ]
+    },
+    {
+      "role": "outer_rpe1__inner_jurkat",
+      "target": "GPN3",
+      "target_exact_ENSG": "ENSG00000111231",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 1.6653345369377348e-16,
+      "max_sum_alpha_abs": 1.1102230246251565e-16,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 3,
+          "observed_components": 2
+        }
+      ]
+    },
+    {
+      "role": "outer_rpe1__inner_jurkat",
+      "target": "SNRNP40",
+      "target_exact_ENSG": "ENSG00000060688",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 1.1102230246251565e-16,
+      "max_sum_alpha_abs": 4.163336342344337e-17,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 3,
+          "observed_components": 2
+        }
+      ]
+    },
+    {
+      "role": "outer_rpe1__inner_jurkat",
+      "target": "RPL39",
+      "target_exact_ENSG": "ENSG00000198918",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 1.1102230246251565e-16,
+      "max_sum_alpha_abs": 6.245004513516506e-17,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6114,
+          "observed_contexts": 3,
+          "observed_components": 2
+        }
+      ]
+    },
+    {
+      "role": "outer_rpe1__inner_jurkat",
+      "target": "C1orf109",
+      "target_exact_ENSG": "ENSG00000116922",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 4.163336342344337e-17,
+      "max_sum_alpha_abs": 4.163336342344337e-17,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 4,
+          "observed_components": 2
+        }
+      ]
+    },
+    {
+      "role": "outer_rpe1__inner_jurkat",
+      "target": "ATP2A2",
+      "target_exact_ENSG": "ENSG00000174437",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 1.1102230246251565e-16,
+      "max_sum_alpha_abs": 1.5265566588595902e-16,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 6,
+          "observed_components": 3
+        }
+      ]
+    },
+    {
+      "role": "outer_rpe1__inner_jurkat",
+      "target": "RTRAF",
+      "target_exact_ENSG": "ENSG00000087302",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 1.1102230246251565e-16,
+      "max_sum_alpha_abs": 1.249000902703301e-16,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 5,
+          "observed_components": 3
+        }
+      ]
+    },
+    {
+      "role": "outer_rpe1__inner_jurkat",
+      "target": "PDCD6",
+      "target_exact_ENSG": "ENSG00000249915",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 2.7755575615628914e-17,
+      "max_sum_alpha_abs": 2.6020852139652106e-17,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 6,
+          "observed_components": 3
+        }
+      ]
+    },
+    {
+      "role": "outer_jurkat__inner_rpe1",
+      "target": "MON1A",
+      "target_exact_ENSG": "ENSG00000164077",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 5.551115123125783e-17,
+      "max_sum_alpha_abs": 5.551115123125783e-17,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 6,
+          "observed_components": 3
+        }
+      ]
+    },
+    {
+      "role": "outer_jurkat__inner_rpe1",
+      "target": "TUFM",
+      "target_exact_ENSG": "ENSG00000178952",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 5.551115123125783e-17,
+      "max_sum_alpha_abs": 8.500145032286355e-17,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 6,
+          "observed_components": 3
+        }
+      ]
+    },
+    {
+      "role": "outer_jurkat__inner_rpe1",
+      "target": "SNRNP40",
+      "target_exact_ENSG": "ENSG00000060688",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 1.1102230246251565e-16,
+      "max_sum_alpha_abs": 4.163336342344337e-17,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 3,
+          "observed_components": 2
+        }
+      ]
+    },
+    {
+      "role": "outer_jurkat__inner_rpe1",
+      "target": "C1orf109",
+      "target_exact_ENSG": "ENSG00000116922",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 5.551115123125783e-17,
+      "max_sum_alpha_abs": 4.163336342344337e-17,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 4,
+          "observed_components": 2
+        }
+      ]
+    },
+    {
+      "role": "outer_jurkat__inner_rpe1",
+      "target": "ATP2A2",
+      "target_exact_ENSG": "ENSG00000174437",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 1.1102230246251565e-16,
+      "max_sum_alpha_abs": 1.5265566588595902e-16,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 6,
+          "observed_components": 3
+        }
+      ]
+    },
+    {
+      "role": "outer_jurkat__inner_rpe1",
+      "target": "SBNO1",
+      "target_exact_ENSG": "ENSG00000139697",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 5.551115123125783e-17,
+      "max_sum_alpha_abs": 4.85722573273506e-17,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 5,
+          "observed_components": 3
+        }
+      ]
+    },
+    {
+      "role": "outer_jurkat__inner_rpe1",
+      "target": "TUBB",
+      "target_exact_ENSG": "ENSG00000196230",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 5.551115123125783e-17,
+      "max_sum_alpha_abs": 4.163336342344337e-17,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 3,
+          "observed_components": 2
+        }
+      ]
+    },
+    {
+      "role": "outer_jurkat__inner_rpe1",
+      "target": "RTRAF",
+      "target_exact_ENSG": "ENSG00000087302",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 1.6653345369377348e-16,
+      "max_sum_alpha_abs": 1.249000902703301e-16,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 5,
+          "observed_components": 3
+        }
+      ]
+    },
+    {
+      "role": "outer_rpe1__inner_hepg2",
+      "target": "EXOSC4",
+      "target_exact_ENSG": "ENSG00000178896",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 5.551115123125783e-17,
+      "max_sum_alpha_abs": 5.551115123125783e-17,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 2,
+          "observed_components": 2
+        }
+      ]
+    },
+    {
+      "role": "outer_rpe1__inner_hepg2",
+      "target": "NUDCD3",
+      "target_exact_ENSG": "ENSG00000015676",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 1.1102230246251565e-16,
+      "max_sum_alpha_abs": 5.551115123125783e-17,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 3,
+          "observed_components": 2
+        }
+      ]
+    },
+    {
+      "role": "outer_rpe1__inner_hepg2",
+      "target": "ZBTB17",
+      "target_exact_ENSG": "ENSG00000116809",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 1.1102230246251565e-16,
+      "max_sum_alpha_abs": 8.326672684688674e-17,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 6,
+          "observed_components": 3
+        }
+      ]
+    },
+    {
+      "role": "outer_rpe1__inner_hepg2",
+      "target": "HSD17B10",
+      "target_exact_ENSG": "ENSG00000072506",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 1.1102230246251565e-16,
+      "max_sum_alpha_abs": 6.938893903907228e-17,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 6,
+          "observed_components": 3
+        }
+      ]
+    },
+    {
+      "role": "outer_rpe1__inner_hepg2",
+      "target": "RAB4B",
+      "target_exact_ENSG": "ENSG00000167578",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 0.0,
+      "max_sum_alpha_abs": 0.0,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6114,
+          "observed_contexts": 1,
+          "observed_components": 1
+        }
+      ]
+    },
+    {
+      "role": "outer_rpe1__inner_hepg2",
+      "target": "BTF3",
+      "target_exact_ENSG": "ENSG00000145741",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 5.551115123125783e-17,
+      "max_sum_alpha_abs": 5.551115123125783e-17,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 3,
+          "observed_components": 2
+        }
+      ]
+    },
+    {
+      "role": "outer_rpe1__inner_hepg2",
+      "target": "NUP133",
+      "target_exact_ENSG": "ENSG00000069248",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 5.551115123125783e-17,
+      "max_sum_alpha_abs": 5.551115123125783e-17,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 4,
+          "observed_components": 3
+        }
+      ]
+    },
+    {
+      "role": "outer_rpe1__inner_hepg2",
+      "target": "RSL1D1",
+      "target_exact_ENSG": "ENSG00000171490",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 5.551115123125783e-17,
+      "max_sum_alpha_abs": 5.551115123125783e-17,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 4,
+          "observed_components": 3
+        }
+      ]
+    },
+    {
+      "role": "outer_hepg2__inner_rpe1",
+      "target": "MON1A",
+      "target_exact_ENSG": "ENSG00000164077",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 5.551115123125783e-17,
+      "max_sum_alpha_abs": 5.551115123125783e-17,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 6,
+          "observed_components": 3
+        }
+      ]
+    },
+    {
+      "role": "outer_hepg2__inner_rpe1",
+      "target": "TUFM",
+      "target_exact_ENSG": "ENSG00000178952",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 8.326672684688674e-17,
+      "max_sum_alpha_abs": 6.938893903907228e-17,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 6,
+          "observed_components": 3
+        }
+      ]
+    },
+    {
+      "role": "outer_hepg2__inner_rpe1",
+      "target": "SNRNP40",
+      "target_exact_ENSG": "ENSG00000060688",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 5.551115123125783e-17,
+      "max_sum_alpha_abs": 2.0816681711721685e-17,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 3,
+          "observed_components": 2
+        }
+      ]
+    },
+    {
+      "role": "outer_hepg2__inner_rpe1",
+      "target": "C1orf109",
+      "target_exact_ENSG": "ENSG00000116922",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 4.163336342344337e-17,
+      "max_sum_alpha_abs": 4.163336342344337e-17,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 4,
+          "observed_components": 2
+        }
+      ]
+    },
+    {
+      "role": "outer_hepg2__inner_rpe1",
+      "target": "ATP2A2",
+      "target_exact_ENSG": "ENSG00000174437",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 1.1102230246251565e-16,
+      "max_sum_alpha_abs": 1.3877787807814457e-16,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 6,
+          "observed_components": 3
+        }
+      ]
+    },
+    {
+      "role": "outer_hepg2__inner_rpe1",
+      "target": "SBNO1",
+      "target_exact_ENSG": "ENSG00000139697",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 5.551115123125783e-17,
+      "max_sum_alpha_abs": 6.938893903907228e-17,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 5,
+          "observed_components": 3
+        }
+      ]
+    },
+    {
+      "role": "outer_hepg2__inner_rpe1",
+      "target": "TUBB",
+      "target_exact_ENSG": "ENSG00000196230",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 5.551115123125783e-17,
+      "max_sum_alpha_abs": 2.916503843986007e-17,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 3,
+          "observed_components": 2
+        }
+      ]
+    },
+    {
+      "role": "outer_hepg2__inner_rpe1",
+      "target": "RTRAF",
+      "target_exact_ENSG": "ENSG00000087302",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 1.1102230246251565e-16,
+      "max_sum_alpha_abs": 1.9255430583342559e-16,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 5,
+          "observed_components": 3
+        }
+      ]
+    },
+    {
+      "role": "outer_jurkat__inner_hepg2",
+      "target": "EXOSC4",
+      "target_exact_ENSG": "ENSG00000178896",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 1.1102230246251565e-16,
+      "max_sum_alpha_abs": 5.551115123125783e-17,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 2,
+          "observed_components": 2
+        }
+      ]
+    },
+    {
+      "role": "outer_jurkat__inner_hepg2",
+      "target": "NUDCD3",
+      "target_exact_ENSG": "ENSG00000015676",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 1.1102230246251565e-16,
+      "max_sum_alpha_abs": 5.551115123125783e-17,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 3,
+          "observed_components": 2
+        }
+      ]
+    },
+    {
+      "role": "outer_jurkat__inner_hepg2",
+      "target": "ZBTB17",
+      "target_exact_ENSG": "ENSG00000116809",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 1.1102230246251565e-16,
+      "max_sum_alpha_abs": 1.3877787807814457e-16,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 6,
+          "observed_components": 3
+        }
+      ]
+    },
+    {
+      "role": "outer_jurkat__inner_hepg2",
+      "target": "HSD17B10",
+      "target_exact_ENSG": "ENSG00000072506",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 2.220446049250313e-16,
+      "max_sum_alpha_abs": 9.71445146547012e-17,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 6,
+          "observed_components": 3
+        }
+      ]
+    },
+    {
+      "role": "outer_jurkat__inner_hepg2",
+      "target": "RAB4B",
+      "target_exact_ENSG": "ENSG00000167578",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 0.0,
+      "max_sum_alpha_abs": 0.0,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6114,
+          "observed_contexts": 1,
+          "observed_components": 1
+        }
+      ]
+    },
+    {
+      "role": "outer_jurkat__inner_hepg2",
+      "target": "BTF3",
+      "target_exact_ENSG": "ENSG00000145741",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 6.938893903907228e-17,
+      "max_sum_alpha_abs": 5.551115123125783e-17,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 3,
+          "observed_components": 2
+        }
+      ]
+    },
+    {
+      "role": "outer_jurkat__inner_hepg2",
+      "target": "NUP133",
+      "target_exact_ENSG": "ENSG00000069248",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 5.551115123125783e-17,
+      "max_sum_alpha_abs": 5.551115123125783e-17,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 4,
+          "observed_components": 3
+        }
+      ]
+    },
+    {
+      "role": "outer_jurkat__inner_hepg2",
+      "target": "RSL1D1",
+      "target_exact_ENSG": "ENSG00000171490",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 5.551115123125783e-17,
+      "max_sum_alpha_abs": 6.938893903907228e-17,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 4,
+          "observed_components": 3
+        }
+      ]
+    },
+    {
+      "role": "outer_hepg2__inner_jurkat",
+      "target": "MON1A",
+      "target_exact_ENSG": "ENSG00000164077",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 8.326672684688674e-17,
+      "max_sum_alpha_abs": 5.551115123125783e-17,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 6,
+          "observed_components": 3
+        }
+      ]
+    },
+    {
+      "role": "outer_hepg2__inner_jurkat",
+      "target": "GPN3",
+      "target_exact_ENSG": "ENSG00000111231",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 1.6653345369377348e-16,
+      "max_sum_alpha_abs": 5.551115123125783e-17,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 3,
+          "observed_components": 2
+        }
+      ]
+    },
+    {
+      "role": "outer_hepg2__inner_jurkat",
+      "target": "SNRNP40",
+      "target_exact_ENSG": "ENSG00000060688",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 3.469446951953614e-17,
+      "max_sum_alpha_abs": 4.163336342344337e-17,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 3,
+          "observed_components": 2
+        }
+      ]
+    },
+    {
+      "role": "outer_hepg2__inner_jurkat",
+      "target": "RPL39",
+      "target_exact_ENSG": "ENSG00000198918",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 5.551115123125783e-17,
+      "max_sum_alpha_abs": 5.551115123125783e-17,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6114,
+          "observed_contexts": 3,
+          "observed_components": 2
+        }
+      ]
+    },
+    {
+      "role": "outer_hepg2__inner_jurkat",
+      "target": "C1orf109",
+      "target_exact_ENSG": "ENSG00000116922",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 5.551115123125783e-17,
+      "max_sum_alpha_abs": 5.551115123125783e-17,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 4,
+          "observed_components": 2
+        }
+      ]
+    },
+    {
+      "role": "outer_hepg2__inner_jurkat",
+      "target": "ATP2A2",
+      "target_exact_ENSG": "ENSG00000174437",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 1.1102230246251565e-16,
+      "max_sum_alpha_abs": 1.6653345369377348e-16,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 6,
+          "observed_components": 3
+        }
+      ]
+    },
+    {
+      "role": "outer_hepg2__inner_jurkat",
+      "target": "RTRAF",
+      "target_exact_ENSG": "ENSG00000087302",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 1.1102230246251565e-16,
+      "max_sum_alpha_abs": 2.914335439641036e-16,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 5,
+          "observed_components": 3
+        }
+      ]
+    },
+    {
+      "role": "outer_hepg2__inner_jurkat",
+      "target": "PDCD6",
+      "target_exact_ENSG": "ENSG00000249915",
+      "independent_source_masked_solve_F32_exact": true,
+      "recipient_NTC_query_exact": true,
+      "nominal_raw_decoder_exact": true,
+      "own_unknown_seen_B0_editable_protection_exact": true,
+      "max_Schur_vs_augmented_abs": 4.2500725161431774e-17,
+      "max_sum_alpha_abs": 2.7755575615628914e-17,
+      "patterns": 2,
+      "nonempty_pattern_records": [
+        {
+          "pattern": 1,
+          "genes": 6113,
+          "observed_contexts": 6,
+          "observed_components": 3
+        }
+      ]
+    }
+  ],
+  "source_T_C_rebuilt": 0,
+  "source_payload_beta_read_only": true,
+  "Native_held_perturbation_values_read": 0,
+  "THP_reads": 0,
+  "fit_calls": 0,
+  "count_draws": 0,
+  "judge_calls": 0,
+  "official_calls": 0,
+  "producer_or_scientific_helper_imported": false,
+  "independent_math": "Own observed-subGram augmented solve plus Schur-complement check, equal-component source-only NTC geometry and response weights, log-RBF positive weighting; no unknown-as-zero fit.",
+  "interpretation": "Three methods share expanded public19 sources. Versus B0 source scope also differs. RawPC0.5 effect and nominal precise-C diagnostic do not lock actual original count-ABI conditional or normalized integer means.",
+  "elapsed_numeric_seconds": 3.202999999979511,
+  "opaque_pre_hash_seconds": 0.3589999999385327,
+  "opaque_post_hash_seconds": 0.5619999999180436,
+  "peak_RSS_bytes": 408862720
+}

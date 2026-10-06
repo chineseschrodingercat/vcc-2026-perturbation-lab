@@ -1,0 +1,56 @@
+{
+  "import_date": "2026-10-06",
+  "milestones": 7,
+  "unique_imported_files": 845,
+  "imported_original_bytes": 15556667,
+  "hash_verification_PASS": true,
+  "saved_component_replay": [
+    {
+      "milestone": "legacy-v28",
+      "cases": 6,
+      "overall": 0.25932824671778637,
+      "max_absolute_difference": 5.551115123125783e-17,
+      "PASS": true
+    },
+    {
+      "milestone": "native-v2-theta-four",
+      "cases": 6,
+      "overall": 0.2561197475115212,
+      "max_absolute_difference": 5.551115123125783e-17,
+      "PASS": true
+    },
+    {
+      "milestone": "native-v4-barycenter",
+      "cases": 6,
+      "overall": 0.2699143987076052,
+      "max_absolute_difference": 5.551115123125783e-17,
+      "PASS": true
+    },
+    {
+      "milestone": "clean400-b0-nb",
+      "cases": 18,
+      "overall": 0.26718504165389595,
+      "max_absolute_difference": 5.551115123125783e-17,
+      "PASS": true
+    },
+    {
+      "milestone": "clean400-b0-poisson",
+      "cases": 18,
+      "overall": 0.2698630850574491,
+      "max_absolute_difference": 5.551115123125783e-17,
+      "PASS": true
+    },
+    {
+      "milestone": "clean400-context-krr-nb",
+      "cases": 18,
+      "overall": 0.27166637938779886,
+      "max_absolute_difference": 8.326672684688674e-17,
+      "PASS": true
+    }
+  ],
+  "scientific_rerun_performed": false,
+  "RNA_decoded": false,
+  "official_query_or_submission": false,
+  "independent_review": "PASS; grouping, byte provenance, data exclusions, local links, and saved arithmetic",
+  "original_data_or_models_modified": false
+}

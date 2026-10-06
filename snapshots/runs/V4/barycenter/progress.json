@@ -1,0 +1,71 @@
+{
+  "status": "complete",
+  "benchmark": "Native_inner_six_roles",
+  "score_contract_sha256": "e489efd753fc0395c87c756113504317d3d144aa23bdc2f474c99f13ccfc3219",
+  "official_score_queries": 0,
+  "aggregates": [
+    {
+      "arm": "N1_weight_0.25",
+      "complete": true,
+      "cases": 6,
+      "expected_cases": 6,
+      "overall": 0.2524926984436148,
+      "delta_vs_V28": -0.006835548274171553,
+      "per_background": {
+        "hepg2": 0.2048862294012394,
+        "jurkat": 0.43209721038126764,
+        "rpe1": 0.12049465554833738
+      },
+      "raw_metrics": {
+        "pds_cosine": 0.8273809523809524,
+        "expr_mse_unbiased_capped_norm": 1.5102542892478705,
+        "de_wilcoxon_direction_fidelity_yield_raw": 0.4893528239618965,
+        "de_wilcoxon_direction_reach_raw": 0.3382232327280779,
+        "de_wilcoxon_sig_jaccard": 0.10973717953688054,
+        "de_wilcoxon_lfc_nmae": 0.839091352718718
+      }
+    },
+    {
+      "arm": "N1_weight_0.5",
+      "complete": true,
+      "cases": 6,
+      "expected_cases": 6,
+      "overall": 0.2425473645818783,
+      "delta_vs_V28": -0.016780882135908066,
+      "per_background": {
+        "hepg2": 0.21813958760726146,
+        "jurkat": 0.344237262863496,
+        "rpe1": 0.1652652432748774
+      },
+      "raw_metrics": {
+        "pds_cosine": 0.8273809523809524,
+        "expr_mse_unbiased_capped_norm": 1.569465676995727,
+        "de_wilcoxon_direction_fidelity_yield_raw": 0.5326888529296152,
+        "de_wilcoxon_direction_reach_raw": 0.3588674983043641,
+        "de_wilcoxon_sig_jaccard": 0.068561635063541,
+        "de_wilcoxon_lfc_nmae": 0.8431896860354646
+      }
+    },
+    {
+      "arm": "N1_weight_0.75",
+      "complete": true,
+      "cases": 6,
+      "expected_cases": 6,
+      "overall": 0.26991439870760525,
+      "delta_vs_V28": 0.01058615198981889,
+      "per_background": {
+        "hepg2": 0.239304839001667,
+        "jurkat": 0.3527412867186045,
+        "rpe1": 0.21769707040254427
+      },
+      "raw_metrics": {
+        "pds_cosine": 0.8244047619047619,
+        "expr_mse_unbiased_capped_norm": 1.6843604514778725,
+        "de_wilcoxon_direction_fidelity_yield_raw": 0.5925084695910682,
+        "de_wilcoxon_direction_reach_raw": 0.3977634115282778,
+        "de_wilcoxon_sig_jaccard": 0.06929698465099812,
+        "de_wilcoxon_lfc_nmae": 0.8453786859192801
+      }
+    }
+  ]
+}

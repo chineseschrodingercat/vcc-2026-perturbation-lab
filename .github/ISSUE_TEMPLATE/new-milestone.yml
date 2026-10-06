@@ -1,0 +1,40 @@
+name: Package a new milestone
+description: Preserve a completed result without changing its scientific scope.
+title: "milestone: "
+body:
+  - type: textarea
+    id: result
+    attributes:
+      label: Result and reason to preserve it
+      description: State the concrete behavior or research finding, including negative outcomes.
+    validations:
+      required: true
+  - type: textarea
+    id: identity
+    attributes:
+      label: Model and evidence identity
+      description: Include original version name, source paths, code hashes, checkpoint hash, and completed run receipts.
+    validations:
+      required: true
+  - type: textarea
+    id: protocol
+    attributes:
+      label: Scoring protocol and evidence scope
+      description: Include cell count, populations, target set, gene axis, anchors, seeds, and held-out or development status. Do not compare incompatible overall scores.
+    validations:
+      required: true
+  - type: textarea
+    id: reproducibility
+    attributes:
+      label: Reproduction requirements and limitations
+      description: Name external assets and environment versions. Explain any missing information or non-portable paths.
+    validations:
+      required: true
+  - type: checkboxes
+    id: packaging
+    attributes:
+      label: Packaging checks
+      options:
+        - label: Raw scientific data, credentials, and large binary assets are excluded from Git.
+        - label: Existing milestones will remain immutable; changed evidence gets a new milestone id.
+        - label: The result is completed evidence, not an unreviewed partial run.

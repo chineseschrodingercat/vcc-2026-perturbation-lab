@@ -1,0 +1,11 @@
+{
+  "model": "candidate",
+  "de_wilcoxon_direction_fidelity_yield_raw": 0.6067529418919755,
+  "de_wilcoxon_direction_reach_raw": 0.2688610435840988,
+  "de_wilcoxon_lfc_nmae": 0.8722425153765778,
+  "de_wilcoxon_sig_jaccard": 0.074297248914648,
+  "expr_mse_unbiased_capped_norm": 1.9255384769000776,
+  "pds_cosine": 0.6964285714285714,
+  "fixed_overall": 0.02529005447719752,
+  "replicate_overall": 0.16993062340701273
+}

@@ -1,0 +1,11 @@
+{
+  "model": "N1_weight_0.75",
+  "de_wilcoxon_direction_fidelity_yield_raw": 0.5116761998938422,
+  "de_wilcoxon_direction_reach_raw": 0.5603619777337181,
+  "de_wilcoxon_lfc_nmae": 0.8462366899767049,
+  "de_wilcoxon_sig_jaccard": 0.0521896194112739,
+  "expr_mse_unbiased_capped_norm": 1.9159605396792787,
+  "pds_cosine": 0.8928571428571429,
+  "fixed_overall": 0.10990350883182975,
+  "replicate_overall": 0.3909379791714125
+}

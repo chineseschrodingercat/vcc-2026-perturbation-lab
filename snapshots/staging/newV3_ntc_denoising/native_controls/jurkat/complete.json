@@ -1,0 +1,88 @@
+{
+  "schema": "new_V3_control_only_state_EB_1",
+  "context": "jurkat",
+  "status": "CONTROL_PILOT_COMPLETED_NO_PERTURBATION_COUNT_OR_JUDGE",
+  "pool_path": "C:\\00 - Competition\\archive\\legacy_20261003\\runs\\residual_v17\\inner_panels\\jurkat\\generation_pool.npz",
+  "pool_sha256": "9e76f6ef6fa63bebbeedd613142f2082bcf8ef7d839029d68ac0bd525737d87c",
+  "pool_rows": 3000,
+  "common_genes": 6119,
+  "native_gene_axis_sha256": "26540d68796c3b9601f644242e154733d280e5e1742664b7f0ae41180b80d269",
+  "metadata_sha256": "c02c7e85b21c1ba03bf7815d7d12d2162834beb80615b2229e392d6dba32cdd3",
+  "selected_s": 1.0,
+  "selection": "Lowest fixed-grid independent half-view NTC held-GEM Poisson NLL; no perturbation outcomes",
+  "fixed_rank": 16,
+  "fixed_clusters": 8,
+  "CPU_threads": 2,
+  "GPU": 0,
+  "seed": 20261661,
+  "choices": [
+    {
+      "s": 0.0,
+      "control_held_countsplit_poisson_NLL": 4.126514304320412,
+      "control_held_countsplit_MSE": 1.2658729465265166,
+      "pred_rate_ge_half_b_zero": 0.15225337609159964
+    },
+    {
+      "s": 0.25,
+      "control_held_countsplit_poisson_NLL": 0.9606029222091125,
+      "control_held_countsplit_MSE": 1.0162035149848474,
+      "pred_rate_ge_half_b_zero": 0.15279369777385204
+    },
+    {
+      "s": 0.5,
+      "control_held_countsplit_poisson_NLL": 0.8424258194371117,
+      "control_held_countsplit_MSE": 0.9053928145940121,
+      "pred_rate_ge_half_b_zero": 0.1602083475882879
+    },
+    {
+      "s": 0.75,
+      "control_held_countsplit_poisson_NLL": 0.7910765335431635,
+      "control_held_countsplit_MSE": 0.9331826368937571,
+      "pred_rate_ge_half_b_zero": 0.11553242467305025
+    },
+    {
+      "s": 1.0,
+      "control_held_countsplit_poisson_NLL": 0.7813263580626065,
+      "control_held_countsplit_MSE": 1.0995757305675338,
+      "pred_rate_ge_half_b_zero": 0.10598363144802253
+    }
+  ],
+  "control_held_readings": {
+    "control_held_raw_gene_mean_MAE": 0.042500533279794604,
+    "control_held_raw_gene_variance_MAE": 0.8098152626436625,
+    "control_held_zero_fraction_MAE": 0.016271366547001044,
+    "theta_poisson_limit_genes": 1059,
+    "negative_remaining_genes": 1059,
+    "latent_from_half_view_variance_warning": "These diagnostics use Xa/p intensities. Final whole-count intensities are recalibrated separately and do not inherit this half-view theta."
+  },
+  "training_NTC_cells": 2422,
+  "held_NTC_cells": 578,
+  "training_GEMs": 45,
+  "held_GEMs": 10,
+  "guide_overlap_training_held": 127,
+  "independent_biological_replicates_claimed": false,
+  "reference_NTC_read": false,
+  "perturbation_truth_read": false,
+  "population_mean_max_abs_error_F64": 3.694822225952521e-13,
+  "population_mean_max_abs_error_stored_F32": 1.099904238799354e-07,
+  "full_pool_zero_mean_genes": 0,
+  "latent_positive_at_original_donor_zero_coordinates": 9929041,
+  "final_negative_remaining_variance_genes": 858,
+  "final_poisson_limit_theta_genes": 858,
+  "emission_variance_calibration": "theta=E[h²]/max(Var(X)-E[h]-Var(h),1e-8), bounded [1e-4,1e8]; impossible negative residual -> Poisson limit with explicit residual",
+  "strict_source_preprocessing_policy_exception": "Declared recipient control-only unsupervised adaptation, not old source-only transform; no receiver perturbation information used",
+  "protected_and_own_gene_policy": "Artifact provides latent common-axis values; count adapter applies original seen/own masks and preserves protected realized H0 counts",
+  "official_NTC_pretraining_used": false,
+  "official_NTC_pretraining_ablation": "Future separate arm; current true execution Native controls only",
+  "state_training_inputs": "Xa~Binomial(X,0.5) only",
+  "state_training_conditional_labels": "Xb=X-Xa only; no same full observed X paired reconstruction label",
+  "final_state_fit": "All generation NTC after control-held selection; PCA/cluster Xa, prototypes Xb, then frozen transform full X for inference",
+  "seconds": 3.3589999999385327,
+  "files_sha256": {
+    "lambda_pool_F32.npy": "13c83efde4430eb4e0da878afd7e3532d34ec21978c4ee03952f06a1d029fe0d",
+    "calibration.npz": "5fff457e4a81c99e06444d3dd4ab60357ffded73cdcd1163bbee6e3a81966ea2",
+    "state_model.npz": "c7bbc6b139063fafec7ab8d95177acc95ba01df5a74bc5ccefe0520763f19825",
+    "donor_metadata.csv": "02bbe56fcd3e0d653e5ac2efc94a1f2873d5dc5f84e5bcb6921fc64d4549fcc6",
+    "control_held_diagnostics.npz": "887a2964002577014135a2eb9219d15f550d946670212cf62e0f0c66be2937af"
+  }
+}

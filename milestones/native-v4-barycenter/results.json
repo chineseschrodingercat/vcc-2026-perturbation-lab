@@ -1,0 +1,25 @@
+{
+  "arm": "N1_weight_0.75",
+  "complete": true,
+  "cases": 6,
+  "expected_cases": 6,
+  "overall": 0.26991439870760525,
+  "delta_vs_V28": 0.01058615198981889,
+  "per_background": {
+    "hepg2": 0.239304839001667,
+    "jurkat": 0.3527412867186045,
+    "rpe1": 0.21769707040254427
+  },
+  "raw_metrics": {
+    "pds_cosine": 0.8244047619047619,
+    "expr_mse_unbiased_capped_norm": 1.6843604514778725,
+    "de_wilcoxon_direction_fidelity_yield_raw": 0.5925084695910682,
+    "de_wilcoxon_direction_reach_raw": 0.3977634115282778,
+    "de_wilcoxon_sig_jaccard": 0.06929698465099812,
+    "de_wilcoxon_lfc_nmae": 0.8453786859192801
+  },
+  "selected_snapshot": "N1_weight_0.75",
+  "baseline": "legacy-v28",
+  "not_stably_promoted": true,
+  "selection_caveat": "V4 weight selected from development sweep; subsequent results were not stable."
+}

@@ -1,0 +1,41 @@
+# Raw and derived scientific payloads stay in the original workspace.
+data/
+raw/
+checkpoints/
+**/raw/
+**/data/
+**/checkpoints/
+*.h5
+*.hdf5
+*.h5ad
+*.npy
+*.npz
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.pickle
+*.gz
+*.zip
+*.tar
+*.7z
+
+# Locally built release assets are uploaded through GitHub Releases.
+artifacts/
+build/
+dist/
+*.egg-info/
+
+# Python, environments, editors, credentials.
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+credentials.json

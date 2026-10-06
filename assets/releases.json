@@ -1,0 +1,213 @@
+{
+  "schema_version": 1,
+  "import_date": "2026-10-06",
+  "repository": "chineseschrodingercat/vcc-2026-perturbation-lab",
+  "releases": [
+    {
+      "tag": "legacy-v3",
+      "milestone_id": "legacy-v3",
+      "title": "V3 \u00b7 early baseline and foundation-model comparison",
+      "assets": [
+        {
+          "name": "legacy-v3-source-evidence.zip",
+          "bytes": 151850,
+          "sha256": "75115be24bddce0cf8aa462f8dc0b0be16ca86e5b5ada076ef6bacdd9e7f709a",
+          "role": "source-evidence"
+        },
+        {
+          "name": "legacy-v3-source-evidence.zip.sha256",
+          "bytes": 96,
+          "sha256": "0b219e9de59f72c6fb74d378ce79b483adff6e1414f6ed605dd16d55e76d870d",
+          "role": "checksum"
+        },
+        {
+          "name": "legacy-v3-release.json",
+          "bytes": 358,
+          "sha256": "36005b40a6cf815518db2ab1e65964cbc6564b020393f21f80f449f083ee5447",
+          "role": "build-receipt"
+        }
+      ],
+      "release_url": "https://github.com/chineseschrodingercat/vcc-2026-perturbation-lab/releases/tag/legacy-v3"
+    },
+    {
+      "tag": "legacy-v28",
+      "milestone_id": "legacy-v28",
+      "title": "V28 \u00b7 retained N1 baseline and deployment recipe",
+      "assets": [
+        {
+          "name": "legacy-v28-source-evidence.zip",
+          "bytes": 493991,
+          "sha256": "8b62eea9e900fde51af017f0589b5c38410715d616192cc6766a15457da15d7b",
+          "role": "source-evidence"
+        },
+        {
+          "name": "legacy-v28-source-evidence.zip.sha256",
+          "bytes": 97,
+          "sha256": "fd5959c8ff5400d7093d51bbdf9803e7542f899ce16c01c5d3424453aa07e35f",
+          "role": "checksum"
+        },
+        {
+          "name": "legacy-v28-release.json",
+          "bytes": 361,
+          "sha256": "71e793504aee8187b05ca95a6c0f7a07314142d9a17be97f30e0d70882047018",
+          "role": "build-receipt"
+        },
+        {
+          "name": "legacy-v28-model-assets.zip",
+          "bytes": 5939418,
+          "sha256": "4cf97adf652c9f7ac0741b19962c56c3baea4247e00a30a70fe2a9e59aeda113",
+          "role": "model-assets"
+        },
+        {
+          "name": "legacy-v28-model-assets.zip.sha256",
+          "bytes": 95,
+          "sha256": "54e1d5be87f441232a26d81ff85a979696cd7f930c2d514083cf59f557ebc175",
+          "role": "checksum"
+        }
+      ],
+      "release_url": "https://github.com/chineseschrodingercat/vcc-2026-perturbation-lab/releases/tag/legacy-v28"
+    },
+    {
+      "tag": "native-v2-theta-four",
+      "milestone_id": "native-v2-theta-four",
+      "title": "V2 \u00b7 dispersion multiplier four",
+      "assets": [
+        {
+          "name": "native-v2-theta-four-source-evidence.zip",
+          "bytes": 235664,
+          "sha256": "a991223a6bde7e78cf3fbf68c348353ac1f620d24be28cc754227310cbbe97ec",
+          "role": "source-evidence"
+        },
+        {
+          "name": "native-v2-theta-four-source-evidence.zip.sha256",
+          "bytes": 107,
+          "sha256": "775c205fef62c335e611a0850b903ceeb6983f789439a263bcf1c04c5cef2fda",
+          "role": "checksum"
+        },
+        {
+          "name": "native-v2-theta-four-release.json",
+          "bytes": 381,
+          "sha256": "d209463f6395017c117aaf087ded58c48ecb4e7a0ba9b682cf7f367aaae334ca",
+          "role": "build-receipt"
+        }
+      ],
+      "release_url": "https://github.com/chineseschrodingercat/vcc-2026-perturbation-lab/releases/tag/native-v2-theta-four"
+    },
+    {
+      "tag": "native-v4-barycenter",
+      "milestone_id": "native-v4-barycenter",
+      "title": "V4 \u00b7 N1 barycenter weight 0.75",
+      "assets": [
+        {
+          "name": "native-v4-barycenter-source-evidence.zip",
+          "bytes": 238547,
+          "sha256": "db81a778a77939b6b94cb11c249e4c1d78342e14577ca925d18c29c08f429914",
+          "role": "source-evidence"
+        },
+        {
+          "name": "native-v4-barycenter-source-evidence.zip.sha256",
+          "bytes": 107,
+          "sha256": "8e35becf5742e663de111494592de16e207e7ac665dfc2c4e638d1af64058682",
+          "role": "checksum"
+        },
+        {
+          "name": "native-v4-barycenter-release.json",
+          "bytes": 381,
+          "sha256": "a63ff8b4f709c161ecd9fdb8df545ed50d6b5a398ba1155eee15eb614ebd5772",
+          "role": "build-receipt"
+        }
+      ],
+      "release_url": "https://github.com/chineseschrodingercat/vcc-2026-perturbation-lab/releases/tag/native-v4-barycenter"
+    },
+    {
+      "tag": "clean400-b0-nb",
+      "milestone_id": "clean400-b0-nb",
+      "title": "Clean400 \u00b7 B0 negative binomial",
+      "assets": [
+        {
+          "name": "clean400-b0-nb-source-evidence.zip",
+          "bytes": 725855,
+          "sha256": "14febb9736fff415bad152d53d04a267c856529a46972fa4dafe62d9aa1a3970",
+          "role": "source-evidence"
+        },
+        {
+          "name": "clean400-b0-nb-source-evidence.zip.sha256",
+          "bytes": 101,
+          "sha256": "b1d243a11383eb32d5e67bf2719c92502112f0f487c85a6052b216ec06a88517",
+          "role": "checksum"
+        },
+        {
+          "name": "clean400-b0-nb-release.json",
+          "bytes": 369,
+          "sha256": "bcda47627f36e5eadb76dcb5c7384a2c7088278f439e927c734084a5a7f79192",
+          "role": "build-receipt"
+        },
+        {
+          "name": "clean400-model-assets.zip",
+          "bytes": 37285489,
+          "sha256": "bef0518ea722864c062ec3ae07ae4f297a397177b2e8243cd1661d017b8acb28",
+          "role": "model-assets"
+        },
+        {
+          "name": "clean400-model-assets.zip.sha256",
+          "bytes": 93,
+          "sha256": "2398082c67ae866c24a09bad1e2639c62d50732eb8e93e88195b65dbe57ac010",
+          "role": "checksum"
+        }
+      ],
+      "release_url": "https://github.com/chineseschrodingercat/vcc-2026-perturbation-lab/releases/tag/clean400-b0-nb"
+    },
+    {
+      "tag": "clean400-b0-poisson",
+      "milestone_id": "clean400-b0-poisson",
+      "title": "Clean400 \u00b7 B0 Poisson",
+      "assets": [
+        {
+          "name": "clean400-b0-poisson-source-evidence.zip",
+          "bytes": 726492,
+          "sha256": "a6b52d737ea65e25649ef05f58bec975bd3d1f7a2391d94d66638a7c95a5a886",
+          "role": "source-evidence"
+        },
+        {
+          "name": "clean400-b0-poisson-source-evidence.zip.sha256",
+          "bytes": 106,
+          "sha256": "7b59539c1ad342284bbc5db352f62149b7ad1d3e3bc41f35d3f838d60defa161",
+          "role": "checksum"
+        },
+        {
+          "name": "clean400-b0-poisson-release.json",
+          "bytes": 379,
+          "sha256": "60a082c7ab529ddb3dd240edc33b10a386f3c4cc9a7426e8e7668f25e1284ef3",
+          "role": "build-receipt"
+        }
+      ],
+      "release_url": "https://github.com/chineseschrodingercat/vcc-2026-perturbation-lab/releases/tag/clean400-b0-poisson"
+    },
+    {
+      "tag": "clean400-context-krr-nb",
+      "milestone_id": "clean400-context-krr-nb",
+      "title": "Clean400 \u00b7 context kernel ridge with NB",
+      "assets": [
+        {
+          "name": "clean400-context-krr-nb-source-evidence.zip",
+          "bytes": 2444462,
+          "sha256": "248ed4b94c92c8a207c27084732f594a544a8dd7a8536e0efc8bbd714f727ae8",
+          "role": "source-evidence"
+        },
+        {
+          "name": "clean400-context-krr-nb-source-evidence.zip.sha256",
+          "bytes": 110,
+          "sha256": "a06ec77f317491ef11233a09dd8db2a5bab89cd414ebf15d3f345f4559939f07",
+          "role": "checksum"
+        },
+        {
+          "name": "clean400-context-krr-nb-release.json",
+          "bytes": 388,
+          "sha256": "9a8285441fff531517c5c5f9ada8ea37495d108761ca5cc2bd3a3f88f95468e5",
+          "role": "build-receipt"
+        }
+      ],
+      "release_url": "https://github.com/chineseschrodingercat/vcc-2026-perturbation-lab/releases/tag/clean400-context-krr-nb"
+    }
+  ]
+}

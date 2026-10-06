@@ -1,0 +1,7 @@
+Copyright 2026 Minhao Liu. All rights reserved for original project code and documentation unless separately licensed.
+
+This private repository is a curated independent research archive for the Virtual Cell Challenge 2026. It is not affiliated with or endorsed by the challenge organizers.
+
+Dependencies and methods mentioned here retain their own licenses and attribution. The archive references cell_eval2, NumPy, SciPy, pandas, PyTorch, Polars, AnnData, State, Stack, SLIM-style methods, and public Perturb-seq sources. These names do not grant redistribution rights to third-party software, models, or datasets. Third-party pretrained model payloads and raw datasets are not included.
+
+Original scientific source and historical records are imported with provenance. Newly written verification and packaging utilities are separate from those frozen implementations. No new open-source license is inferred from the import.

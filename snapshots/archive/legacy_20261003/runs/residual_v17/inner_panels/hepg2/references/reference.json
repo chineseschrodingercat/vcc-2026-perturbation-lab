@@ -1,0 +1,26 @@
+{
+  "cell_eval2": "0.16.0",
+  "real_sha256": "4ab0dda649ba29e884577e7e9abb1f108b8980bf568537089a9aba0d9e7cd26e",
+  "replicate_usable": true,
+  "reason": null,
+  "baseline": {
+    "de_wilcoxon_direction_fidelity_yield_raw": 0.2092833334375337,
+    "de_wilcoxon_direction_reach_raw": 0.4333073898262913,
+    "de_wilcoxon_lfc_nmae": 0.7429409396839601,
+    "de_wilcoxon_sig_jaccard": 0.0425410425696206,
+    "expr_mse_unbiased_capped_norm": 0.6745110820615254,
+    "pds_cosine": 0.4821428571428571
+  },
+  "replicate": {
+    "de_wilcoxon_direction_fidelity_yield_raw": 0.6830190892236158,
+    "de_wilcoxon_direction_reach_raw": 0.9871708153795954,
+    "de_wilcoxon_lfc_nmae": 0.4826574763091318,
+    "de_wilcoxon_sig_jaccard": 0.25045987616256016,
+    "expr_mse_unbiased_capped_norm": 0.013925870299741424,
+    "pds_cosine": 1.0
+  },
+  "five_split_seed": 0,
+  "baseline_release": "official dispersed generic response without unavailable competition knockdown filter",
+  "protocol_sha256": "32c86a23a9bde6ae41ed9fb84c6931ca203256c297e80af7c88d23f0782afe74",
+  "local_only": true
+}

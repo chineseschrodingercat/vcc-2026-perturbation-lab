@@ -1,0 +1,51 @@
+{
+  "schema": "V20_F23_only_count_generator1",
+  "completed": true,
+  "protocol_sha256": "31c05bde3f25212d5b10c0c32eba1f0f821f154c76a4c3c7fabc9e8f369113ca",
+  "inputs_complete_sha256": "9307b2bfc3d0ddae5d3df630f97e96232c8d1f3a0efdd866faf196746a1a458d",
+  "roles": {
+    "inner_train_hepg2": {
+      "path": "C:\\00 - Competition\\models\\V20_native_f23_generator\\inner_train_hepg2",
+      "allowed_native": "hepg2",
+      "encoder_path": "C:\\00 - Competition\\data\\processed\\V20_native_f23_generator\\inner_train_hepg2\\encoder.npz",
+      "encoder_sha256": "d2a60c2d14731efe21bfb6fb5eb5a1f5955f610b2857282c13fe0b39c44bdeb5",
+      "dispersion_seen_path": "C:\\00 - Competition\\models\\V20_native_f23_generator\\inner_train_hepg2\\dispersion_seen.npz",
+      "dispersion_seen_sha256": "702d1ee096fbb078cb129ecf1f32edb97809efaa894b5f3afbea1b915a967a73",
+      "complete_path": "C:\\00 - Competition\\models\\V20_native_f23_generator\\inner_train_hepg2\\COMPLETE.json",
+      "complete_sha256": "ea1f6f1d3b7c04caac5ff219057601a6943f7df6432b30128c127b313a654774"
+    },
+    "inner_train_jurkat": {
+      "path": "C:\\00 - Competition\\models\\V20_native_f23_generator\\inner_train_jurkat",
+      "allowed_native": "jurkat",
+      "encoder_path": "C:\\00 - Competition\\data\\processed\\V20_native_f23_generator\\inner_train_jurkat\\encoder.npz",
+      "encoder_sha256": "ec81419f516dd3573d9739b9c52d93b588bb16a8719bd5ba96aa60c0dc0d9def",
+      "dispersion_seen_path": "C:\\00 - Competition\\models\\V20_native_f23_generator\\inner_train_jurkat\\dispersion_seen.npz",
+      "dispersion_seen_sha256": "17a019320723c97dbbd9a2cb5a40eb2358868ef4d5e954e4d9b5d0e4d5dfd65d",
+      "complete_path": "C:\\00 - Competition\\models\\V20_native_f23_generator\\inner_train_jurkat\\COMPLETE.json",
+      "complete_sha256": "90b528bed5d690db1a92b0c7a2b38cd712f91f51b94ff8a670dd9e46638708b3"
+    },
+    "inner_train_rpe1": {
+      "path": "C:\\00 - Competition\\models\\V20_native_f23_generator\\inner_train_rpe1",
+      "allowed_native": "rpe1",
+      "encoder_path": "C:\\00 - Competition\\data\\processed\\V20_native_f23_generator\\inner_train_rpe1\\encoder.npz",
+      "encoder_sha256": "df6bf61323f9a74af1a8c30fb3c7b8a76dd3e7f45eb5122260adab27ab352650",
+      "dispersion_seen_path": "C:\\00 - Competition\\models\\V20_native_f23_generator\\inner_train_rpe1\\dispersion_seen.npz",
+      "dispersion_seen_sha256": "186319e23bc00d1be82c49201dfefbdbfe40e3d8ee421133092c687d3170ca93",
+      "complete_path": "C:\\00 - Competition\\models\\V20_native_f23_generator\\inner_train_rpe1\\COMPLETE.json",
+      "complete_sha256": "c6e9bb67b8afb5874ef214de775f2f648f3be9d700fed532f8d654226f91d787"
+    }
+  },
+  "outputs_sha256": {
+    "C:\\00 - Competition\\models\\V20_native_f23_generator\\inner_train_hepg2\\COMPLETE.json": "ea1f6f1d3b7c04caac5ff219057601a6943f7df6432b30128c127b313a654774",
+    "C:\\00 - Competition\\models\\V20_native_f23_generator\\inner_train_jurkat\\COMPLETE.json": "90b528bed5d690db1a92b0c7a2b38cd712f91f51b94ff8a670dd9e46638708b3",
+    "C:\\00 - Competition\\models\\V20_native_f23_generator\\inner_train_rpe1\\COMPLETE.json": "c6e9bb67b8afb5874ef214de775f2f648f3be9d700fed532f8d654226f91d787",
+    "C:\\00 - Competition\\models\\V20_native_f23_generator\\ALL_THREE_FITS_FROZEN.json": "550a8d28a889b95ac18445b3a488a56ce64d74aa2c72e1b86a006f32ada5f972",
+    "C:\\00 - Competition\\reports\\V20\\native_f23_generator\\TECHNICAL_VALIDATION_DIAGNOSTICS.json": "b85f5c408579def7dc02f0e958a1476bd7747801e742b4af77703e044ec5da2b"
+  },
+  "actual_fits": 3,
+  "actual_steps": 9000,
+  "actual_draws": 1728000,
+  "final_THP1_truth_sealed": true,
+  "count_authorized": false,
+  "judge_authorized": false
+}

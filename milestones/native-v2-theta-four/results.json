@@ -1,0 +1,24 @@
+{
+  "arm": "theta_four",
+  "completed_roles": 6,
+  "complete_six_roles": true,
+  "overall": 0.2561197475115213,
+  "delta_vs_V28": -0.0032084992062650828,
+  "per_background": {
+    "hepg2": 0.20318106729106605,
+    "jurkat": 0.3494157649943441,
+    "rpe1": 0.21576241024915355
+  },
+  "raw_metrics": {
+    "pds_cosine": 0.8273809523809524,
+    "expr_mse_unbiased_capped_norm": 1.771718641085352,
+    "de_wilcoxon_direction_fidelity_yield_raw": 0.5862363683224173,
+    "de_wilcoxon_direction_reach_raw": 0.3536265360154108,
+    "de_wilcoxon_sig_jaccard": 0.06842442088015001,
+    "de_wilcoxon_lfc_nmae": 0.8422236399672837
+  },
+  "selected_snapshot": "theta_four",
+  "baseline": "legacy-v28",
+  "not_stably_promoted": true,
+  "selection_caveat": "Theta-only ablation; lower than the retained baseline."
+}

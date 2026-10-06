@@ -1,0 +1,19 @@
+{
+  "version": "v2.0",
+  "seed": 20260927,
+  "source_context": "k562",
+  "development_contexts": ["hepg2", "jurkat", "rpe1"],
+  "external_confirmation_context": "h1_2025",
+  "minimum_cells_source_and_destination": 30,
+  "source_support_prior": 50,
+  "target_split": "sha256('vcc-v2:' + target) modulo 5: 0 outer test, 1 inner validation, 2/3/4 inner training",
+  "outer_validation": "Whole destination context held out; test targets excluded from all transfer training contexts",
+  "selection": "Mean inner held-out-context MSE divided by that context's zero-effect MSE; do not select from outer test or H1",
+  "effect_space": "log1p(50000 * pseudobulk mean / sum over shared official genes) minus control profile",
+  "self_target_gene": "Masked in transfer training and MSE/correlation; all evaluation panel target genes removed for PDS proxy",
+  "candidates": ["zero", "v1_raw_scalar", "mean_response", "norm_scalar", "expression_gate", "gene_shrink", "gene_centered", "lowrank_32_a10", "lowrank_64_a100", "lowrank_128_a100", "hybrid_64", "hybrid_128"],
+  "ensemble": "hybrid = equal-weight gene_shrink and lowrank prediction; weight fixed before evaluation",
+  "postprocessing": "Project predicted profile to nonnegative normalized count simplex using only destination controls, then score the projected profile",
+  "missing_targets": "Zero-effect fallback unless a separate held-out-target experiment supports an alternative",
+  "official_score": false
+}

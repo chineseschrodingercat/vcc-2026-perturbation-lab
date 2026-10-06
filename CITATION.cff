@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this archive, cite the specific milestone tag and commit, together with the original data and method sources."
+title: "Virtual Cell Challenge 2026: Perturbation Prediction Research Archive"
+type: software
+authors:
+  - family-names: Liu
+    given-names: Minhao
+    affiliation: "Texas Tech University"
+repository-code: "https://github.com/chineseschrodingercat/vcc-2026-perturbation-lab"
+version: 0.1.0
+date-released: 2026-10-06

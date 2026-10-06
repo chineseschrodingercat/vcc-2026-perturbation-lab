@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-10-05T14:50:49.907650+00:00",
+  "protocol_sha256": "22901dd0a9998cf161836d2303f0263f17f82877f8c0cd1604de4cb8e1edfa7a",
+  "prediction_seal_sha256": "8bed547560cdc296971ead26aa14ddd5af60cb5aab34454715f0e3015b704f0c",
+  "independent_audit_sha256": "85bb62247077bcbbeb5aa1b408d14c35e5e3f050bc13c3bba6ad35cde6ee6f42",
+  "score_entrypoint_path": "C:\\00 - Competition\\staging\\research_v28_20261005\\context_KRR_seedrep_conditional_v1\\score_context_KRR_seedrep_DRAFT.py",
+  "score_entrypoint_sha256": "e17318221cf049d0f0f418fbe0404904bf08ece45f34108733ad551db78649b9",
+  "interpreter": "C:\\00 - Competition\\envs\\vcc313\\Scripts\\python.exe",
+  "interpreter_sha256": "41b0358d661a6be6c3ab18409016f353a20a236b2322df4639f99f1b9879bf26",
+  "judge_processes": 1,
+  "judge_threads": 4,
+  "new_score_cases_expected": 12,
+  "strict_reused_score_cases": 24,
+  "fixed_original_metric_weights_anchors": true,
+  "official_calls": 0
+}
