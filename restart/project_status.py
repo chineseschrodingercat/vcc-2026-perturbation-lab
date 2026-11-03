@@ -64,12 +64,16 @@ def main():
                 'genes':x.get('selected_unique_genes',x.get('n_genes'))} for x in value['datasets']]}
     smoke_checks={name:read(root/'reports'/f'{name}.json') for name in
                   ['real_count_smoke','recovered_v28_smoke','recovered_v28_gpu_smoke']}
+    benchmark=read(root/'reports/count_worker_benchmark.json')
+    benchmark_summary={k:benchmark.get(k) for k in ['status','generator','cells_per_run',
+        'timing_scope','all_streams_identical','worker_summary','speedup_6_over_1','limitations']} if benchmark else None
     result={'updated_utc':datetime.now(timezone.utc).isoformat(),'project_root':str(root),
             'authorized_storage_cap_bytes':1_000_000_000_000,'project_bytes':storage,
             'downloaded_bytes':sum(x['bytes'] for x in downloads),'completed_downloads':sum(x['complete'] for x in downloads),
             'planned_downloads':len(downloads),'downloads':downloads,'sources':sources,'experiments':experiments,
             'extra_data_audits':audits,'engineering_checks':smoke_checks,
             'resource_profile':read(root/'reports/RUNTIME_PROFILE.json'),
+            'count_worker_benchmark':benchmark_summary,
             'official_input_bundles_present':official,
             'official_final_artifacts':[str(p.relative_to(root)) for p in (root/'outputs/restart').rglob('*.vcc')],
             'competition_submissions_performed_by_restart':False}

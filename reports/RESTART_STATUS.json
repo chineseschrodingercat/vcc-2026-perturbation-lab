@@ -1,8 +1,8 @@
 {
-  "updated_utc": "2026-11-03T06:47:58.521970+00:00",
+  "updated_utc": "2026-11-03T06:52:07.619870+00:00",
   "project_root": "E:\\VCC2026_Restart_20261103",
   "authorized_storage_cap_bytes": 1000000000000,
-  "project_bytes": 22118240875,
+  "project_bytes": 22118515895,
   "downloaded_bytes": 21651990519,
   "completed_downloads": 12,
   "planned_downloads": 12,
@@ -461,6 +461,38 @@
     "memory_budget_is_os_limit": false,
     "allocation_policy": "On-demand bounded buffers; no memory reservation or preallocation",
     "gpu_policy": "Frozen V28 device=auto selects CUDA if available; CPU pipelines stay CPU"
+  },
+  "count_worker_benchmark": {
+    "status": "complete",
+    "generator": "poisson",
+    "cells_per_run": 4800,
+    "timing_scope": "Count sampling + ordered count validation and CSR hashing; excludes loading, prediction and HDF5 compression/writing",
+    "all_streams_identical": true,
+    "worker_summary": {
+      "1": {
+        "runs": 2,
+        "median_wall_seconds": 1.349439849999726,
+        "min_wall_seconds": 1.3472032999998191,
+        "max_wall_seconds": 1.3516763999996328,
+        "median_cells_per_second": 3557.031460128419,
+        "max_sampled_process_rss_bytes": 1886842880
+      },
+      "6": {
+        "runs": 2,
+        "median_wall_seconds": 0.368592499999977,
+        "min_wall_seconds": 0.3535116000002745,
+        "max_wall_seconds": 0.38367339999967953,
+        "median_cells_per_second": 13022.511309916234,
+        "max_sampled_process_rss_bytes": 2200338432
+      }
+    },
+    "speedup_6_over_1": 3.661061605973562,
+    "limitations": [
+      "Twelve targets are a short runtime check, not a full 900-target throughput forecast.",
+      "HDF5 compression and disk writing are excluded and may limit end-to-end acceleration.",
+      "A Poisson benchmark cannot establish the speedup of the NB Gamma-Poisson path.",
+      "RSS is sampled in one process; allocator-retained pages affect later baseline and peak readings."
+    ]
   },
   "official_input_bundles_present": {
     "validation": false,

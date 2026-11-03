@@ -1,0 +1,861 @@
+{
+  "schema": "vcc_restart_actual_count_worker_benchmark_v1",
+  "status": "complete",
+  "created_utc": "2026-11-03T06:51:01.638633+00:00",
+  "scope": "Real external RPE1 control means and held-background union predictions; engineering throughput only",
+  "official_submission_performed": false,
+  "raw_cells_reread": false,
+  "model_path": "E:\\VCC2026_Restart_20261103\\outputs\\restart\\union_cv\\selected_model.json",
+  "model_sha256": "562259fbdf7992c8997b296aa9be8643b7c9f378103876615c2270d0a39545be",
+  "source_locks": {
+    "k562_gwps": {
+      "id": "k562_gwps",
+      "background": "K562",
+      "npz_sha256": "9634f605aebc6719f66c1d0533435a0a947d2e20854a38f8fdc0b8aad27a1909"
+    },
+    "k562_essential": {
+      "id": "k562_essential",
+      "background": "K562",
+      "npz_sha256": "76572b60e4f90c9f0db207cf9cba5ea081293bbc8522c3cdf027f0f3863a8a85"
+    },
+    "rpe1_bulk": {
+      "id": "rpe1_bulk",
+      "background": "RPE1",
+      "npz_sha256": "f61f7776779ef31968da416becd2a12ee2e60d50158bbf91642f8c94bfad3e52"
+    },
+    "hepg2_sc": {
+      "id": "hepg2_sc",
+      "background": "HepG2",
+      "npz_sha256": "8f60f2afa9bddd66c18a4d78f5780c147a5f896c09866ae5652525b40b713b0a"
+    },
+    "jurkat_sc": {
+      "id": "jurkat_sc",
+      "background": "Jurkat",
+      "npz_sha256": "e17790b398782baf1e71d5668db9d27c066501a2592b1c0313f6a5838b06af45"
+    },
+    "rpe1_sc": {
+      "id": "rpe1_sc",
+      "background": "RPE1",
+      "npz_sha256": "008ab509dd2c808783baf0e1749029d369736c2bd5836e016654d2d461fa4d04"
+    }
+  },
+  "query_source": "rpe1_sc",
+  "query_npz_keys": [
+    "gene_names",
+    "target_names",
+    "target_mean_counts",
+    "control_mean_counts",
+    "target_n_cells",
+    "control_n_cells",
+    "measured_mask",
+    "source_id",
+    "background",
+    "schema"
+  ],
+  "query_control_cells": 11485.0,
+  "excluded_training_background": "RPE1",
+  "targets": [
+    "PFDN5",
+    "MBD3",
+    "UBE2H",
+    "RPL15",
+    "ZFR",
+    "CRKL",
+    "EIF4H",
+    "PSME2",
+    "KCMF1",
+    "MIOS",
+    "PSAT1",
+    "METTL1"
+  ],
+  "genes": 8749,
+  "cells_per_target": 400,
+  "cells_per_run": 4800,
+  "seed": 20261103,
+  "context_index": 0,
+  "generator": "poisson",
+  "variance_key": null,
+  "variance_note": "No variance stored; Poisson uses actual means only, variance is None",
+  "desired_means_sha256": "78c2639831fe8c5112d5da6244fca837ed40984c3dc156ec2a9665484d0aae46",
+  "control_means_sha256": "014174952fa37822da9a484407d62e13d720a9129caa09167c26c7bbca545e35",
+  "prediction_audit": {
+    "backgrounds": [
+      {
+        "background": "HepG2",
+        "sources": [
+          "hepg2_sc"
+        ],
+        "control_source": "hepg2_sc",
+        "context_weight": 0.5009545255851744,
+        "control_distance": 0.1728099873279834,
+        "covered_targets": 10,
+        "covered_target_gene_pairs": 77350
+      },
+      {
+        "background": "Jurkat",
+        "sources": [
+          "jurkat_sc"
+        ],
+        "control_source": "jurkat_sc",
+        "context_weight": 0.4175283859062666,
+        "control_distance": 0.2183506867019512,
+        "covered_targets": 11,
+        "covered_target_gene_pairs": 81015
+      },
+      {
+        "background": "K562",
+        "sources": [
+          "k562_gwps",
+          "k562_essential"
+        ],
+        "control_source": "k562_gwps",
+        "context_weight": 0.42746396808999076,
+        "control_distance": 0.21247131983178222,
+        "covered_targets": 12,
+        "covered_target_gene_pairs": 86427
+      }
+    ],
+    "covered_targets": 12,
+    "covered_target_gene_pairs": 97337,
+    "same_background_rule": "one vote per gene; highest-support measured source per target/gene"
+  },
+  "source_loading_and_prediction_seconds": 2.9725854999996955,
+  "timing_scope": "Count sampling + ordered count validation and CSR hashing; excludes loading, prediction and HDF5 compression/writing",
+  "equality_rule": "Exact ordered canonical CSR shape/data/indices/indptr SHA256; no tolerance or reseeding by worker",
+  "run_order": [
+    1,
+    6,
+    6,
+    1
+  ],
+  "runs": [
+    {
+      "workers": 1,
+      "wall_seconds": 1.3472032999998191,
+      "process_cpu_seconds": 1.34375,
+      "cells_per_second": 3562.9366406693366,
+      "rss": {
+        "method": "psutil RSS sampled every 20 ms",
+        "before_bytes": 1809932288,
+        "sampled_peak_bytes": 1885204480,
+        "after_bytes": 1809969152,
+        "increase_over_before_bytes": 75272192
+      },
+      "stream_sha256": "09bd290152198abd81feb78504cf48fa5bead494380cf686cf62795698d559fb",
+      "target_blocks": [
+        {
+          "index": 0,
+          "target": "PFDN5",
+          "sha256": "0a1d9f32368380891280c0230314714031631f768ed4f46041b7bce28e25a35c",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1506264,
+          "min_library_counts": 12581,
+          "max_library_counts": 13338,
+          "total_counts": 5169051
+        },
+        {
+          "index": 1,
+          "target": "MBD3",
+          "sha256": "5e39f628a5653e6a16e8322b41b1234b1f290ae4f47ae7a8d5e9f7631cb32d8c",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1499711,
+          "min_library_counts": 12643,
+          "max_library_counts": 13295,
+          "total_counts": 5174834
+        },
+        {
+          "index": 2,
+          "target": "UBE2H",
+          "sha256": "b93a27f0b4b2033448dbeebdd6f0f190c69afc9991405f68cc76db00dc29de4e",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1501839,
+          "min_library_counts": 12569,
+          "max_library_counts": 13225,
+          "total_counts": 5167272
+        },
+        {
+          "index": 3,
+          "target": "RPL15",
+          "sha256": "8c6d383d890a69361e361836dab12ffc86df34f14281735e3662ac4008a67a10",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1534796,
+          "min_library_counts": 12712,
+          "max_library_counts": 13344,
+          "total_counts": 5204482
+        },
+        {
+          "index": 4,
+          "target": "ZFR",
+          "sha256": "34153611b68a79f3d6c2389f2c0012da43ffde7ab53825fb4b3f3c3f812e80e8",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1505473,
+          "min_library_counts": 12654,
+          "max_library_counts": 13257,
+          "total_counts": 5176478
+        },
+        {
+          "index": 5,
+          "target": "CRKL",
+          "sha256": "0c9343829bbb724129b27ae90e31fde4731bc7e0cb128d79bcc8c9b849b8e588",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1499356,
+          "min_library_counts": 12621,
+          "max_library_counts": 13232,
+          "total_counts": 5166887
+        },
+        {
+          "index": 6,
+          "target": "EIF4H",
+          "sha256": "b89c2f013559e889daefb1ee0e724fedb329bf7b9cbbb550895eb747a4185cc6",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1504117,
+          "min_library_counts": 12466,
+          "max_library_counts": 13194,
+          "total_counts": 5160290
+        },
+        {
+          "index": 7,
+          "target": "PSME2",
+          "sha256": "643d9508268358b1b2a032f5ae212daa49bdfcfedc0b3cb96ffd13820b50b899",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1497079,
+          "min_library_counts": 12572,
+          "max_library_counts": 13315,
+          "total_counts": 5160596
+        },
+        {
+          "index": 8,
+          "target": "KCMF1",
+          "sha256": "73e5cf6bfdd7d671e596343c119548a05107be27bddd37981042072539ab46df",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1497431,
+          "min_library_counts": 12594,
+          "max_library_counts": 13225,
+          "total_counts": 5163038
+        },
+        {
+          "index": 9,
+          "target": "MIOS",
+          "sha256": "d40f8f93fafd460677bd4f1b92b1b5ec59b67d7d96028f7476e66a900c83f235",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1493454,
+          "min_library_counts": 12622,
+          "max_library_counts": 13227,
+          "total_counts": 5181913
+        },
+        {
+          "index": 10,
+          "target": "PSAT1",
+          "sha256": "62a5ad22c2b28e9ea140b3a7924ee34f2c75a55dac38271baea554173c6278c9",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1499481,
+          "min_library_counts": 12609,
+          "max_library_counts": 13235,
+          "total_counts": 5163536
+        },
+        {
+          "index": 11,
+          "target": "METTL1",
+          "sha256": "2036fb2c059f50e85e770163da877717b56ccdc751712f8916729e52caa8febf",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1505203,
+          "min_library_counts": 12620,
+          "max_library_counts": 13352,
+          "total_counts": 5178639
+        }
+      ],
+      "exact_digest_match": true
+    },
+    {
+      "workers": 6,
+      "wall_seconds": 0.3535116000002745,
+      "process_cpu_seconds": 1.875,
+      "cells_per_second": 13578.055147260438,
+      "rss": {
+        "method": "psutil RSS sampled every 20 ms",
+        "before_bytes": 1809973248,
+        "sampled_peak_bytes": 2193793024,
+        "after_bytes": 1810677760,
+        "increase_over_before_bytes": 383819776
+      },
+      "stream_sha256": "09bd290152198abd81feb78504cf48fa5bead494380cf686cf62795698d559fb",
+      "target_blocks": [
+        {
+          "index": 0,
+          "target": "PFDN5",
+          "sha256": "0a1d9f32368380891280c0230314714031631f768ed4f46041b7bce28e25a35c",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1506264,
+          "min_library_counts": 12581,
+          "max_library_counts": 13338,
+          "total_counts": 5169051
+        },
+        {
+          "index": 1,
+          "target": "MBD3",
+          "sha256": "5e39f628a5653e6a16e8322b41b1234b1f290ae4f47ae7a8d5e9f7631cb32d8c",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1499711,
+          "min_library_counts": 12643,
+          "max_library_counts": 13295,
+          "total_counts": 5174834
+        },
+        {
+          "index": 2,
+          "target": "UBE2H",
+          "sha256": "b93a27f0b4b2033448dbeebdd6f0f190c69afc9991405f68cc76db00dc29de4e",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1501839,
+          "min_library_counts": 12569,
+          "max_library_counts": 13225,
+          "total_counts": 5167272
+        },
+        {
+          "index": 3,
+          "target": "RPL15",
+          "sha256": "8c6d383d890a69361e361836dab12ffc86df34f14281735e3662ac4008a67a10",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1534796,
+          "min_library_counts": 12712,
+          "max_library_counts": 13344,
+          "total_counts": 5204482
+        },
+        {
+          "index": 4,
+          "target": "ZFR",
+          "sha256": "34153611b68a79f3d6c2389f2c0012da43ffde7ab53825fb4b3f3c3f812e80e8",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1505473,
+          "min_library_counts": 12654,
+          "max_library_counts": 13257,
+          "total_counts": 5176478
+        },
+        {
+          "index": 5,
+          "target": "CRKL",
+          "sha256": "0c9343829bbb724129b27ae90e31fde4731bc7e0cb128d79bcc8c9b849b8e588",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1499356,
+          "min_library_counts": 12621,
+          "max_library_counts": 13232,
+          "total_counts": 5166887
+        },
+        {
+          "index": 6,
+          "target": "EIF4H",
+          "sha256": "b89c2f013559e889daefb1ee0e724fedb329bf7b9cbbb550895eb747a4185cc6",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1504117,
+          "min_library_counts": 12466,
+          "max_library_counts": 13194,
+          "total_counts": 5160290
+        },
+        {
+          "index": 7,
+          "target": "PSME2",
+          "sha256": "643d9508268358b1b2a032f5ae212daa49bdfcfedc0b3cb96ffd13820b50b899",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1497079,
+          "min_library_counts": 12572,
+          "max_library_counts": 13315,
+          "total_counts": 5160596
+        },
+        {
+          "index": 8,
+          "target": "KCMF1",
+          "sha256": "73e5cf6bfdd7d671e596343c119548a05107be27bddd37981042072539ab46df",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1497431,
+          "min_library_counts": 12594,
+          "max_library_counts": 13225,
+          "total_counts": 5163038
+        },
+        {
+          "index": 9,
+          "target": "MIOS",
+          "sha256": "d40f8f93fafd460677bd4f1b92b1b5ec59b67d7d96028f7476e66a900c83f235",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1493454,
+          "min_library_counts": 12622,
+          "max_library_counts": 13227,
+          "total_counts": 5181913
+        },
+        {
+          "index": 10,
+          "target": "PSAT1",
+          "sha256": "62a5ad22c2b28e9ea140b3a7924ee34f2c75a55dac38271baea554173c6278c9",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1499481,
+          "min_library_counts": 12609,
+          "max_library_counts": 13235,
+          "total_counts": 5163536
+        },
+        {
+          "index": 11,
+          "target": "METTL1",
+          "sha256": "2036fb2c059f50e85e770163da877717b56ccdc751712f8916729e52caa8febf",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1505203,
+          "min_library_counts": 12620,
+          "max_library_counts": 13352,
+          "total_counts": 5178639
+        }
+      ],
+      "exact_digest_match": true
+    },
+    {
+      "workers": 6,
+      "wall_seconds": 0.38367339999967953,
+      "process_cpu_seconds": 1.890625,
+      "cells_per_second": 12510.640560445445,
+      "rss": {
+        "method": "psutil RSS sampled every 20 ms",
+        "before_bytes": 1810677760,
+        "sampled_peak_bytes": 2200338432,
+        "after_bytes": 1810685952,
+        "increase_over_before_bytes": 389660672
+      },
+      "stream_sha256": "09bd290152198abd81feb78504cf48fa5bead494380cf686cf62795698d559fb",
+      "target_blocks": [
+        {
+          "index": 0,
+          "target": "PFDN5",
+          "sha256": "0a1d9f32368380891280c0230314714031631f768ed4f46041b7bce28e25a35c",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1506264,
+          "min_library_counts": 12581,
+          "max_library_counts": 13338,
+          "total_counts": 5169051
+        },
+        {
+          "index": 1,
+          "target": "MBD3",
+          "sha256": "5e39f628a5653e6a16e8322b41b1234b1f290ae4f47ae7a8d5e9f7631cb32d8c",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1499711,
+          "min_library_counts": 12643,
+          "max_library_counts": 13295,
+          "total_counts": 5174834
+        },
+        {
+          "index": 2,
+          "target": "UBE2H",
+          "sha256": "b93a27f0b4b2033448dbeebdd6f0f190c69afc9991405f68cc76db00dc29de4e",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1501839,
+          "min_library_counts": 12569,
+          "max_library_counts": 13225,
+          "total_counts": 5167272
+        },
+        {
+          "index": 3,
+          "target": "RPL15",
+          "sha256": "8c6d383d890a69361e361836dab12ffc86df34f14281735e3662ac4008a67a10",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1534796,
+          "min_library_counts": 12712,
+          "max_library_counts": 13344,
+          "total_counts": 5204482
+        },
+        {
+          "index": 4,
+          "target": "ZFR",
+          "sha256": "34153611b68a79f3d6c2389f2c0012da43ffde7ab53825fb4b3f3c3f812e80e8",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1505473,
+          "min_library_counts": 12654,
+          "max_library_counts": 13257,
+          "total_counts": 5176478
+        },
+        {
+          "index": 5,
+          "target": "CRKL",
+          "sha256": "0c9343829bbb724129b27ae90e31fde4731bc7e0cb128d79bcc8c9b849b8e588",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1499356,
+          "min_library_counts": 12621,
+          "max_library_counts": 13232,
+          "total_counts": 5166887
+        },
+        {
+          "index": 6,
+          "target": "EIF4H",
+          "sha256": "b89c2f013559e889daefb1ee0e724fedb329bf7b9cbbb550895eb747a4185cc6",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1504117,
+          "min_library_counts": 12466,
+          "max_library_counts": 13194,
+          "total_counts": 5160290
+        },
+        {
+          "index": 7,
+          "target": "PSME2",
+          "sha256": "643d9508268358b1b2a032f5ae212daa49bdfcfedc0b3cb96ffd13820b50b899",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1497079,
+          "min_library_counts": 12572,
+          "max_library_counts": 13315,
+          "total_counts": 5160596
+        },
+        {
+          "index": 8,
+          "target": "KCMF1",
+          "sha256": "73e5cf6bfdd7d671e596343c119548a05107be27bddd37981042072539ab46df",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1497431,
+          "min_library_counts": 12594,
+          "max_library_counts": 13225,
+          "total_counts": 5163038
+        },
+        {
+          "index": 9,
+          "target": "MIOS",
+          "sha256": "d40f8f93fafd460677bd4f1b92b1b5ec59b67d7d96028f7476e66a900c83f235",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1493454,
+          "min_library_counts": 12622,
+          "max_library_counts": 13227,
+          "total_counts": 5181913
+        },
+        {
+          "index": 10,
+          "target": "PSAT1",
+          "sha256": "62a5ad22c2b28e9ea140b3a7924ee34f2c75a55dac38271baea554173c6278c9",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1499481,
+          "min_library_counts": 12609,
+          "max_library_counts": 13235,
+          "total_counts": 5163536
+        },
+        {
+          "index": 11,
+          "target": "METTL1",
+          "sha256": "2036fb2c059f50e85e770163da877717b56ccdc751712f8916729e52caa8febf",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1505203,
+          "min_library_counts": 12620,
+          "max_library_counts": 13352,
+          "total_counts": 5178639
+        }
+      ],
+      "exact_digest_match": true
+    },
+    {
+      "workers": 1,
+      "wall_seconds": 1.3516763999996328,
+      "process_cpu_seconds": 1.359375,
+      "cells_per_second": 3551.1458215896228,
+      "rss": {
+        "method": "psutil RSS sampled every 20 ms",
+        "before_bytes": 1810685952,
+        "sampled_peak_bytes": 1886842880,
+        "after_bytes": 1810685952,
+        "increase_over_before_bytes": 76156928
+      },
+      "stream_sha256": "09bd290152198abd81feb78504cf48fa5bead494380cf686cf62795698d559fb",
+      "target_blocks": [
+        {
+          "index": 0,
+          "target": "PFDN5",
+          "sha256": "0a1d9f32368380891280c0230314714031631f768ed4f46041b7bce28e25a35c",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1506264,
+          "min_library_counts": 12581,
+          "max_library_counts": 13338,
+          "total_counts": 5169051
+        },
+        {
+          "index": 1,
+          "target": "MBD3",
+          "sha256": "5e39f628a5653e6a16e8322b41b1234b1f290ae4f47ae7a8d5e9f7631cb32d8c",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1499711,
+          "min_library_counts": 12643,
+          "max_library_counts": 13295,
+          "total_counts": 5174834
+        },
+        {
+          "index": 2,
+          "target": "UBE2H",
+          "sha256": "b93a27f0b4b2033448dbeebdd6f0f190c69afc9991405f68cc76db00dc29de4e",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1501839,
+          "min_library_counts": 12569,
+          "max_library_counts": 13225,
+          "total_counts": 5167272
+        },
+        {
+          "index": 3,
+          "target": "RPL15",
+          "sha256": "8c6d383d890a69361e361836dab12ffc86df34f14281735e3662ac4008a67a10",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1534796,
+          "min_library_counts": 12712,
+          "max_library_counts": 13344,
+          "total_counts": 5204482
+        },
+        {
+          "index": 4,
+          "target": "ZFR",
+          "sha256": "34153611b68a79f3d6c2389f2c0012da43ffde7ab53825fb4b3f3c3f812e80e8",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1505473,
+          "min_library_counts": 12654,
+          "max_library_counts": 13257,
+          "total_counts": 5176478
+        },
+        {
+          "index": 5,
+          "target": "CRKL",
+          "sha256": "0c9343829bbb724129b27ae90e31fde4731bc7e0cb128d79bcc8c9b849b8e588",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1499356,
+          "min_library_counts": 12621,
+          "max_library_counts": 13232,
+          "total_counts": 5166887
+        },
+        {
+          "index": 6,
+          "target": "EIF4H",
+          "sha256": "b89c2f013559e889daefb1ee0e724fedb329bf7b9cbbb550895eb747a4185cc6",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1504117,
+          "min_library_counts": 12466,
+          "max_library_counts": 13194,
+          "total_counts": 5160290
+        },
+        {
+          "index": 7,
+          "target": "PSME2",
+          "sha256": "643d9508268358b1b2a032f5ae212daa49bdfcfedc0b3cb96ffd13820b50b899",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1497079,
+          "min_library_counts": 12572,
+          "max_library_counts": 13315,
+          "total_counts": 5160596
+        },
+        {
+          "index": 8,
+          "target": "KCMF1",
+          "sha256": "73e5cf6bfdd7d671e596343c119548a05107be27bddd37981042072539ab46df",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1497431,
+          "min_library_counts": 12594,
+          "max_library_counts": 13225,
+          "total_counts": 5163038
+        },
+        {
+          "index": 9,
+          "target": "MIOS",
+          "sha256": "d40f8f93fafd460677bd4f1b92b1b5ec59b67d7d96028f7476e66a900c83f235",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1493454,
+          "min_library_counts": 12622,
+          "max_library_counts": 13227,
+          "total_counts": 5181913
+        },
+        {
+          "index": 10,
+          "target": "PSAT1",
+          "sha256": "62a5ad22c2b28e9ea140b3a7924ee34f2c75a55dac38271baea554173c6278c9",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1499481,
+          "min_library_counts": 12609,
+          "max_library_counts": 13235,
+          "total_counts": 5163536
+        },
+        {
+          "index": 11,
+          "target": "METTL1",
+          "sha256": "2036fb2c059f50e85e770163da877717b56ccdc751712f8916729e52caa8febf",
+          "shape": [
+            400,
+            8749
+          ],
+          "nnz": 1505203,
+          "min_library_counts": 12620,
+          "max_library_counts": 13352,
+          "total_counts": 5178639
+        }
+      ],
+      "exact_digest_match": true
+    }
+  ],
+  "numpy_version": "2.4.3",
+  "python_version": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "logical_cpus": 16,
+  "code_sha256": {
+    "benchmark_count_workers.py": "b68c87a0c4368a5a21d78439f18475e20a5c49a60ca69c824050530bc92e9b7d",
+    "lean_transfer.py": "c80b5f08567e2f6c0be971d5628da68e2dcaee393cfeaba3f313d99c20a2ee1b",
+    "lean_union.py": "bec5c3bef05cc02237f3328923c4c164a64bc4c2a1059dab0ae26bb47615aa27"
+  },
+  "completed_utc": "2026-11-03T06:51:05.200924+00:00",
+  "all_streams_identical": true,
+  "worker_summary": {
+    "1": {
+      "runs": 2,
+      "median_wall_seconds": 1.349439849999726,
+      "min_wall_seconds": 1.3472032999998191,
+      "max_wall_seconds": 1.3516763999996328,
+      "median_cells_per_second": 3557.031460128419,
+      "max_sampled_process_rss_bytes": 1886842880
+    },
+    "6": {
+      "runs": 2,
+      "median_wall_seconds": 0.368592499999977,
+      "min_wall_seconds": 0.3535116000002745,
+      "max_wall_seconds": 0.38367339999967953,
+      "median_cells_per_second": 13022.511309916234,
+      "max_sampled_process_rss_bytes": 2200338432
+    }
+  },
+  "speedup_6_over_1": 3.661061605973562,
+  "limitations": [
+    "Twelve targets are a short runtime check, not a full 900-target throughput forecast.",
+    "HDF5 compression and disk writing are excluded and may limit end-to-end acceleration.",
+    "A Poisson benchmark cannot establish the speedup of the NB Gamma-Poisson path.",
+    "RSS is sampled in one process; allocator-retained pages affect later baseline and peak readings."
+  ]
+}

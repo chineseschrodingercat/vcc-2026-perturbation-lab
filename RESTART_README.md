@@ -80,6 +80,8 @@
 
 本轮实际项目约 22.12 GB。1 TB 是使用上限；目前优先完成面板匹配、可靠导出和候选检查。已有处理无需因资源设置提高而重跑。
 
+已在本机用真实 RPE1 控制均值和背景留出后的预测均值，测量 12 targets × 400 cells 的 Poisson 计数生成。按 1、6、6、1 workers 顺序各测两次：串行中位耗时 **1.349 秒**，6 workers 为 **0.369 秒**，该环节约 **3.66 倍**；所有 CSR 输出摘要完全一致。并行测试采样到的进程 RSS 峰值约 **2.20 GB**。这里包括计数校验与摘要计算，不包括 HDF5 压缩写盘，也不代表默认 NB 路径或完整 final 的加速倍数。记录见 `reports/count_worker_benchmark.json`。
+
 ## 官方时间与提交约束
 
 根据 [Arc 2026 公告](https://arcinstitute.org/news/virtual-cell-challenge-2026) 和 [官方 CLI Guide](https://vcc-cli-wiki.virtualcellchallenge.org/)：
@@ -99,6 +101,7 @@
 - `restart/project_status.py` 与 `reports/RESTART_STATUS.json`：实际文件与实验状态。
 - `reports/real_count_smoke.json`：真实 RPE1 计数导出检查。
 - `reports/recovered_v28_smoke.json` / `recovered_v28_gpu_smoke.json`：CPU/GPU 资产加载和真实输入推理检查；不是新的生物学验证。
+- `restart/benchmark_count_workers.py` / `reports/count_worker_benchmark.json`：真实输入上的并行采样性能与完全一致性核验。
 - `outputs/restart/core_cv/` 与 `union_cv/`：实际逐目标开发结果、模型参数、输入文件锁。
 - `logs/`：任务日志。历史失败尝试可能仍在追加日志内；最终状态以 receipt / report 为准。
 
