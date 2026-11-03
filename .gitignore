@@ -39,3 +39,10 @@ Thumbs.db
 .idea/
 .vscode/
 credentials.json
+
+# Restart runtime outputs (code and small reports are tracked).
+logs/
+downloads/
+outputs/
+*.part
+*.extracting

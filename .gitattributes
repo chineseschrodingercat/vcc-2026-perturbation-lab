@@ -1,3 +1,9 @@
 # Recorded evidence hashes bind the exact original bytes, including CRLF.
 # Do not normalize archived files during add, checkout, clone, or ZIP creation.
 * -text
+
+# Restart text normalization; historical archive files keep existing bytes.
+/restart/** text eol=lf
+/reports/** text eol=lf
+/RESTART_README.md text eol=lf
+/*.cmd text eol=crlf

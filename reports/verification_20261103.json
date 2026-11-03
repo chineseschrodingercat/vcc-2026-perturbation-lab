@@ -1,0 +1,33 @@
+{
+  "checked_utc": "2026-11-03T06:47:26+00:00",
+  "platform": "Native Windows; project .venv; Python 3.13.9",
+  "semantic_tests": {
+    "command": ".venv\\Scripts\\python.exe -m unittest -v test_lean_transfer test_lean_union",
+    "working_directory": "restart",
+    "passed": 13,
+    "failed": 0,
+    "seconds": 0.354
+  },
+  "actual_data_checks": {
+    "single_cell_input_cells": 656343,
+    "biological_backgrounds": 4,
+    "processed_source_banks": 6,
+    "external_loco_targets_per_background": 512,
+    "real_count_export_report": "reports/real_count_smoke.json",
+    "v28_gpu_inference_report": "reports/recovered_v28_gpu_smoke.json"
+  },
+  "integration_checks": {
+    "official_cli_version": "0.3.0",
+    "official_cli_format_contract": "Inspected published guide and actual 0.3.0 CLI wheel, including prep options and manifest conventions",
+    "build_help": "passed",
+    "build_without_official_inputs": "Expected exit code 2; no placeholder official data or .vcc created",
+    "runtime_profile": "reports/RUNTIME_PROFILE.json"
+  },
+  "limitations": [
+    "Official authenticated validation/final ZIPs have not been downloaded or inspected.",
+    "No full final build or official prep validation has run on actual official inputs.",
+    "LOCO results are same-fold hyperparameter tuning on pseudobulk proxy metrics, not official six-metric scores.",
+    "V28 smoke is engineering inference recovery; its historical training included RPE1."
+  ],
+  "competition_submissions_performed": 0
+}

@@ -1,3 +1,5 @@
+> **November 3 restart:** Data, released model assets, a four-background transfer comparison, and a Windows final-build workflow have been restored. See [restart instructions and actual status](RESTART_README.md). Official input downloads require a local VCC login; no new competition submission has been made.
+
 <div align="center">
 
 # Virtual Cell Challenge 2026
@@ -19,7 +21,7 @@ The practical question behind the work is simple: **which parts of a perturbatio
 
 Some ideas improved a development score; several did not survive paired checks. Both outcomes belong here. A release is a preserved research snapshot, not a claim that its method generalizes or that it replaced the baseline.
 
-> **Status:** research is paused. This October 6, 2026 import packages existing work; it does not restart training, generation, scoring, or competition submissions. Raw and processed RNA populations are external. No new official score was requested during packaging.
+> **Historical archive status (October 6, 2026):** research was paused when the preserved work was imported. That packaging did not restart training, generation, scoring, or competition submissions. The November 3 restart is documented separately above. Raw and processed RNA populations are external. No new official score was requested during packaging.
 
 ## The milestones
 

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "legacy_v28_assets",
+    "url": "https://github.com/chineseschrodingercat/vcc-2026-perturbation-lab/releases/download/legacy-v28/legacy-v28-model-assets.zip",
+    "path": "downloads/legacy-v28-model-assets.zip",
+    "bytes": 5939418,
+    "sha256": "4cf97adf652c9f7ac0741b19962c56c3baea4247e00a30a70fe2a9e59aeda113"
+  },
+  {
+    "id": "clean400_assets",
+    "url": "https://github.com/chineseschrodingercat/vcc-2026-perturbation-lab/releases/download/clean400-b0-nb/clean400-model-assets.zip",
+    "path": "downloads/clean400-model-assets.zip",
+    "bytes": 37285489,
+    "sha256": "bef0518ea722864c062ec3ae07ae4f297a397177b2e8243cd1661d017b8acb28"
+  },
+  {
+    "id": "replogle_k562_gwps_raw_bulk",
+    "url": "https://ndownloader.figshare.com/files/35774443",
+    "path": "data/raw/external/replogle_2022/k562_gwps/K562_gwps_raw_bulk_01.h5ad",
+    "bytes": 374587922,
+    "sha256": "7cec96b3b76169abbf6b6ab9d10bf00d71d942d89e63292351f745e130b154db",
+    "purpose": "Main directly observed source responses for 272 official targets",
+    "source_page": "https://github.com/chineseschrodingercat/vcc-2026-perturbation-lab/blob/main/snapshots/archive/legacy_20261003/configs/source_registry_v3.json"
+  },
+  {
+    "id": "replogle_k562_essential_raw_bulk",
+    "url": "https://ndownloader.figshare.com/files/35773070",
+    "path": "data/raw/external/replogle_2022/k562_essential/K562_essential_raw_bulk_01.h5ad",
+    "bytes": 79766954,
+    "sha256": "80de95e54fcbca0e0537d569b43ec92fde6bd0482801505504baebe3118dcadf",
+    "purpose": "K562 within-line comparison, grouped with GWPS in validation",
+    "source_page": "https://github.com/chineseschrodingercat/vcc-2026-perturbation-lab/blob/main/snapshots/archive/legacy_20261003/configs/source_registry_v3.json"
+  },
+  {
+    "id": "replogle_rpe1_raw_bulk",
+    "url": "https://ndownloader.figshare.com/files/35775581",
+    "path": "data/raw/external/replogle_2022/rpe1/rpe1_raw_bulk_01.h5ad",
+    "bytes": 95350546,
+    "sha256": "603c655f1cfa41d649baf3ae63fca224cc11f297e40d4ed59d390b1e8d2e2db2",
+    "purpose": "External response calibration and validation",
+    "source_page": "https://github.com/chineseschrodingercat/vcc-2026-perturbation-lab/blob/main/snapshots/archive/legacy_20261003/configs/source_registry_v3.json"
+  },
+  {
+    "id": "slim_string_embeddings_v0_3",
+    "url": "https://raw.githubusercontent.com/RasmussenLab/SLIM/main/data/gene_string_embeddings.v0.3.h5",
+    "path": "data/raw/external/slim_embeddings/gene_string_embeddings.v0.3.h5",
+    "bytes": 19502608,
+    "sha256": "789416877b8701ef6f800106d26bf7bb97ea8e72744e6ab93e24933a717f247d",
+    "purpose": "Tested as unseen-target predictor; poor on held-out 2026 targets",
+    "source_page": "https://github.com/chineseschrodingercat/vcc-2026-perturbation-lab/blob/main/snapshots/archive/legacy_20261003/configs/source_registry_v3.json"
+  }
+]

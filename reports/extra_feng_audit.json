@@ -1,0 +1,180 @@
+{
+  "started_utc": "2026-11-03T06:26:15.095474+00:00",
+  "project_root": "E:\\VCC2026_Restart_20261103",
+  "manifest": "E:\\VCC2026_Restart_20261103\\restart\\download_manifest.json",
+  "scope": "Read-only source audit; no training, predictions, effect exponentiation or downloads.",
+  "filters": {
+    "targets_path": null,
+    "target_count": null,
+    "genes_path": null,
+    "gene_count": null
+  },
+  "datasets": [
+    {
+      "id": "feng2026_ipsc_genomewide_lfc",
+      "path": "E:\\VCC2026_Restart_20261103\\data\\raw\\external\\feng_ipsc\\GenomeWideScreen_LFC_byGene.tsv.gz",
+      "expected_bytes": 794610300,
+      "actual_bytes": 794610300,
+      "download_receipt_matches_file": true,
+      "publisher_checksum_checked_by_downloader": true,
+      "audit": "feng_streamed_complete",
+      "rows_scanned": 43187656,
+      "rows_selected": 43187656,
+      "selection": "all rows",
+      "all_target_coverage": {
+        "unique_observed": 6673
+      },
+      "all_gene_coverage": {
+        "unique_observed": 6472
+      },
+      "selected_unique_targets": 6673,
+      "selected_unique_genes": 6472,
+      "selected_rows_with_missing_keys": 0,
+      "selected_duplicate_target_gene_rows": 0,
+      "duplicate_definition": "Number of selected valid-key rows beyond the first occurrence of the same Target + Expressed_Gene_Symbol, including chunk boundaries.",
+      "selected_unique_target_gene_pairs": 43187656,
+      "effect_statistics_selected": {
+        "finite_count": 43187656,
+        "nonfinite_or_nonnumeric_count": 0,
+        "negative": 21937000,
+        "zero": 0,
+        "positive": 21250656,
+        "min_exact": -2.81311530849414,
+        "max_exact": 1.77747679171675,
+        "mean": -0.00036786752054052157,
+        "std_population": 0.06405186939838385,
+        "quantiles": {
+          "0": -0.672114013489984,
+          "0.001": -0.24750709620460798,
+          "0.01": -0.1600505422545891,
+          "0.05": -0.1019526890398481,
+          "0.25": -0.03906118123260518,
+          "0.5": -0.001564186139061,
+          "0.75": 0.03712781893804362,
+          "0.95": 0.10363343635108285,
+          "0.99": 0.164107721631684,
+          "0.999": 0.2479189736685348,
+          "1": 0.428518058922108
+        },
+        "quantile_sample_size": 100000,
+        "quantile_method": "exact when finite_count <= sample capacity, otherwise uniform bottom-k sample; endpoints above are exact"
+      },
+      "on_target_effect_statistics_selected": {
+        "finite_count": 4869,
+        "nonfinite_or_nonnumeric_count": 0,
+        "negative": 4829,
+        "zero": 0,
+        "positive": 40,
+        "min_exact": -2.81311530849414,
+        "max_exact": 0.137639640469227,
+        "mean": -0.38216588446184546,
+        "std_population": 0.32205802333041295,
+        "quantiles": {
+          "0": -2.81311530849414,
+          "0.001": -2.5553255732751388,
+          "0.01": -1.6094990119409611,
+          "0.05": -1.03257576817858,
+          "0.25": -0.475473184283205,
+          "0.5": -0.284658857257483,
+          "0.75": -0.179054468477128,
+          "0.95": -0.07595177070016862,
+          "0.99": -0.00948077740625322,
+          "0.999": 0.057835208281760093,
+          "1": 0.137639640469227
+        },
+        "quantile_sample_size": 4869,
+        "quantile_method": "exact when finite_count <= sample capacity, otherwise uniform bottom-k sample; endpoints above are exact"
+      },
+      "invalid_adjusted_pvalue_rows_selected": 0,
+      "effect_semantics": "Covariate-adjusted mean log-expression residuals; not ordinary raw-pseudobulk log2FC. No exp/exp2, scale conversion, effect filtering or model integration was performed.",
+      "usable_for_training": false,
+      "decision": "Candidate only: validate sign, scale and whole-context holdout utility before model integration.",
+      "status": "audited",
+      "elapsed_seconds": 79.307
+    },
+    {
+      "id": "feng2026_ipsc_targeted_lfc",
+      "path": "E:\\VCC2026_Restart_20261103\\data\\raw\\external\\feng_ipsc\\TargetedScreen_LFC_byGene.tsv.gz",
+      "expected_bytes": 77563731,
+      "actual_bytes": 77563731,
+      "download_receipt_matches_file": true,
+      "publisher_checksum_checked_by_downloader": true,
+      "audit": "feng_streamed_complete",
+      "rows_scanned": 2894880,
+      "rows_selected": 2894880,
+      "selection": "all rows",
+      "all_target_coverage": {
+        "unique_observed": 444
+      },
+      "all_gene_coverage": {
+        "unique_observed": 6520
+      },
+      "selected_unique_targets": 444,
+      "selected_unique_genes": 6520,
+      "selected_rows_with_missing_keys": 0,
+      "selected_duplicate_target_gene_rows": 0,
+      "duplicate_definition": "Number of selected valid-key rows beyond the first occurrence of the same Target + Expressed_Gene_Symbol, including chunk boundaries.",
+      "selected_unique_target_gene_pairs": 2894880,
+      "effect_statistics_selected": {
+        "finite_count": 2894880,
+        "nonfinite_or_nonnumeric_count": 0,
+        "negative": 1402713,
+        "zero": 444,
+        "positive": 1491723,
+        "min_exact": -1.70780346134506,
+        "max_exact": 0.821587538315468,
+        "mean": 0.0003158510677436659,
+        "std_population": 0.020596158077405825,
+        "quantiles": {
+          "0": -1.08277833005744,
+          "0.001": -0.14663936285175852,
+          "0.01": -0.05552198596757773,
+          "0.05": -0.02492619030812813,
+          "0.25": -0.007539757720439175,
+          "0.5": 0.000327717013798,
+          "0.75": 0.008392583197189725,
+          "0.95": 0.02558473295777835,
+          "0.99": 0.05326798788329776,
+          "0.999": 0.1259278330660367,
+          "1": 0.580364059824083
+        },
+        "quantile_sample_size": 100000,
+        "quantile_method": "exact when finite_count <= sample capacity, otherwise uniform bottom-k sample; endpoints above are exact"
+      },
+      "on_target_effect_statistics_selected": {
+        "finite_count": 440,
+        "nonfinite_or_nonnumeric_count": 0,
+        "negative": 438,
+        "zero": 1,
+        "positive": 1,
+        "min_exact": -1.58278576196205,
+        "max_exact": 0.0009507180526873,
+        "mean": -0.38966430196183416,
+        "std_population": 0.3042460993211315,
+        "quantiles": {
+          "0": -1.58278576196205,
+          "0.001": -1.5345508159553487,
+          "0.01": -1.2543133044489996,
+          "0.05": -0.9956638181977481,
+          "0.25": -0.572701445768425,
+          "0.5": -0.313334486644158,
+          "0.75": -0.15525520506015072,
+          "0.95": -0.02986975456646472,
+          "0.99": -0.0004066120559711178,
+          "0.999": 0.000533352827557555,
+          "1": 0.0009507180526873
+        },
+        "quantile_sample_size": 440,
+        "quantile_method": "exact when finite_count <= sample capacity, otherwise uniform bottom-k sample; endpoints above are exact"
+      },
+      "invalid_adjusted_pvalue_rows_selected": 444,
+      "effect_semantics": "Covariate-adjusted mean log-expression residuals; not ordinary raw-pseudobulk log2FC. No exp/exp2, scale conversion, effect filtering or model integration was performed.",
+      "usable_for_training": false,
+      "decision": "Candidate only: validate sign, scale and whole-context holdout utility before model integration.",
+      "status": "audited",
+      "elapsed_seconds": 5.863
+    }
+  ],
+  "completed_utc": "2026-11-03T06:27:40.277493+00:00",
+  "status": "audit_complete"
+}

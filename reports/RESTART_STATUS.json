@@ -1,0 +1,471 @@
+{
+  "updated_utc": "2026-11-03T06:47:58.521970+00:00",
+  "project_root": "E:\\VCC2026_Restart_20261103",
+  "authorized_storage_cap_bytes": 1000000000000,
+  "project_bytes": 22118240875,
+  "downloaded_bytes": 21651990519,
+  "completed_downloads": 12,
+  "planned_downloads": 12,
+  "downloads": [
+    {
+      "id": "legacy_v28_assets",
+      "bytes": 5939418,
+      "expected_bytes": 5939418,
+      "complete": true,
+      "publisher_checksum_checked": true,
+      "sha256": "4cf97adf652c9f7ac0741b19962c56c3baea4247e00a30a70fe2a9e59aeda113"
+    },
+    {
+      "id": "clean400_assets",
+      "bytes": 37285489,
+      "expected_bytes": 37285489,
+      "complete": true,
+      "publisher_checksum_checked": true,
+      "sha256": "bef0518ea722864c062ec3ae07ae4f297a397177b2e8243cd1661d017b8acb28"
+    },
+    {
+      "id": "replogle_k562_gwps_raw_bulk",
+      "bytes": 374587922,
+      "expected_bytes": 374587922,
+      "complete": true,
+      "publisher_checksum_checked": true,
+      "sha256": "7cec96b3b76169abbf6b6ab9d10bf00d71d942d89e63292351f745e130b154db"
+    },
+    {
+      "id": "replogle_k562_essential_raw_bulk",
+      "bytes": 79766954,
+      "expected_bytes": 79766954,
+      "complete": true,
+      "publisher_checksum_checked": true,
+      "sha256": "80de95e54fcbca0e0537d569b43ec92fde6bd0482801505504baebe3118dcadf"
+    },
+    {
+      "id": "replogle_rpe1_raw_bulk",
+      "bytes": 95350546,
+      "expected_bytes": 95350546,
+      "complete": true,
+      "publisher_checksum_checked": true,
+      "sha256": "603c655f1cfa41d649baf3ae63fca224cc11f297e40d4ed59d390b1e8d2e2db2"
+    },
+    {
+      "id": "slim_string_embeddings_v0_3",
+      "bytes": 19502608,
+      "expected_bytes": 19502608,
+      "complete": true,
+      "publisher_checksum_checked": true,
+      "sha256": "789416877b8701ef6f800106d26bf7bb97ea8e72744e6ab93e24933a717f247d"
+    },
+    {
+      "id": "nadig2025_hepg2_scperturb",
+      "bytes": 850590740,
+      "expected_bytes": 850590740,
+      "complete": true,
+      "publisher_checksum_checked": true,
+      "sha256": "1af2f7b3e692ad3d077e6027d68a1f800619e29aa3f7a0efa70146fb7223a4bf"
+    },
+    {
+      "id": "nadig2025_jurkat_scperturb",
+      "bytes": 1293665804,
+      "expected_bytes": 1293665804,
+      "complete": true,
+      "publisher_checksum_checked": true,
+      "sha256": "ade3d83150fd6944212363cd11da77c0d2143fa6df1febb3f15a66d4dab0677f"
+    },
+    {
+      "id": "replogle2022_rpe1_scperturb",
+      "bytes": 1236886900,
+      "expected_bytes": 1236886900,
+      "complete": true,
+      "publisher_checksum_checked": true,
+      "sha256": "12d6a0cf9378c4f09411e27f0ce07b59f1d97731bd576d6fadf112f6f088d1a4"
+    },
+    {
+      "id": "feng2026_ipsc_genomewide_lfc",
+      "bytes": 794610300,
+      "expected_bytes": 794610300,
+      "complete": true,
+      "publisher_checksum_checked": true,
+      "sha256": "74fadc4866a8c498ed78c937109d27f449822d30d9fd13e4cd76d59d678e9ec2"
+    },
+    {
+      "id": "feng2026_ipsc_targeted_lfc",
+      "bytes": 77563731,
+      "expected_bytes": 77563731,
+      "complete": true,
+      "publisher_checksum_checked": true,
+      "sha256": "4e963e6806995b448854636b131072ee23abd4af127068d03fb4ea07240dede0"
+    },
+    {
+      "id": "zhu_dann2026_primary_cd4t_de",
+      "bytes": 16786240107,
+      "expected_bytes": 16786240107,
+      "complete": true,
+      "publisher_checksum_checked": false,
+      "sha256": "c355f535ff32cf7ba1edc49cf9c6039fe84f2c9ebe4d005515cba75790cfbb62"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "hepg2_sc",
+      "background": "HepG2",
+      "source_rows_used": 145473,
+      "targets": 2393,
+      "genes": 9624,
+      "control_n_cells": 4976.0,
+      "input_sha256": "1af2f7b3e692ad3d077e6027d68a1f800619e29aa3f7a0efa70146fb7223a4bf"
+    },
+    {
+      "source_id": "jurkat_sc",
+      "background": "Jurkat",
+      "source_rows_used": 262956,
+      "targets": 2393,
+      "genes": 8882,
+      "control_n_cells": 12013.0,
+      "input_sha256": "ade3d83150fd6944212363cd11da77c0d2143fa6df1febb3f15a66d4dab0677f"
+    },
+    {
+      "source_id": "k562_essential",
+      "background": "K562",
+      "source_rows_used": 2273,
+      "targets": 2057,
+      "genes": 8559,
+      "control_n_cells": 10691.0,
+      "input_sha256": null
+    },
+    {
+      "source_id": "k562_gwps",
+      "background": "K562",
+      "source_rows_used": 11187,
+      "targets": 9866,
+      "genes": 8244,
+      "control_n_cells": 75328.0,
+      "input_sha256": "7cec96b3b76169abbf6b6ab9d10bf00d71d942d89e63292351f745e130b154db"
+    },
+    {
+      "source_id": "rpe1_bulk",
+      "background": "RPE1",
+      "source_rows_used": 2662,
+      "targets": 2393,
+      "genes": 8747,
+      "control_n_cells": 11485.0,
+      "input_sha256": "603c655f1cfa41d649baf3ae63fca224cc11f297e40d4ed59d390b1e8d2e2db2"
+    },
+    {
+      "source_id": "rpe1_sc",
+      "background": "RPE1",
+      "source_rows_used": 247914,
+      "targets": 2393,
+      "genes": 8749,
+      "control_n_cells": 11485.0,
+      "input_sha256": "12d6a0cf9378c4f09411e27f0ce07b59f1d97731bd576d6fadf112f6f088d1a4"
+    }
+  ],
+  "experiments": {
+    "core_cv": {
+      "selected": {
+        "id": "weighted_a0.75_t4",
+        "model": "weighted_shrink",
+        "alpha": 0.75,
+        "temperature": 4.0
+      },
+      "normalization_genes": 6544,
+      "output_genes_before_official_axis": 6544,
+      "zero_proxy_mse": 0.02382103865339612,
+      "selected_proxy_mse": 0.02128245887126627,
+      "selected_proxy_cosine": 0.24983290463134802,
+      "source_locks_count": 6,
+      "per_background_proxy_mse": {
+        "HepG2": {
+          "zero": 0.028682336775212102,
+          "weighted_a0.75_t4": 0.024562594887754436
+        },
+        "Jurkat": {
+          "zero": 0.020574659024121835,
+          "weighted_a0.75_t4": 0.019091835011647483
+        },
+        "K562": {
+          "zero": 0.008150277448619531,
+          "weighted_a0.75_t4": 0.007928448986472946
+        },
+        "RPE1": {
+          "zero": 0.037876881365631034,
+          "weighted_a0.75_t4": 0.03354695659919022
+        }
+      },
+      "interpretation": "External background-held-out development tuning; same folds used to select hyperparameters. Not an official score or independent performance estimate."
+    },
+    "union_cv": {
+      "selected": {
+        "id": "union_a0.75_t4",
+        "model": "weighted_shrink",
+        "alpha": 0.75,
+        "temperature": 4.0
+      },
+      "normalization_genes": 6544,
+      "output_genes_before_official_axis": 11920,
+      "zero_proxy_mse": 0.024920293457339888,
+      "selected_proxy_mse": 0.02307767944859211,
+      "selected_proxy_cosine": 0.2068995211120765,
+      "source_locks_count": 6,
+      "per_background_proxy_mse": {
+        "HepG2": {
+          "zero": 0.030761526047115854,
+          "union_a0.75_t4": 0.0278680911020713
+        },
+        "Jurkat": {
+          "zero": 0.021704126500452694,
+          "union_a0.75_t4": 0.020777801225741268
+        },
+        "K562": {
+          "zero": 0.008686935581065008,
+          "union_a0.75_t4": 0.008565181003173798
+        },
+        "RPE1": {
+          "zero": 0.038528585700725995,
+          "union_a0.75_t4": 0.03509964446338208
+        }
+      },
+      "interpretation": "External background-held-out development tuning; same folds used to select hyperparameters. Not an official score or independent performance estimate."
+    }
+  },
+  "extra_data_audits": {
+    "extra_feng_audit": {
+      "status": "audit_complete",
+      "datasets": [
+        {
+          "id": "feng2026_ipsc_genomewide_lfc",
+          "status": "audited",
+          "targets": 6673,
+          "genes": 6472
+        },
+        {
+          "id": "feng2026_ipsc_targeted_lfc",
+          "status": "audited",
+          "targets": 444,
+          "genes": 6520
+        }
+      ]
+    },
+    "extra_cd4t_audit": {
+      "status": "audit_complete",
+      "datasets": [
+        {
+          "id": "zhu_dann2026_primary_cd4t_de",
+          "status": "audited",
+          "targets": 11526,
+          "genes": 10282
+        }
+      ]
+    }
+  },
+  "engineering_checks": {
+    "real_count_smoke": {
+      "scope": "Real external RPE1 controls -> two local predictions -> integer CSR AnnData. Engineering smoke check, not an official score or competition submission.",
+      "shape": [
+        800,
+        8749
+      ],
+      "source_control_cells": 11485,
+      "targets": [
+        "AAAS",
+        "AAMP"
+      ],
+      "context": "RPE1_LOCAL_SMOKE",
+      "cells_per_target": 400,
+      "stored_entries": 2788470,
+      "min_library_counts": 11828,
+      "max_library_counts": 14122,
+      "mean_library_counts": 12935.46625,
+      "ntc_mean_max_absolute_difference_from_aggregate": 0.0,
+      "output": "outputs\\restart\\smoke\\local_RPE1_counts.h5ad",
+      "bytes": 4014814,
+      "all_checks_passed": true,
+      "excluded_training_background": "RPE1",
+      "source_audit": {
+        "backgrounds": [
+          {
+            "background": "HepG2",
+            "sources": [
+              "hepg2_sc"
+            ],
+            "control_source": "hepg2_sc",
+            "context_weight": 0.5009545255851744,
+            "control_distance": 0.1728099873279834,
+            "covered_targets": 1,
+            "covered_target_gene_pairs": 7735
+          },
+          {
+            "background": "Jurkat",
+            "sources": [
+              "jurkat_sc"
+            ],
+            "control_source": "jurkat_sc",
+            "context_weight": 0.4175283859062666,
+            "control_distance": 0.2183506867019512,
+            "covered_targets": 2,
+            "covered_target_gene_pairs": 14730
+          },
+          {
+            "background": "K562",
+            "sources": [
+              "k562_gwps",
+              "k562_essential"
+            ],
+            "control_source": "k562_gwps",
+            "context_weight": 0.42746396808999076,
+            "control_distance": 0.21247131983178222,
+            "covered_targets": 2,
+            "covered_target_gene_pairs": 14478
+          }
+        ],
+        "covered_targets": 2,
+        "covered_target_gene_pairs": 15962,
+        "same_background_rule": "one vote per gene; highest-support measured source per target/gene"
+      }
+    },
+    "recovered_v28_smoke": {
+      "model": "legacy_v28_reconstructed",
+      "bit_exact_reproduction": false,
+      "effect_space": "raw_pseudocount_log2fc",
+      "pseudocount": 0.5,
+      "formula": "calibrated K562 PC0.5 effect + frozen V7 bounded residual",
+      "calibration": 0.6720111954846246,
+      "source_min_cells": 30,
+      "support_prior_cells": 50.0,
+      "base_effect_clip": [
+        -3.0,
+        3.0
+      ],
+      "input_source_sha256": "9634f605aebc6719f66c1d0533435a0a947d2e20854a38f8fdc0b8aad27a1909",
+      "frozen_features_sha256": "a6cb72bcdcd0e0a5f01e9bce5a4a09d284fd74924373b69af363eebd694aa372",
+      "frozen_string_sha256": "789416877b8701ef6f800106d26bf7bb97ea8e72744e6ab93e24933a717f247d",
+      "model_gene_count": 10916,
+      "normalization_core_gene_count": 6122,
+      "requested_targets": 16,
+      "neural_supported_targets": 16,
+      "source_absent_targets": [],
+      "source_low_support_targets": [],
+      "source_incomplete_core_targets": [],
+      "query_missing_model_genes": 2657,
+      "source_control_profile_rmse_vs_saved": 0.001752751530148089,
+      "source_control_profile_max_abs_vs_saved": 0.017726898193359375,
+      "string_missing_supported_targets": [],
+      "mean_gate": 0.29131451062858105,
+      "residual_rms": 0.0707482863683792,
+      "query_controls_used_for_background_only": true,
+      "count_generator_performed": false,
+      "kind": "tiny_transformer",
+      "ng": 10916,
+      "step": 600,
+      "seed": 20260928,
+      "checkpoint_sha256": "a2b996eacf498ce63ff584be51d84bc52c77c87ec040f96a8a30d43a91d6dce2",
+      "train_contexts": [
+        "hepg2",
+        "jurkat",
+        "rpe1",
+        "orion_hct116"
+      ],
+      "device": "cpu",
+      "torch_version": "2.9.0+cu128",
+      "weights_only": true,
+      "parameters": 993763,
+      "shape": [
+        16,
+        10916
+      ],
+      "all_finite": true,
+      "scope": "Restored source + real external control profile inference only. RPE1 was in historical V28 training, so this is not held-out validation."
+    },
+    "recovered_v28_gpu_smoke": {
+      "model": "legacy_v28_reconstructed",
+      "bit_exact_reproduction": false,
+      "effect_space": "raw_pseudocount_log2fc",
+      "pseudocount": 0.5,
+      "formula": "calibrated K562 PC0.5 effect + frozen V7 bounded residual",
+      "calibration": 0.6720111954846246,
+      "source_min_cells": 30,
+      "support_prior_cells": 50.0,
+      "base_effect_clip": [
+        -3.0,
+        3.0
+      ],
+      "input_source_sha256": "9634f605aebc6719f66c1d0533435a0a947d2e20854a38f8fdc0b8aad27a1909",
+      "frozen_features_sha256": "a6cb72bcdcd0e0a5f01e9bce5a4a09d284fd74924373b69af363eebd694aa372",
+      "frozen_string_sha256": "789416877b8701ef6f800106d26bf7bb97ea8e72744e6ab93e24933a717f247d",
+      "model_gene_count": 10916,
+      "normalization_core_gene_count": 6122,
+      "requested_targets": 128,
+      "neural_supported_targets": 121,
+      "source_absent_targets": [],
+      "source_low_support_targets": [
+        "AFG3L2",
+        "ANAPC10",
+        "ANAPC4",
+        "AQR",
+        "ARL2",
+        "ATP6V1A",
+        "AURKA"
+      ],
+      "source_incomplete_core_targets": [],
+      "query_missing_model_genes": 2657,
+      "source_control_profile_rmse_vs_saved": 0.001752751530148089,
+      "source_control_profile_max_abs_vs_saved": 0.017726898193359375,
+      "string_missing_supported_targets": [],
+      "mean_gate": 0.2138609944049977,
+      "residual_rms": 0.04828103988344258,
+      "query_controls_used_for_background_only": true,
+      "count_generator_performed": false,
+      "kind": "tiny_transformer",
+      "ng": 10916,
+      "step": 600,
+      "seed": 20260928,
+      "checkpoint_sha256": "a2b996eacf498ce63ff584be51d84bc52c77c87ec040f96a8a30d43a91d6dce2",
+      "train_contexts": [
+        "hepg2",
+        "jurkat",
+        "rpe1",
+        "orion_hct116"
+      ],
+      "device": "cuda",
+      "torch_version": "2.9.0+cu128",
+      "weights_only": true,
+      "parameters": 993763,
+      "shape": [
+        128,
+        10916
+      ],
+      "all_finite": true,
+      "elapsed_inference_seconds": 1.642203999999765,
+      "gpu_name": "NVIDIA GeForce RTX 5080",
+      "peak_gpu_allocated_bytes": 45620736,
+      "scope": "Restored source + real external control profile inference only. RPE1 was in historical V28 training, so this is not held-out validation or a training-speed benchmark."
+    }
+  },
+  "resource_profile": {
+    "schema": "vcc_runtime_profile_v1",
+    "recorded_utc": "2026-11-03T06:47:26.558229+00:00",
+    "logical_cpus": 16,
+    "scientific_threads": 12,
+    "ingest_workers": 4,
+    "ingest_threads": 3,
+    "count_workers": 6,
+    "count_threads": 2,
+    "memory": {
+      "total_bytes": 134878691328,
+      "available_bytes": 105916030976,
+      "source": "psutil"
+    },
+    "memory_target_bytes": 107374182400,
+    "memory_headroom_bytes": 17179869184,
+    "memory_budget_bytes": 88736161792,
+    "memory_budget_is_os_limit": false,
+    "allocation_policy": "On-demand bounded buffers; no memory reservation or preallocation",
+    "gpu_policy": "Frozen V28 device=auto selects CUDA if available; CPU pipelines stay CPU"
+  },
+  "official_input_bundles_present": {
+    "validation": false,
+    "final": false
+  },
+  "official_final_artifacts": [],
+  "competition_submissions_performed_by_restart": false
+}

@@ -1,0 +1,421 @@
+{
+  "started_utc": "2026-11-03T06:31:59.182256+00:00",
+  "project_root": "E:\\VCC2026_Restart_20261103",
+  "manifest": "E:\\VCC2026_Restart_20261103\\restart\\download_manifest.json",
+  "scope": "Read-only source audit; no training, predictions, effect exponentiation or downloads.",
+  "filters": {
+    "targets_path": null,
+    "target_count": null,
+    "genes_path": null,
+    "gene_count": null
+  },
+  "datasets": [
+    {
+      "id": "zhu_dann2026_primary_cd4t_de",
+      "path": "E:\\VCC2026_Restart_20261103\\data\\raw\\external\\primary_cd4t\\GWCD4i.DE_stats.h5ad",
+      "expected_bytes": 16786240107,
+      "actual_bytes": 16786240107,
+      "download_receipt_matches_file": true,
+      "publisher_checksum_checked_by_downloader": false,
+      "audit": "cd4t_metadata_only",
+      "n_observations": 33983,
+      "n_genes": 10282,
+      "obs_columns": [
+        "chunk",
+        "culture_condition",
+        "distal_offtarget_flag",
+        "donor_correlation_all_mean",
+        "donor_correlation_all_min",
+        "donor_correlation_hits_mean",
+        "donor_correlation_hits_min",
+        "guide_correlation_all",
+        "guide_correlation_all_pval",
+        "guide_correlation_signif",
+        "guide_correlation_signif_pval",
+        "guide_n_signif_ontarget",
+        "low_target_gex",
+        "n_cells_target",
+        "n_down_genes",
+        "n_downstream",
+        "n_guides",
+        "n_total_de_genes",
+        "n_total_genes_category",
+        "n_up_genes",
+        "neighboring_gene_KD",
+        "ontarget_effect_size",
+        "ontarget_significant",
+        "single_guide_estimate",
+        "target_baseMean",
+        "target_contrast",
+        "target_contrast_gene_name"
+      ],
+      "var_columns": [
+        "gene_ids",
+        "gene_name"
+      ],
+      "target_column": "target_contrast_gene_name",
+      "context_column": "culture_condition",
+      "gene_column": "gene_name",
+      "target_coverage": {
+        "unique_observed": 11526
+      },
+      "gene_coverage": {
+        "unique_observed": 10282
+      },
+      "duplicated_gene_symbol_rows": 0,
+      "duplicate_context_target_rows": 0,
+      "contexts": {
+        "Rest": {
+          "rows": 11287,
+          "unique_targets": 11287,
+          "requested_target_overlap": null
+        },
+        "Stim48hr": {
+          "rows": 11281,
+          "unique_targets": 11281,
+          "requested_target_overlap": null
+        },
+        "Stim8hr": {
+          "rows": 11415,
+          "unique_targets": 11415,
+          "requested_target_overlap": null
+        }
+      },
+      "X_schema": {
+        "encoding": "null",
+        "shape": null,
+        "dtype": "float32"
+      },
+      "layers": {
+        "adj_p_value": {
+          "encoding": "array",
+          "shape": [
+            33983,
+            10282
+          ],
+          "dtype": "float64"
+        },
+        "baseMean": {
+          "encoding": "array",
+          "shape": [
+            33983,
+            10282
+          ],
+          "dtype": "float64"
+        },
+        "lfcSE": {
+          "encoding": "array",
+          "shape": [
+            33983,
+            10282
+          ],
+          "dtype": "float64"
+        },
+        "log_fc": {
+          "encoding": "array",
+          "shape": [
+            33983,
+            10282
+          ],
+          "dtype": "float64"
+        },
+        "p_value": {
+          "encoding": "array",
+          "shape": [
+            33983,
+            10282
+          ],
+          "dtype": "float64"
+        },
+        "zscore": {
+          "encoding": "array",
+          "shape": [
+            33983,
+            10282
+          ],
+          "dtype": "float64"
+        }
+      },
+      "required_layer_log_fc_present": true,
+      "quality_fields": {
+        "ontarget_significant": {
+          "present": true,
+          "role": "Evidence for intended target knockdown; candidate inclusion criterion.",
+          "observed": {
+            "rows": 33983,
+            "missing": 0,
+            "value_counts": {
+              "True": 21221,
+              "False": 12762
+            },
+            "numeric": {
+              "finite": 33983,
+              "min": 0.0,
+              "median": 1.0,
+              "max": 1.0
+            }
+          }
+        },
+        "ontarget_effect_size": {
+          "present": true,
+          "role": "Knockdown magnitude; verify direction and scale before thresholding.",
+          "observed": {
+            "rows": 33983,
+            "missing": 0,
+            "numeric": {
+              "finite": 33983,
+              "min": -58.547976668913336,
+              "median": -6.30463745267495,
+              "max": 7.091937721582496
+            }
+          }
+        },
+        "low_target_gex": {
+          "present": true,
+          "role": "Low baseline target expression; on-target estimate may be unreliable.",
+          "observed": {
+            "rows": 33983,
+            "missing": 0,
+            "value_counts": {
+              "False": 26177,
+              "True": 7806
+            },
+            "numeric": {
+              "finite": 33983,
+              "min": 0.0,
+              "median": 0.0,
+              "max": 1.0
+            }
+          }
+        },
+        "neighboring_gene_KD": {
+          "present": true,
+          "role": "Possible cis co-target/off-target effect; flag for sensitivity analysis.",
+          "observed": {
+            "rows": 33983,
+            "missing": 0,
+            "value_counts": {
+              "False": 31364,
+              "True": 2619
+            },
+            "numeric": {
+              "finite": 33983,
+              "min": 0.0,
+              "median": 0.0,
+              "max": 1.0
+            }
+          }
+        },
+        "distal_offtarget_flag": {
+          "present": true,
+          "role": "Possible distal off-target effect; candidate exclusion/sensitivity flag.",
+          "observed": {
+            "rows": 33983,
+            "missing": 0,
+            "value_counts": {
+              "False": 33550,
+              "True": 433
+            },
+            "numeric": {
+              "finite": 33983,
+              "min": 0.0,
+              "median": 0.0,
+              "max": 1.0
+            }
+          }
+        },
+        "single_guide_estimate": {
+          "present": true,
+          "role": "Only one guide supports the estimate; weaker replication evidence.",
+          "observed": {
+            "rows": 33983,
+            "missing": 0,
+            "value_counts": {
+              "False": 30124,
+              "True": 3859
+            },
+            "numeric": {
+              "finite": 33983,
+              "min": 0.0,
+              "median": 0.0,
+              "max": 1.0
+            }
+          }
+        },
+        "n_guides": {
+          "present": true,
+          "role": "Number of guides supporting this perturbation-condition estimate.",
+          "observed": {
+            "rows": 33983,
+            "missing": 3,
+            "value_counts": {
+              "2.0": 30108,
+              "1.0": 3859,
+              "3.0": 13,
+              "nan": 3
+            },
+            "numeric": {
+              "finite": 33980,
+              "min": 1.0,
+              "median": 2.0,
+              "max": 3.0
+            }
+          }
+        },
+        "guide_n_signif_ontarget": {
+          "present": true,
+          "role": "Number of guides with significant intended-target knockdown.",
+          "observed": {
+            "rows": 33983,
+            "missing": 7943,
+            "value_counts": {
+              "2.0": 19019,
+              "nan": 7943,
+              "0.0": 4393,
+              "1.0": 2628
+            },
+            "numeric": {
+              "finite": 26040,
+              "min": 0.0,
+              "median": 2.0,
+              "max": 2.0
+            }
+          }
+        },
+        "guide_correlation_signif": {
+          "present": true,
+          "role": "Agreement between guide profiles on significant genes.",
+          "observed": {
+            "rows": 33983,
+            "missing": 17836,
+            "numeric": {
+              "finite": 16147,
+              "min": -1.0,
+              "median": 0.6212400196001509,
+              "max": 1.0
+            }
+          }
+        },
+        "guide_correlation_all": {
+          "present": true,
+          "role": "Agreement between guide profiles on all genes.",
+          "observed": {
+            "rows": 33983,
+            "missing": 7943,
+            "numeric": {
+              "finite": 26040,
+              "min": -0.2268722827819559,
+              "median": 0.06475843790406,
+              "max": 0.7144900727155363
+            }
+          }
+        },
+        "donor_correlation_all_mean": {
+          "present": true,
+          "role": "Cross-donor reproducibility diagnostic; not new independent profiles.",
+          "observed": {
+            "rows": 33983,
+            "missing": 29103,
+            "numeric": {
+              "finite": 4880,
+              "min": -0.166764928093821,
+              "median": 0.11070103904076535,
+              "max": 0.7293224867430504
+            }
+          }
+        },
+        "donor_correlation_all_min": {
+          "present": true,
+          "role": "Worst cross-donor agreement diagnostic.",
+          "observed": {
+            "rows": 33983,
+            "missing": 29103,
+            "numeric": {
+              "finite": 4880,
+              "min": -0.3140595244346978,
+              "median": 0.07616952857166856,
+              "max": 0.705457156679335
+            }
+          }
+        },
+        "donor_correlation_hits_mean": {
+          "present": true,
+          "role": "Cross-donor agreement on hit genes.",
+          "observed": {
+            "rows": 33983,
+            "missing": 29103,
+            "numeric": {
+              "finite": 4880,
+              "min": -0.7226555454409177,
+              "median": 0.7309297865046485,
+              "max": 0.9882313554148436
+            }
+          }
+        },
+        "keep_for_DE": {
+          "present": false,
+          "role": "Pseudobulk eligibility flag if present; not assumed to exist in the DE summary."
+        },
+        "keep_effective_guides": {
+          "present": false,
+          "role": "Pseudobulk guide-efficacy flag if present."
+        },
+        "keep_min_cells": {
+          "present": false,
+          "role": "Pseudobulk cell-count eligibility flag if present."
+        }
+      },
+      "count_fields": {
+        "n_cells_target": {
+          "rows": 33983,
+          "missing": 0,
+          "numeric": {
+            "finite": 33983,
+            "min": 17.0,
+            "median": 539.0,
+            "max": 11510.0
+          }
+        },
+        "n_up_genes": {
+          "rows": 33983,
+          "missing": 0,
+          "numeric": {
+            "finite": 33983,
+            "min": 0.0,
+            "median": 1.0,
+            "max": 4151.0
+          }
+        },
+        "n_down_genes": {
+          "rows": 33983,
+          "missing": 0,
+          "numeric": {
+            "finite": 33983,
+            "min": 0.0,
+            "median": 1.0,
+            "max": 2434.0
+          }
+        },
+        "n_total_de_genes": {
+          "rows": 33983,
+          "missing": 0,
+          "numeric": {
+            "finite": 33983,
+            "min": 0.0,
+            "median": 2.0,
+            "max": 5920.0
+          }
+        }
+      },
+      "matrix_values_read": false,
+      "effect_finiteness_validated": false,
+      "effect_semantics": "Published layers['log_fc'] is DESeq2 log2FC. File contains differential-expression summaries, not raw cells; it cannot directly supply a cell-level count distribution.",
+      "usable_for_training": false,
+      "decision": "Metadata audit only. Before inclusion, audit selected effect values, apply documented quality decisions, harmonize genes and assess whole-context holdout utility.",
+      "status": "audited",
+      "elapsed_seconds": 0.112
+    }
+  ],
+  "completed_utc": "2026-11-03T06:31:59.294329+00:00",
+  "status": "audit_complete"
+}

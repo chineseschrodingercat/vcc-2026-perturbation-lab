@@ -1,0 +1,64 @@
+{
+  "scope": "Real external RPE1 controls -> two local predictions -> integer CSR AnnData. Engineering smoke check, not an official score or competition submission.",
+  "shape": [
+    800,
+    8749
+  ],
+  "source_control_cells": 11485,
+  "targets": [
+    "AAAS",
+    "AAMP"
+  ],
+  "context": "RPE1_LOCAL_SMOKE",
+  "cells_per_target": 400,
+  "stored_entries": 2788470,
+  "min_library_counts": 11828,
+  "max_library_counts": 14122,
+  "mean_library_counts": 12935.46625,
+  "ntc_mean_max_absolute_difference_from_aggregate": 0.0,
+  "output": "outputs\\restart\\smoke\\local_RPE1_counts.h5ad",
+  "bytes": 4014814,
+  "all_checks_passed": true,
+  "excluded_training_background": "RPE1",
+  "source_audit": {
+    "backgrounds": [
+      {
+        "background": "HepG2",
+        "sources": [
+          "hepg2_sc"
+        ],
+        "control_source": "hepg2_sc",
+        "context_weight": 0.5009545255851744,
+        "control_distance": 0.1728099873279834,
+        "covered_targets": 1,
+        "covered_target_gene_pairs": 7735
+      },
+      {
+        "background": "Jurkat",
+        "sources": [
+          "jurkat_sc"
+        ],
+        "control_source": "jurkat_sc",
+        "context_weight": 0.4175283859062666,
+        "control_distance": 0.2183506867019512,
+        "covered_targets": 2,
+        "covered_target_gene_pairs": 14730
+      },
+      {
+        "background": "K562",
+        "sources": [
+          "k562_gwps",
+          "k562_essential"
+        ],
+        "control_source": "k562_gwps",
+        "context_weight": 0.42746396808999076,
+        "control_distance": 0.21247131983178222,
+        "covered_targets": 2,
+        "covered_target_gene_pairs": 14478
+      }
+    ],
+    "covered_targets": 2,
+    "covered_target_gene_pairs": 15962,
+    "same_background_rule": "one vote per gene; highest-support measured source per target/gene"
+  }
+}

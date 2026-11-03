@@ -1,0 +1,21 @@
+{
+  "schema": "vcc_runtime_profile_v1",
+  "recorded_utc": "2026-11-03T06:47:26.558229+00:00",
+  "logical_cpus": 16,
+  "scientific_threads": 12,
+  "ingest_workers": 4,
+  "ingest_threads": 3,
+  "count_workers": 6,
+  "count_threads": 2,
+  "memory": {
+    "total_bytes": 134878691328,
+    "available_bytes": 105916030976,
+    "source": "psutil"
+  },
+  "memory_target_bytes": 107374182400,
+  "memory_headroom_bytes": 17179869184,
+  "memory_budget_bytes": 88736161792,
+  "memory_budget_is_os_limit": false,
+  "allocation_policy": "On-demand bounded buffers; no memory reservation or preallocation",
+  "gpu_policy": "Frozen V28 device=auto selects CUDA if available; CPU pipelines stay CPU"
+}
